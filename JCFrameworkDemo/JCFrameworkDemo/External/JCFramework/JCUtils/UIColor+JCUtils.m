@@ -162,7 +162,7 @@
 
 
 #pragma mark - Custom Colors
-@implementation UIColor (Wendys)
+@implementation UIColor (JCCustomise)
 + (UIColor *)appMainColor{
     return [UIColor colorWithRed:206.0/255.0 green:18.0/255.0 blue:39.0/255.0 alpha:1];
 }

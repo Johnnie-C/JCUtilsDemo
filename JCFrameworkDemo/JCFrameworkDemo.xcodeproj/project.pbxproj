@@ -31,7 +31,7 @@
 		93A5DF6A1FF9BC8B006D35CF /* UINavigationBar+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DF551FF9BC8B006D35CF /* UINavigationBar+JCUtils.m */; };
 		93A5DF6B1FF9BC8B006D35CF /* UIView+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DF571FF9BC8B006D35CF /* UIView+JCUtils.m */; };
 		93A5DF6C1FF9BC8B006D35CF /* JCBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DF5A1FF9BC8B006D35CF /* JCBarButtonItem.m */; };
-		93A5DF6D1FF9BC8B006D35CF /* WDProfileTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DF5C1FF9BC8B006D35CF /* WDProfileTextField.m */; };
+		93A5DF6D1FF9BC8B006D35CF /* JCErrorTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DF5C1FF9BC8B006D35CF /* JCErrorTextField.m */; };
 		93A5DF941FF9BD41006D35CF /* CRToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DF701FF9BD41006D35CF /* CRToast.m */; };
 		93A5DF951FF9BD41006D35CF /* CRToastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DF731FF9BD41006D35CF /* CRToastManager.m */; };
 		93A5DF961FF9BD41006D35CF /* CRToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DF751FF9BD41006D35CF /* CRToastView.m */; };
@@ -60,6 +60,11 @@
 		93A5DFC01FF9DA6A006D35CF /* ic_menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93A5DFBF1FF9DA6A006D35CF /* ic_menu@3x.png */; };
 		93A5DFC51FFA0A1E006D35CF /* JCHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DFC31FFA0A1E006D35CF /* JCHomeCell.m */; };
 		93A5DFC61FFA0A1E006D35CF /* JCHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A5DFC41FFA0A1E006D35CF /* JCHomeCell.xib */; };
+		93A5DFCA1FFA1407006D35CF /* JCStretchHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DFC81FFA1407006D35CF /* JCStretchHeaderViewController.m */; };
+		93A5DFCB1FFA1407006D35CF /* JCStretchHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A5DFC91FFA1407006D35CF /* JCStretchHeaderViewController.xib */; };
+		93A5DFCD1FFA18CF006D35CF /* demo_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 93A5DFCC1FFA18CF006D35CF /* demo_image.jpeg */; };
+		93A5DFD11FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DFCF1FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.m */; };
+		93A5DFD21FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A5DFD01FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,8 +133,8 @@
 		93A5DF571FF9BC8B006D35CF /* UIView+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JCUtils.m"; sourceTree = "<group>"; };
 		93A5DF591FF9BC8B006D35CF /* JCBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCBarButtonItem.h; sourceTree = "<group>"; };
 		93A5DF5A1FF9BC8B006D35CF /* JCBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCBarButtonItem.m; sourceTree = "<group>"; };
-		93A5DF5B1FF9BC8B006D35CF /* WDProfileTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDProfileTextField.h; sourceTree = "<group>"; };
-		93A5DF5C1FF9BC8B006D35CF /* WDProfileTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDProfileTextField.m; sourceTree = "<group>"; };
+		93A5DF5B1FF9BC8B006D35CF /* JCErrorTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCErrorTextField.h; sourceTree = "<group>"; };
+		93A5DF5C1FF9BC8B006D35CF /* JCErrorTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCErrorTextField.m; sourceTree = "<group>"; };
 		93A5DF6F1FF9BD41006D35CF /* CRToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToast.h; sourceTree = "<group>"; };
 		93A5DF701FF9BD41006D35CF /* CRToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRToast.m; sourceTree = "<group>"; };
 		93A5DF711FF9BD41006D35CF /* CRToastLayoutHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastLayoutHelpers.h; sourceTree = "<group>"; };
@@ -178,6 +183,13 @@
 		93A5DFC21FFA0A1E006D35CF /* JCHomeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCHomeCell.h; sourceTree = "<group>"; };
 		93A5DFC31FFA0A1E006D35CF /* JCHomeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCHomeCell.m; sourceTree = "<group>"; };
 		93A5DFC41FFA0A1E006D35CF /* JCHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCHomeCell.xib; sourceTree = "<group>"; };
+		93A5DFC71FFA1407006D35CF /* JCStretchHeaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCStretchHeaderViewController.h; path = JCFrameworkDemo/UI/JCStretchHeaderViewController.h; sourceTree = SOURCE_ROOT; };
+		93A5DFC81FFA1407006D35CF /* JCStretchHeaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCStretchHeaderViewController.m; path = JCFrameworkDemo/UI/JCStretchHeaderViewController.m; sourceTree = SOURCE_ROOT; };
+		93A5DFC91FFA1407006D35CF /* JCStretchHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JCStretchHeaderViewController.xib; path = JCFrameworkDemo/UI/JCStretchHeaderViewController.xib; sourceTree = SOURCE_ROOT; };
+		93A5DFCC1FFA18CF006D35CF /* demo_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo_image.jpeg; sourceTree = "<group>"; };
+		93A5DFCE1FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCScrollViewTextFieldDemoViewController.h; sourceTree = "<group>"; };
+		93A5DFCF1FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCScrollViewTextFieldDemoViewController.m; sourceTree = "<group>"; };
+		93A5DFD01FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCScrollViewTextFieldDemoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,8 +367,8 @@
 			children = (
 				93A5DF591FF9BC8B006D35CF /* JCBarButtonItem.h */,
 				93A5DF5A1FF9BC8B006D35CF /* JCBarButtonItem.m */,
-				93A5DF5B1FF9BC8B006D35CF /* WDProfileTextField.h */,
-				93A5DF5C1FF9BC8B006D35CF /* WDProfileTextField.m */,
+				93A5DF5B1FF9BC8B006D35CF /* JCErrorTextField.h */,
+				93A5DF5C1FF9BC8B006D35CF /* JCErrorTextField.m */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -449,6 +461,12 @@
 		93A5DFB11FF9D615006D35CF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				93A5DFC71FFA1407006D35CF /* JCStretchHeaderViewController.h */,
+				93A5DFC81FFA1407006D35CF /* JCStretchHeaderViewController.m */,
+				93A5DFC91FFA1407006D35CF /* JCStretchHeaderViewController.xib */,
+				93A5DFCE1FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.h */,
+				93A5DFCF1FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.m */,
+				93A5DFD01FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.xib */,
 				93A5DFB21FF9D615006D35CF /* HomeViewController */,
 			);
 			path = UI;
@@ -476,6 +494,7 @@
 		93A5DFBA1FF9DA03006D35CF /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				93A5DFCC1FFA18CF006D35CF /* demo_image.jpeg */,
 				93A5DFBF1FF9DA6A006D35CF /* ic_menu@3x.png */,
 				93A5DFBB1FF9DA03006D35CF /* ic_back@3x.png */,
 				93A5DFBC1FF9DA03006D35CF /* search_white@3x.png */,
@@ -599,15 +618,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A5DFD21FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.xib in Resources */,
 				93A5DFC01FF9DA6A006D35CF /* ic_menu@3x.png in Resources */,
 				93A5DFBE1FF9DA03006D35CF /* search_white@3x.png in Resources */,
 				93A5DFA11FF9BD41006D35CF /* normal.png in Resources */,
 				93A5DD671FF9AF4E006D35CF /* LaunchScreen.storyboard in Resources */,
 				93A5DFB71FF9D62D006D35CF /* JCHomeViewController.xib in Resources */,
 				93A5DD641FF9AF4E006D35CF /* Assets.xcassets in Resources */,
+				93A5DFCB1FFA1407006D35CF /* JCStretchHeaderViewController.xib in Resources */,
 				93A5DD621FF9AF4E006D35CF /* Main.storyboard in Resources */,
 				93A5DF9C1FF9BD41006D35CF /* NumericKeypad.xib in Resources */,
 				93A5DFC61FFA0A1E006D35CF /* JCHomeCell.xib in Resources */,
+				93A5DFCD1FFA18CF006D35CF /* demo_image.jpeg in Resources */,
 				93A5DFA51FF9BD82006D35CF /* ReadMe.txt in Resources */,
 				93A5DFA71FF9BE29006D35CF /* ReadMe.txt in Resources */,
 				93A5DFBD1FF9DA03006D35CF /* ic_back@3x.png in Resources */,
@@ -643,7 +665,7 @@
 				93A5DF651FF9BC8B006D35CF /* NSDictionary+JCUtils.m in Sources */,
 				93A5DF661FF9BC8B006D35CF /* NSString+JCUtils.m in Sources */,
 				93A5DFB61FF9D62D006D35CF /* JCHomeViewController.m in Sources */,
-				93A5DF6D1FF9BC8B006D35CF /* WDProfileTextField.m in Sources */,
+				93A5DF6D1FF9BC8B006D35CF /* JCErrorTextField.m in Sources */,
 				93A5DFAE1FF9BF4A006D35CF /* JCLabel.m in Sources */,
 				93A5DF5D1FF9BC8B006D35CF /* JCBaseViewController.m in Sources */,
 				93A5DF671FF9BC8B006D35CF /* UIColor+JCUtils.m in Sources */,
@@ -660,11 +682,13 @@
 				93A5DFB01FF9BF4A006D35CF /* JCButton.m in Sources */,
 				93A5DF6B1FF9BC8B006D35CF /* UIView+JCUtils.m in Sources */,
 				93A5DF621FF9BC8B006D35CF /* JCStretchHeaderHandler.m in Sources */,
+				93A5DFD11FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.m in Sources */,
 				93A5DF9E1FF9BD41006D35CF /* NumericKeypadView.m in Sources */,
 				93A5DF9A1FF9BD41006D35CF /* MTCompoundButton.m in Sources */,
 				93A5DFA21FF9BD41006D35CF /* PAPasscodeViewController.m in Sources */,
 				93A5DF981FF9BD41006D35CF /* CRToastWindow.m in Sources */,
 				93A5DFA31FF9BD41006D35CF /* Reachability.m in Sources */,
+				93A5DFCA1FFA1407006D35CF /* JCStretchHeaderViewController.m in Sources */,
 				93A5DF5F1FF9BC8B006D35CF /* JCTabBarController.m in Sources */,
 				93A5DD6A1FF9AF4E006D35CF /* main.m in Sources */,
 				93A5DF941FF9BD41006D35CF /* CRToast.m in Sources */,

@@ -1,6 +1,5 @@
 //
 //  UINavigationBar+JCUtils.m
-//  Wendys_iOS
 //
 //  Created by Johnnie Cheng on 13/12/17.
 //  Copyright © 2017 Putti. All rights reserved.

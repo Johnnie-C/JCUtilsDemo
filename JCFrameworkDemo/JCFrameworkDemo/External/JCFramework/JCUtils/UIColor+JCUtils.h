@@ -27,7 +27,7 @@
 
 
 #pragma mark - Custom Colors
-@interface UIColor(Wendys)
+@interface UIColor(JCCustomise)
 + (UIColor *)appMainColor;
 + (UIColor *)appMainColorLight;
 

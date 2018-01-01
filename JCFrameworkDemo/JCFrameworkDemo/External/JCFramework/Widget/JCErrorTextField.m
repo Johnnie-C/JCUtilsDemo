@@ -1,19 +1,18 @@
 //
-//  WDProfileTextField.m
-//  Wendys_iOS
+//  JCErrorTextField.m
 //
 //  Created by Johnnie on 18/12/17.
 //  Copyright © 2017 Putti. All rights reserved.
 //
 
-#import "WDProfileTextField.h"
+#import "JCErrorTextField.h"
 #import "JCTextField.h"
 #import "JCLabel.h"
 
 #import "UIView+JCUtils.h"
 #import "UIColor+JCUtils.h"
 
-@interface WDProfileTextField()
+@interface JCErrorTextField()
 
 @property (nonatomic, strong) NSLayoutConstraint *heightConstraint;
 @property (nonatomic, assign) CGFloat originalHeight;
@@ -27,7 +26,7 @@
 
 
 
-@implementation WDProfileTextField
+@implementation JCErrorTextField
 
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -72,12 +71,12 @@
     _error = error;
     if(error.length){
         _floatLabel.text = error;
-        _floatLabel.textColor = [UIColor appMainColor];
+        _floatLabel.textColor = _floatingErrorTextColor ? _floatingErrorTextColor : [UIColor redColor];
         [self showFloatingLabel:YES completion:nil];
     }
     else{
         _floatLabel.text = _placeholder;
-        _floatLabel.textColor = [UIColor whiteColor];
+        _floatLabel.textColor = _floatingPlaceholderTextColor ? _floatingPlaceholderTextColor : [UIColor lightGrayColor];
     }
     
     [_floatLabel sizeToFit];
@@ -86,6 +85,20 @@
 - (void)setLeftImage:(UIImage *)leftImage{
     _leftImage = leftImage;
     [self updateLeftImage];
+}
+
+- (void)setFloatingPlaceholderTextColor:(UIColor *)floatingPlaceholderTextColor{
+    _floatingPlaceholderTextColor = floatingPlaceholderTextColor;
+    if(!_error){
+        _floatLabel.textColor = _floatingPlaceholderTextColor;
+    }
+}
+
+- (void)setfloatingErrorTextColor:(UIColor *)floatingErrorTextColor{
+    _floatingErrorTextColor = floatingErrorTextColor;
+    if(_error){
+        _floatLabel.textColor = _floatingErrorTextColor;
+    }
 }
 
 - (void)initDefaults {
@@ -142,7 +155,7 @@
 - (void)addFloatingLabel{
     _floatLabel = [[JCLabel alloc] initWithFrame:CGRectMake(10, 20, self.width, 15)];
     _floatLabel.text = _placeholder;
-    _floatLabel.textColor = [UIColor whiteColor];
+    _floatLabel.textColor = _floatingPlaceholderTextColor ? _floatingPlaceholderTextColor : [UIColor lightGrayColor];
     _floatLabel.font = [_floatLabel.font fontWithSize:12];
     [_floatLabel sizeToFit];
     [self addSubview:_floatLabel];

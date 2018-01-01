@@ -43,19 +43,19 @@
 - (void)addKeyboardNotificationsObserver {
     
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+                                             selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+                                             selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
 }
 
 
 - (void)removeKeyboardNotificationsObserver {
     [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UIKeyboardWillShowNotification
+                                                    name:UIKeyboardDidShowNotification
                                                   object:nil];
     
     [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UIKeyboardWillHideNotification
+                                                    name:UIKeyboardDidHideNotification
                                                   object:nil];
 }
 
@@ -68,7 +68,7 @@
     }
 }
 
-- (void)keyboardWillShow:(NSNotification *)notification{
+- (void)keyboardDidShow:(NSNotification *)notification{
     if(!_scrollView){
         return;
     }
@@ -91,7 +91,7 @@
     _keyoardSize = keyboardFrameBeginRect.size;
 }
 
-- (void) keyboardWillHide:(NSNotification *) notification{
+- (void) keyboardDidHide:(NSNotification *) notification{
     if(!_isKeyBoardShown || !_scrollView){
         return;
     }

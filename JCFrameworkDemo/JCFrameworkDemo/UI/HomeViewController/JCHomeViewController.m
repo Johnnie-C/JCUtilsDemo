@@ -7,6 +7,9 @@
 //
 
 #import "JCHomeViewController.h"
+#import "JCStretchHeaderViewController.h"
+#import "JCScrollViewTextFieldDemoViewController.h"
+
 #import "JCUIAlertUtils.h"
 #import "JCHomeCell.h"
 
@@ -82,11 +85,11 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     switch (indexPath.row) {
         case JCHomeViewCellIndexScrollView:
-            
+            [self pushViewController:[JCScrollViewTextFieldDemoViewController new]];
             break;
             
         case JCHomeViewCellIndexStretchHeaderView:
-            
+            [self pushViewController:[JCStretchHeaderViewController new]];
             break;
             
         case JCHomeViewCellIndexSlidableCell:

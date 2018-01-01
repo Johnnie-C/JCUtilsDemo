@@ -10,6 +10,8 @@
 #import "JCNavigationController.h"
 #import "JCHomeViewController.h"
 
+#import "UIColor+JCUtils.h"
+
 @interface AppDelegate ()
 
 @end
@@ -20,6 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     JCNavigationController *rootNavigationViewController = [[JCNavigationController alloc] initWithRootViewController:[JCHomeViewController new]];
+    rootNavigationViewController.view.backgroundColor = [UIColor navigationbarBackgroundColor];
     [self.window setRootViewController:rootNavigationViewController];
     [self.window makeKeyAndVisible];
     return YES;
