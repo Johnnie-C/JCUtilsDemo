@@ -1,0 +1,20 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+
+project ‘JCFrameworkDemo’
+
+def all_pods
+    pod 'SAMKeychain'
+end
+
+target :'JCFrameworkDemo' do
+   all_pods
+end
+
+target :'JCFrameworkDemoTests' do
+    all_pods
+end
+
+target :'JCFrameworkDemoUITests' do
+    all_pods
+end

@@ -10,6 +10,11 @@
 
 @interface JCHomeCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIView *bottomMenuView;
+@property (weak, nonatomic) IBOutlet UIView *topContentView;
+
+@property (assign, nonatomic) BOOL disableClick;
+
 - (void)updateUIWithTitle:(NSString *)title;
 
 @end

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WDHeaderTabView">
+            <connections>
+                <outlet property="btnLeft" destination="2LL-wY-3Hl" id="JXj-y7-Ulm"/>
+                <outlet property="btnRight" destination="OG3-ZC-yDe" id="Ln4-hl-Pcz"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="cGY-lw-rYS"/>
+                <outlet property="selectedIndicator" destination="Z4K-Y7-Sy7" id="QPW-9U-MHK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4K-Y7-Sy7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LL-wY-3Hl">
+                    <rect key="frame" x="0.0" y="0.0" width="188" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Latest"/>
+                    <connections>
+                        <action selector="onLeftButtonClicked:" destination="-1" eventType="touchUpInside" id="csQ-zO-ixU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OG3-ZC-yDe">
+                    <rect key="frame" x="188" y="0.0" width="187.5" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="My Coupons"/>
+                    <connections>
+                        <action selector="onRightButtonClicked:" destination="-1" eventType="touchUpInside" id="nLI-0T-3ac"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="OG3-ZC-yDe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0dt-OB-SE2"/>
+                <constraint firstItem="Z4K-Y7-Sy7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0lG-SP-iKT"/>
+                <constraint firstAttribute="trailing" secondItem="Z4K-Y7-Sy7" secondAttribute="trailing" id="26d-1X-DF4"/>
+                <constraint firstItem="OG3-ZC-yDe" firstAttribute="leading" secondItem="2LL-wY-3Hl" secondAttribute="trailing" id="ANd-65-yw7"/>
+                <constraint firstItem="Z4K-Y7-Sy7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="F1J-bt-xah"/>
+                <constraint firstItem="OG3-ZC-yDe" firstAttribute="width" secondItem="2LL-wY-3Hl" secondAttribute="width" id="NbR-tB-e7Z"/>
+                <constraint firstAttribute="trailing" secondItem="OG3-ZC-yDe" secondAttribute="trailing" id="PT8-2m-WMl"/>
+                <constraint firstAttribute="bottom" secondItem="2LL-wY-3Hl" secondAttribute="bottom" id="aOp-ME-GQl"/>
+                <constraint firstAttribute="bottom" secondItem="Z4K-Y7-Sy7" secondAttribute="bottom" id="eTh-ih-zHA"/>
+                <constraint firstItem="2LL-wY-3Hl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gOT-aA-2fb"/>
+                <constraint firstAttribute="bottom" secondItem="OG3-ZC-yDe" secondAttribute="bottom" id="loD-LO-LFJ"/>
+                <constraint firstItem="2LL-wY-3Hl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uaa-9X-3WB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="53"/>
+        </view>
+    </objects>
+</document>

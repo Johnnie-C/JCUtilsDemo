@@ -100,7 +100,7 @@
 }
 
 - (BOOL)hasBackgroundImage{
-    return YES;
+    return NO;
 }
 
 - (void)setLeftBarButtonType:(LeftBarButtonType)type{

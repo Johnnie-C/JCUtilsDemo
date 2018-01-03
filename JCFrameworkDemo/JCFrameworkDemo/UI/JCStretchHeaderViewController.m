@@ -79,8 +79,6 @@
 }
 
 #pragma mark - RvrBarButtonItem Delegate
-
-
 - (void)rightBarButtonItemTapped:(NSInteger)btnType{
     [JCUIAlertUtils toastWithMessage:@"Right search clicked" colour:TOAST_MESSAGE_GREEN];
 }

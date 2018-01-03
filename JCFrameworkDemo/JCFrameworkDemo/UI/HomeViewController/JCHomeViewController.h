@@ -8,6 +8,6 @@
 
 #import "JCBaseViewController.h"
 
-@interface JCHomeViewController : JCBaseViewController<UITableViewDataSource, UITableViewDelegate>
+@interface JCHomeViewController : JCBaseViewController
 
 @end

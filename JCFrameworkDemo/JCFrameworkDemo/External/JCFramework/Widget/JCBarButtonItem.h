@@ -19,7 +19,9 @@ typedef NS_ENUM(NSInteger, LeftBarButtonType) {
 typedef NS_ENUM(NSInteger, RightBarButtonType) {
     RightBarButtonTypeNone,
     RightBarButtonTypeSearch,
-    RightBarButtonTypeMenu
+    RightBarButtonTypeMenu,
+    RightBarButtonTypeAdd,
+    RightBarButtonTypeChange
 };
 
 @class JCBarButtonItem;

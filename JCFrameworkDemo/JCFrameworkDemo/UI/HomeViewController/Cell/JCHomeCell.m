@@ -7,13 +7,13 @@
 //
 
 #import "JCHomeCell.h"
+
 #import "UIColor+JCUtils.h"
+#import "JCUIAlertUtils.h"
 
 
 @interface JCHomeCell()
 
-@property (weak, nonatomic) IBOutlet UIView *bottomMenuView;
-@property (weak, nonatomic) IBOutlet UIView *topContentView;
 @property (weak, nonatomic) IBOutlet UILabel *lbTitle;
 
 @end
@@ -30,15 +30,18 @@
 
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated{
     [super setHighlighted:highlighted animated:animated];
-    
-    _topContentView.backgroundColor = highlighted ? [[UIColor whiteColor] darkerColor] : [UIColor whiteColor];
+    if(!_disableClick){
+        _topContentView.backgroundColor = highlighted ? [[UIColor whiteColor] darkerColor] : [UIColor whiteColor];
+    }
 }
 
 
 - (IBAction)leftButtonClicked:(id)sender {
+    [JCUIAlertUtils toastWithMessage:@"One clicked" colour:TOAST_MESSAGE_ORANGE];
 }
 
 - (IBAction)rightButtonClicked:(id)sender {
+    [JCUIAlertUtils toastWithMessage:@"Two clicked" colour:TOAST_MESSAGE_ORANGE];
 }
 
 @end

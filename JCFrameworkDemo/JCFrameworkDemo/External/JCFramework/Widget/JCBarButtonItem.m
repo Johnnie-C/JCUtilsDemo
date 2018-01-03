@@ -33,25 +33,21 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
 
 @implementation JCBarButtonItem
 
-- (id)initWithLeftBarButtonType:(LeftBarButtonType)type
-{
+- (id)initWithLeftBarButtonType:(LeftBarButtonType)type{
     leftBarButtonType = type;
-    if (type != LeftBarButtonTypeNone)
-    {
-        if (self = [super initWithCustomView:[self setupView:LeftBarButton]])
-        {
+    if (type != LeftBarButtonTypeNone){
+        if (self = [super initWithCustomView:[self setupView:LeftBarButton]]){
+            
         }
     }
     return self;
 }
 
-- (id)initWithRightBarButtonType:(RightBarButtonType)type;
-{
+- (id)initWithRightBarButtonType:(RightBarButtonType)type;{
     rightBarButtonType = type;
-    if (type != RightBarButtonTypeNone)
-    {
-        if (self = [super initWithCustomView:[self setupView:RightBarButton]])
-        {
+    if (type != RightBarButtonTypeNone){
+        if (self = [super initWithCustomView:[self setupView:RightBarButton]]){
+            
         }
     }
     return self;
@@ -66,28 +62,23 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
     UIImage *image;
     NSString *text;
     
-    if (side == LeftBarButton)
-    {
+    if (side == LeftBarButton){
         [self.button addTarget:self action:@selector(leftBarButtonItemTapped:) forControlEvents:UIControlEventTouchUpInside];
         self.button.tag = leftBarButtonType;
-        switch (leftBarButtonType)
-        {
+        switch (leftBarButtonType){
             case LeftBarButtonTypeClose:
-            {
                 image = [UIImage imageNamed:@"ic_close" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
                 self.button.imageEdgeInsets = UIEdgeInsetsMake(8, 8, 8, 8);
                 break;
-            }
+            
             case LeftBarButtonTypeCancel:
-            {
                 [self.button setWidth:kLabelWidth];
                 [self.containerView setWidth:kLabelWidth];
                 text = @"Cancel";
                 image = [UIImage imageNamed:@"ic_back" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
                 break;
-            }
+            
             case LeftBarButtonTypeBack:
-            {
                 [self.button setWidth:kLeftBackContainerWidth];
                 [self.containerView setWidth:kLeftBackContainerWidth];
                 self.button.imageEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
@@ -95,54 +86,47 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
                 [self.containerView addSubview:self.button];
                 image = [UIImage imageNamed:@"ic_back" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
                 break;
-            }
+            
             case LeftBarButtonTypeMenu:
-            {
                 image = [UIImage imageNamed:@"ic_menu" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
                 [self.button setFrame:CGRectMake(0, 0, 60, 40)];
                 [self.containerView setFrame:CGRectMake(0, 0, 60, 40)];
                 self.button.imageEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
                 break;
-            }
+            
             case LeftBarButtonTypeNone:
             default:
-            {
                 break;
-            }
         }
     }
-    else if (side == RightBarButton)
-    {
+    else if (side == RightBarButton){
         [self.button addTarget:self action:@selector(rightBarButtonItemTapped:) forControlEvents:UIControlEventTouchUpInside];
         self.button.tag = rightBarButtonType;
         
-        switch (rightBarButtonType)
-        {
-//            case RightBarButtonTypeLogout:
-//            {
-//                text = @"Logout";
-//                break;
-//            }
+        switch (rightBarButtonType){
+            case RightBarButtonTypeAdd:
+                text = @"+";
+                break;
+                
+            case RightBarButtonTypeChange:
+                text = @"Change";
+                break;
+                
             case RightBarButtonTypeSearch:
-            {
                 image = [UIImage imageNamed:@"search_white" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
                 break;
-            }
+
             case RightBarButtonTypeMenu:
-            {
                 image = [UIImage imageNamed:@"ic_menu" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
                 break;
-            }
+            
             case RightBarButtonTypeNone:
             default:
-            {
                 break;
-            }
         }
     }
     
-    if (image)
-    {
+    if (image){
         UIColor *iconColor = [UIColor navigationbarIconColor];
         [self.button.imageView setContentMode:UIViewContentModeScaleAspectFit];
         
@@ -158,14 +142,13 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
         
     }
     
-    if (text)
-    {
+    if (text){
         UIColor *txtColor = [UIColor navigationbarTextColor];
         [self.button setTitle:text forState:UIControlStateNormal];
         [self.button.titleLabel sizeToFit];
         [self.button sizeToFit];
         [self.button setBackgroundColor:[UIColor clearColor]];
-        [self.button.titleLabel setFont:[UIFont fontWithSize:15]];
+        [self.button.titleLabel setFont:[UIFont fontWithSize:[self getFontSize]]];
         [self.button.titleLabel setTextAlignment:NSTextAlignmentRight];
         [self.button setTitleColor:txtColor ? txtColor : [UIColor whiteColor] forState:UIControlStateNormal];
         [self.button setTitleColor:[UIColor navigationbarTextHighlitColor] forState:UIControlStateHighlighted];
@@ -175,6 +158,15 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
 //    [self.containerView setBackgroundColor:[UIColor redColor]];
 //    [self.button setBackgroundColor:[UIColor blueColor]];
     return self.containerView;
+}
+
+- (CGFloat)getFontSize{
+    CGFloat size = 15;
+    if(rightBarButtonType == RightBarButtonTypeAdd){
+        size = 22;
+    }
+    
+    return size;
 }
 
 - (BOOL)shouldUseOriginalIconWithSide:(BarButtonSide)side btnType:(NSInteger)btnType{
@@ -190,20 +182,15 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
     return shouldUserOriginalIcon;
 }
 
-- (void)leftBarButtonItemTapped:(UIButton *)sender
-{
-    if (sender == self.button)
-    {
+- (void)leftBarButtonItemTapped:(UIButton *)sender{
+    if (sender == self.button){
         [self.delegate leftBarButtonItemTapped:self.button.tag];
     }
 }
 
-- (void)rightBarButtonItemTapped:(UIButton *)sender
-{
-    if (sender == self.button)
-    {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(rightBarButtonItemTapped:)])
-        {
+- (void)rightBarButtonItemTapped:(UIButton *)sender{
+    if (sender == self.button){
+        if (self.delegate && [self.delegate respondsToSelector:@selector(rightBarButtonItemTapped:)]){
             [self.delegate rightBarButtonItemTapped:self.button.tag];
         }
     }

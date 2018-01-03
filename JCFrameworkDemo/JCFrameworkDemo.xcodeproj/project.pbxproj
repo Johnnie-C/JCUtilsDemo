@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D05D596F68A50FA8C6B8ACC /* libPods-JCFrameworkDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7651F1EFF321BA651ACE8AFD /* libPods-JCFrameworkDemoTests.a */; };
+		4542B852BB6CE1245A1E98D1 /* libPods-JCFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */; };
+		51A308779463412C5110544C /* libPods-JCFrameworkDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C5239AFCA53D59A2873D73 /* libPods-JCFrameworkDemoUITests.a */; };
+		934164801FFC7431007B1DCF /* JCAuthenticationHanlder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9341647E1FFC7431007B1DCF /* JCAuthenticationHanlder.m */; };
+		93A1E3A01FFB0110004D660C /* JCDragableCellGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1E39F1FFB0110004D660C /* JCDragableCellGestureRecognizer.m */; };
+		93A1E3A41FFB4337004D660C /* JCHeaderTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1E3A11FFB4336004D660C /* JCHeaderTabView.m */; };
+		93A1E3A51FFB4337004D660C /* JCHeaderTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A1E3A21FFB4336004D660C /* JCHeaderTabView.xib */; };
+		93A1E3A91FFB487F004D660C /* JCTransparentCurveTabDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1E3A71FFB487F004D660C /* JCTransparentCurveTabDemoViewController.m */; };
+		93A1E3AA1FFB487F004D660C /* JCTransparentCurveTabDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A1E3A81FFB487F004D660C /* JCTransparentCurveTabDemoViewController.xib */; };
 		93A5DD5C1FF9AF4E006D35CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DD5B1FF9AF4E006D35CF /* AppDelegate.m */; };
 		93A5DD5F1FF9AF4E006D35CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DD5E1FF9AF4E006D35CF /* ViewController.m */; };
 		93A5DD621FF9AF4E006D35CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A5DD601FF9AF4E006D35CF /* Main.storyboard */; };
@@ -85,6 +94,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26170605C1E6D4C489A2AA7B /* Pods-JCFrameworkDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemoTests/Pods-JCFrameworkDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		32522837E00045A27C44B7B4 /* Pods-JCFrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemo/Pods-JCFrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		454A2EE625BA535674AC670D /* Pods-JCFrameworkDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemoUITests/Pods-JCFrameworkDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7651F1EFF321BA651ACE8AFD /* libPods-JCFrameworkDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9341647E1FFC7431007B1DCF /* JCAuthenticationHanlder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAuthenticationHanlder.m; sourceTree = "<group>"; };
+		9341647F1FFC7431007B1DCF /* JCAuthenticationHanlder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAuthenticationHanlder.h; sourceTree = "<group>"; };
+		93A1E39E1FFB0110004D660C /* JCDragableCellGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCDragableCellGestureRecognizer.h; sourceTree = "<group>"; };
+		93A1E39F1FFB0110004D660C /* JCDragableCellGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCDragableCellGestureRecognizer.m; sourceTree = "<group>"; };
+		93A1E3A11FFB4336004D660C /* JCHeaderTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCHeaderTabView.m; sourceTree = "<group>"; };
+		93A1E3A21FFB4336004D660C /* JCHeaderTabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCHeaderTabView.xib; sourceTree = "<group>"; };
+		93A1E3A31FFB4337004D660C /* JCHeaderTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCHeaderTabView.h; sourceTree = "<group>"; };
+		93A1E3A61FFB487F004D660C /* JCTransparentCurveTabDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCTransparentCurveTabDemoViewController.h; sourceTree = "<group>"; };
+		93A1E3A71FFB487F004D660C /* JCTransparentCurveTabDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCTransparentCurveTabDemoViewController.m; sourceTree = "<group>"; };
+		93A1E3A81FFB487F004D660C /* JCTransparentCurveTabDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCTransparentCurveTabDemoViewController.xib; sourceTree = "<group>"; };
 		93A5DD571FF9AF4E006D35CF /* JCFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A5DD5A1FF9AF4E006D35CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93A5DD5B1FF9AF4E006D35CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -190,6 +214,10 @@
 		93A5DFCE1FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCScrollViewTextFieldDemoViewController.h; sourceTree = "<group>"; };
 		93A5DFCF1FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCScrollViewTextFieldDemoViewController.m; sourceTree = "<group>"; };
 		93A5DFD01FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCScrollViewTextFieldDemoViewController.xib; sourceTree = "<group>"; };
+		B687E02F50B1ED483466C0EC /* Pods-JCFrameworkDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemoUITests/Pods-JCFrameworkDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCBFA0119D73F4771CBE2F9E /* Pods-JCFrameworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemo/Pods-JCFrameworkDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F3C5239AFCA53D59A2873D73 /* libPods-JCFrameworkDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCDB1375D9E7D8ADAB553425 /* Pods-JCFrameworkDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemoTests/Pods-JCFrameworkDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +225,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4542B852BB6CE1245A1E98D1 /* libPods-JCFrameworkDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +233,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D05D596F68A50FA8C6B8ACC /* libPods-JCFrameworkDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,12 +241,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A308779463412C5110544C /* libPods-JCFrameworkDemoUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		078222EF1DA4B3BF8A24365C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32522837E00045A27C44B7B4 /* Pods-JCFrameworkDemo.debug.xcconfig */,
+				DCBFA0119D73F4771CBE2F9E /* Pods-JCFrameworkDemo.release.xcconfig */,
+				26170605C1E6D4C489A2AA7B /* Pods-JCFrameworkDemoTests.debug.xcconfig */,
+				FCDB1375D9E7D8ADAB553425 /* Pods-JCFrameworkDemoTests.release.xcconfig */,
+				B687E02F50B1ED483466C0EC /* Pods-JCFrameworkDemoUITests.debug.xcconfig */,
+				454A2EE625BA535674AC670D /* Pods-JCFrameworkDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		149B297AF0C09A9DF26F62B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */,
+				7651F1EFF321BA651ACE8AFD /* libPods-JCFrameworkDemoTests.a */,
+				F3C5239AFCA53D59A2873D73 /* libPods-JCFrameworkDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93A1E39D1FFB00D2004D660C /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				93A1E39E1FFB0110004D660C /* JCDragableCellGestureRecognizer.h */,
+				93A1E39F1FFB0110004D660C /* JCDragableCellGestureRecognizer.m */,
+			);
+			name = Gesture;
+			path = JCFrameworkDemo/External/JCFramework/JCHelpers/UI/Gesture;
+			sourceTree = SOURCE_ROOT;
+		};
 		93A5DD4E1FF9AF4E006D35CF = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +288,8 @@
 				93A5DD721FF9AF4E006D35CF /* JCFrameworkDemoTests */,
 				93A5DD7D1FF9AF4E006D35CF /* JCFrameworkDemoUITests */,
 				93A5DD581FF9AF4E006D35CF /* Products */,
+				078222EF1DA4B3BF8A24365C /* Pods */,
+				149B297AF0C09A9DF26F62B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -277,11 +343,11 @@
 		93A5DF341FF9BC8B006D35CF /* External */ = {
 			isa = PBXGroup;
 			children = (
+				93A5DF351FF9BC8B006D35CF /* JCFramework */,
 				93A5DF6E1FF9BD41006D35CF /* CRToast */,
 				93A5DF821FF9BD41006D35CF /* PAPasscode */,
 				93A5DF911FF9BD41006D35CF /* Reachability */,
 				93A5DF7A1FF9BD41006D35CF /* UIView+TouchHighlighting */,
-				93A5DF351FF9BC8B006D35CF /* JCFramework */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -319,6 +385,8 @@
 		93A5DF3D1FF9BC8B006D35CF /* JCHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				9341647F1FFC7431007B1DCF /* JCAuthenticationHanlder.h */,
+				9341647E1FFC7431007B1DCF /* JCAuthenticationHanlder.m */,
 				93A5DF3E1FF9BC8B006D35CF /* JCLocationHelper.h */,
 				93A5DF3F1FF9BC8B006D35CF /* JCLocationHelper.m */,
 				93A5DF401FF9BC8B006D35CF /* UI */,
@@ -329,6 +397,7 @@
 		93A5DF401FF9BC8B006D35CF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				93A1E39D1FFB00D2004D660C /* Gesture */,
 				93A5DF411FF9BC8B006D35CF /* JCScrollableViewKeyboardHandler.h */,
 				93A5DF421FF9BC8B006D35CF /* JCScrollableViewKeyboardHandler.m */,
 				93A5DF431FF9BC8B006D35CF /* JCStretchHeaderHandler.h */,
@@ -365,6 +434,9 @@
 		93A5DF581FF9BC8B006D35CF /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				93A1E3A31FFB4337004D660C /* JCHeaderTabView.h */,
+				93A1E3A11FFB4336004D660C /* JCHeaderTabView.m */,
+				93A1E3A21FFB4336004D660C /* JCHeaderTabView.xib */,
 				93A5DF591FF9BC8B006D35CF /* JCBarButtonItem.h */,
 				93A5DF5A1FF9BC8B006D35CF /* JCBarButtonItem.m */,
 				93A5DF5B1FF9BC8B006D35CF /* JCErrorTextField.h */,
@@ -467,6 +539,9 @@
 				93A5DFCE1FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.h */,
 				93A5DFCF1FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.m */,
 				93A5DFD01FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.xib */,
+				93A1E3A61FFB487F004D660C /* JCTransparentCurveTabDemoViewController.h */,
+				93A1E3A71FFB487F004D660C /* JCTransparentCurveTabDemoViewController.m */,
+				93A1E3A81FFB487F004D660C /* JCTransparentCurveTabDemoViewController.xib */,
 				93A5DFB21FF9D615006D35CF /* HomeViewController */,
 			);
 			path = UI;
@@ -519,9 +594,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93A5DD831FF9AF4E006D35CF /* Build configuration list for PBXNativeTarget "JCFrameworkDemo" */;
 			buildPhases = (
+				EA20031685544AFDF63C884B /* [CP] Check Pods Manifest.lock */,
 				93A5DD531FF9AF4E006D35CF /* Sources */,
 				93A5DD541FF9AF4E006D35CF /* Frameworks */,
 				93A5DD551FF9AF4E006D35CF /* Resources */,
+				F305E16C141BE4779CA89053 /* [CP] Embed Pods Frameworks */,
+				AF05503276E416C45A9CD6FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -536,9 +614,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93A5DD861FF9AF4E006D35CF /* Build configuration list for PBXNativeTarget "JCFrameworkDemoTests" */;
 			buildPhases = (
+				423C7F264D8CDC61C6AAD566 /* [CP] Check Pods Manifest.lock */,
 				93A5DD6B1FF9AF4E006D35CF /* Sources */,
 				93A5DD6C1FF9AF4E006D35CF /* Frameworks */,
 				93A5DD6D1FF9AF4E006D35CF /* Resources */,
+				3740FD03053A3BC6190191D2 /* [CP] Embed Pods Frameworks */,
+				8350C49708B1542E5F3FC93A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -554,9 +635,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93A5DD891FF9AF4E006D35CF /* Build configuration list for PBXNativeTarget "JCFrameworkDemoUITests" */;
 			buildPhases = (
+				F8EE465DD48049DFDE5AEED8 /* [CP] Check Pods Manifest.lock */,
 				93A5DD761FF9AF4E006D35CF /* Sources */,
 				93A5DD771FF9AF4E006D35CF /* Frameworks */,
 				93A5DD781FF9AF4E006D35CF /* Resources */,
+				8226C5106342E0710E7A3FA2 /* [CP] Embed Pods Frameworks */,
+				5C6E18CC95EEE4990523DD6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -628,10 +712,12 @@
 				93A5DFCB1FFA1407006D35CF /* JCStretchHeaderViewController.xib in Resources */,
 				93A5DD621FF9AF4E006D35CF /* Main.storyboard in Resources */,
 				93A5DF9C1FF9BD41006D35CF /* NumericKeypad.xib in Resources */,
+				93A1E3A51FFB4337004D660C /* JCHeaderTabView.xib in Resources */,
 				93A5DFC61FFA0A1E006D35CF /* JCHomeCell.xib in Resources */,
 				93A5DFCD1FFA18CF006D35CF /* demo_image.jpeg in Resources */,
 				93A5DFA51FF9BD82006D35CF /* ReadMe.txt in Resources */,
 				93A5DFA71FF9BE29006D35CF /* ReadMe.txt in Resources */,
+				93A1E3AA1FFB487F004D660C /* JCTransparentCurveTabDemoViewController.xib in Resources */,
 				93A5DFBD1FF9DA03006D35CF /* ic_back@3x.png in Resources */,
 				93A5DFA01FF9BD41006D35CF /* highlight.png in Resources */,
 			);
@@ -653,6 +739,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3740FD03053A3BC6190191D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCFrameworkDemoTests/Pods-JCFrameworkDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		423C7F264D8CDC61C6AAD566 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C6E18CC95EEE4990523DD6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCFrameworkDemoUITests/Pods-JCFrameworkDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8226C5106342E0710E7A3FA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCFrameworkDemoUITests/Pods-JCFrameworkDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8350C49708B1542E5F3FC93A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCFrameworkDemoTests/Pods-JCFrameworkDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF05503276E416C45A9CD6FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCFrameworkDemo/Pods-JCFrameworkDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA20031685544AFDF63C884B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F305E16C141BE4779CA89053 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCFrameworkDemo/Pods-JCFrameworkDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8EE465DD48049DFDE5AEED8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		93A5DD531FF9AF4E006D35CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -664,6 +888,7 @@
 				93A5DF641FF9BC8B006D35CF /* JCUtils.m in Sources */,
 				93A5DF651FF9BC8B006D35CF /* NSDictionary+JCUtils.m in Sources */,
 				93A5DF661FF9BC8B006D35CF /* NSString+JCUtils.m in Sources */,
+				93A1E3A91FFB487F004D660C /* JCTransparentCurveTabDemoViewController.m in Sources */,
 				93A5DFB61FF9D62D006D35CF /* JCHomeViewController.m in Sources */,
 				93A5DF6D1FF9BC8B006D35CF /* JCErrorTextField.m in Sources */,
 				93A5DFAE1FF9BF4A006D35CF /* JCLabel.m in Sources */,
@@ -678,6 +903,7 @@
 				93A5DF601FF9BC8B006D35CF /* JCLocationHelper.m in Sources */,
 				93A5DF611FF9BC8B006D35CF /* JCScrollableViewKeyboardHandler.m in Sources */,
 				93A5DF6A1FF9BC8B006D35CF /* UINavigationBar+JCUtils.m in Sources */,
+				93A1E3A41FFB4337004D660C /* JCHeaderTabView.m in Sources */,
 				93A5DD5F1FF9AF4E006D35CF /* ViewController.m in Sources */,
 				93A5DFB01FF9BF4A006D35CF /* JCButton.m in Sources */,
 				93A5DF6B1FF9BC8B006D35CF /* UIView+JCUtils.m in Sources */,
@@ -688,7 +914,9 @@
 				93A5DFA21FF9BD41006D35CF /* PAPasscodeViewController.m in Sources */,
 				93A5DF981FF9BD41006D35CF /* CRToastWindow.m in Sources */,
 				93A5DFA31FF9BD41006D35CF /* Reachability.m in Sources */,
+				93A1E3A01FFB0110004D660C /* JCDragableCellGestureRecognizer.m in Sources */,
 				93A5DFCA1FFA1407006D35CF /* JCStretchHeaderViewController.m in Sources */,
+				934164801FFC7431007B1DCF /* JCAuthenticationHanlder.m in Sources */,
 				93A5DF5F1FF9BC8B006D35CF /* JCTabBarController.m in Sources */,
 				93A5DD6A1FF9AF4E006D35CF /* main.m in Sources */,
 				93A5DF941FF9BD41006D35CF /* CRToast.m in Sources */,
@@ -858,6 +1086,7 @@
 		};
 		93A5DD841FF9AF4E006D35CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32522837E00045A27C44B7B4 /* Pods-JCFrameworkDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -872,6 +1101,7 @@
 		};
 		93A5DD851FF9AF4E006D35CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCBFA0119D73F4771CBE2F9E /* Pods-JCFrameworkDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -886,6 +1116,7 @@
 		};
 		93A5DD871FF9AF4E006D35CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26170605C1E6D4C489A2AA7B /* Pods-JCFrameworkDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -900,6 +1131,7 @@
 		};
 		93A5DD881FF9AF4E006D35CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCDB1375D9E7D8ADAB553425 /* Pods-JCFrameworkDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -914,6 +1146,7 @@
 		};
 		93A5DD8A1FF9AF4E006D35CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B687E02F50B1ED483466C0EC /* Pods-JCFrameworkDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JCFrameworkDemoUITests/Info.plist;
@@ -927,6 +1160,7 @@
 		};
 		93A5DD8B1FF9AF4E006D35CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 454A2EE625BA535674AC670D /* Pods-JCFrameworkDemoUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JCFrameworkDemoUITests/Info.plist;

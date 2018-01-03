@@ -134,7 +134,9 @@
     [self updateLeftImage];
     UIView *paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
     _textField.rightView = paddingView;
-    _textField.rightViewMode = UITextFieldViewModeAlways;
+    _textField.rightViewMode = UITextFieldViewModeUnlessEditing;
+    
+    _textField.clearButtonMode = UITextFieldViewModeWhileEditing;
 }
 
 - (void)updateLeftImage{
