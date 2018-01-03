@@ -15,6 +15,7 @@
                 <outlet property="btnAuth" destination="v0O-os-ENm" id="YEF-a3-lC1"/>
                 <outlet property="const_btnAuthHeight" destination="HiX-lJ-thI" id="YP6-Al-SZe"/>
                 <outlet property="headerView" destination="moe-sF-Rmo" id="S6Y-ed-bEp"/>
+                <outlet property="lbContent" destination="Dyf-e6-uZN" id="SxG-AY-6qL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -56,15 +57,24 @@
                         <action selector="onBtnAuthClicked:" destination="-1" eventType="touchUpInside" id="uk3-ur-jaE"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyf-e6-uZN">
+                    <rect key="frame" x="20" y="290" width="335" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Dyf-e6-uZN" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="02s-bJ-AHi"/>
                 <constraint firstItem="KJO-SD-i9G" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="JAC-lH-U6L"/>
+                <constraint firstItem="Dyf-e6-uZN" firstAttribute="top" secondItem="KJO-SD-i9G" secondAttribute="bottom" constant="20" id="UzR-Lg-zzK"/>
                 <constraint firstItem="v0O-os-ENm" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="V8I-8P-MlJ"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="v0O-os-ENm" secondAttribute="trailing" id="Va0-d8-7Ka"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="moe-sF-Rmo" secondAttribute="trailing" id="jbV-Ot-6ic"/>
                 <constraint firstItem="KJO-SD-i9G" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="jkk-Ei-DT1"/>
                 <constraint firstItem="moe-sF-Rmo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="mvv-uw-M1D"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Dyf-e6-uZN" secondAttribute="trailing" constant="20" id="t5C-kP-Qzh"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="v0O-os-ENm" secondAttribute="bottom" id="uhN-75-HD2"/>
                 <constraint firstItem="KJO-SD-i9G" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="unb-Ag-ahW"/>
                 <constraint firstItem="moe-sF-Rmo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="z8u-ru-ocX"/>

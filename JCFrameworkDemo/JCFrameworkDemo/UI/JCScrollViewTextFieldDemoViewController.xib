@@ -23,14 +23,14 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="1375"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1433"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rq4-WP-AzK">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="1325"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1383"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iB2-an-7BG">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="1280"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1330"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aus-1D-3zb" customClass="JCErrorTextField">
                                     <rect key="frame" x="20" y="20" width="335" height="50"/>
@@ -68,8 +68,13 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvH-m8-z4s">
-                                    <rect key="frame" x="20" y="150" width="335" height="1116"/>
-                                    <string key="text">A Test demo for  a customised text field, and for JCScrollableViewKeyboardHandler which auto adjuests the scroll for contents when keyboard show/hide. JCScrollableViewKeyboardHandler also dismiss keyboard if click out of text field.
+                                    <rect key="frame" x="20" y="150" width="335" height="1156.5"/>
+                                    <mutableString key="text">A Test demo for  a customised text field, and for JCScrollableViewKeyboardHandler which auto adjuests the scroll view for contents when keyboard show/hide. 
+
+JCScrollableViewKeyboardHandler also dismiss keyboard if click out of text field.
+
+This handler should also work for UITableView and UICollectionView, but hasn't been fully tested yet.
+
 
 Some placeholder to make it scrollable
 Some placeholder to make it scrollable
@@ -113,12 +118,8 @@ Some placeholder to make it scrollable
 Some placeholder to make it scrollable
 Some placeholder to make it scrollable
 Some placeholder to make it scrollable
-Some placeholder to make it scrollable
-Some placeholder to make it scrollable
-Some placeholder to make it scrollable
-Some placeholder to make it scrollable
 
-This is the end</string>
+This is the end</mutableString>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -134,7 +135,7 @@ This is the end</string>
                                 <constraint firstItem="0Ev-dz-yHe" firstAttribute="top" secondItem="Aus-1D-3zb" secondAttribute="bottom" constant="10" id="RFB-Mz-SkY"/>
                                 <constraint firstItem="Aus-1D-3zb" firstAttribute="top" secondItem="iB2-an-7BG" secondAttribute="top" constant="20" id="cvC-Lw-KVa"/>
                                 <constraint firstAttribute="trailing" secondItem="Aus-1D-3zb" secondAttribute="trailing" priority="999" constant="20" id="faF-mh-S1J"/>
-                                <constraint firstAttribute="height" constant="1280" id="fuF-tJ-Gba"/>
+                                <constraint firstAttribute="height" constant="1330" id="fuF-tJ-Gba"/>
                                 <constraint firstItem="Aus-1D-3zb" firstAttribute="centerX" secondItem="iB2-an-7BG" secondAttribute="centerX" id="vQH-z5-0kQ"/>
                                 <constraint firstItem="0Ev-dz-yHe" firstAttribute="centerX" secondItem="iB2-an-7BG" secondAttribute="centerX" id="xGQ-eQ-Paa"/>
                             </constraints>
@@ -150,7 +151,7 @@ This is the end</string>
                     </constraints>
                 </scrollView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnL-nO-UrK">
-                    <rect key="frame" x="0.0" y="1325" width="375" height="50"/>
+                    <rect key="frame" x="0.0" y="1383" width="375" height="50"/>
                     <color key="backgroundColor" red="0.1019607843" green="0.6705882353" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="jK6-s2-wD3"/>
@@ -172,7 +173,7 @@ This is the end</string>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="25.5" y="405.5"/>
+            <point key="canvasLocation" x="25.5" y="434.5"/>
         </view>
     </objects>
     <resources>

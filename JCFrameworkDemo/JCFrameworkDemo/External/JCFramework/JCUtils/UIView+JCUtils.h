@@ -39,6 +39,7 @@
 - (void)roundCornerWithRadius:(CGFloat)cornerRadius corners:(UIRectCorner)corners;
 - (void)roundCornerWithRadius:(CGFloat)cornerRadius corners:(UIRectCorner)corners frame:(CGRect)frame;
 
+//auto layout
 - (void)fillInSuperView;
 - (void)addHeightConstraint:(CGFloat)height;
 - (void)alignParentTopFillWidth;

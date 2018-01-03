@@ -27,7 +27,7 @@
 
 - (float)floatForKey:(NSString *)key
 {
-    return [self objectForKeyIsNotNull:key] ? [[self objectForKey:key] floatValue] : 0;
+    return [self objectForKeyIsNotNull:key] ? [[self objectForKey:key] floatValue] : 0.0;
 }
 
 - (NSArray *)arrayForKey:(NSString *)key

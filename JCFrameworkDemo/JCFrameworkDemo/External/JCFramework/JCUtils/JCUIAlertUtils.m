@@ -76,7 +76,10 @@ const NSInteger ALERT_TAG_PHONE_CALL = 102;
     }
     
     [alert addAction:yesButton];
-    [alert addAction:noButton];
+    
+    if(noBtnTitle.length){
+        [alert addAction:noButton];
+    }
     alert.preferredAction = yesButton;
     
     [viewController presentViewController:alert animated:YES completion:nil];

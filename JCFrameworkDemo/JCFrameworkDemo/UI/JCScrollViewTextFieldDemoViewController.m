@@ -76,9 +76,7 @@
 }
 
 - (void)checkEmail{
-    if(![_txtEmail.text isValidEmail]){
-        _txtEmail.error = @"Invalid Email";
-    }
+    _txtEmail.error = [_txtEmail.text isValidEmail] ? nil : @"Invalid Email";
 }
 
 @end

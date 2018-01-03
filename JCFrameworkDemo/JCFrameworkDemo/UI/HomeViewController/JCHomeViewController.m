@@ -91,7 +91,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     cell.disableClick = NO;
     switch (indexPath.row) {
         case JCHomeViewCellIndexScrollView:
-            [cell updateUIWithTitle:@"ScrollView and TextField demo"];
+            [cell updateUIWithTitle:@"ScrollView & customised UITextField demo"];
             break;
             
         case JCHomeViewCellIndexStretchHeaderView:

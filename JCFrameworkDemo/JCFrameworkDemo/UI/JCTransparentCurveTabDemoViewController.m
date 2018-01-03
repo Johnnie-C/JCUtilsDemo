@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet JCHeaderTabView *headerView;
 @property (weak, nonatomic) IBOutlet UIButton *btnAuth;
+@property (weak, nonatomic) IBOutlet UILabel *lbContent;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *const_btnAuthHeight;
 
@@ -49,7 +50,7 @@
 }
 
 - (void)setupNavBar{
-    self.title = @"Transparent tab demo";
+    self.title = @"Curve transparent tab & local authentication demo";
     [self setLeftBarButtonType:LeftBarButtonTypeBack];
 }
 
@@ -62,6 +63,24 @@
         //right tab
         [self setRightBarButtonTypes:@[@([[JCAuthenticationHanlder sharedHelper] hasCreatePasscode] ? RightBarButtonTypeChange : RightBarButtonTypeAdd)]];
     }
+    [self updateContent];
+}
+
+- (void)updateContent{
+    NSString *content = @"A demo for JCHeaderTabView widget using UIBezierPath.\n\nAnd for general use of JCAuthenticationHandler which helps to manage local authentication for system biometrics and custemised passcode.";
+    
+    if(_headerView.selectedIndex){
+        NSString *stringToAppend;
+        if(![[JCAuthenticationHanlder sharedHelper] hasCreatePasscode]){
+            stringToAppend = @"\n\nClicked \"+\" in navigation bar to create new passcode";
+        }
+        else{
+            stringToAppend = @"\n\nClicked \"Change\" in navigation bar to Change passcode";
+        }
+        content = [content stringByAppendingString:stringToAppend];
+    }
+    
+    _lbContent.text = content;
 }
 
 - (void)hideAuthButtonWithCompletion:(void (^)(BOOL finished))completion{

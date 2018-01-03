@@ -123,13 +123,31 @@ NSString *const ERROR_FORGOT_PASSCODE_CLCIKED = @"JCError_forgotPasscodeClicked"
                             reply:completion];
     }
     else{
+        NSString *message, *yesBtnTitle, *noBtnTitle;
+        if([JCAuthenticationHanlder isFaceIDSupported]){
+            message = @"Please set and enable FaceID in \"Settings\"";
+            yesBtnTitle = @"Settings";
+            noBtnTitle = @"Cancel";
+        }
+        else if([JCAuthenticationHanlder isTouchIDSupported]){
+            message = @"Please set and enable TouchID in \"Settings\"";
+            yesBtnTitle = @"Settings";
+            noBtnTitle = @"Cancel";
+        }
+        else{
+            message = @"This device does not support FaceID or TouchID";
+            yesBtnTitle = @"Ok";
+            noBtnTitle = @"";
+        }
         [JCUIAlertUtils showYesNoDialog:@""
-                                content:@"Please set and enable TouchID in \"Settings\""
-                            yesBtnTitle:@"Settings"
+                                content:message
+                            yesBtnTitle:yesBtnTitle
                              yesHandler:^(UIAlertAction *action) {
-                                 [JCUtils redirectToSystemSettingsAuthentication];
+                                 if([yesBtnTitle isEqualToString:@"Settings"]){
+                                     [JCUtils redirectToSystemSettingsAuthentication];
+                                 }
                              }
-                             noBtnTitle:@"Cancel"
+                             noBtnTitle:noBtnTitle
                               noHandler:nil];
     }
 }
