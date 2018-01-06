@@ -13,7 +13,7 @@
 #import "UIView+JCUtils.h"
 #import "JCScrollableViewKeyboardHandler.h"
 
-@interface JCScrollViewTextFieldDemoViewController ()
+@interface JCScrollViewTextFieldDemoViewController ()<JCErrorTextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet JCErrorTextField *txtEmail;
@@ -45,7 +45,7 @@
     [_scrollableViewKeyboardHandler registerResposeScrollViewForKeyBoard:_scrollView];
     
     //important !!
-    //listen to the position of last textField to adjust the content size
+    //obeserving the position of last textField to adjust the content size because the height of customised JCErrorTextField is subject to change
     [_txtPassword addObserver:self forKeyPath:@"center" options:NSKeyValueObservingOptionNew context:NULL];
 }
 
@@ -65,6 +65,8 @@
 }
 
 - (void)setupContentView{
+    _txtEmail.delegate = self;
+    _txtPassword.delegate = self;
     _txtPassword.textField.secureTextEntry = YES;
     [_btnCheck addGestureRecognizer: [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(checkEmail)] ];
 }
@@ -79,4 +81,18 @@
     _txtEmail.error = [_txtEmail.text isValidEmail] ? nil : @"Invalid Email";
 }
 
+#pragma mark - JCErrorTextFieldDelegate
+- (BOOL)textFieldShouldReturn:(JCErrorTextField *)textField{
+    BOOL shouldReturn = NO;
+    if(textField == _txtEmail){
+        [_txtPassword becomeFirstResponder];
+        shouldReturn = YES;
+    }
+    else if(textField == _txtPassword){
+        [self checkEmail];
+        shouldReturn = YES;
+    }
+    
+    return shouldReturn;
+}
 @end

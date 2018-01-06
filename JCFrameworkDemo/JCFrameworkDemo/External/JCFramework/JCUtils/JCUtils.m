@@ -3,7 +3,7 @@
 //  
 //
 //  Created by Johnnie on 4/12/17.
-//  Copyright © 2017 Putti. All rights reserved.
+//  Copyright © 2017 Johnnie Cheng. All rights reserved.
 //
 
 #import "JCUtils.h"
@@ -16,8 +16,7 @@
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
 }
 
-+ (NSBundle *)frameworkBundle
-{
++ (NSBundle *)frameworkBundle{
     static NSBundle* frameworkBundle = nil;
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{
@@ -28,8 +27,7 @@
 
 
 #pragma mark - network
-+(BOOL)hasConnectivity
-{
++(BOOL)hasConnectivity{
     NetworkStatus networkStatus = [[Reachability reachabilityForInternetConnection] currentReachabilityStatus];
     return (networkStatus == NotReachable) ? NO : YES;
 }

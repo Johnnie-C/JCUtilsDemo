@@ -1,6 +1,5 @@
 //
 //  JCStretchHeaderHandler.m
-//  JCStretchHeaderView
 //
 //  Created by Johnnie Cheng on 10/12/17.
 //  Copyright © 2017 Johnnie Cheng. All rights reserved.
@@ -152,6 +151,10 @@
 }
 
 - (void)updateStatusBarAndNavigationBarIfNeedWithNavigationBarAlpha:(CGFloat)navigationBarAlpha{
+    //TODO: improve navigationBarAlpha
+    //if scrollable size Y is not high enough for navigationBarAlpha = 1, disable change nav alpha
+    
+    
 //    if(_scrollView.contentSize.height + _headerViewHeight > _scrollView.height){//if scrollable
         //update status bar style
         _navigationBar.barStyle = navigationBarAlpha > 0.5 ? _originalStatusBarStyle : UIStatusBarStyleLightContent;

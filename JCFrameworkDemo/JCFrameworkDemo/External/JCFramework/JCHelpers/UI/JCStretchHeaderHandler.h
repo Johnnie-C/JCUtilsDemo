@@ -1,6 +1,5 @@
 //
 //  JCStretchHeaderHandler.h
-//  JCStretchHeaderView
 //
 //  Created by Johnnie Cheng on 10/12/17.
 //  Copyright © 2017 Johnnie Cheng. All rights reserved.

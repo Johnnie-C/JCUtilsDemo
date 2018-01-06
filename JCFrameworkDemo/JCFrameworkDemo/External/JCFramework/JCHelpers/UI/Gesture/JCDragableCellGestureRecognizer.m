@@ -1,9 +1,8 @@
 //
 //  JCDragableCellGestureRecognizer.m
-//  JCFrameworkDemo
 //
-//  Created by Johnnie Cheng on 2/01/18.
-//  Copyright © 2018 Johnnie Cheng. All rights reserved.
+//  Created by Johnnie Cheng on 16/07/18.
+//  Copyright © 2017 Johnnie Cheng. All rights reserved.
 //
 
 #import "JCDragableCellGestureRecognizer.h"
@@ -69,8 +68,8 @@
             CGPoint translation = [panGesture translationInView:topContentView.superview];
             CGFloat newX = topContentView.x + translation.x;
             
-            if(newX  < -menuWidth){//add pull effect
-                CGFloat decelerateRate = (topContentView.width - fabs(newX)) / (topContentView.width - menuWidth);
+            if(newX  < -menuWidth / 2){//add pull effect
+                CGFloat decelerateRate = (topContentView.width - fabs(newX)) / (topContentView.width);
                 newX = topContentView.x + translation.x * decelerateRate;
             }
             else if(newX > 0){

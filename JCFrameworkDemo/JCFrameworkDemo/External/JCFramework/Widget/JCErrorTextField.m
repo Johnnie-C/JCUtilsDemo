@@ -2,7 +2,7 @@
 //  JCErrorTextField.m
 //
 //  Created by Johnnie on 18/12/17.
-//  Copyright © 2017 Putti. All rights reserved.
+//  Copyright © 2017 Johnnie Cheng. All rights reserved.
 //
 
 #import "JCErrorTextField.h"

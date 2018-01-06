@@ -2,8 +2,8 @@
 //  UIView+PFUtils.m
 //  
 //
-//  Created by Chris Drake on 4/08/15.
-//  Copyright (c) 2015 Moa Creative. All rights reserved.
+//  Created by Johnnie Cheng on 13/12/17.
+//  Copyright © 2017 Johnnie Cheng. All rights reserved.
 //
 
 #import "UIView+JCUtils.h"

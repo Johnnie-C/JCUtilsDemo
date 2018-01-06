@@ -30,10 +30,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="1383"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iB2-an-7BG">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="1330"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1340"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aus-1D-3zb" customClass="JCErrorTextField">
-                                    <rect key="frame" x="20" y="20" width="335" height="50"/>
+                                    <rect key="frame" x="20" y="304" width="335" height="50"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="8jI-Ah-9Dk"/>
@@ -51,7 +51,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ev-dz-yHe" customClass="JCErrorTextField">
-                                    <rect key="frame" x="20" y="80" width="335" height="50"/>
+                                    <rect key="frame" x="20" y="364" width="335" height="50"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="Vvn-eS-nFw"/>
@@ -68,15 +68,8 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvH-m8-z4s">
-                                    <rect key="frame" x="20" y="150" width="335" height="1156.5"/>
-                                    <mutableString key="text">A Test demo for  a customised text field, and for JCScrollableViewKeyboardHandler which auto adjuests the scroll view for contents when keyboard show/hide. 
-
-JCScrollableViewKeyboardHandler also dismiss keyboard if click out of text field.
-
-This handler should also work for UITableView and UICollectionView, but hasn't been fully tested yet.
-
-
-Some placeholder to make it scrollable
+                                    <rect key="frame" x="20" y="434" width="335" height="893"/>
+                                    <string key="text">Some placeholder to make it scrollable
 Some placeholder to make it scrollable
 Some placeholder to make it scrollable
 Some placeholder to make it scrollable
@@ -119,7 +112,18 @@ Some placeholder to make it scrollable
 Some placeholder to make it scrollable
 Some placeholder to make it scrollable
 
-This is the end</mutableString>
+This is the end</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6L-BU-BFF">
+                                    <rect key="frame" x="20" y="20" width="335" height="264"/>
+                                    <string key="text">A Test demo for  a customised text field, and for JCScrollableViewKeyboardHandler which auto adjuests the scroll view for contents when keyboard show/hide. 
+
+JCScrollableViewKeyboardHandler auto scrolls content to ensuse the editing textField is visible completely. Also it dismiss keyboard if click out of text field.
+
+This handler should also work for UITableView and UICollectionView, but hasn't been fully tested yet.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -130,12 +134,15 @@ This is the end</mutableString>
                                 <constraint firstAttribute="trailing" secondItem="0Ev-dz-yHe" secondAttribute="trailing" priority="999" constant="20" id="3lO-lR-ndK"/>
                                 <constraint firstAttribute="trailing" secondItem="wvH-m8-z4s" secondAttribute="trailing" constant="20" id="3vr-Pr-hHL"/>
                                 <constraint firstItem="0Ev-dz-yHe" firstAttribute="leading" secondItem="iB2-an-7BG" secondAttribute="leading" priority="999" constant="20" id="4E9-95-RAQ"/>
+                                <constraint firstAttribute="trailing" secondItem="L6L-BU-BFF" secondAttribute="trailing" constant="20" id="6Ek-8q-V3f"/>
                                 <constraint firstItem="Aus-1D-3zb" firstAttribute="leading" secondItem="iB2-an-7BG" secondAttribute="leading" priority="999" constant="20" id="Czh-qm-KgB"/>
+                                <constraint firstItem="Aus-1D-3zb" firstAttribute="top" secondItem="L6L-BU-BFF" secondAttribute="bottom" constant="20" id="Lmq-KA-q6k"/>
                                 <constraint firstItem="wvH-m8-z4s" firstAttribute="leading" secondItem="iB2-an-7BG" secondAttribute="leading" constant="20" id="QzV-RV-EVI"/>
                                 <constraint firstItem="0Ev-dz-yHe" firstAttribute="top" secondItem="Aus-1D-3zb" secondAttribute="bottom" constant="10" id="RFB-Mz-SkY"/>
-                                <constraint firstItem="Aus-1D-3zb" firstAttribute="top" secondItem="iB2-an-7BG" secondAttribute="top" constant="20" id="cvC-Lw-KVa"/>
+                                <constraint firstItem="L6L-BU-BFF" firstAttribute="leading" secondItem="iB2-an-7BG" secondAttribute="leading" constant="20" id="aVP-iZ-YFU"/>
+                                <constraint firstItem="L6L-BU-BFF" firstAttribute="top" secondItem="iB2-an-7BG" secondAttribute="top" constant="20" id="eUs-v5-iIW"/>
                                 <constraint firstAttribute="trailing" secondItem="Aus-1D-3zb" secondAttribute="trailing" priority="999" constant="20" id="faF-mh-S1J"/>
-                                <constraint firstAttribute="height" constant="1330" id="fuF-tJ-Gba"/>
+                                <constraint firstAttribute="height" constant="1340" id="fuF-tJ-Gba"/>
                                 <constraint firstItem="Aus-1D-3zb" firstAttribute="centerX" secondItem="iB2-an-7BG" secondAttribute="centerX" id="vQH-z5-0kQ"/>
                                 <constraint firstItem="0Ev-dz-yHe" firstAttribute="centerX" secondItem="iB2-an-7BG" secondAttribute="centerX" id="xGQ-eQ-Paa"/>
                             </constraints>

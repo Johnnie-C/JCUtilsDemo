@@ -57,10 +57,8 @@
     [_stretchHeaderHandler destory];
 }
 
-
 - (void)setupNavBar{
     self.title = @"Stretchable header demo";
-    [self.navigationController.navigationBar setBackgroundColor:[UIColor navigationbarBackgroundColorWithAlpha:0] extendToStatusBar:YES];//important!!
     self.extendedLayoutIncludesOpaqueBars = YES;//important!!
     [self setLeftBarButtonType:LeftBarButtonTypeBack];
     [self setRightBarButtonTypes:@[@(RightBarButtonTypeSearch)]];
@@ -73,7 +71,7 @@
 }
 
 - (void)setupContentView{
-    _lbContent.text = @"A demo for stretchable header in scroll view with fade in/out navigationbar effect.\n\nThis handler should also work for UITableView and UICollectionView, but hasn't been fully tested yet.\n\n\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\n";
+    _lbContent.text = @"A demo for stretchable header in scroll view with fade in/out navigationbar effect.\n\nThis handler should also work for UITableView and UICollectionView, but hasn't been fully tested yet.\n\n\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\nSome placeholder to make it scrollable\n\nThis is the end";
     [_lbContent sizeToFit];
     _const_contentViewHeight.constant = _lbContent.bottom + 20;
 }

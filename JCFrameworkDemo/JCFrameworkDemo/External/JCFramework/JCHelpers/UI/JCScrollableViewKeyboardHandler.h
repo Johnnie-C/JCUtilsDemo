@@ -3,7 +3,7 @@
 //  
 //
 //  Created by Johnnie on 8/09/17.
-//  Copyright © 2017 Moa Creative. All rights reserved.
+//  Copyright © 2017 Johnnie Cheng. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

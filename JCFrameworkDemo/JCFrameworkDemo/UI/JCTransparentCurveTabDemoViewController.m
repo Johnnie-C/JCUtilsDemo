@@ -39,7 +39,7 @@
     } completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
         
         //important!!
-        //to restore tab after rotato
+        //to restore selected tab after rotate
         [_headerView selectTabAtIndex:_headerView.selectedIndex animated:NO];
     }];
 }
@@ -67,7 +67,7 @@
 }
 
 - (void)updateContent{
-    NSString *content = @"A demo for JCHeaderTabView widget using UIBezierPath.\n\nAnd for general use of JCAuthenticationHandler which helps to manage local authentication for system biometrics and custemised passcode.";
+    NSString *content = @"A demo for JCHeaderTabView widget using UIBezierPath for rounded corners and transparent tab.\n\nAnd for general use of JCAuthenticationHandler which helps to manage local authentication for system biometrics and custemised app level passcode.";
     
     if(_headerView.selectedIndex){
         NSString *stringToAppend;

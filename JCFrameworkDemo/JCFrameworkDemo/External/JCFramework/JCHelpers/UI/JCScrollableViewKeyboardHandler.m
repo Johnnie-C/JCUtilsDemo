@@ -3,7 +3,7 @@
 //  
 //
 //  Created by Johnnie on 8/09/17.
-//  Copyright © 2017 Moa Creative. All rights reserved.
+//  Copyright © 2017 Johnnie Cheng. All rights reserved.
 //
 
 #import "JCScrollableViewKeyboardHandler.h"
@@ -91,7 +91,7 @@
     _keyoardSize = keyboardFrameBeginRect.size;
 }
 
-- (void) keyboardDidHide:(NSNotification *) notification{
+- (void)keyboardDidHide:(NSNotification *) notification{
     if(!_isKeyBoardShown || !_scrollView){
         return;
     }

@@ -79,7 +79,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat height = 60;
-    if(indexPath.row == JCHomeViewCellIndexCustomisedHeader){
+    if(indexPath.row == JCHomeViewCellIndexCustomisedHeader || indexPath.row == JCHomeViewCellIndexSlidableCell){
         height = 80;
     }
     return height;
@@ -103,7 +103,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
             break;
             
         case JCHomeViewCellIndexSlidableCell:
-            [cell updateUIWithTitle:@"This is a slidable cell"];
+            [cell updateUIWithTitle:@"This is a slidable cell by using JCDragableCellGestureRecognizer"];
             break;
             
         case JCHomeViewCellIndexSlidableCellTwo:
@@ -132,7 +132,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
         case JCHomeViewCellIndexSlidableCell:
         case JCHomeViewCellIndexSlidableCellTwo:
             [_dragCellpanGesture resetPredragedCellIfNeed];
-            [JCUIAlertUtils toastWithMessage:[NSString stringWithFormat:@"Cell clicked at: %ld-%ld", indexPath.section, indexPath.row]
+            [JCUIAlertUtils toastWithMessage:[NSString stringWithFormat:@"Cell clicked at section: %ld, row: %ld", indexPath.section, indexPath.row]
                                       colour:TOAST_MESSAGE_ORANGE];
             break;
             

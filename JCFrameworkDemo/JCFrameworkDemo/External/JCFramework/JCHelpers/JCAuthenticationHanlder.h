@@ -2,7 +2,7 @@
 //  JCAuthenticationHanlder.h
 //
 //  Created by Johnnie on 13/12/17.
-//  Copyright © 2017 Putti. All rights reserved.
+//  Copyright © 2017 Johnnie Cheng. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
