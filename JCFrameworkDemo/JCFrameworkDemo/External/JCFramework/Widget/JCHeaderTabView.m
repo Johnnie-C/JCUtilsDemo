@@ -128,8 +128,7 @@
     [self onTabSelected:_selectedIndex animated:NO];
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
     if (object == _selectedIndicator && [keyPath isEqualToString:@"bounds"]) {
         [self setupTransparentLayer];
     }

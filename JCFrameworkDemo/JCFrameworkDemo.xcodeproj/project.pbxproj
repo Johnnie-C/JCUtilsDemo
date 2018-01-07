@@ -10,6 +10,8 @@
 		1D05D596F68A50FA8C6B8ACC /* libPods-JCFrameworkDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7651F1EFF321BA651ACE8AFD /* libPods-JCFrameworkDemoTests.a */; };
 		4542B852BB6CE1245A1E98D1 /* libPods-JCFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */; };
 		51A308779463412C5110544C /* libPods-JCFrameworkDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C5239AFCA53D59A2873D73 /* libPods-JCFrameworkDemoUITests.a */; };
+		930176692001993D002D2265 /* JCJellyEffectDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930176672001993D002D2265 /* JCJellyEffectDemoViewController.m */; };
+		9301766A2001993D002D2265 /* JCJellyEffectDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930176682001993D002D2265 /* JCJellyEffectDemoViewController.xib */; };
 		934164801FFC7431007B1DCF /* JCAuthenticationHanlder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9341647E1FFC7431007B1DCF /* JCAuthenticationHanlder.m */; };
 		93A1E3A01FFB0110004D660C /* JCDragableCellGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1E39F1FFB0110004D660C /* JCDragableCellGestureRecognizer.m */; };
 		93A1E3A41FFB4337004D660C /* JCHeaderTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1E3A11FFB4336004D660C /* JCHeaderTabView.m */; };
@@ -99,6 +101,9 @@
 		454A2EE625BA535674AC670D /* Pods-JCFrameworkDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemoUITests/Pods-JCFrameworkDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7651F1EFF321BA651ACE8AFD /* libPods-JCFrameworkDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		930176662001993D002D2265 /* JCJellyEffectDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCJellyEffectDemoViewController.h; sourceTree = "<group>"; };
+		930176672001993D002D2265 /* JCJellyEffectDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCJellyEffectDemoViewController.m; sourceTree = "<group>"; };
+		930176682001993D002D2265 /* JCJellyEffectDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCJellyEffectDemoViewController.xib; sourceTree = "<group>"; };
 		9341647E1FFC7431007B1DCF /* JCAuthenticationHanlder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAuthenticationHanlder.m; sourceTree = "<group>"; };
 		9341647F1FFC7431007B1DCF /* JCAuthenticationHanlder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAuthenticationHanlder.h; sourceTree = "<group>"; };
 		93A1E39E1FFB0110004D660C /* JCDragableCellGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCDragableCellGestureRecognizer.h; sourceTree = "<group>"; };
@@ -542,6 +547,9 @@
 				93A1E3A61FFB487F004D660C /* JCTransparentCurveTabDemoViewController.h */,
 				93A1E3A71FFB487F004D660C /* JCTransparentCurveTabDemoViewController.m */,
 				93A1E3A81FFB487F004D660C /* JCTransparentCurveTabDemoViewController.xib */,
+				930176662001993D002D2265 /* JCJellyEffectDemoViewController.h */,
+				930176672001993D002D2265 /* JCJellyEffectDemoViewController.m */,
+				930176682001993D002D2265 /* JCJellyEffectDemoViewController.xib */,
 				93A5DFB21FF9D615006D35CF /* HomeViewController */,
 			);
 			path = UI;
@@ -703,6 +711,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93A5DFD21FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.xib in Resources */,
+				9301766A2001993D002D2265 /* JCJellyEffectDemoViewController.xib in Resources */,
 				93A5DFC01FF9DA6A006D35CF /* ic_menu@3x.png in Resources */,
 				93A5DFBE1FF9DA03006D35CF /* search_white@3x.png in Resources */,
 				93A5DFA11FF9BD41006D35CF /* normal.png in Resources */,
@@ -911,6 +920,7 @@
 				93A5DFD11FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.m in Sources */,
 				93A5DF9E1FF9BD41006D35CF /* NumericKeypadView.m in Sources */,
 				93A5DF9A1FF9BD41006D35CF /* MTCompoundButton.m in Sources */,
+				930176692001993D002D2265 /* JCJellyEffectDemoViewController.m in Sources */,
 				93A5DFA21FF9BD41006D35CF /* PAPasscodeViewController.m in Sources */,
 				93A5DF981FF9BD41006D35CF /* CRToastWindow.m in Sources */,
 				93A5DFA31FF9BD41006D35CF /* Reachability.m in Sources */,

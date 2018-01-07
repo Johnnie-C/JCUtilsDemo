@@ -10,6 +10,7 @@
 #import "JCStretchHeaderViewController.h"
 #import "JCScrollViewTextFieldDemoViewController.h"
 #import "JCTransparentCurveTabDemoViewController.h"
+#import "JCJellyEffectDemoViewController.h"
 
 #import "JCUIAlertUtils.h"
 #import "JCHomeCell.h"
@@ -22,6 +23,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     JCHomeViewCellIndexScrollView,
     JCHomeViewCellIndexStretchHeaderView,
     JCHomeViewCellIndexCustomisedHeader,
+    JCHomeViewCellIndexJellyEffect,
     JCHomeViewCellIndexSlidableCell,
     JCHomeViewCellIndexSlidableCellTwo
 };
@@ -74,7 +76,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
 
 #pragma mark - TableView
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 6;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -102,6 +104,10 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
             [cell updateUIWithTitle:@"Curve transparent tab & local authentication demo"];
             break;
             
+        case JCHomeViewCellIndexJellyEffect:
+            [cell updateUIWithTitle:@"Jelly effect demo"];
+            break;
+            
         case JCHomeViewCellIndexSlidableCell:
             [cell updateUIWithTitle:@"This is a slidable cell by using JCDragableCellGestureRecognizer"];
             break;
@@ -127,6 +133,10 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
             
         case JCHomeViewCellIndexCustomisedHeader:
             [self pushViewController:[JCTransparentCurveTabDemoViewController new]];
+            break;
+            
+        case JCHomeViewCellIndexJellyEffect:
+            [self pushViewController:[JCJellyEffectDemoViewController new]];
             break;
             
         case JCHomeViewCellIndexSlidableCell:
