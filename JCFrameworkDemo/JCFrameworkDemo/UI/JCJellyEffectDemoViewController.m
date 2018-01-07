@@ -38,18 +38,18 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
     if (object == _jellyView && [keyPath isEqualToString:@"bounds"]) {
-        [self updateJellyLayer];
+        [self updateJellyLayerWithAllControllPoints:NO];
     }
 }
 
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
-    [self updateJellyLayer];
+    [self updateJellyLayerWithAllControllPoints:NO];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self updateJellyLayer];
+    [self updateJellyLayerWithAllControllPoints:NO];
 }
 
 - (void)setupView{
@@ -68,7 +68,6 @@
 
 - (void)setupJellyView{
     _controlPointView = [[UIView alloc] initWithFrame:CGRectMake(self.jellyView.width / 2, self.jellyView.height - 2.5, 5, 5)];
-    _controlPointView.backgroundColor = [UIColor greenColor];
     [self.view addSubview:_controlPointView];
     _controlPointCenter = _controlPointView.center;
     
@@ -76,23 +75,23 @@
     [_displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
     _displayLink.paused = YES;
     
-    [self updateJellyLayer];
+    [self updateJellyLayerWithAllControllPoints:NO];
     [self addDragGesture];
 }
 
 - (void)updateControlPoint{
     _controlPointCenter.x = _controlPointView.layer.presentationLayer.position.x;
     _controlPointCenter.y = _controlPointView.layer.presentationLayer.position.y;
-    [self updateJellyLayer];
+    [self updateJellyLayerWithAllControllPoints:YES];
 }
 
-- (void)updateJellyLayer{
+- (void)updateJellyLayerWithAllControllPoints:(BOOL)updateAllControllPoints{
     [_jellyLayer removeFromSuperlayer];
     UIBezierPath *path = [UIBezierPath bezierPath];
     
     CGFloat totalWidth = self.jellyView.width;
     CGFloat xOffset = _controlPointCenter.x - totalWidth / 2;
-    CGFloat absoluteY = _controlPointCenter.y - _controlPointView.y;
+    CGFloat absoluteY =  _controlPointCenter.y - _jellyView.bottom;
     
     CGFloat x = 0, y = 0;
     [path moveToPoint:CGPointMake(x, y)];//1
@@ -103,15 +102,22 @@
     y = self.jellyView.height;
     [path addLineToPoint:CGPointMake(x, y)];//3
     
-//    x -= totalWidth / 3 + xOffset;
-//    [path addQuadCurveToPoint:CGPointMake(x, y) controlPoint:CGPointMake(x / 2, _controlPointView.y + absoluteY)];//4
+    if(updateAllControllPoints){
+        x -= totalWidth / 3 + xOffset;
+        CGFloat rightControllPointXOffset = _controlPointCenter.x - x;
+        CGFloat rightControllPointX = x - rightControllPointXOffset;
+        [path addQuadCurveToPoint:CGPointMake(x, y) controlPoint:CGPointMake(rightControllPointX, _jellyView.bottom - absoluteY)];//4
+    }
     
-    
-    x -= totalWidth;
+    x -= updateAllControllPoints ? totalWidth / 3 + xOffset : totalWidth;
     [path addQuadCurveToPoint:CGPointMake(x, y) controlPoint:_controlPointCenter];//5
     
-//    x = 0;
-//    [path addQuadCurveToPoint:CGPointMake(x, y) controlPoint:CGPointMake(x / 2, _controlPointView.y + absoluteY)];//6
+    if(updateAllControllPoints){
+        CGFloat leftControllPointXOffset = _controlPointCenter.x - x;
+        CGFloat leftControllPointX = x - leftControllPointXOffset;
+        x = 0;
+        [path addQuadCurveToPoint:CGPointMake(x, y) controlPoint:CGPointMake(leftControllPointX, _jellyView.bottom - absoluteY)];//6
+    }
     
     y -= self.jellyView.height;
     [path addLineToPoint:CGPointMake(x, y)];//7
@@ -140,11 +146,14 @@
             CGPoint point = [pan translationInView:self.view];
             CGFloat contollPointX = _jellyView.width / 2 + point.x;
             CGFloat contollPointY = point.y * 0.7 + _jellyView.height;
+            if(contollPointY > 2 * _jellyView.height){
+                contollPointY = 2 * _jellyView.height;
+            }
             [_controlPointView setX:contollPointX];
             [_controlPointView setY:contollPointY];
             _controlPointCenter.x = contollPointX;
             _controlPointCenter.y = contollPointY;
-            [self updateJellyLayer];
+            [self updateJellyLayerWithAllControllPoints:NO];
             
         }
         else if (pan.state == UIGestureRecognizerStateCancelled ||
@@ -156,21 +165,18 @@
             
             [UIView animateWithDuration:0.3
                                   delay:0.0
-                 usingSpringWithDamping:0.25
-                  initialSpringVelocity:10
+                 usingSpringWithDamping:0.3
+                  initialSpringVelocity:8
                                 options:UIViewAnimationOptionCurveEaseInOut
                              animations:^{
                                  [_controlPointView setX:self.jellyView.width / 2];
-                                 [_controlPointView setY:self.jellyView.height];
+                                 [_controlPointView setY:self.jellyView.height - 2.5];
                                  
                              } completion:^(BOOL finished) {
-                                 
-                                 if(finished)
-                                 {
+                                 if(finished){
                                      _displayLink.paused = YES;
                                      _isAnimating = NO;
                                  }
-                                 
                              }];
         }
     }
