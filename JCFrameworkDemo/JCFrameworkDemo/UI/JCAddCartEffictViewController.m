@@ -66,5 +66,9 @@
                               }];
 }
 
-
+- (void)rightBarButtonItemTapped:(NSInteger)btnType{
+    if(btnType == RightBarButtonTypeCart){
+        _cartButton.cartCount = 0;
+    }
+}
 @end

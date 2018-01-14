@@ -60,7 +60,10 @@
 - (void)performAddCart{
     _lbCount.text = [NSString stringWithFormat:@"%ld", (long)_cartCount];
     _lbCount.hidden = _cartCount > 0 ? NO : YES;
-    [self playAddCartAnimation];
+    
+    if(_cartCount > 0 && _animatedAddCart){
+        [self playAddCartAnimation];
+    }
 }
 
 - (void)playAddCartAnimation{
@@ -74,6 +77,7 @@
     animation.autoreverses = YES;
     animation.duration = 0.05f;
     animation.repeatCount = 2;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     
     [self.containerView.layer addAnimation:animation forKey:nil];
 }

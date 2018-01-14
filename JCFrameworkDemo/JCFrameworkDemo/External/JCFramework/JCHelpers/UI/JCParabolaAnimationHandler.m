@@ -54,14 +54,14 @@
     //path animation
     CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     pathAnimation.path = path.CGPath;
-    pathAnimation.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     pathAnimation.delegate = self;
     pathAnimation.duration = _duration;
     
     //scale animation
     CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform"];
     scaleAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(endSize.width / view.width, endSize.height / view.height, 1)];
-    scaleAnimation.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    scaleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     scaleAnimation.duration = _duration;
     
     //add animiations to group

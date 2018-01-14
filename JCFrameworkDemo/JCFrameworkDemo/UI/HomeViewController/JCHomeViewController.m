@@ -187,8 +187,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     [JCUIAlertUtils toastWithMessage:@"Left menu clicked" colour:TOAST_MESSAGE_GREEN];
 }
 
-- (void)rightBarButtonItemTapped:(NSInteger)btnType
-{
+- (void)rightBarButtonItemTapped:(NSInteger)btnType{
     switch (btnType) {
         case RightBarButtonTypeMenu:
             [JCUIAlertUtils showConfirmDialog:@"this is title"
