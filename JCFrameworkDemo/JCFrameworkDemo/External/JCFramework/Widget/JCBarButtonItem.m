@@ -27,6 +27,10 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
     RightBarButtonType rightBarButtonType;
 }
 
+
+@property (strong, nonatomic) UIImage *icon;
+@property (strong, nonatomic) NSString *text;
+
 @end
 
 
@@ -59,92 +63,114 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
     [self.button setBackgroundColor:[UIColor clearColor]];
     [self.containerView addSubview:self.button];
     
-    UIImage *image;
-    NSString *text;
-    
     if (side == LeftBarButton){
-        [self.button addTarget:self action:@selector(leftBarButtonItemTapped:) forControlEvents:UIControlEventTouchUpInside];
-        self.button.tag = leftBarButtonType;
-        switch (leftBarButtonType){
-            case LeftBarButtonTypeClose:
-                image = [UIImage imageNamed:@"ic_close" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
-                self.button.imageEdgeInsets = UIEdgeInsetsMake(8, 8, 8, 8);
-                break;
-            
-            case LeftBarButtonTypeCancel:
-                [self.button setWidth:kLabelWidth];
-                [self.containerView setWidth:kLabelWidth];
-                text = @"Cancel";
-                image = [UIImage imageNamed:@"ic_back" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
-                break;
-            
-            case LeftBarButtonTypeBack:
-                [self.button setWidth:kLeftBackContainerWidth];
-                [self.containerView setWidth:kLeftBackContainerWidth];
-                self.button.imageEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
-                [self.button addTarget:self action:@selector(leftBarButtonItemTapped:) forControlEvents:UIControlEventTouchUpInside];
-                [self.containerView addSubview:self.button];
-                image = [UIImage imageNamed:@"ic_back" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
-                break;
-            
-            case LeftBarButtonTypeMenu:
-                image = [UIImage imageNamed:@"ic_menu" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
-                [self.button setFrame:CGRectMake(0, 0, 60, 40)];
-                [self.containerView setFrame:CGRectMake(0, 0, 60, 40)];
-                self.button.imageEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
-                break;
-            
-            case LeftBarButtonTypeNone:
-            default:
-                break;
-        }
+        [self setupLeftButton];
+        
     }
     else if (side == RightBarButton){
-        [self.button addTarget:self action:@selector(rightBarButtonItemTapped:) forControlEvents:UIControlEventTouchUpInside];
-        self.button.tag = rightBarButtonType;
-        
-        switch (rightBarButtonType){
-            case RightBarButtonTypeAdd:
-                text = @"+";
-                break;
-                
-            case RightBarButtonTypeChange:
-                text = @"Change";
-                break;
-                
-            case RightBarButtonTypeSearch:
-                image = [UIImage imageNamed:@"search_white" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
-                break;
-
-            case RightBarButtonTypeMenu:
-                image = [UIImage imageNamed:@"ic_menu" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
-                break;
-            
-            case RightBarButtonTypeNone:
-            default:
-                break;
-        }
+        [self setupRightButton];
     }
     
-    if (image){
+    [self setupContainerViewWithSide:side];
+    [self setupAdditionalView];
+    if(side == RightBarButton && rightBarButtonType == RightBarButtonTypeCart){
+        
+    }
+    
+//    [self.containerView setBackgroundColor:[UIColor redColor]];
+//    [self.button setBackgroundColor:[UIColor blueColor]];
+    return self.containerView;
+}
+
+- (void)setupLeftButton{
+    [self.button addTarget:self action:@selector(leftBarButtonItemTapped:) forControlEvents:UIControlEventTouchUpInside];
+    self.button.tag = leftBarButtonType;
+    switch (leftBarButtonType){
+        case LeftBarButtonTypeClose:
+            _icon = [UIImage imageNamed:@"ic_close" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
+            self.button.imageEdgeInsets = UIEdgeInsetsMake(8, 8, 8, 8);
+            break;
+            
+        case LeftBarButtonTypeCancel:
+            [self.button setWidth:kLabelWidth];
+            [self.containerView setWidth:kLabelWidth];
+            _text = @"Cancel";
+            _icon = [UIImage imageNamed:@"ic_back" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
+            break;
+            
+        case LeftBarButtonTypeBack:
+            [self.button setWidth:kLeftBackContainerWidth];
+            [self.containerView setWidth:kLeftBackContainerWidth];
+            self.button.imageEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
+            [self.button addTarget:self action:@selector(leftBarButtonItemTapped:) forControlEvents:UIControlEventTouchUpInside];
+            [self.containerView addSubview:self.button];
+            _icon = [UIImage imageNamed:@"ic_back" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
+            break;
+            
+        case LeftBarButtonTypeMenu:
+            _icon = [UIImage imageNamed:@"ic_menu" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
+            [self.button setFrame:CGRectMake(0, 0, 60, 40)];
+            [self.containerView setFrame:CGRectMake(0, 0, 60, 40)];
+            self.button.imageEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
+            break;
+            
+        case LeftBarButtonTypeNone:
+        default:
+            break;
+    }
+}
+
+- (void)setupRightButton{
+    [self.button addTarget:self action:@selector(rightBarButtonItemTapped:) forControlEvents:UIControlEventTouchUpInside];
+    self.button.tag = rightBarButtonType;
+    
+    switch (rightBarButtonType){
+        case RightBarButtonTypeAdd:
+            _text = @"+";
+            break;
+            
+        case RightBarButtonTypeChange:
+            _text = @"Change";
+            break;
+            
+        case RightBarButtonTypeSearch:
+            _icon = [UIImage imageNamed:@"search_white" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
+            break;
+            
+        case RightBarButtonTypeMenu:
+            _icon = [UIImage imageNamed:@"ic_menu" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
+            break;
+            
+        case RightBarButtonTypeCart:
+            _icon = [UIImage imageNamed:@"nav_cart" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
+            break;
+            
+        case RightBarButtonTypeNone:
+        default:
+            break;
+    }
+}
+
+- (void)setupContainerViewWithSide:(BarButtonSide)side{
+    if (_icon){
         UIColor *iconColor = [UIColor navigationbarIconColor];
         [self.button.imageView setContentMode:UIViewContentModeScaleAspectFit];
         
         NSInteger btnType = side == LeftBarButton ? leftBarButtonType : rightBarButtonType;
         if(iconColor && ![self shouldUseOriginalIconWithSide:side btnType:btnType]){
-            image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-            [self.button setImage:image forState:UIControlStateNormal];
+            _icon = [_icon imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+            [self.button setImage:_icon forState:UIControlStateNormal];
             self.button.tintColor = iconColor;
         }
         else{
-            [self.button setImage:image forState:UIControlStateNormal];
+            [self.button setImage:_icon forState:UIControlStateNormal];
         }
         
     }
     
-    if (text){
+    if (_text){
         UIColor *txtColor = [UIColor navigationbarTextColor];
-        [self.button setTitle:text forState:UIControlStateNormal];
+        [self.button setTitle:_text forState:UIControlStateNormal];
         [self.button.titleLabel sizeToFit];
         [self.button sizeToFit];
         [self.button setBackgroundColor:[UIColor clearColor]];
@@ -154,10 +180,11 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
         [self.button setTitleColor:[UIColor navigationbarTextHighlitColor] forState:UIControlStateHighlighted];
         self.containerView.frame = self.button.frame;
     }
+}
+
+//for customised class use
+- (void)setupAdditionalView{
     
-//    [self.containerView setBackgroundColor:[UIColor redColor]];
-//    [self.button setBackgroundColor:[UIColor blueColor]];
-    return self.containerView;
 }
 
 - (CGFloat)getFontSize{

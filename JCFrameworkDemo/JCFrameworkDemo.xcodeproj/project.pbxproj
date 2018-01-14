@@ -13,6 +13,11 @@
 		930176692001993D002D2265 /* JCJellyEffectDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930176672001993D002D2265 /* JCJellyEffectDemoViewController.m */; };
 		9301766A2001993D002D2265 /* JCJellyEffectDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930176682001993D002D2265 /* JCJellyEffectDemoViewController.xib */; };
 		934164801FFC7431007B1DCF /* JCAuthenticationHanlder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9341647E1FFC7431007B1DCF /* JCAuthenticationHanlder.m */; };
+		9366E7D7200AE6C90073B4D5 /* JCAddCartEffictViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9366E7D5200AE6C90073B4D5 /* JCAddCartEffictViewController.m */; };
+		9366E7D8200AE6C90073B4D5 /* JCAddCartEffictViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9366E7D6200AE6C90073B4D5 /* JCAddCartEffictViewController.xib */; };
+		9366E7DA200AE8190073B4D5 /* nav_cart@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9366E7D9200AE8190073B4D5 /* nav_cart@3x.png */; };
+		9366E7DE200AF4C20073B4D5 /* JCCartBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9366E7DD200AF4C20073B4D5 /* JCCartBarButtonItem.m */; };
+		9366E7E1200B08870073B4D5 /* JCParabolaAnimationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9366E7E0200B08870073B4D5 /* JCParabolaAnimationHandler.m */; };
 		93A1E3A01FFB0110004D660C /* JCDragableCellGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1E39F1FFB0110004D660C /* JCDragableCellGestureRecognizer.m */; };
 		93A1E3A41FFB4337004D660C /* JCHeaderTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1E3A11FFB4336004D660C /* JCHeaderTabView.m */; };
 		93A1E3A51FFB4337004D660C /* JCHeaderTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A1E3A21FFB4336004D660C /* JCHeaderTabView.xib */; };
@@ -106,6 +111,14 @@
 		930176682001993D002D2265 /* JCJellyEffectDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCJellyEffectDemoViewController.xib; sourceTree = "<group>"; };
 		9341647E1FFC7431007B1DCF /* JCAuthenticationHanlder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAuthenticationHanlder.m; sourceTree = "<group>"; };
 		9341647F1FFC7431007B1DCF /* JCAuthenticationHanlder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAuthenticationHanlder.h; sourceTree = "<group>"; };
+		9366E7D4200AE6C90073B4D5 /* JCAddCartEffictViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAddCartEffictViewController.h; sourceTree = "<group>"; };
+		9366E7D5200AE6C90073B4D5 /* JCAddCartEffictViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAddCartEffictViewController.m; sourceTree = "<group>"; };
+		9366E7D6200AE6C90073B4D5 /* JCAddCartEffictViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCAddCartEffictViewController.xib; sourceTree = "<group>"; };
+		9366E7D9200AE8190073B4D5 /* nav_cart@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_cart@3x.png"; sourceTree = "<group>"; };
+		9366E7DC200AF4C20073B4D5 /* JCCartBarButtonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCCartBarButtonItem.h; sourceTree = "<group>"; };
+		9366E7DD200AF4C20073B4D5 /* JCCartBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCCartBarButtonItem.m; sourceTree = "<group>"; };
+		9366E7DF200B08870073B4D5 /* JCParabolaAnimationHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCParabolaAnimationHandler.h; sourceTree = "<group>"; };
+		9366E7E0200B08870073B4D5 /* JCParabolaAnimationHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCParabolaAnimationHandler.m; sourceTree = "<group>"; };
 		93A1E39E1FFB0110004D660C /* JCDragableCellGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCDragableCellGestureRecognizer.h; sourceTree = "<group>"; };
 		93A1E39F1FFB0110004D660C /* JCDragableCellGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCDragableCellGestureRecognizer.m; sourceTree = "<group>"; };
 		93A1E3A11FFB4336004D660C /* JCHeaderTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCHeaderTabView.m; sourceTree = "<group>"; };
@@ -276,6 +289,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9366E7DB200AF48D0073B4D5 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				9366E7DC200AF4C20073B4D5 /* JCCartBarButtonItem.h */,
+				9366E7DD200AF4C20073B4D5 /* JCCartBarButtonItem.m */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 		93A1E39D1FFB00D2004D660C /* Gesture */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +429,8 @@
 				93A5DF421FF9BC8B006D35CF /* JCScrollableViewKeyboardHandler.m */,
 				93A5DF431FF9BC8B006D35CF /* JCStretchHeaderHandler.h */,
 				93A5DF441FF9BC8B006D35CF /* JCStretchHeaderHandler.m */,
+				9366E7DF200B08870073B4D5 /* JCParabolaAnimationHandler.h */,
+				9366E7E0200B08870073B4D5 /* JCParabolaAnimationHandler.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -550,7 +574,11 @@
 				930176662001993D002D2265 /* JCJellyEffectDemoViewController.h */,
 				930176672001993D002D2265 /* JCJellyEffectDemoViewController.m */,
 				930176682001993D002D2265 /* JCJellyEffectDemoViewController.xib */,
+				9366E7D4200AE6C90073B4D5 /* JCAddCartEffictViewController.h */,
+				9366E7D5200AE6C90073B4D5 /* JCAddCartEffictViewController.m */,
+				9366E7D6200AE6C90073B4D5 /* JCAddCartEffictViewController.xib */,
 				93A5DFB21FF9D615006D35CF /* HomeViewController */,
+				9366E7DB200AF48D0073B4D5 /* Widget */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -577,6 +605,7 @@
 		93A5DFBA1FF9DA03006D35CF /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				9366E7D9200AE8190073B4D5 /* nav_cart@3x.png */,
 				93A5DFCC1FFA18CF006D35CF /* demo_image.jpeg */,
 				93A5DFBF1FF9DA6A006D35CF /* ic_menu@3x.png */,
 				93A5DFBB1FF9DA03006D35CF /* ic_back@3x.png */,
@@ -712,6 +741,7 @@
 			files = (
 				93A5DFD21FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.xib in Resources */,
 				9301766A2001993D002D2265 /* JCJellyEffectDemoViewController.xib in Resources */,
+				9366E7D8200AE6C90073B4D5 /* JCAddCartEffictViewController.xib in Resources */,
 				93A5DFC01FF9DA6A006D35CF /* ic_menu@3x.png in Resources */,
 				93A5DFBE1FF9DA03006D35CF /* search_white@3x.png in Resources */,
 				93A5DFA11FF9BD41006D35CF /* normal.png in Resources */,
@@ -725,6 +755,7 @@
 				93A5DFC61FFA0A1E006D35CF /* JCHomeCell.xib in Resources */,
 				93A5DFCD1FFA18CF006D35CF /* demo_image.jpeg in Resources */,
 				93A5DFA51FF9BD82006D35CF /* ReadMe.txt in Resources */,
+				9366E7DA200AE8190073B4D5 /* nav_cart@3x.png in Resources */,
 				93A5DFA71FF9BE29006D35CF /* ReadMe.txt in Resources */,
 				93A1E3AA1FFB487F004D660C /* JCTransparentCurveTabDemoViewController.xib in Resources */,
 				93A5DFBD1FF9DA03006D35CF /* ic_back@3x.png in Resources */,
@@ -895,6 +926,7 @@
 				93A5DF971FF9BD41006D35CF /* CRToastViewController.m in Sources */,
 				93A5DF961FF9BD41006D35CF /* CRToastView.m in Sources */,
 				93A5DF641FF9BC8B006D35CF /* JCUtils.m in Sources */,
+				9366E7E1200B08870073B4D5 /* JCParabolaAnimationHandler.m in Sources */,
 				93A5DF651FF9BC8B006D35CF /* NSDictionary+JCUtils.m in Sources */,
 				93A5DF661FF9BC8B006D35CF /* NSString+JCUtils.m in Sources */,
 				93A1E3A91FFB487F004D660C /* JCTransparentCurveTabDemoViewController.m in Sources */,
@@ -913,6 +945,7 @@
 				93A5DF611FF9BC8B006D35CF /* JCScrollableViewKeyboardHandler.m in Sources */,
 				93A5DF6A1FF9BC8B006D35CF /* UINavigationBar+JCUtils.m in Sources */,
 				93A1E3A41FFB4337004D660C /* JCHeaderTabView.m in Sources */,
+				9366E7DE200AF4C20073B4D5 /* JCCartBarButtonItem.m in Sources */,
 				93A5DD5F1FF9AF4E006D35CF /* ViewController.m in Sources */,
 				93A5DFB01FF9BF4A006D35CF /* JCButton.m in Sources */,
 				93A5DF6B1FF9BC8B006D35CF /* UIView+JCUtils.m in Sources */,
@@ -927,6 +960,7 @@
 				93A1E3A01FFB0110004D660C /* JCDragableCellGestureRecognizer.m in Sources */,
 				93A5DFCA1FFA1407006D35CF /* JCStretchHeaderViewController.m in Sources */,
 				934164801FFC7431007B1DCF /* JCAuthenticationHanlder.m in Sources */,
+				9366E7D7200AE6C90073B4D5 /* JCAddCartEffictViewController.m in Sources */,
 				93A5DF5F1FF9BC8B006D35CF /* JCTabBarController.m in Sources */,
 				93A5DD6A1FF9AF4E006D35CF /* main.m in Sources */,
 				93A5DF941FF9BD41006D35CF /* CRToast.m in Sources */,

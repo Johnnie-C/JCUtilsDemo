@@ -163,9 +163,9 @@
             _isAnimating = YES;
             _displayLink.paused = NO;
             
-            [UIView animateWithDuration:0.3
+            [UIView animateWithDuration:0.4
                                   delay:0.0
-                 usingSpringWithDamping:0.3
+                 usingSpringWithDamping:0.1
                   initialSpringVelocity:8
                                 options:UIViewAnimationOptionCurveEaseInOut
                              animations:^{
@@ -176,6 +176,7 @@
                                  if(finished){
                                      _displayLink.paused = YES;
                                      _isAnimating = NO;
+                                     [self updateControlPoint];
                                  }
                              }];
         }

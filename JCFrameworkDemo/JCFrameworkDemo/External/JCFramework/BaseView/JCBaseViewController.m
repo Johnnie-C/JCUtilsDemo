@@ -7,6 +7,7 @@
 //
 
 #import "JCBaseViewController.h"
+#import "JCCartBarButtonItem.h"
 
 #import "JCUtils.h"
 #import "UIColor+JCUtils.h"
@@ -122,7 +123,13 @@
     NSMutableArray<JCBarButtonItem *> *buttons = [NSMutableArray array];
     for(NSNumber *typeNum in types){
         RightBarButtonType type = [typeNum integerValue];
-        JCBarButtonItem *btn = [[JCBarButtonItem alloc] initWithRightBarButtonType:type];
+        JCBarButtonItem *btn;
+        if(type == RightBarButtonTypeCart){
+            btn = [[JCCartBarButtonItem alloc] initWithRightBarButtonType:type];
+        }
+        else{
+            btn = [[JCBarButtonItem alloc] initWithRightBarButtonType:type];
+        }
         [btn setDelegate:self];
         [buttons addObject:btn];
     }

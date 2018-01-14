@@ -21,7 +21,8 @@ typedef NS_ENUM(NSInteger, RightBarButtonType) {
     RightBarButtonTypeSearch,
     RightBarButtonTypeMenu,
     RightBarButtonTypeAdd,
-    RightBarButtonTypeChange
+    RightBarButtonTypeChange,
+    RightBarButtonTypeCart
 };
 
 @class JCBarButtonItem;
@@ -42,5 +43,8 @@ typedef NS_ENUM(NSInteger, RightBarButtonType) {
 
 - (id)initWithLeftBarButtonType:(LeftBarButtonType)type;
 - (id)initWithRightBarButtonType:(RightBarButtonType)type;
+
+//for customised class use, override this
+- (void)setupAdditionalView;
 
 @end

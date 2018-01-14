@@ -11,6 +11,7 @@
 #import "JCScrollViewTextFieldDemoViewController.h"
 #import "JCTransparentCurveTabDemoViewController.h"
 #import "JCJellyEffectDemoViewController.h"
+#import "JCAddCartEffictViewController.h"
 
 #import "JCUIAlertUtils.h"
 #import "JCHomeCell.h"
@@ -20,12 +21,13 @@
 NSString *const JC_HOME_CELL_IDENTIFIER = @"jcHomeCellIdentifier";
 
 typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
+    JCHomeViewCellIndexSlidableCell,
+    JCHomeViewCellIndexSlidableCellTwo,
     JCHomeViewCellIndexScrollView,
     JCHomeViewCellIndexStretchHeaderView,
     JCHomeViewCellIndexCustomisedHeader,
     JCHomeViewCellIndexJellyEffect,
-    JCHomeViewCellIndexSlidableCell,
-    JCHomeViewCellIndexSlidableCellTwo
+    JCHomeViewCellIndexAddCartEffict
 };
 
 
@@ -76,7 +78,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
 
 #pragma mark - TableView
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 6;
+    return 7;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -92,6 +94,14 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.disableClick = NO;
     switch (indexPath.row) {
+        case JCHomeViewCellIndexSlidableCell:
+            [cell updateUIWithTitle:@"This is a slidable cell by using JCDragableCellGestureRecognizer"];
+            break;
+            
+        case JCHomeViewCellIndexSlidableCellTwo:
+            [cell updateUIWithTitle:@"This is an another slidable cell"];
+            break;
+            
         case JCHomeViewCellIndexScrollView:
             [cell updateUIWithTitle:@"ScrollView & customised UITextField demo"];
             break;
@@ -107,13 +117,8 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
         case JCHomeViewCellIndexJellyEffect:
             [cell updateUIWithTitle:@"Jelly effect demo"];
             break;
-            
-        case JCHomeViewCellIndexSlidableCell:
-            [cell updateUIWithTitle:@"This is a slidable cell by using JCDragableCellGestureRecognizer"];
-            break;
-            
-        case JCHomeViewCellIndexSlidableCellTwo:
-            [cell updateUIWithTitle:@"This is an another slidable cell"];
+        case JCHomeViewCellIndexAddCartEffict:
+            [cell updateUIWithTitle:@"Add cart parabola effect dome"];
             break;
             
     }
@@ -137,6 +142,10 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
             
         case JCHomeViewCellIndexJellyEffect:
             [self pushViewController:[JCJellyEffectDemoViewController new]];
+            break;
+            
+        case JCHomeViewCellIndexAddCartEffict:
+            [self pushViewController:[JCAddCartEffictViewController new]];
             break;
             
         case JCHomeViewCellIndexSlidableCell:
