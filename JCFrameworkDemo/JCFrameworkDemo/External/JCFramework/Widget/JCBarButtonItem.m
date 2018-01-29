@@ -65,7 +65,6 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
     
     if (side == LeftBarButton){
         [self setupLeftButton];
-        
     }
     else if (side == RightBarButton){
         [self setupRightButton];
@@ -73,9 +72,6 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
     
     [self setupContainerViewWithSide:side];
     [self setupAdditionalView];
-    if(side == RightBarButton && rightBarButtonType == RightBarButtonTypeCart){
-        
-    }
     
 //    [self.containerView setBackgroundColor:[UIColor redColor]];
 //    [self.button setBackgroundColor:[UIColor blueColor]];

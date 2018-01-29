@@ -13,11 +13,23 @@
 		930176692001993D002D2265 /* JCJellyEffectDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930176672001993D002D2265 /* JCJellyEffectDemoViewController.m */; };
 		9301766A2001993D002D2265 /* JCJellyEffectDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930176682001993D002D2265 /* JCJellyEffectDemoViewController.xib */; };
 		934164801FFC7431007B1DCF /* JCAuthenticationHanlder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9341647E1FFC7431007B1DCF /* JCAuthenticationHanlder.m */; };
+		93477D26201D5C2C00C8DC39 /* JCCoreDataDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93477D24201D5C2C00C8DC39 /* JCCoreDataDemoViewController.m */; };
+		93477D27201D5C2C00C8DC39 /* JCCoreDataDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93477D25201D5C2C00C8DC39 /* JCCoreDataDemoViewController.xib */; };
+		93477D44201D688600C8DC39 /* JCCoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93477D42201D688600C8DC39 /* JCCoreDataDemo.xcdatamodeld */; };
+		93477D52201D83D900C8DC39 /* CoreDataDemoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 93477D4F201D83D900C8DC39 /* CoreDataDemoItem.m */; };
+		93477D55201D8A7F00C8DC39 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93477D54201D8A7E00C8DC39 /* CoreData.framework */; };
+		93477D64201DBE1000C8DC39 /* CoreDataDemoItemOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 93477D63201DBE1000C8DC39 /* CoreDataDemoItemOption.m */; };
+		935E7A37201840EC00BB42E2 /* JCTransitionDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 935E7A35201840EC00BB42E2 /* JCTransitionDemoListViewController.m */; };
+		935E7A38201840EC00BB42E2 /* JCTransitionDemoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 935E7A36201840EC00BB42E2 /* JCTransitionDemoListViewController.xib */; };
 		9366E7D7200AE6C90073B4D5 /* JCAddCartEffictViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9366E7D5200AE6C90073B4D5 /* JCAddCartEffictViewController.m */; };
 		9366E7D8200AE6C90073B4D5 /* JCAddCartEffictViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9366E7D6200AE6C90073B4D5 /* JCAddCartEffictViewController.xib */; };
 		9366E7DA200AE8190073B4D5 /* nav_cart@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9366E7D9200AE8190073B4D5 /* nav_cart@3x.png */; };
 		9366E7DE200AF4C20073B4D5 /* JCCartBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9366E7DD200AF4C20073B4D5 /* JCCartBarButtonItem.m */; };
 		9366E7E1200B08870073B4D5 /* JCParabolaAnimationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9366E7E0200B08870073B4D5 /* JCParabolaAnimationHandler.m */; };
+		93906934201EDB3400662440 /* CoreDataDemoItemDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 93906933201EDB3400662440 /* CoreDataDemoItemDAO.m */; };
+		93906937201EDF6400662440 /* CoreDataDemoItemOptionDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 93906936201EDF6400662440 /* CoreDataDemoItemOptionDAO.m */; };
+		9390693C201EE23100662440 /* JCCoreDataDemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9390693A201EE23100662440 /* JCCoreDataDemoCell.m */; };
+		9390693D201EE23100662440 /* JCCoreDataDemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9390693B201EE23100662440 /* JCCoreDataDemoCell.xib */; };
 		93A1E3A01FFB0110004D660C /* JCDragableCellGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1E39F1FFB0110004D660C /* JCDragableCellGestureRecognizer.m */; };
 		93A1E3A41FFB4337004D660C /* JCHeaderTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A1E3A11FFB4336004D660C /* JCHeaderTabView.m */; };
 		93A1E3A51FFB4337004D660C /* JCHeaderTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A1E3A21FFB4336004D660C /* JCHeaderTabView.xib */; };
@@ -111,6 +123,18 @@
 		930176682001993D002D2265 /* JCJellyEffectDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCJellyEffectDemoViewController.xib; sourceTree = "<group>"; };
 		9341647E1FFC7431007B1DCF /* JCAuthenticationHanlder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAuthenticationHanlder.m; sourceTree = "<group>"; };
 		9341647F1FFC7431007B1DCF /* JCAuthenticationHanlder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAuthenticationHanlder.h; sourceTree = "<group>"; };
+		93477D23201D5C2C00C8DC39 /* JCCoreDataDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCCoreDataDemoViewController.h; sourceTree = "<group>"; };
+		93477D24201D5C2C00C8DC39 /* JCCoreDataDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCCoreDataDemoViewController.m; sourceTree = "<group>"; };
+		93477D25201D5C2C00C8DC39 /* JCCoreDataDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCCoreDataDemoViewController.xib; sourceTree = "<group>"; };
+		93477D43201D688600C8DC39 /* JCCoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JCCoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
+		93477D4F201D83D900C8DC39 /* CoreDataDemoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataDemoItem.m; sourceTree = "<group>"; };
+		93477D51201D83D900C8DC39 /* CoreDataDemoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataDemoItem.h; sourceTree = "<group>"; };
+		93477D54201D8A7E00C8DC39 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		93477D62201DBE0F00C8DC39 /* CoreDataDemoItemOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataDemoItemOption.h; sourceTree = "<group>"; };
+		93477D63201DBE1000C8DC39 /* CoreDataDemoItemOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataDemoItemOption.m; sourceTree = "<group>"; };
+		935E7A34201840EC00BB42E2 /* JCTransitionDemoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCTransitionDemoListViewController.h; sourceTree = "<group>"; };
+		935E7A35201840EC00BB42E2 /* JCTransitionDemoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCTransitionDemoListViewController.m; sourceTree = "<group>"; };
+		935E7A36201840EC00BB42E2 /* JCTransitionDemoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCTransitionDemoListViewController.xib; sourceTree = "<group>"; };
 		9366E7D4200AE6C90073B4D5 /* JCAddCartEffictViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAddCartEffictViewController.h; sourceTree = "<group>"; };
 		9366E7D5200AE6C90073B4D5 /* JCAddCartEffictViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAddCartEffictViewController.m; sourceTree = "<group>"; };
 		9366E7D6200AE6C90073B4D5 /* JCAddCartEffictViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCAddCartEffictViewController.xib; sourceTree = "<group>"; };
@@ -119,6 +143,13 @@
 		9366E7DD200AF4C20073B4D5 /* JCCartBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCCartBarButtonItem.m; sourceTree = "<group>"; };
 		9366E7DF200B08870073B4D5 /* JCParabolaAnimationHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCParabolaAnimationHandler.h; sourceTree = "<group>"; };
 		9366E7E0200B08870073B4D5 /* JCParabolaAnimationHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCParabolaAnimationHandler.m; sourceTree = "<group>"; };
+		93906932201EDB3400662440 /* CoreDataDemoItemDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataDemoItemDAO.h; sourceTree = "<group>"; };
+		93906933201EDB3400662440 /* CoreDataDemoItemDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataDemoItemDAO.m; sourceTree = "<group>"; };
+		93906935201EDF6400662440 /* CoreDataDemoItemOptionDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataDemoItemOptionDAO.h; sourceTree = "<group>"; };
+		93906936201EDF6400662440 /* CoreDataDemoItemOptionDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataDemoItemOptionDAO.m; sourceTree = "<group>"; };
+		93906939201EE23100662440 /* JCCoreDataDemoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCCoreDataDemoCell.h; sourceTree = "<group>"; };
+		9390693A201EE23100662440 /* JCCoreDataDemoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCCoreDataDemoCell.m; sourceTree = "<group>"; };
+		9390693B201EE23100662440 /* JCCoreDataDemoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCCoreDataDemoCell.xib; sourceTree = "<group>"; };
 		93A1E39E1FFB0110004D660C /* JCDragableCellGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCDragableCellGestureRecognizer.h; sourceTree = "<group>"; };
 		93A1E39F1FFB0110004D660C /* JCDragableCellGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCDragableCellGestureRecognizer.m; sourceTree = "<group>"; };
 		93A1E3A11FFB4336004D660C /* JCHeaderTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCHeaderTabView.m; sourceTree = "<group>"; };
@@ -243,6 +274,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93477D55201D8A7F00C8DC39 /* CoreData.framework in Frameworks */,
 				4542B852BB6CE1245A1E98D1 /* libPods-JCFrameworkDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,11 +314,56 @@
 		149B297AF0C09A9DF26F62B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				93477D54201D8A7E00C8DC39 /* CoreData.framework */,
 				9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */,
 				7651F1EFF321BA651ACE8AFD /* libPods-JCFrameworkDemoTests.a */,
 				F3C5239AFCA53D59A2873D73 /* libPods-JCFrameworkDemoUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93477D22201D52B300C8DC39 /* MagicalRecordCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				93906938201EE21400662440 /* Cell */,
+				93477D23201D5C2C00C8DC39 /* JCCoreDataDemoViewController.h */,
+				93477D24201D5C2C00C8DC39 /* JCCoreDataDemoViewController.m */,
+				93477D25201D5C2C00C8DC39 /* JCCoreDataDemoViewController.xib */,
+			);
+			path = MagicalRecordCoreData;
+			sourceTree = "<group>";
+		};
+		93477D28201D5D5100C8DC39 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				93477D42201D688600C8DC39 /* JCCoreDataDemo.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		93477D2C201D5F0B00C8DC39 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				93477D51201D83D900C8DC39 /* CoreDataDemoItem.h */,
+				93477D4F201D83D900C8DC39 /* CoreDataDemoItem.m */,
+				93477D62201DBE0F00C8DC39 /* CoreDataDemoItemOption.h */,
+				93477D63201DBE1000C8DC39 /* CoreDataDemoItemOption.m */,
+				93906932201EDB3400662440 /* CoreDataDemoItemDAO.h */,
+				93906933201EDB3400662440 /* CoreDataDemoItemDAO.m */,
+				93906935201EDF6400662440 /* CoreDataDemoItemOptionDAO.h */,
+				93906936201EDF6400662440 /* CoreDataDemoItemOptionDAO.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		935E7A3320183F5D00BB42E2 /* VCTransition */ = {
+			isa = PBXGroup;
+			children = (
+				935E7A34201840EC00BB42E2 /* JCTransitionDemoListViewController.h */,
+				935E7A35201840EC00BB42E2 /* JCTransitionDemoListViewController.m */,
+				935E7A36201840EC00BB42E2 /* JCTransitionDemoListViewController.xib */,
+			);
+			path = VCTransition;
 			sourceTree = "<group>";
 		};
 		9366E7DB200AF48D0073B4D5 /* Widget */ = {
@@ -296,6 +373,16 @@
 				9366E7DD200AF4C20073B4D5 /* JCCartBarButtonItem.m */,
 			);
 			path = Widget;
+			sourceTree = "<group>";
+		};
+		93906938201EE21400662440 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				93906939201EE23100662440 /* JCCoreDataDemoCell.h */,
+				9390693A201EE23100662440 /* JCCoreDataDemoCell.m */,
+				9390693B201EE23100662440 /* JCCoreDataDemoCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		93A1E39D1FFB00D2004D660C /* Gesture */ = {
@@ -335,6 +422,8 @@
 			children = (
 				93A5DD5A1FF9AF4E006D35CF /* AppDelegate.h */,
 				93A5DD5B1FF9AF4E006D35CF /* AppDelegate.m */,
+				93477D2C201D5F0B00C8DC39 /* Data */,
+				93477D28201D5D5100C8DC39 /* CoreData */,
 				93A5DFB11FF9D615006D35CF /* UI */,
 				93A5DD5D1FF9AF4E006D35CF /* ViewController.h */,
 				93A5DD5E1FF9AF4E006D35CF /* ViewController.m */,
@@ -562,6 +651,8 @@
 		93A5DFB11FF9D615006D35CF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				93477D22201D52B300C8DC39 /* MagicalRecordCoreData */,
+				935E7A3320183F5D00BB42E2 /* VCTransition */,
 				93A5DFC71FFA1407006D35CF /* JCStretchHeaderViewController.h */,
 				93A5DFC81FFA1407006D35CF /* JCStretchHeaderViewController.m */,
 				93A5DFC91FFA1407006D35CF /* JCStretchHeaderViewController.xib */,
@@ -751,6 +842,7 @@
 				93A5DFCB1FFA1407006D35CF /* JCStretchHeaderViewController.xib in Resources */,
 				93A5DD621FF9AF4E006D35CF /* Main.storyboard in Resources */,
 				93A5DF9C1FF9BD41006D35CF /* NumericKeypad.xib in Resources */,
+				9390693D201EE23100662440 /* JCCoreDataDemoCell.xib in Resources */,
 				93A1E3A51FFB4337004D660C /* JCHeaderTabView.xib in Resources */,
 				93A5DFC61FFA0A1E006D35CF /* JCHomeCell.xib in Resources */,
 				93A5DFCD1FFA18CF006D35CF /* demo_image.jpeg in Resources */,
@@ -760,6 +852,8 @@
 				93A1E3AA1FFB487F004D660C /* JCTransparentCurveTabDemoViewController.xib in Resources */,
 				93A5DFBD1FF9DA03006D35CF /* ic_back@3x.png in Resources */,
 				93A5DFA01FF9BD41006D35CF /* highlight.png in Resources */,
+				93477D27201D5C2C00C8DC39 /* JCCoreDataDemoViewController.xib in Resources */,
+				935E7A38201840EC00BB42E2 /* JCTransitionDemoListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -925,13 +1019,16 @@
 				93A5DF6C1FF9BC8B006D35CF /* JCBarButtonItem.m in Sources */,
 				93A5DF971FF9BD41006D35CF /* CRToastViewController.m in Sources */,
 				93A5DF961FF9BD41006D35CF /* CRToastView.m in Sources */,
+				93906934201EDB3400662440 /* CoreDataDemoItemDAO.m in Sources */,
 				93A5DF641FF9BC8B006D35CF /* JCUtils.m in Sources */,
 				9366E7E1200B08870073B4D5 /* JCParabolaAnimationHandler.m in Sources */,
 				93A5DF651FF9BC8B006D35CF /* NSDictionary+JCUtils.m in Sources */,
 				93A5DF661FF9BC8B006D35CF /* NSString+JCUtils.m in Sources */,
+				935E7A37201840EC00BB42E2 /* JCTransitionDemoListViewController.m in Sources */,
 				93A1E3A91FFB487F004D660C /* JCTransparentCurveTabDemoViewController.m in Sources */,
 				93A5DFB61FF9D62D006D35CF /* JCHomeViewController.m in Sources */,
 				93A5DF6D1FF9BC8B006D35CF /* JCErrorTextField.m in Sources */,
+				93477D64201DBE1000C8DC39 /* CoreDataDemoItemOption.m in Sources */,
 				93A5DFAE1FF9BF4A006D35CF /* JCLabel.m in Sources */,
 				93A5DF5D1FF9BC8B006D35CF /* JCBaseViewController.m in Sources */,
 				93A5DF671FF9BC8B006D35CF /* UIColor+JCUtils.m in Sources */,
@@ -940,14 +1037,18 @@
 				93A5DF681FF9BC8B006D35CF /* UIFont+JCUtils.m in Sources */,
 				93A5DF9D1FF9BD41006D35CF /* NumericKeypadTextField.m in Sources */,
 				93A5DF9F1FF9BD41006D35CF /* NumericKeypadViewController.m in Sources */,
+				93906937201EDF6400662440 /* CoreDataDemoItemOptionDAO.m in Sources */,
 				93A5DF691FF9BC8B006D35CF /* UIImage+JCUtils.m in Sources */,
 				93A5DF601FF9BC8B006D35CF /* JCLocationHelper.m in Sources */,
 				93A5DF611FF9BC8B006D35CF /* JCScrollableViewKeyboardHandler.m in Sources */,
 				93A5DF6A1FF9BC8B006D35CF /* UINavigationBar+JCUtils.m in Sources */,
 				93A1E3A41FFB4337004D660C /* JCHeaderTabView.m in Sources */,
+				93477D44201D688600C8DC39 /* JCCoreDataDemo.xcdatamodeld in Sources */,
+				9390693C201EE23100662440 /* JCCoreDataDemoCell.m in Sources */,
 				9366E7DE200AF4C20073B4D5 /* JCCartBarButtonItem.m in Sources */,
 				93A5DD5F1FF9AF4E006D35CF /* ViewController.m in Sources */,
 				93A5DFB01FF9BF4A006D35CF /* JCButton.m in Sources */,
+				93477D26201D5C2C00C8DC39 /* JCCoreDataDemoViewController.m in Sources */,
 				93A5DF6B1FF9BC8B006D35CF /* UIView+JCUtils.m in Sources */,
 				93A5DF621FF9BC8B006D35CF /* JCStretchHeaderHandler.m in Sources */,
 				93A5DFD11FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.m in Sources */,
@@ -959,6 +1060,7 @@
 				93A5DFA31FF9BD41006D35CF /* Reachability.m in Sources */,
 				93A1E3A01FFB0110004D660C /* JCDragableCellGestureRecognizer.m in Sources */,
 				93A5DFCA1FFA1407006D35CF /* JCStretchHeaderViewController.m in Sources */,
+				93477D52201D83D900C8DC39 /* CoreDataDemoItem.m in Sources */,
 				934164801FFC7431007B1DCF /* JCAuthenticationHanlder.m in Sources */,
 				9366E7D7200AE6C90073B4D5 /* JCAddCartEffictViewController.m in Sources */,
 				93A5DF5F1FF9BC8B006D35CF /* JCTabBarController.m in Sources */,
@@ -1256,6 +1358,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		93477D42201D688600C8DC39 /* JCCoreDataDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93477D43201D688600C8DC39 /* JCCoreDataDemo.xcdatamodel */,
+			);
+			currentVersion = 93477D43201D688600C8DC39 /* JCCoreDataDemo.xcdatamodel */;
+			path = JCCoreDataDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 93A5DD4F1FF9AF4E006D35CF /* Project object */;
 }

@@ -5,6 +5,7 @@ project ‘JCFrameworkDemo’
 
 def all_pods
     pod 'SAMKeychain'
+    pod "MagicalRecord"
 end
 
 target :'JCFrameworkDemo' do

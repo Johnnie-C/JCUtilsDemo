@@ -12,6 +12,7 @@
 #import "JCTransparentCurveTabDemoViewController.h"
 #import "JCJellyEffectDemoViewController.h"
 #import "JCAddCartEffictViewController.h"
+#import "JCCoreDataDemoViewController.h"
 
 #import "JCUIAlertUtils.h"
 #import "JCHomeCell.h"
@@ -27,7 +28,8 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     JCHomeViewCellIndexStretchHeaderView,
     JCHomeViewCellIndexCustomisedHeader,
     JCHomeViewCellIndexJellyEffect,
-    JCHomeViewCellIndexAddCartEffict
+    JCHomeViewCellIndexAddCartEffict,
+    JCHomeViewCellIndexCoreData
 };
 
 
@@ -78,7 +80,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
 
 #pragma mark - TableView
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 7;
+    return 8;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -117,8 +119,13 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
         case JCHomeViewCellIndexJellyEffect:
             [cell updateUIWithTitle:@"Jelly effect demo"];
             break;
+            
         case JCHomeViewCellIndexAddCartEffict:
             [cell updateUIWithTitle:@"Add cart parabola effect dome"];
+            break;
+            
+        case JCHomeViewCellIndexCoreData:
+            [cell updateUIWithTitle:@"CoreData with MagicalRecord demo"];
             break;
             
     }
@@ -155,6 +162,9 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
                                       colour:TOAST_MESSAGE_ORANGE];
             break;
             
+        case JCHomeViewCellIndexCoreData:
+            [self pushViewController:[JCCoreDataDemoViewController new]];
+            break;
     }
 }
 

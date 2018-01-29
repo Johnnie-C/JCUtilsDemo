@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JCCoreDataDemoViewController">
+            <connections>
+                <outlet property="tableView" destination="Soh-z9-X3z" id="60J-lI-wca"/>
+                <outlet property="txtAdd" destination="w1J-gJ-umu" id="uIO-gV-YuC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w1J-gJ-umu" customClass="JCTextField">
+                    <rect key="frame" x="20" y="40" width="283" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DN-uo-54K" customClass="JCButton">
+                    <rect key="frame" x="323" y="40" width="32" height="30"/>
+                    <state key="normal" title="ADD"/>
+                    <connections>
+                        <action selector="onAddClicked:" destination="-1" eventType="touchUpInside" id="7YM-zV-SPs"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Soh-z9-X3z">
+                    <rect key="frame" x="0.0" y="90" width="375" height="577"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Soh-z9-X3z" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="8tf-d4-K3h"/>
+                <constraint firstItem="Soh-z9-X3z" firstAttribute="top" secondItem="w1J-gJ-umu" secondAttribute="bottom" constant="20" id="GIH-3p-vpZ"/>
+                <constraint firstItem="4DN-uo-54K" firstAttribute="leading" secondItem="w1J-gJ-umu" secondAttribute="trailing" constant="20" id="GU7-Ww-DXS"/>
+                <constraint firstItem="w1J-gJ-umu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="IfJ-Kd-sgs"/>
+                <constraint firstItem="w1J-gJ-umu" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="PHR-4d-t1U"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="4DN-uo-54K" secondAttribute="trailing" constant="20" id="QUe-mW-Eo5"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Soh-z9-X3z" secondAttribute="trailing" id="l2d-GX-tso"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Soh-z9-X3z" secondAttribute="bottom" id="oz6-V8-s59"/>
+                <constraint firstItem="4DN-uo-54K" firstAttribute="centerY" secondItem="w1J-gJ-umu" secondAttribute="centerY" id="qEB-hB-3sj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

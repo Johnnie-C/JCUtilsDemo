@@ -39,7 +39,6 @@ typedef NS_ENUM(NSInteger, RightBarButtonType) {
 @property (strong, nonatomic) UIView *containerView;
 @property (strong, nonatomic) UIButton *button;
 @property (strong, nonatomic) UILabel *label;
-@property (strong, nonatomic) UILabel *lb_favouriteCount;
 
 - (id)initWithLeftBarButtonType:(LeftBarButtonType)type;
 - (id)initWithRightBarButtonType:(RightBarButtonType)type;

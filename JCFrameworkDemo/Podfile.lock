@@ -1,12 +1,17 @@
 PODS:
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
   - SAMKeychain (1.5.3)
 
 DEPENDENCIES:
+  - MagicalRecord
   - SAMKeychain
 
 SPEC CHECKSUMS:
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
 
-PODFILE CHECKSUM: 59a812b58c492931178799bee2a078df283db3e1
+PODFILE CHECKSUM: 45826ecdfc477cbc456da092d8700cfc76ea8502
 
 COCOAPODS: 1.2.1
