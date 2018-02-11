@@ -30,8 +30,8 @@
     return YES;
 }
 
-- (void)setupMagicalRecord{
-    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"JCCoreDataDemo"];
+    - (void)setupMagicalRecord{
+        [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"JCCoreDataDemo"];
 }
 
 

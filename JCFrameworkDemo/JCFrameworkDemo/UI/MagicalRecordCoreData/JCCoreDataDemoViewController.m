@@ -26,19 +26,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self createItems];
+//    [self createItems];
     _items = [CoreDataDemoItemDAO allRecords];
-    NSLog(@"total itmes count: %ld", _items.count);
-    NSLog(@"--------------------------------------------------");
-    for(CoreDataDemoItem *item in _items){
-        NSLog(@"name: %@, uid: %d, desc: %@", item.name, item.uid, item.desc);
-        for(CoreDataDemoItemOption *option in item.options){
-            NSLog(@"option name: %@, option value: %@", option.name, option.value);
-        }
-        
-        NSLog(@"--------------------------------------------------");
-    }
-    
+//    [self updateItems];
+    [self printoutItems];
 }
 
 - (void)createItems{
@@ -59,16 +50,35 @@
     item2.uid = 2;
     item2.name = @"item 2";
     CoreDataDemoItemOption *o3 = [CoreDataDemoItemOptionDAO  newRecord];
-    o3.name = @"o3 name";
-    o3.value = @"o3 value";
+    o3.name = @"o1 name";
+    o3.value = @"o1 value";
     CoreDataDemoItemOption *o4 = [CoreDataDemoItemOptionDAO  newRecord];
-    o4.name = @"o4 name";
-    o4.value = @"o4 value";
+    o4.name = @"o2 name";
+    o4.value = @"o2 value";
     item2.options = [NSOrderedSet orderedSetWithArray:@[o3, o4]];
     
     [CoreDataDemoItemDAO saveRecords];
 }
 
+- (void)printoutItems{
+    _items = [CoreDataDemoItemDAO allRecords];
+    NSLog(@"total itmes count: %ld", _items.count);
+    NSLog(@"--------------------------------------------------");
+    for(CoreDataDemoItem *item in _items){
+        NSLog(@"name: %@, uid: %d, desc: %@", item.name, item.uid, item.desc);
+        for(CoreDataDemoItemOption *option in item.options){
+            NSLog(@"option name: %@, option value: %@", option.name, option.value);
+        }
+        
+        NSLog(@"--------------------------------------------------");
+    }
+}
+
+- (void)updateItems{
+    [[_items firstObject].options firstObject].name = @"new name";
+    [CoreDataDemoItemDAO saveRecords];
+//    [CoreDataDemoItemOptionDAO saveRecords];
+}
 
 #pragma mark - actions
 - (IBAction)onAddClicked:(id)sender {
