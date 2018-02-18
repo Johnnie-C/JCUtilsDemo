@@ -20,9 +20,14 @@
 
 + (NSString *)appVersion;
 + (NSBundle *)frameworkBundle;
++ (UIViewController *)rootViewController;
 
 + (BOOL)hasConnectivity;
 
++ (NSString *)deviceUDID;
+
++ (NSString *)getMimeTypeFromFileName:(NSString *)filename;
++ (NSString *)getMimeTypeForData:(NSData *)data;
 
 #pragma mark - device info
 + (BOOL)isIPad;
@@ -40,6 +45,11 @@
 #pragma mark - email
 + (void)sendEmailToEmailAddress:(NSString *)email subject:(NSString *)subject;
 
+#pragma mark - call
++ (void)callNumber:(NSString *)number;
+
 #pragma mark - redirection
 + (void)redirectToSystemSettingsAuthentication;
+
 @end
+

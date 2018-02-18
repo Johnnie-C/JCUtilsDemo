@@ -30,6 +30,8 @@
 @interface UIColor(JCCustomise)
 + (UIColor *)appMainColor;
 + (UIColor *)appMainColorLight;
++ (UIColor *)okGrey;
++ (UIColor *)cancelRed;
 
 #pragma mark - loader
 + (UIColor *)loaderBG;

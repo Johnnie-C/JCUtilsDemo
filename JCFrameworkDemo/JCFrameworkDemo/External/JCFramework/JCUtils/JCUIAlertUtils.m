@@ -9,6 +9,7 @@
 #import "JCUIAlertUtils.h"
 #import "CRToast.h"
 
+#import "JCUIAlertController.h"
 #import "JCUtils.h"
 #import "UIFont+JCUtils.h"
 #import "UIColor+JCUtils.h"
@@ -16,46 +17,71 @@
 
 const NSInteger ALERT_TAG_PHONE_CALL = 102;
 
+@implementation UIAlertAction(JCUtils)
+- (void)_jcSetTitleColor:(UIColor *)color{
+    if ([self respondsToSelector:NSSelectorFromString(@"_titleTextColor")]) {
+        [self setValue:color forKey:@"titleTextColor"];
+    }
+}
+@end
+
+
 @implementation JCUIAlertUtils
 
 #pragma mark - alert
-+ (void)showConfirmDialog:(NSString *)title content:(NSString *)content okHandler:(void (^)(UIAlertAction *action))okHandler{
+
++ (void)showConfirmDialog:(NSString *)title content:(NSString *)content okBtnTitle:(NSString *)okBtnTitle okHandler:(void (^)(UIAlertAction *action))okHandler{
+    [JCUIAlertUtils showConfirmDialog:title content:content okBtnTitle:okBtnTitle okHandler:okHandler inViewController:[JCUtils rootViewController]];
+}
+
++ (void)showConfirmDialog:(NSString *)title content:(NSString *)content okBtnTitle:(NSString *)okBtnTitle okHandler:(void (^)(UIAlertAction *action))okHandler inViewController:(UIViewController *)viewController{
+    if(!okBtnTitle.length){
+        okBtnTitle = @"Ok";
+    }
+    
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title
                                                                    message:content
                                                             preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction* okButton = [UIAlertAction
-                                actionWithTitle:@"Ok"
-                                style:UIAlertActionStyleDefault
-                                handler:okHandler];
-    
-    if ([okButton respondsToSelector:NSSelectorFromString(@"_titleTextColor")]) {
-        [okButton setValue:[UIColor appMainColor] forKey:@"titleTextColor"];
-    }
-    
+                               actionWithTitle:okBtnTitle
+                               style:UIAlertActionStyleDefault
+                               handler:okHandler];
+    [okButton _jcSetTitleColor:[UIColor appMainColor]];
     [alert addAction:okButton];
     
-    [[JCUIAlertUtils rootViewController] presentViewController:alert animated:YES completion:nil];
-}
-
-+ (void)showYesNoDialog:(NSString *)title content:(NSString *)content
-            yesBtnTitle:(NSString *)yesBtnTitle yesHandler:(void (^)(UIAlertAction *action))yesHandler
-            noBtnTitle:(NSString *)noBtnTitle noHandler:(void (^)(UIAlertAction *action))noHandler
-{
-    [JCUIAlertUtils showYesNoDialog:title content:content
-                        yesBtnTitle:yesBtnTitle yesHandler:yesHandler
-                         noBtnTitle:noBtnTitle noHandler:noHandler
-                   inViewController:[JCUIAlertUtils rootViewController]];
+    [viewController presentViewController:alert animated:YES completion:nil];
 }
 
 + (void)showYesNoDialog:(NSString *)title content:(NSString *)content
             yesBtnTitle:(NSString *)yesBtnTitle yesHandler:(void (^)(UIAlertAction *action))yesHandler
              noBtnTitle:(NSString *)noBtnTitle noHandler:(void (^)(UIAlertAction *action))noHandler
+{
+    [JCUIAlertUtils showYesNoDialog:title content:content image:nil
+                        yesBtnTitle:yesBtnTitle yesHandler:yesHandler
+                         noBtnTitle:noBtnTitle noHandler:noHandler
+                   inViewController:[JCUtils rootViewController]];
+}
+
++ (void)showYesNoDialog:(NSString *)title content:(NSString *)content image:(UIImage *)image
+            yesBtnTitle:(NSString *)yesBtnTitle yesHandler:(void (^)(UIAlertAction *action))yesHandler
+             noBtnTitle:(NSString *)noBtnTitle noHandler:(void (^)(UIAlertAction *action))noHandler
+{
+    [JCUIAlertUtils showYesNoDialog:title content:content image:image
+                        yesBtnTitle:yesBtnTitle yesHandler:yesHandler
+                         noBtnTitle:noBtnTitle noHandler:noHandler
+                   inViewController:[JCUtils rootViewController]];
+}
+
++ (void)showYesNoDialog:(NSString *)title content:(NSString *)content image:(UIImage *)image
+            yesBtnTitle:(NSString *)yesBtnTitle yesHandler:(void (^)(UIAlertAction *action))yesHandler
+             noBtnTitle:(NSString *)noBtnTitle noHandler:(void (^)(UIAlertAction *action))noHandler
        inViewController:(UIViewController *)viewController
 {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title
-                                                                   message:content
-                                                            preferredStyle:UIAlertControllerStyleAlert];
+    JCUIAlertController *alert = [JCUIAlertController alertControllerWithTitle:title
+                                                                       message:content
+                                                                         image:image
+                                                                preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction* yesButton = [UIAlertAction
                                 actionWithTitle:yesBtnTitle
@@ -67,19 +93,14 @@ const NSInteger ALERT_TAG_PHONE_CALL = 102;
                                style:UIAlertActionStyleDefault
                                handler:noHandler];
     
-    if ([yesButton respondsToSelector:NSSelectorFromString(@"_titleTextColor")]) {
-        [yesButton setValue:[UIColor appMainColor] forKey:@"titleTextColor"];
-    }
-    
-    if ([noButton respondsToSelector:NSSelectorFromString(@"_titleTextColor")]) {
-        [noButton setValue:[UIColor lightGrayColor] forKey:@"titleTextColor"];
-    }
-    
-    [alert addAction:yesButton];
+    [yesButton _jcSetTitleColor:[UIColor cancelRed]];
+    [noButton _jcSetTitleColor:[UIColor okGrey]];
     
     if(noBtnTitle.length){
         [alert addAction:noButton];
     }
+    [alert addAction:yesButton];
+    
     alert.preferredAction = yesButton;
     
     [viewController presentViewController:alert animated:YES completion:nil];
@@ -99,42 +120,60 @@ const NSInteger ALERT_TAG_PHONE_CALL = 102;
     
     [alert addAction:okButton];
     
-    [[JCUIAlertUtils rootViewController] presentViewController:alert animated:YES completion:nil];
+    [[JCUtils rootViewController] presentViewController:alert animated:YES completion:nil];
 }
 
-+ (void)showCallConfirmAlertWithNumber:(NSString *)number{
++ (void)showCallConfirmAlertWithNumber:(NSString *)number inViewController:(UIViewController *)parentViewController{
     if([JCUtils isIPhone]){
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Call"
                                                                        message:[NSString stringWithFormat:@"%@", number]
                                                                 preferredStyle:UIAlertControllerStyleAlert];
-        
         UIAlertAction* okButton = [UIAlertAction
                                    actionWithTitle:@"Ok"
                                    style:UIAlertActionStyleDefault
                                    handler:^(UIAlertAction * _Nonnull action) {
-                                       NSString *num = [number stringByReplacingOccurrencesOfString:@" " withString:@""];
-                                       NSURL *phoneURL = [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", num]];
-                                       [[UIApplication sharedApplication] openURL:phoneURL];
+                                       [JCUtils callNumber:number];
                                    }];
         
         UIAlertAction* cancelButton = [UIAlertAction
-                                   actionWithTitle:@"Cancel"
-                                   style:UIAlertActionStyleDefault
+                                       actionWithTitle:@"Cancel"
+                                       style:UIAlertActionStyleDefault
                                        handler:nil];
+        
+        [okButton _jcSetTitleColor:[UIColor appMainColor]];
+        [cancelButton _jcSetTitleColor:[UIColor okGrey]];
         
         [alert addAction:okButton];
         [alert addAction:cancelButton];
         
         
-        [[JCUIAlertUtils rootViewController] presentViewController:alert animated:YES completion:nil];
+        [parentViewController presentViewController:alert animated:YES completion:nil];
     }
     else{
-        [JCUIAlertUtils showConfirmDialog:@"Error" content:@"This device does not support for phone call." okHandler:nil];
+        [JCUIAlertUtils showConfirmDialog:@"Error" content:@"This device does not support for phone call." okBtnTitle:@"Ok" okHandler:nil];
     }
 }
 
-+ (UIViewController *)rootViewController{
-    return [[[UIApplication sharedApplication] keyWindow] rootViewController];
+#pragma mark - action sheet
++ (void)showActionSheetForActions:(NSArray<UIAlertAction *> *)actions
+{
+    [JCUIAlertUtils showActionSheetForActions:actions
+                             inViewController:[JCUtils rootViewController]];
+}
+
++ (void)showActionSheetForActions:(NSArray<UIAlertAction *> *)actions
+                 inViewController:(UIViewController *)viewController
+{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
+                                                                   message:nil
+                                                            preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    for(UIAlertAction *action in actions){
+        [action _jcSetTitleColor:action.style == UIAlertActionStyleCancel ? [UIColor cancelRed] : [UIColor blackColor]];
+        [alert addAction:action];
+    }
+    
+    [viewController presentViewController:alert animated:YES completion:nil];
 }
 
 #pragma mark - toast
@@ -145,6 +184,7 @@ const NSInteger ALERT_TAG_PHONE_CALL = 102;
 
 
 + (void)toastWithMessage:(NSString *)message colour:(UIColor *)colour completion:(void (^)(void))completion{
+    [CRToastManager dismissNotification:YES];
     NSDictionary *options = @{
                               kCRToastTextKey : message,
                               kCRToastTextAlignmentKey : @(NSTextAlignmentCenter),

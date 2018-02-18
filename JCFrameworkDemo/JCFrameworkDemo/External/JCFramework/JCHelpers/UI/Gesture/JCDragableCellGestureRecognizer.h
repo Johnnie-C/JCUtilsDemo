@@ -11,8 +11,17 @@
 
 @required
 - (BOOL)canDragCellForIndexPath:(NSIndexPath *)indexPath;
-- (UIView *)topContentViewForCell:(UIView *)cell;
-- (UIView *)bottomMenuViewForCell:(UIView *)cell;
+- (UIView *)topContentViewForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath;
+- (CGFloat)bottomMenuWidthForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath;
+
+@optional
+- (void)onDragingCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath;
+- (void)onStopDragingCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath;
+- (void)didResetCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath;
+
+
+- (NSLayoutConstraint *)topContentLeftConstraintForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath;
+- (NSLayoutConstraint *)topContentRightConstraintForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath;
 
 @end
 
@@ -27,5 +36,6 @@
 - (instancetype)initWithTargetScrollView:(UIScrollView *)scrollview;
 
 - (void)resetPredragedCellIfNeed;
-    
+
 @end
+

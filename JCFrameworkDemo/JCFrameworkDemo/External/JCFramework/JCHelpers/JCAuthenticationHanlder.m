@@ -239,6 +239,7 @@ NSString *const ERROR_FORGOT_PASSCODE_CLCIKED = @"JCError_forgotPasscodeClicked"
 - (void)PAPasscodeViewControllerOnForgotPasscodeClicked:(PAPasscodeViewController *)controller{
     [JCUIAlertUtils showYesNoDialog:@"Forgot Passcode"
                             content:@"Re-login to reset passcode?"
+                              image:nil
                         yesBtnTitle:@"Reset"
                          yesHandler:^(UIAlertAction *action) {
                              UIViewController *rootVC = [[[UIApplication sharedApplication] keyWindow] rootViewController];
@@ -250,8 +251,7 @@ NSString *const ERROR_FORGOT_PASSCODE_CLCIKED = @"JCError_forgotPasscodeClicked"
                              }];
                          }
                          noBtnTitle:@"Cancel"
-                          noHandler:nil
-                   inViewController:controller];
+                          noHandler:nil inViewController:controller];
 }
 
 

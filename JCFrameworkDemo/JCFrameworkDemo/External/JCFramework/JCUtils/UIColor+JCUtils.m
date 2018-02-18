@@ -171,6 +171,14 @@
     return [UIColor colorWithRed:234.0/255.0 green:166.0/255.0 blue:174.0/255.0 alpha:1];
 }
 
++ (UIColor *)okGrey{
+    return [UIColor colorWithRed:108.0/255.0 green:108.0/255.0 blue:108.0/255.0 alpha:1];
+}
+
++ (UIColor *)cancelRed{
+    return [UIColor appMainColor];
+}
+
 #pragma mark - loader
 + (UIColor *)loaderBG{
     return [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:0.4];

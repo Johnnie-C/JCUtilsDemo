@@ -32,7 +32,7 @@
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(releaseKB:)];
     tapGesture.cancelsTouchesInView = NO;
     
-    [[[UIApplication sharedApplication] delegate].window.rootViewController.view addGestureRecognizer:tapGesture];
+    [[[UIApplication sharedApplication] delegate].window addGestureRecognizer:tapGesture];
 }
 
 - (void)unregister{
@@ -62,7 +62,7 @@
 
 - (void)releaseKB:(id)sender{
     UIView *view = ((UITapGestureRecognizer *)sender).view;
-
+    
     if(![view isKindOfClass:[UITextField class]]){
         [_scrollView endEditing:YES];
     }
@@ -86,7 +86,7 @@
     
     CGFloat bottomInsetToAdjust = [self calculateaBottomInsetDiffWithKeyboardHeight:keyboardFrameBeginRect.size.height];
     _scrollView.contentInset = UIEdgeInsetsMake(_insetTop, _insetLeft, _insetBottom + MAX(bottomInsetToAdjust, 0), _insetRight);
-
+    
     _isKeyBoardShown = YES;
     _keyoardSize = keyboardFrameBeginRect.size;
 }
@@ -103,7 +103,7 @@
 - (CGFloat)calculateaBottomInsetDiffWithKeyboardHeight:(CGFloat)keyboardHeight{
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGRect scrollViewRectInScreen = [_scrollView.superview convertRect:_scrollView.frame toView:nil];
-    CGFloat scrollViewBottom = scrollViewRectInScreen.origin.y + scrollViewRectInScreen.size.height;
+    CGFloat scrollViewBottom = scrollViewRectInScreen.origin.y + MIN(_scrollView.contentSize.height, scrollViewRectInScreen.size.height);
     CGFloat kbTopInScreen = screenRect.size.height - keyboardHeight;
     
     CGFloat contentBottomSpace = 0;

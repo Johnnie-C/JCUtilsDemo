@@ -7,6 +7,10 @@
 //
 
 #import "JCUtils.h"
+#import "JCUIAlertUtils.h"
+#import <MobileCoreServices/MobileCoreServices.h>
+
+#import <SAMKeychain/SAMKeychain.h>
 #import "Reachability.h"
 
 @implementation JCUtils
@@ -16,7 +20,8 @@
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
 }
 
-+ (NSBundle *)frameworkBundle{
++ (NSBundle *)frameworkBundle
+{
     static NSBundle* frameworkBundle = nil;
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{
@@ -25,9 +30,53 @@
     return frameworkBundle;
 }
 
++ (NSString *)deviceUDID{
+    NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleNameKey];
+    
+    NSString *strApplicationUDID = [SAMKeychain passwordForService:appName account:@"incoding"];
+    if (strApplicationUDID == nil){
+        strApplicationUDID  = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+        [SAMKeychain setPassword:strApplicationUDID forService:appName account:@"incoding"];
+    }
+    
+    return strApplicationUDID;
+}
+
++ (UIViewController *)rootViewController{
+    return [[[UIApplication sharedApplication] keyWindow] rootViewController];
+}
+
++ (NSString *)getMimeTypeFromFileName:(NSString *)filename{
+    CFStringRef UTI = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (__bridge CFStringRef)[filename pathExtension], NULL);
+    CFStringRef MIMEType = UTTypeCopyPreferredTagWithClass(UTI, kUTTagClassMIMEType);
+    CFRelease(UTI);
+    if (!MIMEType) {
+        return @"application/octet-stream";
+    }
+    return (__bridge NSString *)(MIMEType);
+}
+
++ (NSString *)getMimeTypeForData:(NSData *)data {
+    uint8_t c;
+    [data getBytes:&c length:1];
+    
+    switch (c) {
+        case 0xFF:
+            return @"image/jpeg";
+        case 0x89:
+            return @"image/png";
+        case 0x47:
+            return @"image/gif";
+        case 0x49:
+        case 0x4D:
+            return @"image/tiff";
+    }
+    return nil;
+}
 
 #pragma mark - network
-+(BOOL)hasConnectivity{
++(BOOL)hasConnectivity
+{
     NetworkStatus networkStatus = [[Reachability reachabilityForInternetConnection] currentReachabilityStatus];
     return (networkStatus == NotReachable) ? NO : YES;
 }
@@ -83,16 +132,29 @@
 }
 
 #pragma mark - email
-+ (void)sendEmailToEmailAddress:(NSString *)email subject:(NSString *)subject
-{
++ (void)sendEmailToEmailAddress:(NSString *)email subject:(NSString *)subject{
     NSString *emailURLStr = [NSString stringWithFormat:@"mailto:%@?subject=%@", email, subject];
     emailURLStr = [emailURLStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *emailURL = [NSURL URLWithString:emailURLStr];
     [[UIApplication sharedApplication] openURL:emailURL];
 }
 
++ (void)callNumber:(NSString *)number{
+    if([JCUtils isIPhone]){
+        NSString *num = [number stringByReplacingOccurrencesOfString:@" " withString:@""];
+        NSURL *phoneURL = [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", num]];
+        [[UIApplication sharedApplication] openURL:phoneURL];
+    }
+    else{
+        [JCUIAlertUtils showConfirmDialog:@"Error" content:@"This device does not support for phone call." okBtnTitle:@"Ok" okHandler:nil];
+    }
+    
+}
+
 #pragma mark - redirection
 + (void)redirectToSystemSettingsAuthentication{
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
 }
+
 @end
+

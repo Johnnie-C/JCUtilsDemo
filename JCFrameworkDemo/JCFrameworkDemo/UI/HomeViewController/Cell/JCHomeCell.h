@@ -6,15 +6,11 @@
 //  Copyright © 2018 Johnnie Cheng. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "JCHomeBaseCell.h"
 
-@interface JCHomeCell : UITableViewCell
+@interface JCHomeCell : JCHomeBaseCell
 
 @property (weak, nonatomic) IBOutlet UIView *bottomMenuView;
 @property (weak, nonatomic) IBOutlet UIView *topContentView;
-
-@property (assign, nonatomic) BOOL disableClick;
-
-- (void)updateUIWithTitle:(NSString *)title;
 
 @end

@@ -15,9 +15,9 @@ typedef void(^JCParabloaAnimationCompletion)(void);
 
 @property (assign, nonatomic) CGFloat duration;
 
--(void)startAnimationandView:(UIView *)view
-                  startPoint:(CGPoint)startPoint
-                    endPoint:(CGPoint)endPoint endSize:(CGSize)endSize
-               complemention:(JCParabloaAnimationCompletion)completion;
+- (void)startAnimationandView:(UIView *)view
+                   startPoint:(CGPoint)startPoint
+                     endPoint:(CGPoint)endPoint endSize:(CGSize)endSize
+                complemention:(JCParabloaAnimationCompletion)completion;
 
 @end

@@ -35,10 +35,10 @@
     _duration = 0.3f;
 }
 
--(void)startAnimationandView:(UIView *)view
-                  startPoint:(CGPoint)startPoint
-                    endPoint:(CGPoint)endPoint endSize:(CGSize)endSize
-               complemention:(JCParabloaAnimationCompletion)completion
+- (void)startAnimationandView:(UIView *)view
+                   startPoint:(CGPoint)startPoint
+                     endPoint:(CGPoint)endPoint endSize:(CGSize)endSize
+                complemention:(JCParabloaAnimationCompletion)completion
 {
     _viewToAnimate = view;
     _completion = completion;
@@ -55,22 +55,22 @@
     CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     pathAnimation.path = path.CGPath;
     pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    pathAnimation.delegate = self;
-    pathAnimation.duration = _duration;
     
     //scale animation
     CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform"];
     scaleAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(endSize.width / view.width, endSize.height / view.height, 1)];
     scaleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    scaleAnimation.duration = _duration;
     
     //add animiations to group
     CAAnimationGroup *groups = [CAAnimationGroup animation];
-    groups.animations = @[pathAnimation,scaleAnimation];
+    groups.animations = @[pathAnimation, scaleAnimation];
     groups.duration = _duration;
+    groups.delegate = self;
+    //prevent animated view go back to init position and size after animation end
+    groups.fillMode = kCAFillModeForwards;
+    groups.removedOnCompletion = NO;
     
-    [view.layer addAnimation:pathAnimation forKey:nil];
-    [view.layer addAnimation:groups forKey:@"group"];
+    [view.layer addAnimation:groups forKey:nil];
 }
 
 #pragma mark - CAAnimationDelegate
@@ -86,3 +86,4 @@
 }
 
 @end
+

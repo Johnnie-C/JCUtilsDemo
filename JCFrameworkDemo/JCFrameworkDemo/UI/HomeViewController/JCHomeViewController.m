@@ -15,12 +15,17 @@
 #import "JCCoreDataDemoViewController.h"
 #import "JCAnimatedCollectionViewDemoViewController.h"
 
-#import "JCUIAlertUtils.h"
+#import "JCHomeBaseCell.h"
 #import "JCHomeCell.h"
+#import "JCHomeConfirmDeleteCell.h"
+
+#import "JCUIAlertUtils.h"
+#import "UIView+JCUtils.h"
 #import "JCDragableCellGestureRecognizer.h"
 
 
 NSString *const JC_HOME_CELL_IDENTIFIER = @"jcHomeCellIdentifier";
+NSString *const JC_HOME_CONFIRM_DELETE_CELL_IDENTIFIER = @"jcHomeConfirmDeleteCellIdentifier";
 
 typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     JCHomeViewCellIndexSlidableCell,
@@ -29,7 +34,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     JCHomeViewCellIndexStretchHeaderView,
     JCHomeViewCellIndexCustomisedHeader,
     JCHomeViewCellIndexJellyEffect,
-    JCHomeViewCellIndexAddCartEffict,
+    JCHomeViewCellIndexAddCartEffect,
     JCHomeViewCellIndexCoreData,
     JCHomeViewCellIndexAnimatedCollectionView
 };
@@ -73,6 +78,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     
     NSBundle *bundle = [NSBundle bundleForClass:[JCHomeCell class]];
     [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([JCHomeCell class]) bundle:bundle] forCellReuseIdentifier:JC_HOME_CELL_IDENTIFIER];
+    [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([JCHomeConfirmDeleteCell class]) bundle:bundle] forCellReuseIdentifier:JC_HOME_CONFIRM_DELETE_CELL_IDENTIFIER];
     
     //setup dragable cell
     _dragCellpanGesture = [[JCDragableCellGestureRecognizer alloc] initWithTargetScrollView:_tableView];
@@ -86,60 +92,32 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    CGFloat height = 60;
-    if(indexPath.row == JCHomeViewCellIndexCustomisedHeader || indexPath.row == JCHomeViewCellIndexSlidableCell){
-        height = 80;
-    }
-    return height;
+    return [JCHomeBaseCell heightForCellWithTitle:[self cellTitleForIndexPath:indexPath]];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    JCHomeCell *cell = [tableView dequeueReusableCellWithIdentifier:JC_HOME_CELL_IDENTIFIER];
+    JCHomeBaseCell *cell;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.disableClick = NO;
     switch (indexPath.row) {
-        case JCHomeViewCellIndexSlidableCell:
-            [cell updateUIWithTitle:@"This is a slidable cell by using JCDragableCellGestureRecognizer"];
-            break;
-            
         case JCHomeViewCellIndexSlidableCellTwo:
-            [cell updateUIWithTitle:@"This is an another slidable cell"];
+            cell = [tableView dequeueReusableCellWithIdentifier:JC_HOME_CONFIRM_DELETE_CELL_IDENTIFIER];
             break;
             
-        case JCHomeViewCellIndexScrollView:
-            [cell updateUIWithTitle:@"ScrollView & customised UITextField demo"];
+        default:
+            cell = [tableView dequeueReusableCellWithIdentifier:JC_HOME_CELL_IDENTIFIER];
             break;
-            
-        case JCHomeViewCellIndexStretchHeaderView:
-            [cell updateUIWithTitle:@"Stretchable header demo"];
-            break;
-            
-        case JCHomeViewCellIndexCustomisedHeader:
-            [cell updateUIWithTitle:@"Curve transparent tab & local authentication demo"];
-            break;
-            
-        case JCHomeViewCellIndexJellyEffect:
-            [cell updateUIWithTitle:@"Jelly effect demo"];
-            break;
-            
-        case JCHomeViewCellIndexAddCartEffict:
-            [cell updateUIWithTitle:@"Add cart parabola effect dome"];
-            break;
-            
-        case JCHomeViewCellIndexCoreData:
-            [cell updateUIWithTitle:@"CoreData with MagicalRecord demo"];
-            break;
-            
-        case JCHomeViewCellIndexAnimatedCollectionView:
-            [cell updateUIWithTitle:@"Animated CollectionView demo"];
-            break;
-            
     }
+    
+    [cell updateUIWithTitle:[self cellTitleForIndexPath:indexPath]];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [_dragCellpanGesture resetPredragedCellIfNeed];
+    
     switch (indexPath.row) {
         case JCHomeViewCellIndexScrollView:
             [self pushViewController:[JCScrollViewTextFieldDemoViewController new]];
@@ -157,7 +135,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
             [self pushViewController:[JCJellyEffectDemoViewController new]];
             break;
             
-        case JCHomeViewCellIndexAddCartEffict:
+        case JCHomeViewCellIndexAddCartEffect:
             [self pushViewController:[JCAddCartEffictViewController new]];
             break;
             
@@ -179,28 +157,103 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     }
 }
 
+#pragma mark -- cell title
+- (NSString *)cellTitleForIndexPath:(NSIndexPath *)indexPath{
+    NSString *title;
+    switch (indexPath.row) {
+        case JCHomeViewCellIndexSlidableCell:
+            title = @"This is a slidable cell by using JCDragableCellGestureRecognizer\nDemo drawer bottom menu (Bottm menu stay still).\nNot suitable for cell with transparent background";
+            break;
+            
+        case JCHomeViewCellIndexSlidableCellTwo:
+            title = @"This is an another slidable cell\nDemo for opening menu (menu width is changeable).\nSuitable for cell with transparent background";
+            break;
+            
+        case JCHomeViewCellIndexScrollView:
+             title = @"ScrollView & customised UITextField demo";
+            break;
+            
+        case JCHomeViewCellIndexStretchHeaderView:
+             title = @"Stretchable header demo";
+            break;
+            
+        case JCHomeViewCellIndexCustomisedHeader:
+             title = @"Curve transparent tab & local authentication demo";
+            break;
+            
+        case JCHomeViewCellIndexJellyEffect:
+             title = @"Jelly effect demo";
+            break;
+            
+        case JCHomeViewCellIndexAddCartEffect:
+             title = @"Add cart parabola effect dome";
+            break;
+            
+        case JCHomeViewCellIndexCoreData:
+            title = @"CoreData with MagicalRecord demo";
+            break;
+            
+        case JCHomeViewCellIndexAnimatedCollectionView:
+            title = @"Animated CollectionView demo";
+            break;
+    }
+    
+    return title;
+}
+
 #pragma mark - JCDragableCellGestureRecognizerDelegate
 - (BOOL)canDragCellForIndexPath:(NSIndexPath *)indexPath{
     return indexPath.row == JCHomeViewCellIndexSlidableCell
         || indexPath.row == JCHomeViewCellIndexSlidableCellTwo;
 }
 
-- (UIView *)topContentViewForCell:(UIView *)cell{
+- (UIView *)topContentViewForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath{
     UIView *topContentView;
     if([cell isKindOfClass:[JCHomeCell class]]){
         topContentView = ((JCHomeCell *)cell).topContentView;
+    }
+    else if([cell isKindOfClass:[JCHomeConfirmDeleteCell class]]){
+        topContentView = ((JCHomeConfirmDeleteCell *)cell).topContentView;
     }
     
     return topContentView;
 }
 
-- (UIView *)bottomMenuViewForCell:(UIView *)cell{
-    UIView *topContentView;
+- (NSLayoutConstraint *)topContentLeftConstraintForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath{
+    NSLayoutConstraint *constraint;
+    if(indexPath.row == JCHomeViewCellIndexSlidableCellTwo){
+        constraint = ((JCHomeConfirmDeleteCell *)cell).const_topViewLeft;
+    }
+
+    return constraint;
+}
+
+- (NSLayoutConstraint *)topContentRightConstraintForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath{
+    NSLayoutConstraint *constraint;
+    if(indexPath.row == JCHomeViewCellIndexSlidableCellTwo){
+        constraint = ((JCHomeConfirmDeleteCell *)cell).const_topViewRight;
+    }
+
+    return constraint;
+}
+
+- (CGFloat)bottomMenuWidthForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath{
+    CGFloat width = 0;
+    
     if([cell isKindOfClass:[JCHomeCell class]]){
-        topContentView = ((JCHomeCell *)cell).bottomMenuView;
+        width = ((JCHomeCell *)cell).bottomMenuView.width;
+    }
+    else if([cell isKindOfClass:[JCHomeConfirmDeleteCell class]]){
+        width = [(JCHomeConfirmDeleteCell *)cell menuWidth];
     }
     
-    return topContentView;
+    return width;
+}
+
+- (void)didResetCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath{
+    if(indexPath.row == JCHomeViewCellIndexSlidableCellTwo){
+        [((JCHomeConfirmDeleteCell *)cell) resetDeleteBtn];
+    }
 }
 
 #pragma mark - RvrBarButtonItem Delegate
@@ -212,7 +265,8 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     switch (btnType) {
         case RightBarButtonTypeMenu:
             [JCUIAlertUtils showConfirmDialog:@"this is title"
-                                       content:@"right menu button clicked"
+                                      content:@"right menu button clicked"
+                                   okBtnTitle:@"Dismiss"
                                     okHandler:nil];
             break;
         case RightBarButtonTypeSearch:

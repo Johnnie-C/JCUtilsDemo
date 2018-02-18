@@ -48,26 +48,42 @@
     else if([_scrollView isKindOfClass:[UITableView class]]){
         indexPath = [(UITableView *)_scrollView indexPathForRowAtPoint:location];
     }
-
+    
     if(_preDraggedCellIndexPath
        && (_preDraggedCellIndexPath.section != indexPath.section || _preDraggedCellIndexPath.row != indexPath.row))
     {
         [self showSlideMenu:NO indexPath:_preDraggedCellIndexPath animat:YES];
     }
-    _preDraggedCellIndexPath = indexPath;
+    
+    if(indexPath){
+        _preDraggedCellIndexPath = indexPath;
+    }
     [self handDrag:panGesture indexPath:indexPath];
 }
 
 - (void)handDrag:(UIPanGestureRecognizer *)panGesture indexPath:(NSIndexPath *)indexPath{
     if(_dragableCellGRDelegate && [_dragableCellGRDelegate canDragCellForIndexPath:indexPath]){
         UIView *cell = [self cellForIndexPath:indexPath];
-        UIView *topContentView = [_dragableCellGRDelegate topContentViewForCell:cell];
-        CGFloat menuWidth = [_dragableCellGRDelegate bottomMenuViewForCell:cell].width;
+        if(!cell){
+            [self resetPredragedCellIfNeed];
+            return;
+        }
+        UIView *topContentView = [_dragableCellGRDelegate topContentViewForCell:cell indexPath:indexPath];
+        CGFloat menuWidth = [_dragableCellGRDelegate bottomMenuWidthForCell:cell indexPath:indexPath];
+        
+        NSLayoutConstraint *const_topContentLeft;
+        if(_dragableCellGRDelegate && [_dragableCellGRDelegate respondsToSelector:@selector(topContentLeftConstraintForCell:indexPath:)]){
+            const_topContentLeft = [_dragableCellGRDelegate topContentLeftConstraintForCell:cell indexPath:indexPath];
+        }
+        
+        NSLayoutConstraint *const_topContentRight;
+        if(_dragableCellGRDelegate && [_dragableCellGRDelegate respondsToSelector:@selector(topContentRightConstraintForCell:indexPath:)]){
+            const_topContentRight = [_dragableCellGRDelegate topContentRightConstraintForCell:cell indexPath:indexPath];
+        }
         
         if(panGesture.state == UIGestureRecognizerStateChanged){
             CGPoint translation = [panGesture translationInView:topContentView.superview];
             CGFloat newX = topContentView.x + translation.x;
-            
             if(newX  < -menuWidth / 2){//add pull effect
                 CGFloat decelerateRate = (topContentView.width - fabs(newX)) / (topContentView.width);
                 newX = topContentView.x + translation.x * decelerateRate;
@@ -76,9 +92,19 @@
                 newX = 0;
             }
             
-            [topContentView setX:newX];
+            if(const_topContentLeft && const_topContentRight){
+                const_topContentLeft.constant = newX;
+                const_topContentRight.constant = -newX;
+            }
+            else{
+                [topContentView setX:newX];
+            }
             
             [panGesture setTranslation:CGPointZero inView:topContentView.superview];
+            
+            if(_dragableCellGRDelegate && [_dragableCellGRDelegate respondsToSelector:@selector(onDragingCell:indexPath:)]){
+                [_dragableCellGRDelegate onDragingCell:cell indexPath:indexPath];
+            }
             
         }
         else if(panGesture.state == UIGestureRecognizerStateEnded || panGesture.state == UIGestureRecognizerStateCancelled){
@@ -92,6 +118,10 @@
             }
             
             [self showSlideMenu:shouldShowMenu indexPath:indexPath animat:YES];
+            
+            if(_dragableCellGRDelegate && [_dragableCellGRDelegate respondsToSelector:@selector(onStopDragingCell:indexPath:)]){
+                [_dragableCellGRDelegate onStopDragingCell:cell indexPath:indexPath];
+            }
         }
     }
 }
@@ -99,10 +129,23 @@
 - (void)showSlideMenu:(BOOL)isOpen indexPath:(NSIndexPath *)indexPath animat:(BOOL)animat{
     [self updateMenuOpenStatusForIndexPath:indexPath isOpen:isOpen];
     UIView *cell = [self cellForIndexPath:indexPath];
-    UIView *topContentView = [_dragableCellGRDelegate topContentViewForCell:cell];
-    CGFloat menuWidth = [_dragableCellGRDelegate bottomMenuViewForCell:cell].width;
+    UIView *topContentView = [_dragableCellGRDelegate topContentViewForCell:cell indexPath:indexPath];
+    CGFloat menuWidth = [_dragableCellGRDelegate bottomMenuWidthForCell:cell indexPath:indexPath];
+    NSLayoutConstraint *const_topContentLeft, *const_topContentRight;
+    if(_dragableCellGRDelegate && [_dragableCellGRDelegate respondsToSelector:@selector(topContentLeftConstraintForCell:indexPath:)]){
+        const_topContentLeft = [_dragableCellGRDelegate topContentLeftConstraintForCell:cell indexPath:indexPath];
+    }
+    
+    if(_dragableCellGRDelegate && [_dragableCellGRDelegate respondsToSelector:@selector(topContentRightConstraintForCell:indexPath:)]){
+        const_topContentRight = [_dragableCellGRDelegate topContentRightConstraintForCell:cell indexPath:indexPath];
+    }
     
     CGFloat newX = isOpen ? -menuWidth : 0;
+    
+    if(const_topContentLeft && const_topContentRight){
+        const_topContentLeft.constant = newX;
+        const_topContentRight.constant = -newX;
+    }
     
     if(animat){
         [UIView animateWithDuration:0.3
@@ -111,13 +154,24 @@
               initialSpringVelocity:2
                             options:UIViewAnimationOptionCurveEaseOut
                          animations:^{
-                             [topContentView setX:newX];
+                             if(const_topContentLeft){
+                                 [cell layoutIfNeeded];
+                             }
+                             else{
+                                 [topContentView setX:newX];
+                             }
                          }
                          completion:nil];
         
     }
     else{
         [topContentView setX:newX];
+    }
+    
+    if(!isOpen){
+        if(_dragableCellGRDelegate && [_dragableCellGRDelegate respondsToSelector:@selector(didResetCell:indexPath:)]){
+            [_dragableCellGRDelegate didResetCell:cell indexPath:indexPath];
+        }
     }
 }
 

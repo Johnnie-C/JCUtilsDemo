@@ -27,6 +27,10 @@
 		9366E7DE200AF4C20073B4D5 /* JCCartBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9366E7DD200AF4C20073B4D5 /* JCCartBarButtonItem.m */; };
 		9366E7E1200B08870073B4D5 /* JCParabolaAnimationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9366E7E0200B08870073B4D5 /* JCParabolaAnimationHandler.m */; };
 		93702EF6202EAEE300AD0AFA /* JCCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 93702EF5202EAEE300AD0AFA /* JCCollectionViewFlowLayout.m */; };
+		937DD5C5203919F400301F64 /* JCUIAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937DD5C3203919F300301F64 /* JCUIAlertController.m */; };
+		937DD5CE20391F5E00301F64 /* JCHomeConfirmDeleteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 937DD5CC20391F5E00301F64 /* JCHomeConfirmDeleteCell.m */; };
+		937DD5CF20391F5E00301F64 /* JCHomeConfirmDeleteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 937DD5CD20391F5E00301F64 /* JCHomeConfirmDeleteCell.xib */; };
+		937DD5D2203921EE00301F64 /* JCHomeBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 937DD5D1203921EE00301F64 /* JCHomeBaseCell.m */; };
 		93906934201EDB3400662440 /* CoreDataDemoItemDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 93906933201EDB3400662440 /* CoreDataDemoItemDAO.m */; };
 		93906937201EDF6400662440 /* CoreDataDemoItemOptionDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 93906936201EDF6400662440 /* CoreDataDemoItemOptionDAO.m */; };
 		9390693C201EE23100662440 /* JCCoreDataDemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9390693A201EE23100662440 /* JCCoreDataDemoCell.m */; };
@@ -150,6 +154,13 @@
 		9366E7E0200B08870073B4D5 /* JCParabolaAnimationHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCParabolaAnimationHandler.m; sourceTree = "<group>"; };
 		93702EF4202EAEE300AD0AFA /* JCCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		93702EF5202EAEE300AD0AFA /* JCCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		937DD5C3203919F300301F64 /* JCUIAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCUIAlertController.m; sourceTree = "<group>"; };
+		937DD5C4203919F400301F64 /* JCUIAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCUIAlertController.h; sourceTree = "<group>"; };
+		937DD5CB20391F5E00301F64 /* JCHomeConfirmDeleteCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCHomeConfirmDeleteCell.h; sourceTree = "<group>"; };
+		937DD5CC20391F5E00301F64 /* JCHomeConfirmDeleteCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCHomeConfirmDeleteCell.m; sourceTree = "<group>"; };
+		937DD5CD20391F5E00301F64 /* JCHomeConfirmDeleteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCHomeConfirmDeleteCell.xib; sourceTree = "<group>"; };
+		937DD5D0203921EE00301F64 /* JCHomeBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCHomeBaseCell.h; sourceTree = "<group>"; };
+		937DD5D1203921EE00301F64 /* JCHomeBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCHomeBaseCell.m; sourceTree = "<group>"; };
 		93906932201EDB3400662440 /* CoreDataDemoItemDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataDemoItemDAO.h; sourceTree = "<group>"; };
 		93906933201EDB3400662440 /* CoreDataDemoItemDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataDemoItemDAO.m; sourceTree = "<group>"; };
 		93906935201EDF6400662440 /* CoreDataDemoItemOptionDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataDemoItemOptionDAO.h; sourceTree = "<group>"; };
@@ -588,6 +599,8 @@
 		93A5DF581FF9BC8B006D35CF /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				937DD5C4203919F400301F64 /* JCUIAlertController.h */,
+				937DD5C3203919F300301F64 /* JCUIAlertController.m */,
 				93A1E3A31FFB4337004D660C /* JCHeaderTabView.h */,
 				93A1E3A11FFB4336004D660C /* JCHeaderTabView.m */,
 				93A1E3A21FFB4336004D660C /* JCHeaderTabView.xib */,
@@ -745,9 +758,14 @@
 		93A5DFC11FFA04EE006D35CF /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				937DD5D0203921EE00301F64 /* JCHomeBaseCell.h */,
+				937DD5D1203921EE00301F64 /* JCHomeBaseCell.m */,
 				93A5DFC21FFA0A1E006D35CF /* JCHomeCell.h */,
 				93A5DFC31FFA0A1E006D35CF /* JCHomeCell.m */,
 				93A5DFC41FFA0A1E006D35CF /* JCHomeCell.xib */,
+				937DD5CB20391F5E00301F64 /* JCHomeConfirmDeleteCell.h */,
+				937DD5CC20391F5E00301F64 /* JCHomeConfirmDeleteCell.m */,
+				937DD5CD20391F5E00301F64 /* JCHomeConfirmDeleteCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -875,6 +893,7 @@
 				93A5DFA11FF9BD41006D35CF /* normal.png in Resources */,
 				93A5DD671FF9AF4E006D35CF /* LaunchScreen.storyboard in Resources */,
 				93A5DFB71FF9D62D006D35CF /* JCHomeViewController.xib in Resources */,
+				937DD5CF20391F5E00301F64 /* JCHomeConfirmDeleteCell.xib in Resources */,
 				93A5DD641FF9AF4E006D35CF /* Assets.xcassets in Resources */,
 				93A5DFCB1FFA1407006D35CF /* JCStretchHeaderViewController.xib in Resources */,
 				93A5DD621FF9AF4E006D35CF /* Main.storyboard in Resources */,
@@ -1063,6 +1082,7 @@
 				93A5DF641FF9BC8B006D35CF /* JCUtils.m in Sources */,
 				9366E7E1200B08870073B4D5 /* JCParabolaAnimationHandler.m in Sources */,
 				93A5DF651FF9BC8B006D35CF /* NSDictionary+JCUtils.m in Sources */,
+				937DD5D2203921EE00301F64 /* JCHomeBaseCell.m in Sources */,
 				93A5DF661FF9BC8B006D35CF /* NSString+JCUtils.m in Sources */,
 				935E7A37201840EC00BB42E2 /* JCTransitionDemoListViewController.m in Sources */,
 				93A1E3A91FFB487F004D660C /* JCTransparentCurveTabDemoViewController.m in Sources */,
@@ -1098,8 +1118,10 @@
 				93A5DF9A1FF9BD41006D35CF /* MTCompoundButton.m in Sources */,
 				930176692001993D002D2265 /* JCJellyEffectDemoViewController.m in Sources */,
 				93A5DFA21FF9BD41006D35CF /* PAPasscodeViewController.m in Sources */,
+				937DD5C5203919F400301F64 /* JCUIAlertController.m in Sources */,
 				93A5DF981FF9BD41006D35CF /* CRToastWindow.m in Sources */,
 				93A5DFA31FF9BD41006D35CF /* Reachability.m in Sources */,
+				937DD5CE20391F5E00301F64 /* JCHomeConfirmDeleteCell.m in Sources */,
 				93A1E3A01FFB0110004D660C /* JCDragableCellGestureRecognizer.m in Sources */,
 				93A5DFCA1FFA1407006D35CF /* JCStretchHeaderViewController.m in Sources */,
 				93477D52201D83D900C8DC39 /* CoreDataDemoItem.m in Sources */,
