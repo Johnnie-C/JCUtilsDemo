@@ -162,11 +162,11 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     NSString *title;
     switch (indexPath.row) {
         case JCHomeViewCellIndexSlidableCell:
-            title = @"This is a slidable cell by using JCDragableCellGestureRecognizer\nDemo drawer bottom menu (Bottm menu stay still).\nNot suitable for cell with transparent background";
+            title = @"This is a slidable cell by using JCDragableCellGestureRecognizer.\nDemo for drawer bottom menu (Bottm menu stay still).";
             break;
             
         case JCHomeViewCellIndexSlidableCellTwo:
-            title = @"This is an another slidable cell\nDemo for opening menu (menu width is changeable).\nSuitable for cell with transparent background";
+            title = @"This is an another slidable cell with confirm delete effect.\nDemo for opening menu (menu opening with dragging). Can be used with transparent background cell";
             break;
             
         case JCHomeViewCellIndexScrollView:

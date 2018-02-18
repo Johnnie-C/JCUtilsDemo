@@ -9,6 +9,27 @@
 
 @protocol JCDragableCellGestureRecognizerDelegate
 
+/**
+ 
+ for style: simple drawer bottom menu
+ @required:
+ - (BOOL)canDragCellForIndexPath:(NSIndexPath *)indexPath;
+ - (CGFloat)bottomMenuWidthForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath;
+ - (UIView *)topContentViewForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath;
+ 
+ for style: opening menu
+ @required:
+ - (BOOL)canDragCellForIndexPath:(NSIndexPath *)indexPath;
+ - (CGFloat)bottomMenuWidthForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath;
+ - (UIView *)topContentViewForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath;
+ - (NSLayoutConstraint *)topContentLeftConstraintForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath;
+ - (NSLayoutConstraint *)topContentRightConstraintForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath;
+ and additional setups are required for cell, check demo for JCHomeConfirmDeleteCell
+
+ 
+ **/
+
+
 @required
 - (BOOL)canDragCellForIndexPath:(NSIndexPath *)indexPath;
 - (UIView *)topContentViewForCell:(UIView *)cell indexPath:(NSIndexPath *)indexPath;
