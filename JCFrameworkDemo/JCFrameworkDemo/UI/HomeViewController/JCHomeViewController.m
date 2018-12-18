@@ -14,6 +14,7 @@
 #import "JCAddCartEffictViewController.h"
 #import "JCCoreDataDemoViewController.h"
 #import "JCAnimatedCollectionViewDemoViewController.h"
+#import "JSFloatingView.h"
 
 #import "JCHomeBaseCell.h"
 #import "JCHomeCell.h"
@@ -36,7 +37,8 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     JCHomeViewCellIndexJellyEffect,
     JCHomeViewCellIndexAddCartEffect,
     JCHomeViewCellIndexCoreData,
-    JCHomeViewCellIndexAnimatedCollectionView
+    JCHomeViewCellIndexAnimatedCollectionView,
+    JCHomeViewCellIndexFloatingView
 };
 
 
@@ -88,7 +90,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
 
 #pragma mark - TableView
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 9;
+    return 10;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -153,6 +155,11 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
         case JCHomeViewCellIndexAnimatedCollectionView:
             [self pushViewController:[JCAnimatedCollectionViewDemoViewController new]];
             break;
+        
+      case JCHomeViewCellIndexFloatingView:
+        [JSFloatingView showFloatingView];
+        break;
+        
             
     }
 }
@@ -196,6 +203,10 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
         case JCHomeViewCellIndexAnimatedCollectionView:
             title = @"Animated CollectionView demo";
             break;
+        
+        case JCHomeViewCellIndexFloatingView:
+        title = @"Floating View demo";
+          break;
     }
     
     return title;

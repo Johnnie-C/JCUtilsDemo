@@ -87,7 +87,7 @@
 
 - (CGFloat)tabbarItemWidth{
     CGFloat width = self.tabBar.width / self.viewControllers.count;
-    if([JCUtils isIPad] || ([JCUtils isIPhoneX] && [JCUtils isLandscape])){
+    if([JCUtils isIPad] || ([JCUtils isFullScreenDevice] && [JCUtils isLandscape])){
         for(UIView *subview in self.tabBar.subviews){
             if([subview isKindOfClass:NSClassFromString(@"UITabBarButton")]){
                 width = subview.width;

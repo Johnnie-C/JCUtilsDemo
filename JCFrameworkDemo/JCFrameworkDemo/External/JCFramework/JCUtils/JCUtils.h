@@ -32,8 +32,11 @@
 #pragma mark - device info
 + (BOOL)isIPad;
 + (BOOL)isIPhone;
-+ (BOOL)isIPhoneX;
-+ (CGFloat)safeMarginForIPhoneX;
++ (BOOL)isFullScreenDevice;
++ (CGFloat)safeMarginTop;
++ (CGFloat)safeMarginBottom;
++ (CGFloat)safeMarginLeft;
++ (CGFloat)safeMarginRight;
 + (BOOL)isPortrait;
 + (BOOL)isLandscape;
 + (BOOL)isLandscapeLeft;

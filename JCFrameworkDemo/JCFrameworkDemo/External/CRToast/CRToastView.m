@@ -164,7 +164,7 @@ static CGFloat CRCenterXForActivityIndicatorWithAlignment(CRToastAccessoryViewAl
     if (self.toast.subtitleText == nil) {
         CGFloat y = statusBarYOffset;
         CGFloat height = CGRectGetHeight(contentFrame);
-        if([JCUtils isIPhoneX] && [JCUtils isPortrait]){
+        if([JCUtils isFullScreenDevice] && [JCUtils isPortrait]){
             y += [[UIApplication sharedApplication] statusBarFrame].size.height;
             height -= [[UIApplication sharedApplication] statusBarFrame].size.height;
         }

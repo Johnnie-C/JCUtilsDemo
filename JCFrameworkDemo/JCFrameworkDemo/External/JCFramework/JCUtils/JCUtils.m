@@ -90,15 +90,52 @@
     return [[UIDevice currentDevice].model hasPrefix:@"iPad"];
 }
 
-+ (BOOL)isIPhoneX{
-    return [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone
-    && ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.width == 812)
-    && SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"11.0");
++ (BOOL)isFullScreenDevice{
+    if (@available(iOS 11.0, *)) {
+        return [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0;
+    } else {
+        return NO;
+    }
 }
 
-+ (CGFloat)safeMarginForIPhoneX{
-    //TODO: get proper size programmatically
-    return 30;
++ (CGFloat)safeMarginTop{
+    CGFloat margin = 0;
+    
+    if (@available(iOS 11.0, *)) {
+        margin = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.top;
+    }
+    
+    return margin;
+}
+
++ (CGFloat)safeMarginBottom{
+    CGFloat margin = 0;
+    
+    if (@available(iOS 11.0, *)) {
+        margin = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom;
+    }
+    
+    return margin;
+}
+
++ (CGFloat)safeMarginLeft{
+    CGFloat margin = 0;
+    
+    if (@available(iOS 11.0, *)) {
+        margin = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.left;
+    }
+    
+    return margin;
+}
+
++ (CGFloat)safeMarginRight{
+    CGFloat margin = 0;
+    
+    if (@available(iOS 11.0, *)) {
+        margin = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.right;
+    }
+    
+    return margin;
 }
 
 + (BOOL)isPortrait{

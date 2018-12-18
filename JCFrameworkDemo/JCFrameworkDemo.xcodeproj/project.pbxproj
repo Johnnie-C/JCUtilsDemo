@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1D05D596F68A50FA8C6B8ACC /* libPods-JCFrameworkDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7651F1EFF321BA651ACE8AFD /* libPods-JCFrameworkDemoTests.a */; };
+		336BEC3721C8A66B00556BB3 /* JSBaseFloatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 336BEC3621C8A66B00556BB3 /* JSBaseFloatingView.m */; };
+		336BEC3A21C8A6A800556BB3 /* JSFloatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 336BEC3921C8A6A800556BB3 /* JSFloatingView.m */; };
 		4542B852BB6CE1245A1E98D1 /* libPods-JCFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */; };
 		51A308779463412C5110544C /* libPods-JCFrameworkDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C5239AFCA53D59A2873D73 /* libPods-JCFrameworkDemoUITests.a */; };
 		930176692001993D002D2265 /* JCJellyEffectDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930176672001993D002D2265 /* JCJellyEffectDemoViewController.m */; };
@@ -124,6 +126,10 @@
 /* Begin PBXFileReference section */
 		26170605C1E6D4C489A2AA7B /* Pods-JCFrameworkDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemoTests/Pods-JCFrameworkDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		32522837E00045A27C44B7B4 /* Pods-JCFrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemo/Pods-JCFrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		336BEC3521C8A66B00556BB3 /* JSBaseFloatingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSBaseFloatingView.h; sourceTree = "<group>"; };
+		336BEC3621C8A66B00556BB3 /* JSBaseFloatingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSBaseFloatingView.m; sourceTree = "<group>"; };
+		336BEC3821C8A6A800556BB3 /* JSFloatingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSFloatingView.h; sourceTree = "<group>"; };
+		336BEC3921C8A6A800556BB3 /* JSFloatingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSFloatingView.m; sourceTree = "<group>"; };
 		454A2EE625BA535674AC670D /* Pods-JCFrameworkDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemoUITests/Pods-JCFrameworkDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7651F1EFF321BA651ACE8AFD /* libPods-JCFrameworkDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -531,6 +537,8 @@
 				93A5DF381FF9BC8B006D35CF /* JCBaseViewController.m */,
 				93A5DF391FF9BC8B006D35CF /* JCNavigationController.h */,
 				93A5DF3A1FF9BC8B006D35CF /* JCNavigationController.m */,
+				336BEC3521C8A66B00556BB3 /* JSBaseFloatingView.h */,
+				336BEC3621C8A66B00556BB3 /* JSBaseFloatingView.m */,
 				93A5DF3B1FF9BC8B006D35CF /* JCTabBarController.h */,
 				93A5DF3C1FF9BC8B006D35CF /* JCTabBarController.m */,
 				93A5DFAA1FF9BF4A006D35CF /* JCButton.h */,
@@ -718,6 +726,8 @@
 				9366E7D4200AE6C90073B4D5 /* JCAddCartEffictViewController.h */,
 				9366E7D5200AE6C90073B4D5 /* JCAddCartEffictViewController.m */,
 				9366E7D6200AE6C90073B4D5 /* JCAddCartEffictViewController.xib */,
+				336BEC3821C8A6A800556BB3 /* JSFloatingView.h */,
+				336BEC3921C8A6A800556BB3 /* JSFloatingView.m */,
 				93A5DFB21FF9D615006D35CF /* HomeViewController */,
 				9366E7DB200AF48D0073B4D5 /* Widget */,
 			);
@@ -1077,6 +1087,7 @@
 				939B1DBA202E9E0900D11956 /* JCAnimatedCollectionViewDemoViewController.m in Sources */,
 				93A5DF6C1FF9BC8B006D35CF /* JCBarButtonItem.m in Sources */,
 				93A5DF971FF9BD41006D35CF /* CRToastViewController.m in Sources */,
+				336BEC3721C8A66B00556BB3 /* JSBaseFloatingView.m in Sources */,
 				93A5DF961FF9BD41006D35CF /* CRToastView.m in Sources */,
 				93906934201EDB3400662440 /* CoreDataDemoItemDAO.m in Sources */,
 				93A5DF641FF9BC8B006D35CF /* JCUtils.m in Sources */,
@@ -1096,6 +1107,7 @@
 				93A5DF991FF9BD41006D35CF /* MTViewHighlighter.m in Sources */,
 				93A5DF9B1FF9BD41006D35CF /* UIView+TouchHighlighting.m in Sources */,
 				93A5DF681FF9BC8B006D35CF /* UIFont+JCUtils.m in Sources */,
+				336BEC3A21C8A6A800556BB3 /* JSFloatingView.m in Sources */,
 				93A5DF9D1FF9BD41006D35CF /* NumericKeypadTextField.m in Sources */,
 				93A5DF9F1FF9BD41006D35CF /* NumericKeypadViewController.m in Sources */,
 				93906937201EDF6400662440 /* CoreDataDemoItemOptionDAO.m in Sources */,
