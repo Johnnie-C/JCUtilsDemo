@@ -86,7 +86,7 @@
 		93A5DFA21FF9BD41006D35CF /* PAPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DF901FF9BD41006D35CF /* PAPasscodeViewController.m */; };
 		93A5DFA31FF9BD41006D35CF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DF931FF9BD41006D35CF /* Reachability.m */; };
 		93A5DFA51FF9BD82006D35CF /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93A5DFA41FF9BD82006D35CF /* ReadMe.txt */; };
-		93A5DFA71FF9BE29006D35CF /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93A5DFA61FF9BE29006D35CF /* ReadMe.txt */; };
+		93A5DFA71FF9BE29006D35CF /* PAPasscodeReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93A5DFA61FF9BE29006D35CF /* PAPasscodeReadMe.txt */; };
 		93A5DFAE1FF9BF4A006D35CF /* JCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DFAB1FF9BF4A006D35CF /* JCLabel.m */; };
 		93A5DFAF1FF9BF4A006D35CF /* JCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DFAC1FF9BF4A006D35CF /* JCTextField.m */; };
 		93A5DFB01FF9BF4A006D35CF /* JCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DFAD1FF9BF4A006D35CF /* JCButton.m */; };
@@ -264,7 +264,7 @@
 		93A5DF921FF9BD41006D35CF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		93A5DF931FF9BD41006D35CF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		93A5DFA41FF9BD82006D35CF /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
-		93A5DFA61FF9BE29006D35CF /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		93A5DFA61FF9BE29006D35CF /* PAPasscodeReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PAPasscodeReadMe.txt; sourceTree = "<group>"; };
 		93A5DFA81FF9BF4A006D35CF /* JCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCLabel.h; sourceTree = "<group>"; };
 		93A5DFA91FF9BF4A006D35CF /* JCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCTextField.h; sourceTree = "<group>"; };
 		93A5DFAA1FF9BF4A006D35CF /* JCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCButton.h; sourceTree = "<group>"; };
@@ -655,7 +655,7 @@
 		93A5DF821FF9BD41006D35CF /* PAPasscode */ = {
 			isa = PBXGroup;
 			children = (
-				93A5DFA61FF9BE29006D35CF /* ReadMe.txt */,
+				93A5DFA61FF9BE29006D35CF /* PAPasscodeReadMe.txt */,
 				93A5DF831FF9BD41006D35CF /* NumPadTextField */,
 				93A5DF8F1FF9BD41006D35CF /* PAPasscodeViewController.h */,
 				93A5DF901FF9BD41006D35CF /* PAPasscodeViewController.m */,
@@ -904,7 +904,7 @@
 				93A5DFCD1FFA18CF006D35CF /* demo_image.jpeg in Resources */,
 				93A5DFA51FF9BD82006D35CF /* ReadMe.txt in Resources */,
 				9366E7DA200AE8190073B4D5 /* nav_cart@3x.png in Resources */,
-				93A5DFA71FF9BE29006D35CF /* ReadMe.txt in Resources */,
+				93A5DFA71FF9BE29006D35CF /* PAPasscodeReadMe.txt in Resources */,
 				93A1E3AA1FFB487F004D660C /* JCTransparentCurveTabDemoViewController.xib in Resources */,
 				93A5DFBD1FF9DA03006D35CF /* ic_back@3x.png in Resources */,
 				93A5DFA01FF9BD41006D35CF /* highlight.png in Resources */,
