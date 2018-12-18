@@ -26,8 +26,6 @@
     UIImageView *iv = [UIImageView new];
     [self.view addSubview:iv];
     [iv fillInSuperView];
-    iv.clipsToBounds = YES;
-    iv.layer.cornerRadius = 10;
     iv.image = [UIImage imageNamed:@"demo_image.jpeg"];
 }
 
