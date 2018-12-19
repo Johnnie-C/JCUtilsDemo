@@ -6,6 +6,7 @@ project ‘JCFrameworkDemo’
 def all_pods
     pod "MagicalRecord"
     pod 'JCFramework', :path => '../JCFramework'
+    pod 'JCFloatingView', :path => '../JCFloatingView'
 end
 
 target :'JCFrameworkDemo' do

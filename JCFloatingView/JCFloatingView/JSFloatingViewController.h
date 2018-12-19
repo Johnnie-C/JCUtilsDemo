@@ -1,5 +1,5 @@
 //
-//  JSBaseFloatingViewController.h
+//  JSFloatingViewController.h
 //  JCFrameworkDemo
 //
 //  Created by Johnnie Cheng on 19/12/18.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface JSBaseFloatingViewController : UIViewController
+@interface JSFloatingViewController : UIViewController
 
 @property(nonatomic, readonly) BOOL isShowing;
 

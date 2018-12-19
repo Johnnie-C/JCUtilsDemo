@@ -7,6 +7,7 @@
 //
 
 #import "JSFloatingView.h"
+#import <JCFramework/JCFramework.h>
 
 @implementation JSFloatingView
 

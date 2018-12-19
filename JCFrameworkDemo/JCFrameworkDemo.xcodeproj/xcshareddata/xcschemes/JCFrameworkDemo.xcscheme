@@ -28,6 +28,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3317D06921CB0BC1000D87FE"
+               BuildableName = "JCFloatingView.framework"
+               BlueprintName = "JCFloatingView"
+               ReferencedContainer = "container:../JCFloatingView/JCFloatingView.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "93A5DD561FF9AF4E006D35CF"
                BuildableName = "JCFrameworkDemo.app"
                BlueprintName = "JCFrameworkDemo"

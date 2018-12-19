@@ -63,8 +63,6 @@
 		3317D00021CAF765000D87FE /* JCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFC021CAF765000D87FE /* JCBaseViewController.m */; };
 		3317D00121CAF765000D87FE /* JCButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFC121CAF765000D87FE /* JCButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3317D00221CAF765000D87FE /* JCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFC221CAF765000D87FE /* JCButton.m */; };
-		3317D00321CAF765000D87FE /* JCFloatingWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFC321CAF765000D87FE /* JCFloatingWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317D00421CAF765000D87FE /* JCFloatingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFC421CAF765000D87FE /* JCFloatingWindow.m */; };
 		3317D00521CAF765000D87FE /* JCLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFC521CAF765000D87FE /* JCLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3317D00621CAF765000D87FE /* JCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFC621CAF765000D87FE /* JCLabel.m */; };
 		3317D00721CAF765000D87FE /* JCNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFC721CAF765000D87FE /* JCNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -75,9 +73,6 @@
 		3317D00C21CAF765000D87FE /* JCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFCC21CAF765000D87FE /* JCTabBarController.m */; };
 		3317D00D21CAF765000D87FE /* JCTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFCD21CAF765000D87FE /* JCTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3317D00E21CAF765000D87FE /* JCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFCE21CAF765000D87FE /* JCTextField.m */; };
-		3317D00F21CAF765000D87FE /* JSBaseFloatingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFCF21CAF765000D87FE /* JSBaseFloatingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317D01021CAF765000D87FE /* JSBaseFloatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFD021CAF765000D87FE /* JSBaseFloatingViewController.m */; };
-		3317D01121CAF765000D87FE /* JSBaseFloatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3317CFD121CAF765000D87FE /* JSBaseFloatingViewController.xib */; };
 		3317D01221CAF765000D87FE /* JCBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFD321CAF765000D87FE /* JCBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3317D01321CAF765000D87FE /* JCBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFD421CAF765000D87FE /* JCBarButtonItem.m */; };
 		3317D01421CAF765000D87FE /* JCErrorTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFD521CAF765000D87FE /* JCErrorTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -176,8 +171,6 @@
 		3317CFC021CAF765000D87FE /* JCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCBaseViewController.m; sourceTree = "<group>"; };
 		3317CFC121CAF765000D87FE /* JCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCButton.h; sourceTree = "<group>"; };
 		3317CFC221CAF765000D87FE /* JCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCButton.m; sourceTree = "<group>"; };
-		3317CFC321CAF765000D87FE /* JCFloatingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCFloatingWindow.h; sourceTree = "<group>"; };
-		3317CFC421CAF765000D87FE /* JCFloatingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCFloatingWindow.m; sourceTree = "<group>"; };
 		3317CFC521CAF765000D87FE /* JCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCLabel.h; sourceTree = "<group>"; };
 		3317CFC621CAF765000D87FE /* JCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCLabel.m; sourceTree = "<group>"; };
 		3317CFC721CAF765000D87FE /* JCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCNavigationController.h; sourceTree = "<group>"; };
@@ -188,9 +181,6 @@
 		3317CFCC21CAF765000D87FE /* JCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCTabBarController.m; sourceTree = "<group>"; };
 		3317CFCD21CAF765000D87FE /* JCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCTextField.h; sourceTree = "<group>"; };
 		3317CFCE21CAF765000D87FE /* JCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCTextField.m; sourceTree = "<group>"; };
-		3317CFCF21CAF765000D87FE /* JSBaseFloatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseFloatingViewController.h; sourceTree = "<group>"; };
-		3317CFD021CAF765000D87FE /* JSBaseFloatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseFloatingViewController.m; sourceTree = "<group>"; };
-		3317CFD121CAF765000D87FE /* JSBaseFloatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSBaseFloatingViewController.xib; sourceTree = "<group>"; };
 		3317CFD321CAF765000D87FE /* JCBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCBarButtonItem.h; sourceTree = "<group>"; };
 		3317CFD421CAF765000D87FE /* JCBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCBarButtonItem.m; sourceTree = "<group>"; };
 		3317CFD521CAF765000D87FE /* JCErrorTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCErrorTextField.h; sourceTree = "<group>"; };
@@ -245,13 +235,13 @@
 			isa = PBXGroup;
 			children = (
 				3317D04421CB0327000D87FE /* JCFramework.podspec */,
+				3317CF4D21CAF6B2000D87FE /* JCFramework */,
 				3317D05221CB08F4000D87FE /* Resource */,
 				3317D02D21CAF908000D87FE /* SAMKeychain */,
 				3317CF6A21CAF758000D87FE /* CRToast */,
 				3317CF7A21CAF758000D87FE /* PAPasscode */,
 				3317CF7721CAF758000D87FE /* Reachability */,
 				3317CF6221CAF758000D87FE /* UIView+TouchHighlighting */,
-				3317CF4D21CAF6B2000D87FE /* JCFramework */,
 				3317CF4C21CAF6B2000D87FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -394,8 +384,6 @@
 				3317CFC021CAF765000D87FE /* JCBaseViewController.m */,
 				3317CFC121CAF765000D87FE /* JCButton.h */,
 				3317CFC221CAF765000D87FE /* JCButton.m */,
-				3317CFC321CAF765000D87FE /* JCFloatingWindow.h */,
-				3317CFC421CAF765000D87FE /* JCFloatingWindow.m */,
 				3317CFC521CAF765000D87FE /* JCLabel.h */,
 				3317CFC621CAF765000D87FE /* JCLabel.m */,
 				3317CFC721CAF765000D87FE /* JCNavigationController.h */,
@@ -404,9 +392,6 @@
 				3317CFCC21CAF765000D87FE /* JCTabBarController.m */,
 				3317CFCD21CAF765000D87FE /* JCTextField.h */,
 				3317CFCE21CAF765000D87FE /* JCTextField.m */,
-				3317CFCF21CAF765000D87FE /* JSBaseFloatingViewController.h */,
-				3317CFD021CAF765000D87FE /* JSBaseFloatingViewController.m */,
-				3317CFD121CAF765000D87FE /* JSBaseFloatingViewController.xib */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -516,7 +501,6 @@
 				3317CF8A21CAF758000D87FE /* MTViewHighlighter.h in Headers */,
 				3317D01D21CAF765000D87FE /* JCLocationHelper.h in Headers */,
 				3317CFA921CAF758000D87FE /* PAPasscodeViewController.h in Headers */,
-				3317D00F21CAF765000D87FE /* JSBaseFloatingViewController.h in Headers */,
 				3317CFFB21CAF765000D87FE /* UINavigationBar+JCUtils.h in Headers */,
 				3317CFA021CAF758000D87FE /* NumericKeypadTextField.h in Headers */,
 				3317D00B21CAF765000D87FE /* JCTabBarController.h in Headers */,
@@ -535,7 +519,6 @@
 				3317CFA221CAF758000D87FE /* NumericKeypadView.h in Headers */,
 				3317CF9221CAF758000D87FE /* CRToastLayoutHelpers.h in Headers */,
 				3317CFF921CAF765000D87FE /* UIImage+JCUtils.h in Headers */,
-				3317D00321CAF765000D87FE /* JCFloatingWindow.h in Headers */,
 				3317CF5021CAF6B2000D87FE /* JCFramework.h in Headers */,
 				3317D03421CAF909000D87FE /* SAMKeychain.h in Headers */,
 				3317D02521CAF765000D87FE /* JCScrollableViewKeyboardHandler.h in Headers */,
@@ -620,7 +603,6 @@
 				3317D05B21CB08F4000D87FE /* ic_back@3x.png in Resources */,
 				3317D05A21CB08F4000D87FE /* demo_image.jpeg in Resources */,
 				3317D04521CB0327000D87FE /* JCFramework.podspec in Resources */,
-				3317D01121CAF765000D87FE /* JSBaseFloatingViewController.xib in Resources */,
 				3317CFA621CAF758000D87FE /* highlight.png in Resources */,
 				3317D05F21CB08F4000D87FE /* search_white@3x.png in Resources */,
 				3317CF9B21CAF758000D87FE /* ReadMe.txt in Resources */,
@@ -651,7 +633,6 @@
 				3317CFA521CAF758000D87FE /* NumericKeypadViewController.m in Sources */,
 				3317D00621CAF765000D87FE /* JCLabel.m in Sources */,
 				3317CF9121CAF758000D87FE /* CRToast.m in Sources */,
-				3317D01021CAF765000D87FE /* JSBaseFloatingViewController.m in Sources */,
 				3317CFEE21CAF765000D87FE /* JCUIAlertUtils.m in Sources */,
 				3317CF8B21CAF758000D87FE /* MTViewHighlighter.m in Sources */,
 				3317D00221CAF765000D87FE /* JCButton.m in Sources */,
@@ -659,7 +640,6 @@
 				3317D00C21CAF765000D87FE /* JCTabBarController.m in Sources */,
 				3317D00821CAF765000D87FE /* JCNavigationController.m in Sources */,
 				3317D02021CAF765000D87FE /* JCDragableCellGestureRecognizer.m in Sources */,
-				3317D00421CAF765000D87FE /* JCFloatingWindow.m in Sources */,
 				3317D01C21CAF765000D87FE /* JCAuthenticationHanlder.m in Sources */,
 				3317CFF821CAF765000D87FE /* UIFont+JCUtils.m in Sources */,
 				3317CF9A21CAF758000D87FE /* CRToastWindow.m in Sources */,

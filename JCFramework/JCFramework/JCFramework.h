@@ -18,12 +18,9 @@ FOUNDATION_EXPORT const unsigned char JCUtilsVersionString[];
 
 
 #import "JCBaseViewController.h"
-#import "JSBaseFloatingViewController.h"
-
 #import "PAPasscodeViewController.h"
 #import "UIView+TouchHighlighting.h"
 #import "JCButton.h"
-#import "JCFloatingWindow.h"
 #import "JCLabel.h"
 #import "JCNavigationController.h"
 #import "JCPanGestureRecognizer.h"

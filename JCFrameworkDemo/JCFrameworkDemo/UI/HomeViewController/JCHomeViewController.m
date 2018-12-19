@@ -19,6 +19,7 @@
 #import "JCHomeBaseCell.h"
 #import "JCHomeCell.h"
 #import "JCHomeConfirmDeleteCell.h"
+#import <JCFloatingView/JCFloatingView.h>
 
 
 NSString *const JC_HOME_CELL_IDENTIFIER = @"jcHomeCellIdentifier";

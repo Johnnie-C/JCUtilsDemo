@@ -1,10 +1,16 @@
 PODS:
+  - JCFloatingView (1.0.0):
+    - JCFloatingView/JCFramework (= 1.0.0)
+    - JCFramework
+  - JCFloatingView/JCFramework (1.0.0):
+    - JCFramework
   - JCFramework (1.0.0)
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
 
 DEPENDENCIES:
+  - JCFloatingView (from `../JCFloatingView`)
   - JCFramework (from `../JCFramework`)
   - MagicalRecord
 
@@ -13,13 +19,16 @@ SPEC REPOS:
     - MagicalRecord
 
 EXTERNAL SOURCES:
+  JCFloatingView:
+    :path: "../JCFloatingView"
   JCFramework:
     :path: "../JCFramework"
 
 SPEC CHECKSUMS:
-  JCFramework: 36e1e8c248d2b79d8bace7f07a24544c54a0b19a
+  JCFloatingView: 1b94c07258c82de54b190867745dee8129f423cc
+  JCFramework: 1eabb6122b81e3a16bc45d0060145a55ec21bfae
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
 
-PODFILE CHECKSUM: dd4fd0e093cb94b0c38dcfb6dbad19b0b948d7fb
+PODFILE CHECKSUM: bbf18569e737fece719cd10a762a773077c79c6e
 
 COCOAPODS: 1.5.3

@@ -1,17 +1,14 @@
 //
-//  JSBaseFloatingViewController.m
+//  JSFloatingViewController.m
 //  JCFrameworkDemo
 //
 //  Created by Johnnie Cheng on 19/12/18.
 //  Copyright © 2018 Johnnie Cheng. All rights reserved.
 //
 
-#import "JSBaseFloatingViewController.h"
+#import "JSFloatingViewController.h"
 #import "JCFloatingWindow.h"
-#import "JCPanGestureRecognizer.h"
-#import "UIView+JCUtils.h"
-#import "UIColor+JCUtils.h"
-#import "JCUtils.h"
+#import <JCFramework/JCFramework.h>
 
 
 typedef NS_ENUM(NSInteger, JCFoatingViewCloestEdge){
@@ -25,7 +22,7 @@ typedef NS_ENUM(NSInteger, JCFoatingViewCloestEdge){
 
 
 
-@interface JSBaseFloatingViewController ()
+@interface JSFloatingViewController ()
 
 @property (nonatomic, strong) JCFloatingWindow *window;
 @property (nonatomic, assign) JCFoatingViewCloestEdge cloestEdge;
@@ -51,7 +48,7 @@ typedef NS_ENUM(NSInteger, JCFoatingViewCloestEdge){
 
 
 
-@implementation JSBaseFloatingViewController
+@implementation JSFloatingViewController
 
 - (void)showFloatingView{
     [self setupFloatingViewIfNeed];
@@ -71,7 +68,7 @@ typedef NS_ENUM(NSInteger, JCFoatingViewCloestEdge){
 }
 
 - (instancetype)init{
-    if (self = [self initWithNibName:NSStringFromClass([JSBaseFloatingViewController class]) bundle:[JCUtils frameworkBundle]]){
+    if (self = [self initWithNibName:NSStringFromClass([JSFloatingViewController class]) bundle:[NSBundle bundleForClass:[JSFloatingViewController class]]]){
         _closeViewHeight = 120;
         _window = [[JCFloatingWindow alloc] initWithFrame: CGRectMake(0, 0, [JCUtils screenWidth], [JCUtils screenHeight])];
         _window.rootViewController = self;
@@ -138,6 +135,7 @@ typedef NS_ENUM(NSInteger, JCFoatingViewCloestEdge){
     _ivCloseBG.backgroundColor = [[UIColor cancelRed] colorWithAlphaComponent:0.8];
     _ivCloseBG.clipsToBounds = YES;
     _ivCloseBG.layer.cornerRadius = _ivCloseBG.height / 2;
+    _ivClose.image = [UIImage imageNamed:@"ic_close" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
 }
 
 - (void)handleFloatingViewRotation{
