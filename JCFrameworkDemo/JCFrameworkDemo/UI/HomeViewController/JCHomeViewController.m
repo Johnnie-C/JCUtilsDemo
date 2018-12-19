@@ -47,6 +47,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
 
 @interface JCHomeViewController ()<UITableViewDataSource, UITableViewDelegate, JCDragableCellGestureRecognizerDelegate>
 
+@property (strong, nonatomic) JSFloatingView *floatingView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) JCDragableCellGestureRecognizer *dragCellpanGesture;
 
@@ -156,11 +157,12 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
             [self pushViewController:[JCAnimatedCollectionViewDemoViewController new]];
             break;
         
-      case JCHomeViewCellIndexFloatingView:
-        [JSFloatingView showFloatingView];
-        break;
-        
-            
+        case JCHomeViewCellIndexFloatingView:
+            if(!_floatingView){
+                _floatingView = [JSFloatingView new];
+            }
+            _floatingView.isShowing ? [_floatingView hideFloatingView] : [_floatingView showFloatingView];
+            break;
     }
 }
 

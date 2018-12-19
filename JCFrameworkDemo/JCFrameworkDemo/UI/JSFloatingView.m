@@ -12,21 +12,18 @@
 
 @implementation JSFloatingView
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-  
+- (UIView *)createFloatingView {
     CGFloat width = 80;
     CGFloat height = 110;
+    CGFloat x = [JCUtils screenWidth] - width - [JCUtils safeMarginRight];
+    CGFloat y = [JCUtils screenHeight] - height - [JCUtils safeMarginBottom];
     
-    [self.view setX:[JCUtils screenWidth] - width - [JCUtils safeMarginRight]];
-    [self.view setY:[JCUtils screenHeight] - height - [JCUtils safeMarginBottom]];
-    [self.view setWidth:width];
-    [self.view setHeight:height];
-    
-    UIImageView *iv = [UIImageView new];
-    [self.view addSubview:iv];
-    [iv fillInSuperView];
+    UIImageView *iv = [[UIImageView alloc] initWithFrame:CGRectMake(x, y, width, height)];
+    iv.clipsToBounds = YES;
+    iv.layer.cornerRadius = 10;
     iv.image = [UIImage imageNamed:@"demo_image.jpeg"];
+    
+    return iv;
 }
 
 @end

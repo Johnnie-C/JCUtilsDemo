@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1D05D596F68A50FA8C6B8ACC /* libPods-JCFrameworkDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7651F1EFF321BA651ACE8AFD /* libPods-JCFrameworkDemoTests.a */; };
-		336BEC3721C8A66B00556BB3 /* JSBaseFloatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 336BEC3621C8A66B00556BB3 /* JSBaseFloatingView.m */; };
+		3317CE5321C9A2FB000D87FE /* JCFloatingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CE5221C9A2FB000D87FE /* JCFloatingWindow.m */; };
+		3317CE5721C9A9BA000D87FE /* JSBaseFloatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CE5521C9A9BA000D87FE /* JSBaseFloatingViewController.m */; };
+		3317CE5821C9A9BA000D87FE /* JSBaseFloatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3317CE5621C9A9BA000D87FE /* JSBaseFloatingViewController.xib */; };
+		3317CE5B21C9C387000D87FE /* JCPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CE5A21C9C387000D87FE /* JCPanGestureRecognizer.m */; };
 		336BEC3A21C8A6A800556BB3 /* JSFloatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 336BEC3921C8A6A800556BB3 /* JSFloatingView.m */; };
 		4542B852BB6CE1245A1E98D1 /* libPods-JCFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */; };
 		51A308779463412C5110544C /* libPods-JCFrameworkDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C5239AFCA53D59A2873D73 /* libPods-JCFrameworkDemoUITests.a */; };
@@ -126,8 +129,13 @@
 /* Begin PBXFileReference section */
 		26170605C1E6D4C489A2AA7B /* Pods-JCFrameworkDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemoTests/Pods-JCFrameworkDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		32522837E00045A27C44B7B4 /* Pods-JCFrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemo/Pods-JCFrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		336BEC3521C8A66B00556BB3 /* JSBaseFloatingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSBaseFloatingView.h; sourceTree = "<group>"; };
-		336BEC3621C8A66B00556BB3 /* JSBaseFloatingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSBaseFloatingView.m; sourceTree = "<group>"; };
+		3317CE5121C9A2FB000D87FE /* JCFloatingWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCFloatingWindow.h; sourceTree = "<group>"; };
+		3317CE5221C9A2FB000D87FE /* JCFloatingWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCFloatingWindow.m; sourceTree = "<group>"; };
+		3317CE5421C9A9BA000D87FE /* JSBaseFloatingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSBaseFloatingViewController.h; sourceTree = "<group>"; };
+		3317CE5521C9A9BA000D87FE /* JSBaseFloatingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSBaseFloatingViewController.m; sourceTree = "<group>"; };
+		3317CE5621C9A9BA000D87FE /* JSBaseFloatingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JSBaseFloatingViewController.xib; sourceTree = "<group>"; };
+		3317CE5921C9C387000D87FE /* JCPanGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCPanGestureRecognizer.h; sourceTree = "<group>"; };
+		3317CE5A21C9C387000D87FE /* JCPanGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCPanGestureRecognizer.m; sourceTree = "<group>"; };
 		336BEC3821C8A6A800556BB3 /* JSFloatingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSFloatingView.h; sourceTree = "<group>"; };
 		336BEC3921C8A6A800556BB3 /* JSFloatingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSFloatingView.m; sourceTree = "<group>"; };
 		454A2EE625BA535674AC670D /* Pods-JCFrameworkDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemoUITests/Pods-JCFrameworkDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -537,8 +545,6 @@
 				93A5DF381FF9BC8B006D35CF /* JCBaseViewController.m */,
 				93A5DF391FF9BC8B006D35CF /* JCNavigationController.h */,
 				93A5DF3A1FF9BC8B006D35CF /* JCNavigationController.m */,
-				336BEC3521C8A66B00556BB3 /* JSBaseFloatingView.h */,
-				336BEC3621C8A66B00556BB3 /* JSBaseFloatingView.m */,
 				93A5DF3B1FF9BC8B006D35CF /* JCTabBarController.h */,
 				93A5DF3C1FF9BC8B006D35CF /* JCTabBarController.m */,
 				93A5DFAA1FF9BF4A006D35CF /* JCButton.h */,
@@ -547,6 +553,13 @@
 				93A5DFAB1FF9BF4A006D35CF /* JCLabel.m */,
 				93A5DFA91FF9BF4A006D35CF /* JCTextField.h */,
 				93A5DFAC1FF9BF4A006D35CF /* JCTextField.m */,
+				3317CE5121C9A2FB000D87FE /* JCFloatingWindow.h */,
+				3317CE5221C9A2FB000D87FE /* JCFloatingWindow.m */,
+				3317CE5421C9A9BA000D87FE /* JSBaseFloatingViewController.h */,
+				3317CE5521C9A9BA000D87FE /* JSBaseFloatingViewController.m */,
+				3317CE5621C9A9BA000D87FE /* JSBaseFloatingViewController.xib */,
+				3317CE5921C9C387000D87FE /* JCPanGestureRecognizer.h */,
+				3317CE5A21C9C387000D87FE /* JCPanGestureRecognizer.m */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -906,6 +919,7 @@
 				937DD5CF20391F5E00301F64 /* JCHomeConfirmDeleteCell.xib in Resources */,
 				93A5DD641FF9AF4E006D35CF /* Assets.xcassets in Resources */,
 				93A5DFCB1FFA1407006D35CF /* JCStretchHeaderViewController.xib in Resources */,
+				3317CE5821C9A9BA000D87FE /* JSBaseFloatingViewController.xib in Resources */,
 				93A5DD621FF9AF4E006D35CF /* Main.storyboard in Resources */,
 				93A5DF9C1FF9BD41006D35CF /* NumericKeypad.xib in Resources */,
 				9390693D201EE23100662440 /* JCCoreDataDemoCell.xib in Resources */,
@@ -1087,7 +1101,6 @@
 				939B1DBA202E9E0900D11956 /* JCAnimatedCollectionViewDemoViewController.m in Sources */,
 				93A5DF6C1FF9BC8B006D35CF /* JCBarButtonItem.m in Sources */,
 				93A5DF971FF9BD41006D35CF /* CRToastViewController.m in Sources */,
-				336BEC3721C8A66B00556BB3 /* JSBaseFloatingView.m in Sources */,
 				93A5DF961FF9BD41006D35CF /* CRToastView.m in Sources */,
 				93906934201EDB3400662440 /* CoreDataDemoItemDAO.m in Sources */,
 				93A5DF641FF9BC8B006D35CF /* JCUtils.m in Sources */,
@@ -1131,12 +1144,14 @@
 				930176692001993D002D2265 /* JCJellyEffectDemoViewController.m in Sources */,
 				93A5DFA21FF9BD41006D35CF /* PAPasscodeViewController.m in Sources */,
 				937DD5C5203919F400301F64 /* JCUIAlertController.m in Sources */,
+				3317CE5721C9A9BA000D87FE /* JSBaseFloatingViewController.m in Sources */,
 				93A5DF981FF9BD41006D35CF /* CRToastWindow.m in Sources */,
 				93A5DFA31FF9BD41006D35CF /* Reachability.m in Sources */,
 				937DD5CE20391F5E00301F64 /* JCHomeConfirmDeleteCell.m in Sources */,
 				93A1E3A01FFB0110004D660C /* JCDragableCellGestureRecognizer.m in Sources */,
 				93A5DFCA1FFA1407006D35CF /* JCStretchHeaderViewController.m in Sources */,
 				93477D52201D83D900C8DC39 /* CoreDataDemoItem.m in Sources */,
+				3317CE5321C9A2FB000D87FE /* JCFloatingWindow.m in Sources */,
 				934164801FFC7431007B1DCF /* JCAuthenticationHanlder.m in Sources */,
 				9366E7D7200AE6C90073B4D5 /* JCAddCartEffictViewController.m in Sources */,
 				93A5DF5F1FF9BC8B006D35CF /* JCTabBarController.m in Sources */,
@@ -1145,6 +1160,7 @@
 				93A5DF951FF9BD41006D35CF /* CRToastManager.m in Sources */,
 				93A5DFAF1FF9BF4A006D35CF /* JCTextField.m in Sources */,
 				93A5DF631FF9BC8B006D35CF /* JCUIAlertUtils.m in Sources */,
+				3317CE5B21C9C387000D87FE /* JCPanGestureRecognizer.m in Sources */,
 				93A5DF5E1FF9BC8B006D35CF /* JCNavigationController.m in Sources */,
 				93A5DD5C1FF9AF4E006D35CF /* AppDelegate.m in Sources */,
 				93A5DFC51FFA0A1E006D35CF /* JCHomeCell.m in Sources */,
@@ -1312,6 +1328,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5KWW36V7AA;
 				INFOPLIST_FILE = JCFrameworkDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1327,6 +1344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5KWW36V7AA;
 				INFOPLIST_FILE = JCFrameworkDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

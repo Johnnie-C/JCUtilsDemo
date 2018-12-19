@@ -6,9 +6,9 @@
 //  Copyright © 2018 Johnnie Cheng. All rights reserved.
 //
 
-#import "JSBaseFloatingView.h"
+#import "JSBaseFloatingViewController.h"
 
-@interface JSFloatingView : JSBaseFloatingView
+@interface JSFloatingView : JSBaseFloatingViewController
 
 @end
 
