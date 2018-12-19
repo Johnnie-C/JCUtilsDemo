@@ -1,39 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSBaseFloatingViewController">
             <connections>
+                <outlet property="closeBaseView" destination="F3E-eL-l95" id="tcT-nc-3aE"/>
+                <outlet property="const_closeViewHeight" destination="PpL-Nx-lRy" id="ymS-Zs-Nc7"/>
+                <outlet property="const_ivCloseHeight" destination="bIs-gO-hNx" id="cV2-b6-hiO"/>
+                <outlet property="const_ivCloseWidth" destination="geD-9v-R0s" id="2Lw-uo-hjo"/>
+                <outlet property="ivClose" destination="76O-eZ-RFR" id="r3W-bh-WG4"/>
+                <outlet property="ivCloseBG" destination="ddS-1N-5no" id="VeS-IB-cv5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F3E-eL-l95">
-                    <rect key="frame" x="0.0" y="547" width="375" height="120"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="frame" x="0.0" y="692" width="375" height="120"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ddS-1N-5no">
+                            <rect key="frame" x="167.66666666666666" y="30" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="HSd-Ag-exF"/>
+                                <constraint firstAttribute="width" constant="40" id="N8r-un-KIr"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_close.png" translatesAutoresizingMaskIntoConstraints="NO" id="76O-eZ-RFR">
+                            <rect key="frame" x="177.66666666666666" y="40" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="bIs-gO-hNx"/>
+                                <constraint firstAttribute="width" constant="20" id="geD-9v-R0s"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="120" id="PpL-Nx-lRy"/>
+                        <constraint firstItem="ddS-1N-5no" firstAttribute="top" secondItem="76O-eZ-RFR" secondAttribute="top" constant="-10" id="4Ut-2y-fTp"/>
+                        <constraint firstItem="76O-eZ-RFR" firstAttribute="top" secondItem="F3E-eL-l95" secondAttribute="top" constant="40" id="HX0-Q1-Gt6"/>
+                        <constraint firstItem="ddS-1N-5no" firstAttribute="centerX" secondItem="F3E-eL-l95" secondAttribute="centerX" id="JbO-Nt-RXK"/>
+                        <constraint firstAttribute="height" constant="120" placeholder="YES" id="OPV-vy-bbE"/>
+                        <constraint firstAttribute="height" priority="999" id="PpL-Nx-lRy"/>
+                        <constraint firstItem="76O-eZ-RFR" firstAttribute="centerX" secondItem="F3E-eL-l95" secondAttribute="centerX" id="aS2-B4-Lws"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="F3E-eL-l95" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="DFr-w4-dS1"/>
                 <constraint firstItem="F3E-eL-l95" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Lqe-eE-gep"/>
+                <constraint firstAttribute="bottom" secondItem="F3E-eL-l95" secondAttribute="bottom" id="gKT-wG-9s0"/>
                 <constraint firstItem="F3E-eL-l95" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u1c-qw-t8c"/>
             </constraints>
-            <point key="canvasLocation" x="138.40000000000001" y="154.27286356821591"/>
+            <point key="canvasLocation" x="138.40000000000001" y="153.69458128078819"/>
         </view>
     </objects>
+    <resources>
+        <image name="ic_close.png" width="55" height="55"/>
+    </resources>
 </document>

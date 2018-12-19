@@ -43,7 +43,7 @@
 }
 
 + (UIViewController *)rootViewController{
-    return [[[UIApplication sharedApplication] keyWindow] rootViewController];
+    return [[[UIApplication sharedApplication] windows][0] rootViewController];
 }
 
 + (NSString *)getMimeTypeFromFileName:(NSString *)filename{

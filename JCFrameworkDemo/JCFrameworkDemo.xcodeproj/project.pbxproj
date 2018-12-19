@@ -12,6 +12,7 @@
 		3317CE5721C9A9BA000D87FE /* JSBaseFloatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CE5521C9A9BA000D87FE /* JSBaseFloatingViewController.m */; };
 		3317CE5821C9A9BA000D87FE /* JSBaseFloatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3317CE5621C9A9BA000D87FE /* JSBaseFloatingViewController.xib */; };
 		3317CE5B21C9C387000D87FE /* JCPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CE5A21C9C387000D87FE /* JCPanGestureRecognizer.m */; };
+		3317CE5D21C9E312000D87FE /* ic_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317CE5C21C9E312000D87FE /* ic_close.png */; };
 		336BEC3A21C8A6A800556BB3 /* JSFloatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 336BEC3921C8A6A800556BB3 /* JSFloatingView.m */; };
 		4542B852BB6CE1245A1E98D1 /* libPods-JCFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */; };
 		51A308779463412C5110544C /* libPods-JCFrameworkDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C5239AFCA53D59A2873D73 /* libPods-JCFrameworkDemoUITests.a */; };
@@ -136,6 +137,7 @@
 		3317CE5621C9A9BA000D87FE /* JSBaseFloatingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JSBaseFloatingViewController.xib; sourceTree = "<group>"; };
 		3317CE5921C9C387000D87FE /* JCPanGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCPanGestureRecognizer.h; sourceTree = "<group>"; };
 		3317CE5A21C9C387000D87FE /* JCPanGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCPanGestureRecognizer.m; sourceTree = "<group>"; };
+		3317CE5C21C9E312000D87FE /* ic_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_close.png; sourceTree = "<group>"; };
 		336BEC3821C8A6A800556BB3 /* JSFloatingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSFloatingView.h; sourceTree = "<group>"; };
 		336BEC3921C8A6A800556BB3 /* JSFloatingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSFloatingView.m; sourceTree = "<group>"; };
 		454A2EE625BA535674AC670D /* Pods-JCFrameworkDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemoUITests/Pods-JCFrameworkDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -770,6 +772,7 @@
 			isa = PBXGroup;
 			children = (
 				9366E7D9200AE8190073B4D5 /* nav_cart@3x.png */,
+				3317CE5C21C9E312000D87FE /* ic_close.png */,
 				93A5DFCC1FFA18CF006D35CF /* demo_image.jpeg */,
 				93A5DFBF1FF9DA6A006D35CF /* ic_menu@3x.png */,
 				93A5DFBB1FF9DA03006D35CF /* ic_back@3x.png */,
@@ -911,6 +914,7 @@
 				93A5DFD21FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.xib in Resources */,
 				9301766A2001993D002D2265 /* JCJellyEffectDemoViewController.xib in Resources */,
 				9366E7D8200AE6C90073B4D5 /* JCAddCartEffictViewController.xib in Resources */,
+				3317CE5D21C9E312000D87FE /* ic_close.png in Resources */,
 				93A5DFC01FF9DA6A006D35CF /* ic_menu@3x.png in Resources */,
 				93A5DFBE1FF9DA03006D35CF /* search_white@3x.png in Resources */,
 				93A5DFA11FF9BD41006D35CF /* normal.png in Resources */,

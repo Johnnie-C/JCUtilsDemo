@@ -102,6 +102,19 @@ NSString *const JC_CONST_HEIGHT = @"jc_constHeight";
     self.frame = frame;
 }
 
+- (CGRect)rectInView:(UIView *)view{
+    return self.superview ? [self.superview convertRect:self.frame toView:view] : CGRectZero;
+}
+
+- (CGPoint)centerInView:(UIView *)view{
+    CGRect rect = [self rectInView:view];
+    if(CGRectEqualToRect(rect, CGRectZero)){
+        return CGPointZero;
+    }
+    
+    return CGPointMake(rect.origin.x + rect.size.width / 2, rect.origin.y + rect.size.height / 2);
+}
+
 - (void)roundCornerWithRadius:(CGFloat)cornerRadius corners:(UIRectCorner)corners{
     [self roundCornerWithRadius:cornerRadius corners:corners frame:self.bounds];
 }

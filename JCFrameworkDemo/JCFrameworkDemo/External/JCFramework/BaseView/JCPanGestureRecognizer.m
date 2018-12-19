@@ -24,6 +24,14 @@
 
 @implementation JCPanGestureRecognizer
 
+- (instancetype)init{
+    if(self = [super init]){
+        self.delaysTouchesBegan = NO;
+    }
+    
+    return self;
+}
+
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [super touchesBegan:touches withEvent:event];
     if (self.state == UIGestureRecognizerStatePossible) {

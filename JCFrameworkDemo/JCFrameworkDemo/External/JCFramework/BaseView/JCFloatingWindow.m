@@ -18,4 +18,9 @@
     return nil;
 }
 
+- (void)reset{
+    [_floatingView removeFromSuperview];
+    _floatingView = nil;
+}
+
 @end

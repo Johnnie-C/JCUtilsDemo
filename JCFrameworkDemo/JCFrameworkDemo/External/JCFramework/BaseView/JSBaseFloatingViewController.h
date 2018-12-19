@@ -15,6 +15,7 @@
 
 - (void)showFloatingView;
 - (void)hideFloatingView;
+- (void)dismissFloatingView;
 
 
 @end

@@ -24,25 +24,21 @@ extern NSString *const JC_CONST_HEIGHT;
 
 - (void)removeAllSubviews;
 
-- (void)setWidth:(CGFloat)width;
-
-- (void)setHeight:(CGFloat)height;
 
 - (CGFloat)x;
-
 - (CGFloat)y;
-
 - (CGFloat)width;
-
 - (CGFloat)height;
-
 - (CGFloat)right;
-
 - (CGFloat)bottom;
 
 - (void)setX:(CGFloat)x;
-
 - (void)setY:(CGFloat)y;
+- (void)setWidth:(CGFloat)width;
+- (void)setHeight:(CGFloat)height;
+
+- (CGRect)rectInView:(UIView *)view;
+- (CGPoint)centerInView:(UIView *)view;
 
 - (void)roundCornerWithRadius:(CGFloat)cornerRadius corners:(UIRectCorner)corners;
 - (void)roundCornerWithRadius:(CGFloat)cornerRadius corners:(UIRectCorner)corners frame:(CGRect)frame;
