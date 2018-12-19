@@ -30,6 +30,7 @@ typedef NS_ENUM(NSInteger, JCFoatingViewCloestEdge){
 @property (nonatomic, strong) JCFloatingWindow *window;
 @property (nonatomic, assign) JCFoatingViewCloestEdge cloestEdge;
 @property (nonatomic, assign) CGFloat closeViewHeight;
+@property (nonatomic, strong) CAGradientLayer *closeViewGradientLayer;
 
 @property (weak, nonatomic) IBOutlet UIImageView *ivCloseBG;
 @property (weak, nonatomic) IBOutlet UIImageView *ivClose;
@@ -122,13 +123,16 @@ typedef NS_ENUM(NSInteger, JCFoatingViewCloestEdge){
 
 - (void)setupCloseView{
     //setup gradient background
-    CAGradientLayer *closeViewGradientLayer = [CAGradientLayer layer];
-    closeViewGradientLayer.frame = CGRectMake(0, 20, [JCUtils screenWidth], _closeViewHeight + 20);
+    if(_closeViewGradientLayer){
+        [_closeViewGradientLayer removeFromSuperlayer];
+    }
+    _closeViewGradientLayer = [CAGradientLayer layer];
+    _closeViewGradientLayer.frame = CGRectMake(0, 20, [JCUtils screenWidth], _closeViewHeight + 20);
     UIColor *topColor = [UIColor clearColor];
     UIColor *bottomColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.5];
-    closeViewGradientLayer.colors = @[(id)topColor.CGColor, (id)bottomColor.CGColor];
-    closeViewGradientLayer.locations = @[@(0.0), @(0.5)];
-    [_closeBaseView.layer insertSublayer:closeViewGradientLayer atIndex:0];
+    _closeViewGradientLayer.colors = @[(id)topColor.CGColor, (id)bottomColor.CGColor];
+    _closeViewGradientLayer.locations = @[@(0.0), @(0.5)];
+    [_closeBaseView.layer insertSublayer:_closeViewGradientLayer atIndex:0];
     
     //setup close image
     _ivCloseBG.backgroundColor = [[UIColor cancelRed] colorWithAlphaComponent:0.8];
@@ -160,7 +164,8 @@ typedef NS_ENUM(NSInteger, JCFoatingViewCloestEdge){
     
     _window.floatingView.x = finalX;
     _window.floatingView.y = finalY;
-    [self finaliseFloatingViewWithVelocity:CGPointZero];
+    [self finaliseFloatingViewWithVelocity:CGPointZero animated:NO];
+    [self setupCloseView];
 }
 
 - (CGFloat)floatingViewMinX{
@@ -244,7 +249,7 @@ typedef NS_ENUM(NSInteger, JCFoatingViewCloestEdge){
     return dismissed;
 }
 
-- (void)finaliseFloatingViewWithVelocity:(CGPoint)velocity{
+- (void)finaliseFloatingViewWithVelocity:(CGPoint)velocity animated:(BOOL)animated{
     UIView *floatingView = _window.floatingView;
     CGFloat velocityX = 0.02 * velocity.x;
     CGFloat velocityY = 0.02 * velocity.y;
@@ -268,12 +273,16 @@ typedef NS_ENUM(NSInteger, JCFoatingViewCloestEdge){
         _cloestEdge = finalY == [self floatingViewMinY] ? JCFoatingViewCloestEdgeTop : JCFoatingViewCloestEdgeBottom;
     }
     
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:0.3];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    if(animated){
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDuration:0.3];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    }
     [floatingView setX:finalX];
     [floatingView setY:finalY];
-    [UIView commitAnimations];
+    if(animated){
+        [UIView commitAnimations];
+    }
 }
 
 
@@ -325,7 +334,7 @@ typedef NS_ENUM(NSInteger, JCFoatingViewCloestEdge){
         
         if(![self dismissFloatingViewIfNeed]){
             floatingView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1, 1);
-            [self finaliseFloatingViewWithVelocity:[panGesture velocityInView:floatingView.superview]];
+            [self finaliseFloatingViewWithVelocity:[panGesture velocityInView:floatingView.superview] animated:YES];
         }
     }
 }
