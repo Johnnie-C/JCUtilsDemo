@@ -20,10 +20,6 @@
 #import "JCHomeCell.h"
 #import "JCHomeConfirmDeleteCell.h"
 
-#import "JCUIAlertUtils.h"
-#import "UIView+JCUtils.h"
-#import "JCDragableCellGestureRecognizer.h"
-
 
 NSString *const JC_HOME_CELL_IDENTIFIER = @"jcHomeCellIdentifier";
 NSString *const JC_HOME_CONFIRM_DELETE_CELL_IDENTIFIER = @"jcHomeConfirmDeleteCellIdentifier";

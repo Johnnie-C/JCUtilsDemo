@@ -8,11 +8,6 @@
 
 #import "JCStretchHeaderViewController.h"
 
-#import "UINavigationBar+JCUtils.h"
-#import "UIView+JCUtils.h"
-#import "UIColor+JCUtils.h"
-#import "JCStretchHeaderHandler.h"
-#import "JCUIAlertUtils.h"
 
 @interface JCStretchHeaderViewController ()
 

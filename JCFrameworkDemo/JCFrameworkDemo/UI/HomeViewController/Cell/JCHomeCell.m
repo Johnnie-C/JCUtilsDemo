@@ -7,9 +7,7 @@
 //
 
 #import "JCHomeCell.h"
-
-#import "UIColor+JCUtils.h"
-#import "JCUIAlertUtils.h"
+#import <JCFramework/JCFramework.h>
 
 
 @interface JCHomeCell()

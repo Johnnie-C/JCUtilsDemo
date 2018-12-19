@@ -1,17 +1,25 @@
 PODS:
+  - JCFramework (1.0.0)
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
-  - SAMKeychain (1.5.3)
 
 DEPENDENCIES:
+  - JCFramework (from `../JCFramework`)
   - MagicalRecord
-  - SAMKeychain
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MagicalRecord
+
+EXTERNAL SOURCES:
+  JCFramework:
+    :path: "../JCFramework"
 
 SPEC CHECKSUMS:
+  JCFramework: 36e1e8c248d2b79d8bace7f07a24544c54a0b19a
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
-  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
 
-PODFILE CHECKSUM: 45826ecdfc477cbc456da092d8700cfc76ea8502
+PODFILE CHECKSUM: dd4fd0e093cb94b0c38dcfb6dbad19b0b948d7fb
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.5.3

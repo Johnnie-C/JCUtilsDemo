@@ -7,10 +7,6 @@
 //
 
 #import "JCTransparentCurveTabDemoViewController.h"
-#import "JCHeaderTabView.h"
-
-#import "JCAuthenticationHanlder.h"
-#import "JCUIAlertUtils.h"
 
 @interface JCTransparentCurveTabDemoViewController ()<JCHeaderTabViewDelegate>
 

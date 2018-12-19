@@ -7,10 +7,7 @@
 //
 
 #import "JCAddCartEffictViewController.h"
-#import "JCCartBarButtonItem.h"
 
-#import "JCParabolaAnimationHandler.h"
-#import "UIView+JCUtils.h"
 
 @interface JCAddCartEffictViewController ()
 

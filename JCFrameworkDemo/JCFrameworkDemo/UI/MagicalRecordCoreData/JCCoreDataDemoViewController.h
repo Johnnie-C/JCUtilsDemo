@@ -6,7 +6,7 @@
 //  Copyright © 2018 Johnnie Cheng. All rights reserved.
 //
 
-#import "JCBaseViewController.h"
+#import <JCFramework/JCFramework.h>
 
 @interface JCCoreDataDemoViewController : JCBaseViewController
 

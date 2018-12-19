@@ -7,12 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "JCNavigationController.h"
 #import "JCHomeViewController.h"
 
-#import "UIColor+JCUtils.h"
-
 #import <MagicalRecord/MagicalRecord.h>
+#import <JCFramework/JCFramework.h>
 
 @interface AppDelegate ()
 

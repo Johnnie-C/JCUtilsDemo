@@ -8,9 +8,6 @@
 
 #import "JCJellyEffectDemoViewController.h"
 
-#import "UIColor+JCUtils.h"
-#import "UIView+JCUtils.h"
-#import "JCUtils.h"
 
 @interface JCJellyEffectDemoViewController ()
 

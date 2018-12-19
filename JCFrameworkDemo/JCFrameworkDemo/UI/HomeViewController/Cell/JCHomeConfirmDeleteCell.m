@@ -7,12 +7,7 @@
 //
 
 #import "JCHomeConfirmDeleteCell.h"
-
-#import "JCUtils.h"
-#import "JCUIAlertUtils.h"
-#import "UIColor+JCUtils.h"
-#import "UIView+JCUtils.h"
-#import "UIFont+JCUtils.h"
+#import <JCFramework/JCFramework.h>
 
 CGFloat const JC_HOME_CONFIRM_DELETE_CELL_MAX_MENU_WIDTH_NORMAL = 130;
 NSString *const JC_HOME_CONFIRM_DELETE_CELL_LEFT_BUTTON_TITLE = @"One";

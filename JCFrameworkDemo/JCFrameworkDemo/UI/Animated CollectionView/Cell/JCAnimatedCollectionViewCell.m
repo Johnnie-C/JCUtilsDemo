@@ -8,7 +8,7 @@
 
 #import "JCAnimatedCollectionViewCell.h"
 
-#import "UIColor+JCUtils.h"
+#import <JCFramework/JCFramework.h>
 
 @implementation JCAnimatedCollectionViewCell
 

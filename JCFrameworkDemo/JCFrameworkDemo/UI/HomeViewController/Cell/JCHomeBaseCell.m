@@ -8,8 +8,7 @@
 
 #import "JCHomeBaseCell.h"
 
-#import "JCUtils.h"
-#import "UIFont+JCUtils.h"
+#import <JCFramework/JCFramework.h>
 
 @implementation JCHomeBaseCell
 

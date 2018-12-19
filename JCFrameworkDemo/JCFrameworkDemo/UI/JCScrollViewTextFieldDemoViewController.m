@@ -8,11 +8,6 @@
 
 #import "JCScrollViewTextFieldDemoViewController.h"
 
-#import "JCErrorTextField.h"
-#import "NSString+JCUtils.h"
-#import "UIView+JCUtils.h"
-#import "JCScrollableViewKeyboardHandler.h"
-
 @interface JCScrollViewTextFieldDemoViewController ()<JCErrorTextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;

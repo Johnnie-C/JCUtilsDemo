@@ -9,10 +9,6 @@
 #import "JCAnimatedCollectionViewDemoViewController.h"
 #import "JCAnimatedCollectionViewCell.h"
 
-#import "JCUtils.h"
-#import "UIView+JCUtils.h"
-#import "UIColor+JCUtils.h"
-
 NSString *const JC_ANIMATED_COLLECTION_VIEW_CELL_IDENTIFIER = @"jcAnimatedCollectionViewCellIdentifier";
 
 typedef NS_ENUM(NSInteger, JCAnimatedCollectionViewOperation){

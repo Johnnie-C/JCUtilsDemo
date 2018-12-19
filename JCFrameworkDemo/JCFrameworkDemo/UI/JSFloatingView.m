@@ -7,8 +7,6 @@
 //
 
 #import "JSFloatingView.h"
-#import "UIView+JCUtils.h"
-#import "JCUtils.h"
 
 @implementation JSFloatingView
 
