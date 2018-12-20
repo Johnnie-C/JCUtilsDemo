@@ -41,9 +41,9 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
 
 
 
-@interface JCHomeViewController ()<UITableViewDataSource, UITableViewDelegate, JCDragableCellGestureRecognizerDelegate, JSFloatingViewControllerDelegate>
+@interface JCHomeViewController ()<UITableViewDataSource, UITableViewDelegate, JCDragableCellGestureRecognizerDelegate, JCFloatingViewControllerDelegate>
 
-@property (strong, nonatomic) JSFloatingViewController *floatingView;
+@property (strong, nonatomic) JCFloatingViewController *floatingView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) JCDragableCellGestureRecognizer *dragCellpanGesture;
 
@@ -162,7 +162,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
                 config.floatingViewWidth = 80;
                 config.floatingViewHeight = 110;
                 config.floatingViewCornerRadius = 10;
-                _floatingView = [JSFloatingViewController FloatingViewWithConfig:config];
+                _floatingView = [JCFloatingViewController FloatingViewWithConfig:config];
                 _floatingView.delegate = self;
             }
             _floatingView.isShowing ? [_floatingView hideFloatingView] : [_floatingView showFloatingView];
@@ -303,13 +303,13 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
 }
 
 
-#pragma mark - JSFloatingViewControllerDelegate
-- (void)didClickedFloatingView:(JSFloatingViewController *)floatingView{
+#pragma mark - JCFloatingViewControllerDelegate
+- (void)didClickedFloatingView:(JCFloatingViewController *)floatingView{
     [JCUIAlertUtils toastWithMessage:@"Did clicked floating view"
                               colour:TOAST_MESSAGE_GREEN];
 }
 
-- (void)didDismissFloatingView:(JSFloatingViewController *)floatingView{
+- (void)didDismissFloatingView:(JCFloatingViewController *)floatingView{
     [JCUIAlertUtils toastWithMessage:@"Floating view dismiss success"
                               colour:TOAST_MESSAGE_GREEN];
 }
