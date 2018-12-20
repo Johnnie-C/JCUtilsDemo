@@ -10,13 +10,13 @@ Pod::Spec.new do |spec|
     spec.framework    = 'SystemConfiguration'
     spec.ios.deployment_target  = '9.0'
     
-    s.subspec 'JCFramework' do |sub|
+    spec.subspec 'JCFramework' do |sub|
 		sub.source_files = 'JCFramework/**/*.{h,m}'
 		sub.resources = [ 'JCFramework/**/*.xib', 'JCFramework/Resource/**/*.*']
 		sub.public_header_files = 'JCFramework/**/*.h'
 	end
 	
-	s.subspec 'JCFloatingView' do |sub|
+	spec.subspec 'JCFloatingView' do |sub|
 		sub.source_files = 'JCFloatingView/**/*.{h,m}'
 		sub.resources = [ 'JCFloatingView/**/*.xib', 'JCFloatingView/Resource/**/*.*']
 		sub.public_header_files = 'JCFloatingView/**/*.h'
