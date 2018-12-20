@@ -7,7 +7,12 @@
 //
 
 #import "JCFloatingViewConfig.h"
+
+#if __has_include("JCFramework.h")
+#import "JCFramework.h"
+#else
 #import <JCFramework/JCFramework.h>
+#endif
 
 @interface JCFloatingViewConfig()
 

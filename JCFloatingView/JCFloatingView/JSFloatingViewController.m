@@ -9,7 +9,12 @@
 #import "JSFloatingViewController.h"
 #import "JCFloatingWindow.h"
 #import "JCFloatingViewConfig.h"
+
+#if __has_include("JCFramework.h")
+#import "JCFramework.h"
+#else
 #import <JCFramework/JCFramework.h>
+#endif
 
 
 typedef NS_ENUM(NSInteger, JCFoatingViewClosestEdge){
