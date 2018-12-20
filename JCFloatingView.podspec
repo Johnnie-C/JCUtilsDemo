@@ -10,4 +10,5 @@ Pod::Spec.new do |spec|
     spec.resources = [ '**/*.xib', 'JCFloatingView/Resources/**/*.*', 'JCFramework/Resource/**/*.*']
     spec.exclude_files = [ 'JCFrameworkDemo/**/*.*' ]
     spec.framework    = 'SystemConfiguration'
+    spec.ios.deployment_target  = '9.0'
 end
