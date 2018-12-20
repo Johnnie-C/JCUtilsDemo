@@ -8,6 +8,6 @@ Pod::Spec.new do |spec|
     spec.source       = { :git => "https://github.com/EzlyJohnnie/JCUtilsDemo.git" }
     spec.source_files = '**/*.{h,m,xib}'
     spec.resources = ['JCFloatingView/Resources/**/*.*', 'JCFramework/Resource/**/*.*']
-    spec.exclude_files = [ 'JCFrameworkDemo/**' ]
+    spec.exclude_files = [ 'JCFrameworkDemo/**/*.*' ]
     spec.framework    = 'SystemConfiguration'
 end
