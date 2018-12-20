@@ -18,5 +18,6 @@
 - (NSURL *)urlForKey:(NSString *)key;
 
 - (NSString*) toJSONStr;
++ (NSDictionary *)fromJsonStr:(NSString *)json;
 
 @end

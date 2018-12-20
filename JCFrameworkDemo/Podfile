@@ -5,9 +5,11 @@ project ‘JCFrameworkDemo’
 
 def all_pods
     pod "MagicalRecord"
-    pod 'JCFloatingView', :podspec => 'https://raw.githubusercontent.com/EzlyJohnnie/JCUtilsDemo/master/JCFloatingView/JCFloatingView.podspec'
-    pod 'JCFramework', :podspec => 'https://raw.githubusercontent.com/EzlyJohnnie/JCUtilsDemo/master/JCFramework/JCFramework.podspec'
+    pod 'JCFramework', :path => '../JCFramework'
+    pod 'JCFloatingView', :path => '../JCFloatingView'
+
 end
+
 
 target :'JCFrameworkDemo' do
    all_pods

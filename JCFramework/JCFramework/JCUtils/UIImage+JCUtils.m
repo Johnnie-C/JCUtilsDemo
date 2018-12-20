@@ -308,6 +308,42 @@
 
     return blackWhiteLayer;
 }
+    
+- (UIImage *)roundImage{
+    UIGraphicsBeginImageContext(self.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGFloat radius = self.size.width / 2;
+    CGContextBeginPath (context);
+    
+    CGFloat imageCentreX = self.size.width / 2;
+    CGFloat imageCentreY = self.size.height / 2;
+    CGContextAddArc (context, imageCentreX, imageCentreY, radius, 0, 2 * M_PI, 0);
+    CGContextClosePath (context);
+    CGContextClip (context);
+    
+    // Draw the IMAGE
+    CGRect myRect = CGRectMake(0, 0, self.size.width, self.size.height);
+    [self drawInRect:myRect];
+    
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
+    
+#pragma mark - Base64
+- (NSString *)encodeToBase64String:(UIImage *)image{
+    return [UIImagePNGRepresentation(image) base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+}
+    
++ (UIImage *)fromBase64:(NSString *)strEncodeData{
+    if(!strEncodeData) return nil;
+    
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:strEncodeData options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    return [UIImage imageWithData:data];
+}
+
 
 @end
 

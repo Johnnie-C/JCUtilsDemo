@@ -28,7 +28,7 @@
 		3317D08121CB0C1C000D87FE /* JCFloatingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCFloatingWindow.h; sourceTree = "<group>"; };
 		3317D08221CB0C1C000D87FE /* JCFloatingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCFloatingWindow.m; sourceTree = "<group>"; };
 		3317D08321CB0C1D000D87FE /* JCFloatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCFloatingViewController.m; sourceTree = "<group>"; };
-		3317D08921CB0C93000D87FE /* JCFloatingView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JCFloatingView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3317D08921CB0C93000D87FE /* JCFloatingView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JCFloatingView.podspec; sourceTree = "<group>"; };
 		3317D09221CB125F000D87FE /* JCFloatingViewConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCFloatingViewConfig.h; sourceTree = "<group>"; };
 		3317D09321CB125F000D87FE /* JCFloatingViewConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCFloatingViewConfig.m; sourceTree = "<group>"; };
 		3317D09A21CB1E92000D87FE /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };

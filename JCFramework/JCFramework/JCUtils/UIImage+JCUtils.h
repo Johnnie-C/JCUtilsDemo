@@ -21,5 +21,10 @@
 - (UIImage *)resizeWithWidth:(CGFloat)width height:(CGFloat)height;
 - (UIImage *)rotateForExif;
 - (UIImage *)fillWithColor:(UIColor *)fillColor;
+- (UIImage *)roundImage;
 
+#pragma mark - Base64
+- (NSString *)encodeToBase64String:(UIImage *)image;
++ (UIImage *)fromBase64:(NSString *)strEncodeData;
+    
 @end

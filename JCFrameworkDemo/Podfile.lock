@@ -1,8 +1,5 @@
 PODS:
   - JCFloatingView (1.0.0):
-    - JCFloatingView/JCFramework (= 1.0.0)
-    - JCFramework
-  - JCFloatingView/JCFramework (1.0.0):
     - JCFramework
   - JCFramework (1.0.0)
   - MagicalRecord (2.3.2):
@@ -25,10 +22,10 @@ EXTERNAL SOURCES:
     :path: "../JCFramework"
 
 SPEC CHECKSUMS:
-  JCFloatingView: 4ef7b894ebad824b8682f8f2f764e21ee585b8b2
-  JCFramework: 1eabb6122b81e3a16bc45d0060145a55ec21bfae
+  JCFloatingView: 975580a237bcbfe43026c034c5e0cf8842fb2eb3
+  JCFramework: 8497b15cb4aebfc6b6fbba92b58caa9d8e4fbcd4
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
 
-PODFILE CHECKSUM: bbf18569e737fece719cd10a762a773077c79c6e
+PODFILE CHECKSUM: eb1d8a201180a5a1045da2bce92fbdbe0bcc244c
 
 COCOAPODS: 1.5.3

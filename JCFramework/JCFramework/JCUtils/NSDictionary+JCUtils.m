@@ -49,4 +49,10 @@
     }
 }
 
++ (NSDictionary *)fromJsonStr:(NSString *)json{
+    NSError *error;
+    NSData *data = [json dataUsingEncoding:NSUTF8StringEncoding];
+    return [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+}
+    
 @end
