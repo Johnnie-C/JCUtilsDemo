@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-    spec.name         = 'JCFloatingView'
+    spec.name         = 'JCUtils'
     spec.version      = '1.0.0'
     spec.license      = { :type => 'BSD' }
     spec.homepage     = 'https://github.com/EzlyJohnnie/JCUtilsDemo/tree/master/JCFloatingView'
