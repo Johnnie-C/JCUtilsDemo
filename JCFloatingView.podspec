@@ -9,5 +9,4 @@ Pod::Spec.new do |spec|
     spec.source_files = '*.{h,m,xib}'
 	spec.exclude_files = [ 'JCFrameworkDemo/**' ]
     spec.framework    = 'SystemConfiguration'
-    spec.dependency'JCFramework'
 end
