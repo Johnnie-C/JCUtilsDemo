@@ -16,7 +16,7 @@ FOUNDATION_EXPORT const unsigned char JCFloatingViewVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <JCFloatingView/PublicHeader.h>
 
-#import "JSFloatingViewController.h"
+#import "JCFloatingViewController.h"
 #import "JCFloatingWindow.h"
 #import "JCFloatingViewConfig.h"
 

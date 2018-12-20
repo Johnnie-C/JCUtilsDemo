@@ -1,12 +1,12 @@
 //
-//  JSFloatingViewController.m
+//  JCFloatingViewController.m
 //  JCFrameworkDemo
 //
 //  Created by Johnnie Cheng on 19/12/18.
 //  Copyright © 2018 Johnnie Cheng. All rights reserved.
 //
 
-#import "JSFloatingViewController.h"
+#import "JCFloatingViewController.h"
 #import "JCFloatingWindow.h"
 #import "JCFloatingViewConfig.h"
 
@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger, JCFoatingViewClosestEdge){
 
 
 
-@interface JSFloatingViewController ()<JCPanGestureRecognizerPressDelegate>
+@interface JCFloatingViewController ()<JCPanGestureRecognizerPressDelegate>
 
 @property (nonatomic, strong) JCFloatingViewConfig *config;
 
@@ -59,11 +59,11 @@ typedef NS_ENUM(NSInteger, JCFoatingViewClosestEdge){
 
 
 
-@implementation JSFloatingViewController
+@implementation JCFloatingViewController
 
 #pragma mark - initialise
 + (instancetype)FloatingViewWithConfig:(JCFloatingViewConfig *)config{
-    return [[JSFloatingViewController alloc] initWithConfig:config];
+    return [[JCFloatingViewController alloc] initWithConfig:config];
 }
 
 - (instancetype)init{
@@ -75,7 +75,7 @@ typedef NS_ENUM(NSInteger, JCFoatingViewClosestEdge){
 }
 
 - (instancetype)initWithConfig:(JCFloatingViewConfig *)config{
-    if (self = [self initWithNibName:NSStringFromClass([JSFloatingViewController class]) bundle:[NSBundle bundleForClass:[JSFloatingViewController class]]]){
+    if (self = [self initWithNibName:NSStringFromClass([JCFloatingViewController class]) bundle:[NSBundle bundleForClass:[JCFloatingViewController class]]]){
         [self _initWithConfig:config];
     }
     
