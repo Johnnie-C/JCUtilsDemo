@@ -25,7 +25,7 @@ EXTERNAL SOURCES:
     :path: "../JCFramework"
 
 SPEC CHECKSUMS:
-  JCFloatingView: 1b94c07258c82de54b190867745dee8129f423cc
+  JCFloatingView: 4ef7b894ebad824b8682f8f2f764e21ee585b8b2
   JCFramework: 1eabb6122b81e3a16bc45d0060145a55ec21bfae
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
 
