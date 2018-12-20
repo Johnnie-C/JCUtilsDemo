@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
     spec.resources    = [ '../JCFloatingView/**/*.xib', '../JCFloatingView/Resources/**/*.*' ]
     spec.framework    = 'SystemConfiguration'
     spec.ios.deployment_target  = '9.0'
-    spec.dependency 'JCFramework' :podspec => 'https://raw.githubusercontent.com/EzlyJohnnie/JCUtilsDemo/master/JCFramework/JCFramework.podspec'
+    spec.dependency 'JCFramework', :podspec => 'https://raw.githubusercontent.com/EzlyJohnnie/JCUtilsDemo/master/JCFramework/JCFramework.podspec'
     
     #spec.subspec 'JCFramework' do |ss|
     #   ss.source_files         = '../JCFramework/**/*.{h,m,xib}'
