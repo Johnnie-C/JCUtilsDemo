@@ -47,6 +47,7 @@
     _floatingViewBorderWidth = 2.0f;
     _floatingViewCornerRadius = 30;
     _floatingView = [self defaultFloatingView];
+    [self configFloatingViewFrame];
     
     _closeImage = [UIImage imageNamed:@"ic_close" inBundle:[JCUtils frameworkBundle] compatibleWithTraitCollection:nil];
     _closeImageWidth = 20;

@@ -93,7 +93,6 @@ typedef NS_ENUM(NSInteger, JCFoatingViewClosestEdge){
 
 
 #pragma mark - setup
-
 - (UIStatusBarStyle)preferredStatusBarStyle{
     return _config.preferredStatusBarStyle;
 }
