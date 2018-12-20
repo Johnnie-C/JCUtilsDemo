@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
     spec.summary      = 'App level floating view.'
     spec.source       = { :git => "https://github.com/EzlyJohnnie/JCUtilsDemo.git" }
     spec.source_files = '**/*.{h,m,xib}'
-    spec.resources = ['JCFloatingView/Resources/**/*.*', 'JCFramework/Resources/**/*.*']
+    spec.resources = ['JCFloatingView/Resources/**/*.*', 'JCFramework/Resource/**/*.*']
     spec.exclude_files = [ 'JCFrameworkDemo/**' ]
     spec.framework    = 'SystemConfiguration'
 end
