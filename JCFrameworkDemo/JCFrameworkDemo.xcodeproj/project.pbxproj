@@ -12,7 +12,6 @@
 		3317D04F21CB069C000D87FE /* JCFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3317D04321CB0281000D87FE /* JCFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3317D08E21CB0F31000D87FE /* JCFloatingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3317D07E21CB0BE3000D87FE /* JCFloatingView.framework */; };
 		3317D08F21CB0F31000D87FE /* JCFloatingView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3317D07E21CB0BE3000D87FE /* JCFloatingView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		336BEC3A21C8A6A800556BB3 /* JSFloatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 336BEC3921C8A6A800556BB3 /* JSFloatingView.m */; };
 		4542B852BB6CE1245A1E98D1 /* libPods-JCFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */; };
 		51A308779463412C5110544C /* libPods-JCFrameworkDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C5239AFCA53D59A2873D73 /* libPods-JCFrameworkDemoUITests.a */; };
 		930176692001993D002D2265 /* JCJellyEffectDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930176672001993D002D2265 /* JCJellyEffectDemoViewController.m */; };
@@ -124,8 +123,6 @@
 		32522837E00045A27C44B7B4 /* Pods-JCFrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemo/Pods-JCFrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		3317D03E21CB0281000D87FE /* JCFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JCFramework.xcodeproj; path = ../../../JCFramework/JCFramework.xcodeproj; sourceTree = "<group>"; };
 		3317D07921CB0BE3000D87FE /* JCFloatingView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JCFloatingView.xcodeproj; path = ../../../JCFloatingView/JCFloatingView.xcodeproj; sourceTree = "<group>"; };
-		336BEC3821C8A6A800556BB3 /* JSFloatingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSFloatingView.h; sourceTree = "<group>"; };
-		336BEC3921C8A6A800556BB3 /* JSFloatingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSFloatingView.m; sourceTree = "<group>"; };
 		454A2EE625BA535674AC670D /* Pods-JCFrameworkDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemoUITests/Pods-JCFrameworkDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7651F1EFF321BA651ACE8AFD /* libPods-JCFrameworkDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -440,8 +437,6 @@
 				9366E7D4200AE6C90073B4D5 /* JCAddCartEffictViewController.h */,
 				9366E7D5200AE6C90073B4D5 /* JCAddCartEffictViewController.m */,
 				9366E7D6200AE6C90073B4D5 /* JCAddCartEffictViewController.xib */,
-				336BEC3821C8A6A800556BB3 /* JSFloatingView.h */,
-				336BEC3921C8A6A800556BB3 /* JSFloatingView.m */,
 				93A5DFB21FF9D615006D35CF /* HomeViewController */,
 			);
 			path = UI;
@@ -734,7 +729,6 @@
 				93A5DFB61FF9D62D006D35CF /* JCHomeViewController.m in Sources */,
 				939B1DBF202E9E4200D11956 /* JCAnimatedCollectionViewCell.m in Sources */,
 				93477D64201DBE1000C8DC39 /* CoreDataDemoItemOption.m in Sources */,
-				336BEC3A21C8A6A800556BB3 /* JSFloatingView.m in Sources */,
 				93906937201EDF6400662440 /* CoreDataDemoItemOptionDAO.m in Sources */,
 				93477D44201D688600C8DC39 /* JCCoreDataDemo.xcdatamodeld in Sources */,
 				9390693C201EE23100662440 /* JCCoreDataDemoCell.m in Sources */,

@@ -13,6 +13,8 @@
             <connections>
                 <outlet property="closeBaseView" destination="F3E-eL-l95" id="tcT-nc-3aE"/>
                 <outlet property="const_closeViewHeight" destination="PpL-Nx-lRy" id="ymS-Zs-Nc7"/>
+                <outlet property="const_ivCloseBGHeight" destination="HSd-Ag-exF" id="Pqn-Io-fmw"/>
+                <outlet property="const_ivCloseBGWidth" destination="N8r-un-KIr" id="8Bh-3L-yWD"/>
                 <outlet property="const_ivCloseHeight" destination="bIs-gO-hNx" id="cV2-b6-hiO"/>
                 <outlet property="const_ivCloseWidth" destination="geD-9v-R0s" id="2Lw-uo-hjo"/>
                 <outlet property="ivClose" destination="76O-eZ-RFR" id="r3W-bh-WG4"/>
@@ -45,7 +47,7 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="ddS-1N-5no" firstAttribute="top" secondItem="76O-eZ-RFR" secondAttribute="top" constant="-10" id="4Ut-2y-fTp"/>
+                        <constraint firstItem="ddS-1N-5no" firstAttribute="centerY" secondItem="76O-eZ-RFR" secondAttribute="centerY" id="G9Y-b6-1YR"/>
                         <constraint firstItem="76O-eZ-RFR" firstAttribute="top" secondItem="F3E-eL-l95" secondAttribute="top" constant="40" id="HX0-Q1-Gt6"/>
                         <constraint firstItem="ddS-1N-5no" firstAttribute="centerX" secondItem="F3E-eL-l95" secondAttribute="centerX" id="JbO-Nt-RXK"/>
                         <constraint firstAttribute="height" constant="120" placeholder="YES" id="OPV-vy-bbE"/>

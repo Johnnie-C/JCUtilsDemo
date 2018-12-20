@@ -61,5 +61,8 @@ extern NSString *const JC_CONST_HEIGHT;
 - (NSDictionary *)alignParentBottomFillWidth;
 - (NSDictionary *)alignParentBottomFillWidthWithPaddingLeft:(CGFloat)left right:(CGFloat)right bottom:(CGFloat)bottom;
 
+
++ (void)springAnimation:(void (^)(void))animation completion:(void (^ __nullable)(BOOL finished))completion;
+
 @end
 

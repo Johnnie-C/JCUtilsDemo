@@ -14,6 +14,9 @@
 		3317D08721CB0C1D000D87FE /* JCFloatingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317D08221CB0C1C000D87FE /* JCFloatingWindow.m */; };
 		3317D08821CB0C1D000D87FE /* JSFloatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317D08321CB0C1D000D87FE /* JSFloatingViewController.m */; };
 		3317D08A21CB0C93000D87FE /* JCFloatingView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3317D08921CB0C93000D87FE /* JCFloatingView.podspec */; };
+		3317D09421CB125F000D87FE /* JCFloatingViewConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317D09221CB125F000D87FE /* JCFloatingViewConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3317D09521CB125F000D87FE /* JCFloatingViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317D09321CB125F000D87FE /* JCFloatingViewConfig.m */; };
+		3317D09B21CB1E92000D87FE /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D09A21CB1E92000D87FE /* placeholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		3317D08221CB0C1C000D87FE /* JCFloatingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCFloatingWindow.m; sourceTree = "<group>"; };
 		3317D08321CB0C1D000D87FE /* JSFloatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFloatingViewController.m; sourceTree = "<group>"; };
 		3317D08921CB0C93000D87FE /* JCFloatingView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JCFloatingView.podspec; sourceTree = "<group>"; };
+		3317D09221CB125F000D87FE /* JCFloatingViewConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCFloatingViewConfig.h; sourceTree = "<group>"; };
+		3317D09321CB125F000D87FE /* JCFloatingViewConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCFloatingViewConfig.m; sourceTree = "<group>"; };
+		3317D09A21CB1E92000D87FE /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,7 @@
 			children = (
 				3317D08921CB0C93000D87FE /* JCFloatingView.podspec */,
 				3317D06C21CB0BC1000D87FE /* JCFloatingView */,
+				3317D09821CB1E92000D87FE /* Resources */,
 				3317D06B21CB0BC1000D87FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,12 +69,30 @@
 				3317D06D21CB0BC1000D87FE /* JCFloatingView.h */,
 				3317D08121CB0C1C000D87FE /* JCFloatingWindow.h */,
 				3317D08221CB0C1C000D87FE /* JCFloatingWindow.m */,
+				3317D09221CB125F000D87FE /* JCFloatingViewConfig.h */,
+				3317D09321CB125F000D87FE /* JCFloatingViewConfig.m */,
 				3317D08021CB0C1C000D87FE /* JSFloatingViewController.h */,
 				3317D08321CB0C1D000D87FE /* JSFloatingViewController.m */,
 				3317D07F21CB0C1C000D87FE /* JSFloatingViewController.xib */,
 				3317D06E21CB0BC1000D87FE /* Info.plist */,
 			);
 			path = JCFloatingView;
+			sourceTree = "<group>";
+		};
+		3317D09821CB1E92000D87FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3317D09921CB1E92000D87FE /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3317D09921CB1E92000D87FE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3317D09A21CB1E92000D87FE /* placeholder.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +104,7 @@
 			files = (
 				3317D06F21CB0BC1000D87FE /* JCFloatingView.h in Headers */,
 				3317D08521CB0C1D000D87FE /* JSFloatingViewController.h in Headers */,
+				3317D09421CB125F000D87FE /* JCFloatingViewConfig.h in Headers */,
 				3317D08621CB0C1D000D87FE /* JCFloatingWindow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3317D08A21CB0C93000D87FE /* JCFloatingView.podspec in Resources */,
+				3317D09B21CB1E92000D87FE /* placeholder.png in Resources */,
 				3317D08421CB0C1D000D87FE /* JSFloatingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3317D09521CB125F000D87FE /* JCFloatingViewConfig.m in Sources */,
 				3317D08821CB0C1D000D87FE /* JSFloatingViewController.m in Sources */,
 				3317D08721CB0C1D000D87FE /* JCFloatingWindow.m in Sources */,
 			);

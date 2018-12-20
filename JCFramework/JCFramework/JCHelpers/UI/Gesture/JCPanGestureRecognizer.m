@@ -26,7 +26,7 @@
 
 - (instancetype)init{
     if(self = [super init]){
-        self.delaysTouchesBegan = NO;
+        self.delaysTouchesEnded = NO;
     }
     
     return self;
@@ -35,9 +35,12 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [super touchesBegan:touches withEvent:event];
     if (self.state == UIGestureRecognizerStatePossible) {
+        if(_pressDelegate){
+            [_pressDelegate didPress: self];
+        }
         self.state = UIGestureRecognizerStateBegan;
         _touchDownTime = [[NSDate date] timeIntervalSince1970];
-        _touchDownPoint = [self locationInView:self.view];
+        _touchDownPoint = [self locationInView:self.view.superview];
         _touchUpTime = 0;
         _touchUpPoint = CGPointZero;
     }
@@ -47,12 +50,12 @@
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [super touchesEnded:touches withEvent:event];
     _touchUpTime = [[NSDate date] timeIntervalSince1970];
-    _touchUpPoint = [self locationInView:self.view];
+    _touchUpPoint = [self locationInView:self.view.superview];
 }
 
 - (BOOL)isTap{
     return _touchUpTime && _touchDownTime && _touchUpTime - _touchDownTime < 0.3
-        && ABS(_touchUpPoint.x - _touchDownPoint.x) < 5 && ABS(_touchUpPoint.y - _touchDownPoint.y) < 5;
+    && ABS(_touchUpPoint.x - _touchDownPoint.x) < 5 && ABS(_touchUpPoint.y - _touchDownPoint.y) < 5;
 }
 
 @end

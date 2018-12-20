@@ -18,4 +18,5 @@ FOUNDATION_EXPORT const unsigned char JCFloatingViewVersionString[];
 
 #import "JSFloatingViewController.h"
 #import "JCFloatingWindow.h"
+#import "JCFloatingViewConfig.h"
 

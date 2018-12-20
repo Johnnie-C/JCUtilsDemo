@@ -381,5 +381,14 @@ NSString *const JC_CONST_HEIGHT = @"jc_constHeight";
              };
 }
 
++ (void)springAnimation:(void (^)(void))animation completion:(void (^ __nullable)(BOOL finished))completion{
+    [UIView animateWithDuration:0.3
+                          delay:0
+         usingSpringWithDamping:0.5
+          initialSpringVelocity:2
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:animation
+                     completion:completion];
+}
 @end
 

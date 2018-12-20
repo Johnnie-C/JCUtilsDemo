@@ -14,7 +14,6 @@
 #import "JCAddCartEffictViewController.h"
 #import "JCCoreDataDemoViewController.h"
 #import "JCAnimatedCollectionViewDemoViewController.h"
-#import "JSFloatingView.h"
 
 #import "JCHomeBaseCell.h"
 #import "JCHomeCell.h"
@@ -42,9 +41,9 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
 
 
 
-@interface JCHomeViewController ()<UITableViewDataSource, UITableViewDelegate, JCDragableCellGestureRecognizerDelegate>
+@interface JCHomeViewController ()<UITableViewDataSource, UITableViewDelegate, JCDragableCellGestureRecognizerDelegate, JSFloatingViewControllerDelegate>
 
-@property (strong, nonatomic) JSFloatingView *floatingView;
+@property (strong, nonatomic) JSFloatingViewController *floatingView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) JCDragableCellGestureRecognizer *dragCellpanGesture;
 
@@ -156,7 +155,15 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
         
         case JCHomeViewCellIndexFloatingView:
             if(!_floatingView){
-                _floatingView = [JSFloatingView new];
+                JCFloatingViewConfig *config = [JCFloatingViewConfig new];
+                config.overMargin = 5;
+                config.stickyToEdge = NO;
+                config.floatingViewBorderColor = [UIColor orangeColor];
+                config.floatingViewWidth = 80;
+                config.floatingViewHeight = 110;
+                config.floatingViewCornerRadius = 10;
+                _floatingView = [JSFloatingViewController FloatingViewWithConfig:config];
+                _floatingView.delegate = self;
             }
             _floatingView.isShowing ? [_floatingView hideFloatingView] : [_floatingView showFloatingView];
             break;
@@ -293,6 +300,18 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
             break;
             
     }
+}
+
+
+#pragma mark - JSFloatingViewControllerDelegate
+- (void)didClickedFloatingView:(JSFloatingViewController *)floatingView{
+    [JCUIAlertUtils toastWithMessage:@"Did clicked floating view"
+                              colour:TOAST_MESSAGE_GREEN];
+}
+
+- (void)didDismissFloatingView:(JSFloatingViewController *)floatingView{
+    [JCUIAlertUtils toastWithMessage:@"Floating view dismiss success"
+                              colour:TOAST_MESSAGE_GREEN];
 }
 
 @end
