@@ -8,8 +8,27 @@
 
 #import "UIFont+JCUtils.h"
 #import "NSString+JCUtils.h"
+#import <UIKit/UIKit.h>
+#import <CoreText/CoreText.h>
 
 @implementation UIFont (JCUtils)
+  
++ (void)registerFontWithFilename:(NSString *)filename bundle:(NSBundle *)bundle{
+    NSString *pathForResourceString = [bundle pathForResource:filename ofType:nil];
+    CGDataProviderRef fontDataProvider = CGDataProviderCreateWithFilename([pathForResourceString UTF8String]);
+    CGFontRef customFont = CGFontCreateWithDataProvider(fontDataProvider);
+    CGDataProviderRelease(fontDataProvider);
+    CFErrorRef error;
+    CTFontManagerRegisterGraphicsFont(customFont, &error);
+    CGFontRelease(customFont);
+}
+  
++ (void)loadFontsWithFilenames:(NSArray<NSString *> *)filenames bunble:(NSBundle *)bundle{
+    for(NSString *filename in filenames){
+        [UIFont registerFontWithFilename:filename bundle:bundle];
+    }
+}
+
 
 + (UIFont *)fontWithType:(JCFontType)type{
     return [UIFont fontWithType:type size:17]; // default font size
