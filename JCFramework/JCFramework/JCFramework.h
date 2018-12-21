@@ -46,6 +46,7 @@ FOUNDATION_EXPORT const unsigned char JCUtilsVersionString[];
 
 #import "JCUtils.h"
 #import "UIFont+JCUtils.h"
+#import "NSArray+JCUtils.h"
 #import "JCUIAlertUtils.h"
 #import "NSDictionary+JCUtils.h"
 #import "NSString+JCUtils.h"

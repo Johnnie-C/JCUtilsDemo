@@ -110,6 +110,8 @@
 		3317D05D21CB08F4000D87FE /* ic_menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05721CB08F4000D87FE /* ic_menu@3x.png */; };
 		3317D05E21CB08F4000D87FE /* nav_cart@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05821CB08F4000D87FE /* nav_cart@3x.png */; };
 		3317D05F21CB08F4000D87FE /* search_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05921CB08F4000D87FE /* search_white@3x.png */; };
+		33291C9921CC941700D87CAC /* NSArray+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33291C9721CC941700D87CAC /* NSArray+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33291C9A21CC941700D87CAC /* NSArray+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 33291C9821CC941700D87CAC /* NSArray+JCUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -218,6 +220,8 @@
 		3317D05721CB08F4000D87FE /* ic_menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_menu@3x.png"; sourceTree = "<group>"; };
 		3317D05821CB08F4000D87FE /* nav_cart@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_cart@3x.png"; sourceTree = "<group>"; };
 		3317D05921CB08F4000D87FE /* search_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_white@3x.png"; sourceTree = "<group>"; };
+		33291C9721CC941700D87CAC /* NSArray+JCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+JCUtils.h"; sourceTree = "<group>"; };
+		33291C9821CC941700D87CAC /* NSArray+JCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JCUtils.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +377,8 @@
 				3317CFBB21CAF765000D87FE /* UINavigationBar+JCUtils.m */,
 				3317CFBC21CAF765000D87FE /* UIView+JCUtils.h */,
 				3317CFBD21CAF765000D87FE /* UIView+JCUtils.m */,
+				33291C9721CC941700D87CAC /* NSArray+JCUtils.h */,
+				33291C9821CC941700D87CAC /* NSArray+JCUtils.m */,
 			);
 			path = JCUtils;
 			sourceTree = "<group>";
@@ -505,6 +511,7 @@
 				3317CFA021CAF758000D87FE /* NumericKeypadTextField.h in Headers */,
 				3317D00B21CAF765000D87FE /* JCTabBarController.h in Headers */,
 				3317D02C21CAF830000D87FE /* JCCartBarButtonItem.h in Headers */,
+				33291C9921CC941700D87CAC /* NSArray+JCUtils.h in Headers */,
 				3317D02721CAF765000D87FE /* JCStretchHeaderHandler.h in Headers */,
 				3317D00D21CAF765000D87FE /* JCTextField.h in Headers */,
 				3317D00121CAF765000D87FE /* JCButton.h in Headers */,
@@ -632,6 +639,7 @@
 				3317D00E21CAF765000D87FE /* JCTextField.m in Sources */,
 				3317CFA521CAF758000D87FE /* NumericKeypadViewController.m in Sources */,
 				3317D00621CAF765000D87FE /* JCLabel.m in Sources */,
+				33291C9A21CC941700D87CAC /* NSArray+JCUtils.m in Sources */,
 				3317CF9121CAF758000D87FE /* CRToast.m in Sources */,
 				3317CFEE21CAF765000D87FE /* JCUIAlertUtils.m in Sources */,
 				3317CF8B21CAF758000D87FE /* MTViewHighlighter.m in Sources */,
