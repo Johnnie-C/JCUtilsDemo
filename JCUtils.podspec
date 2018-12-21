@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
 	
 	spec.subspec 'JCFloatingView' do |sub|
 		sub.source_files = 'JCFloatingView/**/*.{h,m}'
-		sub.resources = [ 'JCFloatingView/**/*.xib', 'JCFloatingView/Resource/**/*.*']
+		sub.resources = [ 'JCFloatingView/**/*.xib', 'JCFloatingView/Resources/**/*.*']
 		sub.public_header_files = 'JCFloatingView/**/*.h'
 		sub.dependency 'JCUtils/JCFramework'
 	end
