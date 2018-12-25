@@ -22,7 +22,7 @@ iOS 9+
 1. Follow the instruction for installing [Cocoapod](https://guides.cocoapods.org/using/using-cocoapods)
 2. Add following code to podfile
 ```
-pod 'JCUtils/JCFloatingView', :podspec => 'https://raw.githubusercontent.com/EzlyJohnnie/JCUtilsDemo/feature/restructure/JCUtils.podspec'
+pod 'JCUtils/JCFloatingView', :podspec => 'https://raw.githubusercontent.com/EzlyJohnnie/JCUtilsDemo/master/JCUtils.podspec'
 ```
 
 <br>
