@@ -21,27 +21,26 @@ iOS 9+
 #### Install
 1. Follow the instruction for installing [Cocoapod](https://guides.cocoapods.org/using/using-cocoapods)
 2. Add following code to podfile
-```
+```ruby
 pod 'JCUtils/JCFloatingView', :podspec => 'https://raw.githubusercontent.com/EzlyJohnnie/JCUtilsDemo/master/JCUtils.podspec'
 ```
 
-<br>
-#### Usage
-```Objective-C
+#### Usage 
+```objective-c
 - (void)showFloatingView{
-JCFloatingViewConfig *config = [JCFloatingViewConfig new];
-JCFloatingViewController *floatingView = [JCFloatingViewController FloatingViewWithConfig:config];
-floatingView.delegate = self;
-[floatingView showFloatingView];
+  JCFloatingViewConfig *config = [JCFloatingViewConfig new];
+  JCFloatingViewController *floatingView = [JCFloatingViewController FloatingViewWithConfig:config];
+  floatingView.delegate = self;
+  [floatingView showFloatingView];
 }
 
 #pragma mark - JCFloatingViewControllerDelegate
 - (void)didClickedFloatingView:(JCFloatingViewController *)floatingView{
-//did click on floating view 
+  //did click on floating view 
 }
 
 - (void)didDismissFloatingView:(JCFloatingViewController *)floatingView{
-//floating view dismissed by drag to close
+  //floating view dismissed by drag to close
 }
 ```
 
@@ -49,7 +48,7 @@ floatingView.delegate = self;
 Floating view can be configured through `JCFloatingViewConfig`
 <br>
 For example
-```Objective-C
+```objective-c
 JCFloatingViewConfig *config = [JCFloatingViewConfig new];
 config.overMargin = 5;
 config.stickyToEdge = YES;
