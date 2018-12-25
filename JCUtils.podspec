@@ -33,7 +33,7 @@ Pod::Spec.new do |spec|
 
 
     spec.subspec 'JCAuthentication' do |sub|
-        sub.source_files = [ 'JCFramework/JCFramework/JCDesign/BaseView/JCNavigationController.h', 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.{h,m}' ]
+    sub.source_files = [ 'JCFramework/JCFramework/JCDesign/BaseView/JCNavigationController.{h,m}', 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.{h,m}' ]
         sub.public_header_files = [ 'JCFramework/JCFramework/JCDesign/BaseView/JCNavigationController.h', 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.h']
         sub.resources = [ 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.{xib,png}']
         sub.dependency 'JCUtils/JCFrameworkEssential'
