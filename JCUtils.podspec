@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
 
     spec.subspec 'JCFrameworkEssential' do |sub|
         sub.source_files = [ 'JCFramework/JCFramework/JCFramework.h', 'JCFramework/JCFramework/Essential/**/*.{h,m}' ]
-        sub.public_header_files = 'JCFramework/JCFramework/Essential/**/*.h'
+        sub.public_header_files = [ 'JCFramework/JCFramework/JCFramework.h', 'JCFramework/JCFramework/Essential/**/*.h' ]
     end
 
 
@@ -69,7 +69,7 @@ Pod::Spec.new do |spec|
 
     spec.subspec 'JCFloatingView' do |sub|
         sub.source_files = 'JCFloatingView/**/*.{h,m}'
-        sub.resources = [ 'JCFloatingView/**/*.xib', 'JCFloatingView/Resources/**/*.*']
+        sub.resources = [ 'JCFloatingView/**/*.xib', 'JCFloatingView/Resources/**/*.*', 'JCFramework/Resource/**/*.*']
         sub.public_header_files = 'JCFloatingView/**/*.h'
         sub.dependency 'JCUtils/JCFrameworkEssential'
     end
