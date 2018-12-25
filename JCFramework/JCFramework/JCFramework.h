@@ -23,7 +23,6 @@ FOUNDATION_EXPORT const unsigned char JCUtilsVersionString[];
 #import "JCPanGestureRecognizer.h"
 
 #import "JCUtils.h"
-#import "JCUIAlertUtils.h"
 #import "NSArray+JCUtils.h"
 #import "NSDictionary+JCUtils.h"
 #import "NSString+JCUtils.h"
@@ -50,6 +49,11 @@ FOUNDATION_EXPORT const unsigned char JCUtilsVersionString[];
 #import "JCLocationHelper.h"
 #endif
 
+//JCAlert
+#if __has_include("JCUIAlertUtils.h")
+#import "JCUIAlertUtils.h"
+#endif
+
 
 //Device ID
 #if __has_include("JCUtils+DeviceID.h")
@@ -66,3 +70,4 @@ FOUNDATION_EXPORT const unsigned char JCUtilsVersionString[];
 #if __has_include("JCUIAlertUtils+CRToast.h")
 #import "JCUIAlertUtils+CRToast.h"
 #endif
+

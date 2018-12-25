@@ -11,15 +11,15 @@ Pod::Spec.new do |spec|
     spec.ios.deployment_target  = '9.0'
     
     spec.subspec 'JCFramework' do |sub|
-		sub.source_files = 'JCFramework/**/*.{h,m}'
-		sub.resources = [ 'JCFramework/**/*.xib', 'JCFramework/Resource/**/*.*']
-		sub.public_header_files = 'JCFramework/**/*.h'
+        sub.source_files = 'JCFramework/**/*.{h,m}'
+        sub.resources = [ 'JCFramework/**/*.xib', 'JCFramework/Resource/**/*.*']
+        sub.public_header_files = 'JCFramework/**/*.h'
         sub.dependency 'SAMKeychain'
-	end
+    end
 
 
     spec.subspec 'JCFrameworkEssential' do |sub|
-        sub.source_files = [ 'JCFramework/JCFramework/Essential/**/*.{h,m}' ]
+        sub.source_files = [ 'JCFramework/JCFramework/JCFramework.h', 'JCFramework/JCFramework/Essential/**/*.{h,m}' ]
         sub.public_header_files = 'JCFramework/JCFramework/Essential/**/*.h'
     end
 
@@ -42,8 +42,15 @@ Pod::Spec.new do |spec|
 
 
     spec.subspec 'JCLocation' do |sub|
-        sub.source_files = [ 'JCFramework/JCFramework/JCHelpers/Location/**/*.{h,m}' ]
-        sub.public_header_files = 'JCFramework/JCFramework/JCHelpers/Location/**/*.h'
+        sub.source_files = [ 'JCFramework/JCFramework/JCAlert/*.{h,m}' ]
+        sub.public_header_files = 'JCFramework/JCFramework/JCAlert/*.h'
+        sub.dependency 'JCUtils/JCFrameworkEssential'
+    end
+
+    spec.subspec 'JCAlert' do |sub|
+        sub.source_files = [ 'JCFramework/JCFramework/Design/**/*.{h,m}' ]
+        sub.resources = [ 'JCFramework/**/*.xib', 'JCFramework/Resource/**/*.*']
+        sub.public_header_files = 'JCFramework/Design/**/*.h'
         sub.dependency 'JCUtils/JCFrameworkEssential'
     end
 
@@ -61,11 +68,11 @@ Pod::Spec.new do |spec|
     end
 
 
-	spec.subspec 'JCFloatingView' do |sub|
-		sub.source_files = 'JCFloatingView/**/*.{h,m}'
-		sub.resources = [ 'JCFloatingView/**/*.xib', 'JCFloatingView/Resources/**/*.*']
-		sub.public_header_files = 'JCFloatingView/**/*.h'
-		sub.dependency 'JCUtils/JCFrameworkEssential'
-	end
+    spec.subspec 'JCFloatingView' do |sub|
+        sub.source_files = 'JCFloatingView/**/*.{h,m}'
+        sub.resources = [ 'JCFloatingView/**/*.xib', 'JCFloatingView/Resources/**/*.*']
+        sub.public_header_files = 'JCFloatingView/**/*.h'
+        sub.dependency 'JCUtils/JCFrameworkEssential'
+    end
 	
 end

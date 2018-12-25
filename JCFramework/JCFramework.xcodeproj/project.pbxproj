@@ -111,6 +111,7 @@
 		932F9A5B21D1D0050028FD90 /* UINavigationBar+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A4721D1D0050028FD90 /* UINavigationBar+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		932F9A5C21D1D2170028FD90 /* JCDesign.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A0921D1CECC0028FD90 /* JCDesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		932F9A5D21D1D21D0028FD90 /* JCAuthentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A0821D1CDCD0028FD90 /* JCAuthentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		939DC1FA21D1EB2F002359CB /* JCAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 939DC1F921D1EAA3002359CB /* JCAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -220,6 +221,7 @@
 		932F9A4521D1D0050028FD90 /* UIView+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JCUtils.h"; sourceTree = "<group>"; };
 		932F9A4621D1D0050028FD90 /* JCUIAlertUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCUIAlertUtils.h; sourceTree = "<group>"; };
 		932F9A4721D1D0050028FD90 /* UINavigationBar+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JCUtils.h"; sourceTree = "<group>"; };
+		939DC1F921D1EAA3002359CB /* JCAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAlert.h; sourceTree = "<group>"; };
 		93AB2A0221CE441500A9A0BA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		93AB2A0421CE443000A9A0BA /* libPods-JCFrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-JCFrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AB2A0621CE443900A9A0BA /* libSAMKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSAMKeychain.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,6 +268,7 @@
 				932F9A0A21D1CFF60028FD90 /* Essential */,
 				3317CFE121CAF765000D87FE /* JCDesign */,
 				3317CFDC21CAF765000D87FE /* JCHelpers */,
+				939DC1F821D1EA73002359CB /* JCAlert */,
 				3317CFAB21CAF765000D87FE /* JCUtils */,
 			);
 			path = JCFramework;
@@ -353,8 +356,6 @@
 				3317CFD721CAF765000D87FE /* JCHeaderTabView.h */,
 				3317CFD821CAF765000D87FE /* JCHeaderTabView.m */,
 				3317CFD921CAF765000D87FE /* JCHeaderTabView.xib */,
-				3317CFDA21CAF765000D87FE /* JCUIAlertController.h */,
-				3317CFDB21CAF765000D87FE /* JCUIAlertController.m */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -486,8 +487,6 @@
 		932F9A0B21D1CFF60028FD90 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				932F9A4621D1D0050028FD90 /* JCUIAlertUtils.h */,
-				932F9A4221D1D0040028FD90 /* JCUIAlertUtils.m */,
 				932F9A3F21D1D0040028FD90 /* JCUtils.h */,
 				932F9A3721D1D0040028FD90 /* JCUtils.m */,
 				932F9A3521D1D0040028FD90 /* NSArray+JCUtils.h */,
@@ -508,6 +507,18 @@
 				932F9A3B21D1D0040028FD90 /* UIView+JCUtils.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		939DC1F821D1EA73002359CB /* JCAlert */ = {
+			isa = PBXGroup;
+			children = (
+				939DC1F921D1EAA3002359CB /* JCAlert.h */,
+				3317CFDA21CAF765000D87FE /* JCUIAlertController.h */,
+				3317CFDB21CAF765000D87FE /* JCUIAlertController.m */,
+				932F9A4621D1D0050028FD90 /* JCUIAlertUtils.h */,
+				932F9A4221D1D0040028FD90 /* JCUIAlertUtils.m */,
+			);
+			path = JCAlert;
 			sourceTree = "<group>";
 		};
 		93AB2A0121CE441400A9A0BA /* Frameworks */ = {
@@ -574,6 +585,7 @@
 				3317CF9921CAF758000D87FE /* CRToastWindow.h in Headers */,
 				3317D02321CAF765000D87FE /* JCParabolaAnimationHandler.h in Headers */,
 				3317CF9721CAF758000D87FE /* CRToastViewController.h in Headers */,
+				939DC1FA21D1EB2F002359CB /* JCAlert.h in Headers */,
 				932F998721D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.h in Headers */,
 				3317CF8C21CAF758000D87FE /* MTCompoundButton.h in Headers */,
 			);
