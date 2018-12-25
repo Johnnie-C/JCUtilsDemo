@@ -19,8 +19,8 @@ Pod::Spec.new do |spec|
 
 
     spec.subspec 'JCFrameworkEssential' do |sub|
-        sub.source_files = [ 'JCFramework/Essential/*.{h,m}' ]
-        sub.public_header_files = 'JCFramework/Essential/*.h'
+        sub.source_files = [ 'JCFramework/JCFramework/Essential/*.{h,m}' ]
+        sub.public_header_files = 'JCFramework/JCFramework/Essential/*.h'
     end
 
 
@@ -34,7 +34,7 @@ Pod::Spec.new do |spec|
 
     spec.subspec 'JCAuthentication' do |sub|
         sub.source_files = [ 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.{h,m}' ]
-        sub.public_header_files = 'JCFramework/JCHelpers/Authentication/**/*.h'
+        sub.public_header_files = 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.h'
         sub.resources = [ 'JCFramework/JCHelpers/Authentication/**/*.{xib,png}']
         sub.dependency 'JCUtils/JCFrameworkEssential'
         sub.dependency 'SAMKeychain'
@@ -43,7 +43,7 @@ Pod::Spec.new do |spec|
 
     spec.subspec 'JCLocation' do |sub|
         sub.source_files = [ 'JCFramework/JCFramework/JCHelpers/Location/**/*.{h,m}' ]
-        sub.public_header_files = 'JCFramework/JCHelpers/Location/**/*.h'
+        sub.public_header_files = 'JCFramework/JCFramework/JCHelpers/Location/**/*.h'
         sub.dependency 'JCUtils/JCFrameworkEssential'
     end
 
