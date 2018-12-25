@@ -35,11 +35,11 @@
 
 
 - (IBAction)leftButtonClicked:(id)sender {
-    [JCUIAlertUtils toastWithMessage:@"One clicked" colour:[UIColor toastMessageOrange]];
+    [JCToast toastWithMessage:@"One clicked" colour:[UIColor toastMessageOrange]];
 }
 
 - (IBAction)rightButtonClicked:(id)sender {
-    [JCUIAlertUtils toastWithMessage:@"Two clicked" colour:[UIColor toastMessageOrange]];
+    [JCToast toastWithMessage:@"Two clicked" colour:[UIColor toastMessageOrange]];
 }
 
 @end

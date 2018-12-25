@@ -147,7 +147,7 @@
                                                                     [self showAuthButtonWithCompletion:nil];
                                                                 }
                                                                 else{
-                                                                    [JCUIAlertUtils toastWithMessage:errorMsg
+                                                                    [JCToast toastWithMessage:errorMsg
                                                                                               colour:[UIColor toastMessageRed]];
                                                                 }
                                                             }];
@@ -155,7 +155,7 @@
 
 - (void)showChangePasscode{
     [[JCAuthenticationHanlder sharedHelper] changePasswordWithTitle:@"Change passcode" completion:^(BOOL success, NSString *errorMsg) {
-        [JCUIAlertUtils toastWithMessage:success ? @"Passcode changed" :errorMsg
+        [JCToast toastWithMessage:success ? @"Passcode changed" :errorMsg
                                   colour:success ? [UIColor toastMessageGreen] : [UIColor toastMessageRed]];
     }];
 }
@@ -164,11 +164,11 @@
     [[JCAuthenticationHanlder sharedHelper] authenticateWithPasswordWithTitle:@"This is a demo title" completion:^(BOOL success, NSString *errorMsg) {
         if([errorMsg isEqualToString:ERROR_FORGOT_PASSCODE_CLCIKED]){
             //forget passcode clicked
-            [JCUIAlertUtils toastWithMessage:@"Forget passcode clicked"
+            [JCToast toastWithMessage:@"Forget passcode clicked"
                                       colour:[UIColor toastMessageGreen]];
         }
         else{
-            [JCUIAlertUtils toastWithMessage:success ? @"Passcode auth success" :errorMsg
+            [JCToast toastWithMessage:success ? @"Passcode auth success" :errorMsg
                                       colour:success ? [UIColor toastMessageGreen] : [UIColor toastMessageRed]];
         }
     }];
@@ -176,7 +176,7 @@
 
 - (void)showBiometricsAuthentication{
     [[JCAuthenticationHanlder sharedHelper] authenticateWithBiometricsWithTitle:@"This is a demo title" completion:^(BOOL success, NSError *error) {
-        [JCUIAlertUtils toastWithMessage:success ? @"Biometrics auth success" : [error localizedDescription]
+        [JCToast toastWithMessage:success ? @"Biometrics auth success" : [error localizedDescription]
                                   colour:success ? [UIColor toastMessageGreen] : [UIColor toastMessageRed]];
     }];
 }

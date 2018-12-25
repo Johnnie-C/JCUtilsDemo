@@ -141,7 +141,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
         case JCHomeViewCellIndexSlidableCell:
         case JCHomeViewCellIndexSlidableCellTwo:
             [_dragCellpanGesture resetPredragedCellIfNeed];
-            [JCUIAlertUtils toastWithMessage:[NSString stringWithFormat:@"Cell clicked at section: %ld, row: %ld", indexPath.section, indexPath.row]
+            [JCToast toastWithMessage:[NSString stringWithFormat:@"Cell clicked at section: %ld, row: %ld", indexPath.section, indexPath.row]
                                       colour:[UIColor toastMessageOrange]];
             break;
             
@@ -278,7 +278,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     BOOL hasConnectivity = [JCUtils hasConnectivity];
     NSString *message = [NSString stringWithFormat:@"checking connection: %@",
                                                     hasConnectivity ? @"connected" : @"No Connection"];
-    [JCUIAlertUtils toastWithMessage:message colour: hasConnectivity ? [UIColor toastMessageGreen] : [UIColor toastMessageRed]];
+    [JCToast toastWithMessage:message colour: hasConnectivity ? [UIColor toastMessageGreen] : [UIColor toastMessageRed]];
 }
 
 - (void)rightBarButtonItemTapped:(NSInteger)btnType{
@@ -294,11 +294,11 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
                                     content:@"right search button clicked"
                                 yesBtnTitle:@"Yes"
                                  yesHandler:^(UIAlertAction *action) {
-                                     [JCUIAlertUtils toastWithMessage:@"Yes button clicked" colour:[UIColor toastMessageGreen]];
+                                     [JCToast toastWithMessage:@"Yes button clicked" colour:[UIColor toastMessageGreen]];
                                  }
                                  noBtnTitle:@"No"
                                   noHandler:^(UIAlertAction *action) {
-                                      [JCUIAlertUtils toastWithMessage:@"No button clicked" colour:[UIColor toastMessageRed]];
+                                      [JCToast toastWithMessage:@"No button clicked" colour:[UIColor toastMessageRed]];
                                   }];
             break;
             
@@ -308,12 +308,12 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
 
 #pragma mark - JCFloatingViewControllerDelegate
 - (void)didClickedFloatingView:(JCFloatingViewController *)floatingView{
-    [JCUIAlertUtils toastWithMessage:@"Did clicked floating view"
+    [JCToast toastWithMessage:@"Did clicked floating view"
                               colour:[UIColor toastMessageGreen]];
 }
 
 - (void)didDismissFloatingView:(JCFloatingViewController *)floatingView{
-    [JCUIAlertUtils toastWithMessage:@"Floating view dismiss success"
+    [JCToast toastWithMessage:@"Floating view dismiss success"
                               colour:[UIColor toastMessageGreen]];
 }
 

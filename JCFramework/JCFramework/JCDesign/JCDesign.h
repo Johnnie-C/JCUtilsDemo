@@ -17,7 +17,6 @@
 #import "JCBarButtonItem.h"
 #import "JCErrorTextField.h"
 #import "JCHeaderTabView.h"
-#import "JCUIAlertController.h"
 
 #import "JCCollectionViewFlowLayout.h"
 #import "JCParabolaAnimationHandler.h"

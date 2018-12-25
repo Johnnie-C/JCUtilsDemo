@@ -1,5 +1,5 @@
 //
-//  JCUIAlertUtils+CRToast.h
+//  JCToast.h
 //  JCFramework
 //
 //  Created by Johnnie Cheng on 25/12/18.
@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JCUIAlertUtils.h"
 
 
-@interface JCUIAlertUtils (JCCRToast)
+@interface JCToast : NSObject
 
 + (void)toastWithMessage:(NSString *)message colour:(UIColor *)colour;
 + (void)toastWithMessage:(NSString *)message colour:(UIColor *)colour completion:(void (^)(void))completion;

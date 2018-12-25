@@ -13,7 +13,6 @@
 #import "UIColor+JCUtils.h"
 #import "UIImage+JCUtils.h"
 #import "UIView+JCUtils.h"
-#import "JCUIAlertUtils.h"
 #import "UINavigationBar+JCUtils.h"
 
 @interface JCBaseViewController (){

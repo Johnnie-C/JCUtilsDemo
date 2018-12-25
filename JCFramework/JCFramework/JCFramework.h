@@ -61,8 +61,8 @@ FOUNDATION_EXPORT const unsigned char JCUtilsVersionString[];
 #endif
 
 //JCToast
-#if __has_include("JCUIAlertUtils+CRToast.h")
-#import "JCUIAlertUtils+CRToast.h"
+#if __has_include("JCToast.h")
+#import "JCToast.h"
 #endif
 
 //JCUtils+Comprehansive

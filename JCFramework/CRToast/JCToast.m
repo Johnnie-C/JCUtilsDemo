@@ -1,17 +1,17 @@
 //
-//  JCUIAlertUtils+CRToast.m
+//  JCToast.m
 //  JCFramework
 //
 //  Created by Johnnie Cheng on 25/12/18.
 //  Copyright © 2018 Johnnie Cheng. All rights reserved.
 //
 
-#import "JCUIAlertUtils+CRToast.h"
+#import "JCToast.h"
 #import "CRToast.h"
 #import "UIFont+JCUtils.h"
 
 
-@implementation JCUIAlertUtils (JCCRToast)
+@implementation JCToast
 
 + (void)toastWithMessage:(NSString *)message colour:(UIColor *)colour
 {

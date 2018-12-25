@@ -68,8 +68,8 @@
 		3317D05D21CB08F4000D87FE /* ic_menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05721CB08F4000D87FE /* ic_menu@3x.png */; };
 		3317D05E21CB08F4000D87FE /* nav_cart@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05821CB08F4000D87FE /* nav_cart@3x.png */; };
 		3317D05F21CB08F4000D87FE /* search_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05921CB08F4000D87FE /* search_white@3x.png */; };
-		932F998721D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F998521D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		932F998821D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F998621D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.m */; };
+		932F998721D1AF7A0028FD90 /* JCToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F998521D1AF7A0028FD90 /* JCToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F998821D1AF7A0028FD90 /* JCToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F998621D1AF7A0028FD90 /* JCToast.m */; };
 		932F999F21D1C9740028FD90 /* JCAuthenticationHanlder.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F998D21D1C9740028FD90 /* JCAuthenticationHanlder.m */; };
 		932F99A021D1C9740028FD90 /* PAPasscodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F998F21D1C9740028FD90 /* PAPasscodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		932F99A121D1C9740028FD90 /* PAPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F999021D1C9740028FD90 /* PAPasscodeViewController.m */; };
@@ -178,8 +178,8 @@
 		3317D05721CB08F4000D87FE /* ic_menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_menu@3x.png"; sourceTree = "<group>"; };
 		3317D05821CB08F4000D87FE /* nav_cart@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_cart@3x.png"; sourceTree = "<group>"; };
 		3317D05921CB08F4000D87FE /* search_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_white@3x.png"; sourceTree = "<group>"; };
-		932F998521D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCUIAlertUtils+CRToast.h"; sourceTree = "<group>"; };
-		932F998621D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JCUIAlertUtils+CRToast.m"; sourceTree = "<group>"; };
+		932F998521D1AF7A0028FD90 /* JCToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCToast.h; sourceTree = "<group>"; };
+		932F998621D1AF7A0028FD90 /* JCToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCToast.m; sourceTree = "<group>"; };
 		932F998D21D1C9740028FD90 /* JCAuthenticationHanlder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAuthenticationHanlder.m; sourceTree = "<group>"; };
 		932F998F21D1C9740028FD90 /* PAPasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPasscodeViewController.h; sourceTree = "<group>"; };
 		932F999021D1C9740028FD90 /* PAPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPasscodeViewController.m; sourceTree = "<group>"; };
@@ -310,8 +310,8 @@
 				3317CF7421CAF758000D87FE /* CRToastWindow.h */,
 				3317CF7521CAF758000D87FE /* CRToastWindow.m */,
 				3317CF7621CAF758000D87FE /* ReadMe.txt */,
-				932F998521D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.h */,
-				932F998621D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.m */,
+				932F998521D1AF7A0028FD90 /* JCToast.h */,
+				932F998621D1AF7A0028FD90 /* JCToast.m */,
 			);
 			path = CRToast;
 			sourceTree = "<group>";
@@ -586,7 +586,7 @@
 				3317D02321CAF765000D87FE /* JCParabolaAnimationHandler.h in Headers */,
 				3317CF9721CAF758000D87FE /* CRToastViewController.h in Headers */,
 				939DC1FA21D1EB2F002359CB /* JCAlert.h in Headers */,
-				932F998721D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.h in Headers */,
+				932F998721D1AF7A0028FD90 /* JCToast.h in Headers */,
 				3317CF8C21CAF758000D87FE /* MTCompoundButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,7 +692,7 @@
 				3317D00C21CAF765000D87FE /* JCTabBarController.m in Sources */,
 				3317D00821CAF765000D87FE /* JCNavigationController.m in Sources */,
 				3317D02021CAF765000D87FE /* JCDragableCellGestureRecognizer.m in Sources */,
-				932F998821D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.m in Sources */,
+				932F998821D1AF7A0028FD90 /* JCToast.m in Sources */,
 				3317CF9A21CAF758000D87FE /* CRToastWindow.m in Sources */,
 				3317CF8D21CAF758000D87FE /* MTCompoundButton.m in Sources */,
 				3317D00021CAF765000D87FE /* JCBaseViewController.m in Sources */,

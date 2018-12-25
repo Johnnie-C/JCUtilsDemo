@@ -46,6 +46,7 @@ Pod::Spec.new do |spec|
         sub.source_files = [ 'JCFramework/JCFramework/JCHelpers/Location/**/*.{h,m}' ]
         sub.public_header_files = 'JCFramework/JCFramework/JCHelpers/Location/**/*.h'
         sub.dependency 'JCUtils/JCFrameworkEssential'
+        sub.dependency 'JCUtils/JCAlert'
     end
 
     spec.subspec 'JCAlert' do |sub|
