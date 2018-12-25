@@ -6,10 +6,9 @@
 //  Copyright © 2017 Johnnie Cheng. All rights reserved.
 //
 
-#import "JCUtils+JCReachability.h"
-#import "Reachability.h"
+#import "JCReachability.h"
 
-@implementation JCUtils (JCReachability)
+@implementation JCReachability
     
 + (BOOL)hasConnectivity{
     NetworkStatus networkStatus = [[Reachability reachabilityForInternetConnection] currentReachabilityStatus];

@@ -9,7 +9,8 @@ Pod::Spec.new do |spec|
     spec.exclude_files = [ 'JCFrameworkDemo/**/*.*' ]
     spec.framework    = 'SystemConfiguration'
     spec.ios.deployment_target  = '9.0'
-    
+
+
     spec.subspec 'JCFramework' do |sub|
         sub.source_files = 'JCFramework/**/*.{h,m}'
         sub.resources = [ 'JCFramework/**/*.xib', 'JCFramework/Resource/**/*.*']

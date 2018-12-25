@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		9304F1DD21CDBE0500225FB2 /* JCReachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9304F1D321CDBE0500225FB2 /* JCReachability.framework */; };
 		9304F1E221CDBE0500225FB2 /* JCReachabilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9304F1E121CDBE0500225FB2 /* JCReachabilityTests.m */; };
-		9304F1E421CDBE0500225FB2 /* JCReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 9304F1D621CDBE0500225FB2 /* JCReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9304F20221CDBE9100225FB2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9304F1FE21CDBE9100225FB2 /* Reachability.m */; };
-		9304F20321CDBE9100225FB2 /* JCUtils+JCReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9304F1FF21CDBE9100225FB2 /* JCUtils+JCReachability.m */; };
-		9304F20421CDBE9100225FB2 /* JCUtils+JCReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 9304F20021CDBE9100225FB2 /* JCUtils+JCReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9304F20321CDBE9100225FB2 /* JCReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9304F1FF21CDBE9100225FB2 /* JCReachability.m */; };
+		9304F20421CDBE9100225FB2 /* JCReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 9304F20021CDBE9100225FB2 /* JCReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9304F20521CDBE9100225FB2 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 9304F20121CDBE9100225FB2 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9304F20C21CDC03A00225FB2 /* JCReachability.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9304F20B21CDC03A00225FB2 /* JCReachability.podspec */; };
 /* End PBXBuildFile section */
@@ -29,14 +28,13 @@
 
 /* Begin PBXFileReference section */
 		9304F1D321CDBE0500225FB2 /* JCReachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCReachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9304F1D621CDBE0500225FB2 /* JCReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCReachability.h; sourceTree = "<group>"; };
 		9304F1D721CDBE0500225FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9304F1DC21CDBE0500225FB2 /* JCReachabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCReachabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9304F1E121CDBE0500225FB2 /* JCReachabilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCReachabilityTests.m; sourceTree = "<group>"; };
 		9304F1E321CDBE0500225FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9304F1FE21CDBE9100225FB2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		9304F1FF21CDBE9100225FB2 /* JCUtils+JCReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JCUtils+JCReachability.m"; sourceTree = "<group>"; };
-		9304F20021CDBE9100225FB2 /* JCUtils+JCReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JCUtils+JCReachability.h"; sourceTree = "<group>"; };
+		9304F1FF21CDBE9100225FB2 /* JCReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCReachability.m; sourceTree = "<group>"; };
+		9304F20021CDBE9100225FB2 /* JCReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCReachability.h; sourceTree = "<group>"; };
 		9304F20121CDBE9100225FB2 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		9304F20B21CDC03A00225FB2 /* JCReachability.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JCReachability.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,9 +80,8 @@
 		9304F1D521CDBE0500225FB2 /* JCReachability */ = {
 			isa = PBXGroup;
 			children = (
-				9304F1D621CDBE0500225FB2 /* JCReachability.h */,
-				9304F20021CDBE9100225FB2 /* JCUtils+JCReachability.h */,
-				9304F1FF21CDBE9100225FB2 /* JCUtils+JCReachability.m */,
+				9304F20021CDBE9100225FB2 /* JCReachability.h */,
+				9304F1FF21CDBE9100225FB2 /* JCReachability.m */,
 				9304F20121CDBE9100225FB2 /* Reachability.h */,
 				9304F1FE21CDBE9100225FB2 /* Reachability.m */,
 				9304F1D721CDBE0500225FB2 /* Info.plist */,
@@ -108,9 +105,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9304F20421CDBE9100225FB2 /* JCUtils+JCReachability.h in Headers */,
+				9304F20421CDBE9100225FB2 /* JCReachability.h in Headers */,
 				9304F20521CDBE9100225FB2 /* Reachability.h in Headers */,
-				9304F1E421CDBE0500225FB2 /* JCReachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9304F20321CDBE9100225FB2 /* JCUtils+JCReachability.m in Sources */,
+				9304F20321CDBE9100225FB2 /* JCReachability.m in Sources */,
 				9304F20221CDBE9100225FB2 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

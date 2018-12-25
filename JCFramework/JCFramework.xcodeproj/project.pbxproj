@@ -62,7 +62,6 @@
 		3317D02B21CAF830000D87FE /* JCCartBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317D02921CAF830000D87FE /* JCCartBarButtonItem.m */; };
 		3317D02C21CAF830000D87FE /* JCCartBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317D02A21CAF830000D87FE /* JCCartBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3317D04521CB0327000D87FE /* JCFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3317D04421CB0327000D87FE /* JCFramework.podspec */; };
-		3317D05A21CB08F4000D87FE /* demo_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05421CB08F4000D87FE /* demo_image.jpeg */; };
 		3317D05B21CB08F4000D87FE /* ic_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05521CB08F4000D87FE /* ic_back@3x.png */; };
 		3317D05C21CB08F4000D87FE /* ic_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05621CB08F4000D87FE /* ic_close.png */; };
 		3317D05D21CB08F4000D87FE /* ic_menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05721CB08F4000D87FE /* ic_menu@3x.png */; };
@@ -172,7 +171,6 @@
 		3317D02921CAF830000D87FE /* JCCartBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCartBarButtonItem.m; sourceTree = "<group>"; };
 		3317D02A21CAF830000D87FE /* JCCartBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCartBarButtonItem.h; sourceTree = "<group>"; };
 		3317D04421CB0327000D87FE /* JCFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JCFramework.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3317D05421CB08F4000D87FE /* demo_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo_image.jpeg; sourceTree = "<group>"; };
 		3317D05521CB08F4000D87FE /* ic_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_back@3x.png"; sourceTree = "<group>"; };
 		3317D05621CB08F4000D87FE /* ic_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_close.png; sourceTree = "<group>"; };
 		3317D05721CB08F4000D87FE /* ic_menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_menu@3x.png"; sourceTree = "<group>"; };
@@ -409,7 +407,6 @@
 		3317D05321CB08F4000D87FE /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				3317D05421CB08F4000D87FE /* demo_image.jpeg */,
 				3317D05521CB08F4000D87FE /* ic_back@3x.png */,
 				3317D05621CB08F4000D87FE /* ic_close.png */,
 				3317D05721CB08F4000D87FE /* ic_menu@3x.png */,
@@ -653,7 +650,6 @@
 				932F99AC21D1C9740028FD90 /* PAPasscodeReadMe.txt in Resources */,
 				932F99A321D1C9740028FD90 /* NumericKeypad.xib in Resources */,
 				3317D05B21CB08F4000D87FE /* ic_back@3x.png in Resources */,
-				3317D05A21CB08F4000D87FE /* demo_image.jpeg in Resources */,
 				3317D04521CB0327000D87FE /* JCFramework.podspec in Resources */,
 				932F99AA21D1C9740028FD90 /* normal.png in Resources */,
 				3317D05F21CB08F4000D87FE /* search_white@3x.png in Resources */,

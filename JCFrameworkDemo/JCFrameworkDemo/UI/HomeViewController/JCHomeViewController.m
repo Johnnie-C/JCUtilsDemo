@@ -157,7 +157,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
             if(!_floatingView){
                 JCFloatingViewConfig *config = [JCFloatingViewConfig new];
                 config.overMargin = 5;
-                config.stickyToEdge = NO;
+                config.stickyToEdge = YES;
                 config.floatingViewBorderColor = [UIColor orangeColor];
                 config.floatingViewWidth = 80;
                 config.floatingViewHeight = 110;
@@ -275,7 +275,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
 
 #pragma mark - RvrBarButtonItem Delegate
 - (void)leftBarButtonItemTapped:(NSInteger)btnType{
-    BOOL hasConnectivity = [JCUtils hasConnectivity];
+    BOOL hasConnectivity = [JCReachability hasConnectivity];
     NSString *message = [NSString stringWithFormat:@"checking connection: %@",
                                                     hasConnectivity ? @"connected" : @"No Connection"];
     [JCToast toastWithMessage:message colour: hasConnectivity ? [UIColor toastMessageGreen] : [UIColor toastMessageRed]];
