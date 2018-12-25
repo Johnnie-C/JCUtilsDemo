@@ -19,8 +19,8 @@ Pod::Spec.new do |spec|
 
 
     spec.subspec 'JCFrameworkEssential' do |sub|
-        sub.source_files = [ 'JCFramework/JCFramework/Essential/*.{h,m}' ]
-        sub.public_header_files = 'JCFramework/JCFramework/Essential/*.h'
+        sub.source_files = [ 'JCFramework/JCFramework/Essential/*/**.{h,m}' ]
+        sub.public_header_files = 'JCFramework/JCFramework/Essential/**/*.h'
     end
 
 
