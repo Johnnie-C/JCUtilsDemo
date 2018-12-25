@@ -156,12 +156,12 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
         case JCHomeViewCellIndexFloatingView:
             if(!_floatingView){
                 JCFloatingViewConfig *config = [JCFloatingViewConfig new];
-                config.overMargin = 5;
-                config.stickyToEdge = YES;
-                config.floatingViewBorderColor = [UIColor orangeColor];
-                config.floatingViewWidth = 80;
-                config.floatingViewHeight = 110;
-                config.floatingViewCornerRadius = 10;
+//                config.overMargin = 5;
+//                config.stickyToEdge = YES;
+//                config.floatingViewBorderColor = [UIColor orangeColor];
+//                config.floatingViewWidth = 80;
+//                config.floatingViewHeight = 110;
+//                config.floatingViewCornerRadius = 10;
                 _floatingView = [JCFloatingViewController FloatingViewWithConfig:config];
                 _floatingView.delegate = self;
             }
