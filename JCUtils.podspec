@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
     spec.authors      = { 'Johnnie Cheng' => 'a81658804@hotmail.com' }
     spec.summary      = 'App level floating view.'
     spec.source       = { :git => "https://github.com/EzlyJohnnie/JCUtilsDemo.git" }
-    spec.exclude_files = [ 'JCFrameworkDemo/**/*.*' ]
+    spec.exclude_files = [ 'JCFrameworkDemo/**/*.*', 'WikiResources/**/*.*' ]
     spec.framework    = 'SystemConfiguration'
     spec.ios.deployment_target  = '9.0'
 
