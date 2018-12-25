@@ -164,10 +164,6 @@
     [self.view insertSubview:_statusBarView atIndex:999];
 }
 
-- (BOOL)SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO:(NSString *)version{
-    return SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(version);
-}
-
 - (void)pushViewController:(UIViewController *)viewController{
     [self.navigationController pushViewController:viewController animated:YES];
 }

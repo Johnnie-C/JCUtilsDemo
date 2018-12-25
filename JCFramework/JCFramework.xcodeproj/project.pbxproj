@@ -26,39 +26,6 @@
 		3317CF9921CAF758000D87FE /* CRToastWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CF7421CAF758000D87FE /* CRToastWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3317CF9A21CAF758000D87FE /* CRToastWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CF7521CAF758000D87FE /* CRToastWindow.m */; };
 		3317CF9B21CAF758000D87FE /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3317CF7621CAF758000D87FE /* ReadMe.txt */; };
-		3317CF9C21CAF758000D87FE /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CF7821CAF758000D87FE /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CF9D21CAF758000D87FE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CF7921CAF758000D87FE /* Reachability.m */; };
-		3317CF9E21CAF758000D87FE /* NumericKeypad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3317CF7C21CAF758000D87FE /* NumericKeypad.xib */; };
-		3317CF9F21CAF758000D87FE /* NumericKeypadDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CF7D21CAF758000D87FE /* NumericKeypadDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CFA021CAF758000D87FE /* NumericKeypadTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CF7E21CAF758000D87FE /* NumericKeypadTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CFA121CAF758000D87FE /* NumericKeypadTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CF7F21CAF758000D87FE /* NumericKeypadTextField.m */; };
-		3317CFA221CAF758000D87FE /* NumericKeypadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CF8021CAF758000D87FE /* NumericKeypadView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CFA321CAF758000D87FE /* NumericKeypadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CF8121CAF758000D87FE /* NumericKeypadView.m */; };
-		3317CFA421CAF758000D87FE /* NumericKeypadViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CF8221CAF758000D87FE /* NumericKeypadViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CFA521CAF758000D87FE /* NumericKeypadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CF8321CAF758000D87FE /* NumericKeypadViewController.m */; };
-		3317CFA621CAF758000D87FE /* highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317CF8521CAF758000D87FE /* highlight.png */; };
-		3317CFA721CAF758000D87FE /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317CF8621CAF758000D87FE /* normal.png */; };
-		3317CFA821CAF758000D87FE /* PAPasscodeReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3317CF8721CAF758000D87FE /* PAPasscodeReadMe.txt */; };
-		3317CFA921CAF758000D87FE /* PAPasscodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CF8821CAF758000D87FE /* PAPasscodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CFAA21CAF758000D87FE /* PAPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CF8921CAF758000D87FE /* PAPasscodeViewController.m */; };
-		3317CFED21CAF765000D87FE /* JCUIAlertUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFAC21CAF765000D87FE /* JCUIAlertUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CFEE21CAF765000D87FE /* JCUIAlertUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFAD21CAF765000D87FE /* JCUIAlertUtils.m */; };
-		3317CFEF21CAF765000D87FE /* JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFAE21CAF765000D87FE /* JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CFF021CAF765000D87FE /* JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFAF21CAF765000D87FE /* JCUtils.m */; };
-		3317CFF121CAF765000D87FE /* NSDictionary+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFB021CAF765000D87FE /* NSDictionary+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CFF221CAF765000D87FE /* NSDictionary+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFB121CAF765000D87FE /* NSDictionary+JCUtils.m */; };
-		3317CFF321CAF765000D87FE /* NSString+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFB221CAF765000D87FE /* NSString+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CFF421CAF765000D87FE /* NSString+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFB321CAF765000D87FE /* NSString+JCUtils.m */; };
-		3317CFF521CAF765000D87FE /* UIColor+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFB421CAF765000D87FE /* UIColor+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CFF621CAF765000D87FE /* UIColor+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFB521CAF765000D87FE /* UIColor+JCUtils.m */; };
-		3317CFF721CAF765000D87FE /* UIFont+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFB621CAF765000D87FE /* UIFont+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CFF821CAF765000D87FE /* UIFont+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFB721CAF765000D87FE /* UIFont+JCUtils.m */; };
-		3317CFF921CAF765000D87FE /* UIImage+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFB821CAF765000D87FE /* UIImage+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CFFA21CAF765000D87FE /* UIImage+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFB921CAF765000D87FE /* UIImage+JCUtils.m */; };
-		3317CFFB21CAF765000D87FE /* UINavigationBar+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFBA21CAF765000D87FE /* UINavigationBar+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CFFC21CAF765000D87FE /* UINavigationBar+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFBB21CAF765000D87FE /* UINavigationBar+JCUtils.m */; };
-		3317CFFD21CAF765000D87FE /* UIView+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFBC21CAF765000D87FE /* UIView+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317CFFE21CAF765000D87FE /* UIView+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFBD21CAF765000D87FE /* UIView+JCUtils.m */; };
 		3317CFFF21CAF765000D87FE /* JCBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFBF21CAF765000D87FE /* JCBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3317D00021CAF765000D87FE /* JCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFC021CAF765000D87FE /* JCBaseViewController.m */; };
 		3317D00121CAF765000D87FE /* JCButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFC121CAF765000D87FE /* JCButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -82,10 +49,6 @@
 		3317D01821CAF765000D87FE /* JCHeaderTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3317CFD921CAF765000D87FE /* JCHeaderTabView.xib */; };
 		3317D01921CAF765000D87FE /* JCUIAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFDA21CAF765000D87FE /* JCUIAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3317D01A21CAF765000D87FE /* JCUIAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFDB21CAF765000D87FE /* JCUIAlertController.m */; };
-		3317D01B21CAF765000D87FE /* JCAuthenticationHanlder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFDD21CAF765000D87FE /* JCAuthenticationHanlder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317D01C21CAF765000D87FE /* JCAuthenticationHanlder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFDE21CAF765000D87FE /* JCAuthenticationHanlder.m */; };
-		3317D01D21CAF765000D87FE /* JCLocationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFDF21CAF765000D87FE /* JCLocationHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317D01E21CAF765000D87FE /* JCLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFE021CAF765000D87FE /* JCLocationHelper.m */; };
 		3317D01F21CAF765000D87FE /* JCDragableCellGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFE321CAF765000D87FE /* JCDragableCellGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3317D02021CAF765000D87FE /* JCDragableCellGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFE421CAF765000D87FE /* JCDragableCellGestureRecognizer.m */; };
 		3317D02121CAF765000D87FE /* JCCollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFE521CAF765000D87FE /* JCCollectionViewFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -98,11 +61,6 @@
 		3317D02821CAF765000D87FE /* JCStretchHeaderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFEC21CAF765000D87FE /* JCStretchHeaderHandler.m */; };
 		3317D02B21CAF830000D87FE /* JCCartBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317D02921CAF830000D87FE /* JCCartBarButtonItem.m */; };
 		3317D02C21CAF830000D87FE /* JCCartBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317D02A21CAF830000D87FE /* JCCartBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317D03321CAF909000D87FE /* SAMKeychain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3317D02E21CAF908000D87FE /* SAMKeychain.bundle */; };
-		3317D03421CAF909000D87FE /* SAMKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317D02F21CAF908000D87FE /* SAMKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317D03521CAF909000D87FE /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317D03021CAF908000D87FE /* SAMKeychain.m */; };
-		3317D03621CAF909000D87FE /* SAMKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317D03121CAF908000D87FE /* SAMKeychainQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317D03721CAF909000D87FE /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317D03221CAF908000D87FE /* SAMKeychainQuery.m */; };
 		3317D04521CB0327000D87FE /* JCFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3317D04421CB0327000D87FE /* JCFramework.podspec */; };
 		3317D05A21CB08F4000D87FE /* demo_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05421CB08F4000D87FE /* demo_image.jpeg */; };
 		3317D05B21CB08F4000D87FE /* ic_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05521CB08F4000D87FE /* ic_back@3x.png */; };
@@ -110,8 +68,49 @@
 		3317D05D21CB08F4000D87FE /* ic_menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05721CB08F4000D87FE /* ic_menu@3x.png */; };
 		3317D05E21CB08F4000D87FE /* nav_cart@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05821CB08F4000D87FE /* nav_cart@3x.png */; };
 		3317D05F21CB08F4000D87FE /* search_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05921CB08F4000D87FE /* search_white@3x.png */; };
-		33291C9921CC941700D87CAC /* NSArray+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33291C9721CC941700D87CAC /* NSArray+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33291C9A21CC941700D87CAC /* NSArray+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 33291C9821CC941700D87CAC /* NSArray+JCUtils.m */; };
+		932F998721D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F998521D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F998821D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F998621D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.m */; };
+		932F999F21D1C9740028FD90 /* JCAuthenticationHanlder.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F998D21D1C9740028FD90 /* JCAuthenticationHanlder.m */; };
+		932F99A021D1C9740028FD90 /* PAPasscodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F998F21D1C9740028FD90 /* PAPasscodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F99A121D1C9740028FD90 /* PAPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F999021D1C9740028FD90 /* PAPasscodeViewController.m */; };
+		932F99A221D1C9740028FD90 /* NumericKeypadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F999221D1C9740028FD90 /* NumericKeypadViewController.m */; };
+		932F99A321D1C9740028FD90 /* NumericKeypad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 932F999321D1C9740028FD90 /* NumericKeypad.xib */; };
+		932F99A421D1C9740028FD90 /* NumericKeypadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F999421D1C9740028FD90 /* NumericKeypadView.m */; };
+		932F99A521D1C9740028FD90 /* NumericKeypadTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F999521D1C9740028FD90 /* NumericKeypadTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F99A621D1C9740028FD90 /* NumericKeypadDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F999621D1C9740028FD90 /* NumericKeypadDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F99A721D1C9740028FD90 /* NumericKeypadViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F999721D1C9740028FD90 /* NumericKeypadViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F99A821D1C9740028FD90 /* NumericKeypadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F999821D1C9740028FD90 /* NumericKeypadView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F99A921D1C9740028FD90 /* highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 932F999A21D1C9740028FD90 /* highlight.png */; };
+		932F99AA21D1C9740028FD90 /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 932F999B21D1C9740028FD90 /* normal.png */; };
+		932F99AB21D1C9740028FD90 /* NumericKeypadTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F999C21D1C9740028FD90 /* NumericKeypadTextField.m */; };
+		932F99AC21D1C9740028FD90 /* PAPasscodeReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 932F999D21D1C9740028FD90 /* PAPasscodeReadMe.txt */; };
+		932F99AD21D1C9740028FD90 /* JCAuthenticationHanlder.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F999E21D1C9740028FD90 /* JCAuthenticationHanlder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F99B121D1C9810028FD90 /* JCLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F99AF21D1C9810028FD90 /* JCLocationHelper.m */; };
+		932F99B221D1C9810028FD90 /* JCLocationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F99B021D1C9810028FD90 /* JCLocationHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F99DE21D1CD050028FD90 /* JCUtils+DeviceID.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F99DC21D1CD050028FD90 /* JCUtils+DeviceID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F99DF21D1CD050028FD90 /* JCUtils+DeviceID.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F99DD21D1CD050028FD90 /* JCUtils+DeviceID.m */; };
+		932F9A4821D1D0050028FD90 /* NSDictionary+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F9A3421D1D0040028FD90 /* NSDictionary+JCUtils.m */; };
+		932F9A4921D1D0050028FD90 /* NSArray+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A3521D1D0040028FD90 /* NSArray+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F9A4A21D1D0050028FD90 /* UIFont+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F9A3621D1D0040028FD90 /* UIFont+JCUtils.m */; };
+		932F9A4B21D1D0050028FD90 /* JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F9A3721D1D0040028FD90 /* JCUtils.m */; };
+		932F9A4C21D1D0050028FD90 /* UIFont+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A3821D1D0040028FD90 /* UIFont+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F9A4D21D1D0050028FD90 /* NSString+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A3921D1D0040028FD90 /* NSString+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F9A4E21D1D0050028FD90 /* NSArray+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F9A3A21D1D0040028FD90 /* NSArray+JCUtils.m */; };
+		932F9A4F21D1D0050028FD90 /* UIView+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F9A3B21D1D0040028FD90 /* UIView+JCUtils.m */; };
+		932F9A5021D1D0050028FD90 /* NSDictionary+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A3C21D1D0040028FD90 /* NSDictionary+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F9A5121D1D0050028FD90 /* UIColor+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A3D21D1D0040028FD90 /* UIColor+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F9A5221D1D0050028FD90 /* UIImage+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A3E21D1D0040028FD90 /* UIImage+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F9A5321D1D0050028FD90 /* JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A3F21D1D0040028FD90 /* JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F9A5421D1D0050028FD90 /* UINavigationBar+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F9A4021D1D0040028FD90 /* UINavigationBar+JCUtils.m */; };
+		932F9A5521D1D0050028FD90 /* UIColor+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F9A4121D1D0040028FD90 /* UIColor+JCUtils.m */; };
+		932F9A5621D1D0050028FD90 /* JCUIAlertUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F9A4221D1D0040028FD90 /* JCUIAlertUtils.m */; };
+		932F9A5721D1D0050028FD90 /* UIImage+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F9A4321D1D0040028FD90 /* UIImage+JCUtils.m */; };
+		932F9A5821D1D0050028FD90 /* NSString+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F9A4421D1D0050028FD90 /* NSString+JCUtils.m */; };
+		932F9A5921D1D0050028FD90 /* UIView+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A4521D1D0050028FD90 /* UIView+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F9A5A21D1D0050028FD90 /* JCUIAlertUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A4621D1D0050028FD90 /* JCUIAlertUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F9A5B21D1D0050028FD90 /* UINavigationBar+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A4721D1D0050028FD90 /* UINavigationBar+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F9A5C21D1D2170028FD90 /* JCDesign.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A0921D1CECC0028FD90 /* JCDesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F9A5D21D1D21D0028FD90 /* JCAuthentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A0821D1CDCD0028FD90 /* JCAuthentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,39 +135,6 @@
 		3317CF7421CAF758000D87FE /* CRToastWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastWindow.h; sourceTree = "<group>"; };
 		3317CF7521CAF758000D87FE /* CRToastWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRToastWindow.m; sourceTree = "<group>"; };
 		3317CF7621CAF758000D87FE /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
-		3317CF7821CAF758000D87FE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		3317CF7921CAF758000D87FE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		3317CF7C21CAF758000D87FE /* NumericKeypad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumericKeypad.xib; sourceTree = "<group>"; };
-		3317CF7D21CAF758000D87FE /* NumericKeypadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericKeypadDelegate.h; sourceTree = "<group>"; };
-		3317CF7E21CAF758000D87FE /* NumericKeypadTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericKeypadTextField.h; sourceTree = "<group>"; };
-		3317CF7F21CAF758000D87FE /* NumericKeypadTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumericKeypadTextField.m; sourceTree = "<group>"; };
-		3317CF8021CAF758000D87FE /* NumericKeypadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericKeypadView.h; sourceTree = "<group>"; };
-		3317CF8121CAF758000D87FE /* NumericKeypadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumericKeypadView.m; sourceTree = "<group>"; };
-		3317CF8221CAF758000D87FE /* NumericKeypadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericKeypadViewController.h; sourceTree = "<group>"; };
-		3317CF8321CAF758000D87FE /* NumericKeypadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumericKeypadViewController.m; sourceTree = "<group>"; };
-		3317CF8521CAF758000D87FE /* highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highlight.png; sourceTree = "<group>"; };
-		3317CF8621CAF758000D87FE /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
-		3317CF8721CAF758000D87FE /* PAPasscodeReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PAPasscodeReadMe.txt; sourceTree = "<group>"; };
-		3317CF8821CAF758000D87FE /* PAPasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPasscodeViewController.h; sourceTree = "<group>"; };
-		3317CF8921CAF758000D87FE /* PAPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPasscodeViewController.m; sourceTree = "<group>"; };
-		3317CFAC21CAF765000D87FE /* JCUIAlertUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCUIAlertUtils.h; sourceTree = "<group>"; };
-		3317CFAD21CAF765000D87FE /* JCUIAlertUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCUIAlertUtils.m; sourceTree = "<group>"; };
-		3317CFAE21CAF765000D87FE /* JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCUtils.h; sourceTree = "<group>"; };
-		3317CFAF21CAF765000D87FE /* JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCUtils.m; sourceTree = "<group>"; };
-		3317CFB021CAF765000D87FE /* NSDictionary+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JCUtils.h"; sourceTree = "<group>"; };
-		3317CFB121CAF765000D87FE /* NSDictionary+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JCUtils.m"; sourceTree = "<group>"; };
-		3317CFB221CAF765000D87FE /* NSString+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JCUtils.h"; sourceTree = "<group>"; };
-		3317CFB321CAF765000D87FE /* NSString+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JCUtils.m"; sourceTree = "<group>"; };
-		3317CFB421CAF765000D87FE /* UIColor+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JCUtils.h"; sourceTree = "<group>"; };
-		3317CFB521CAF765000D87FE /* UIColor+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JCUtils.m"; sourceTree = "<group>"; };
-		3317CFB621CAF765000D87FE /* UIFont+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+JCUtils.h"; sourceTree = "<group>"; };
-		3317CFB721CAF765000D87FE /* UIFont+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+JCUtils.m"; sourceTree = "<group>"; };
-		3317CFB821CAF765000D87FE /* UIImage+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JCUtils.h"; sourceTree = "<group>"; };
-		3317CFB921CAF765000D87FE /* UIImage+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JCUtils.m"; sourceTree = "<group>"; };
-		3317CFBA21CAF765000D87FE /* UINavigationBar+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JCUtils.h"; sourceTree = "<group>"; };
-		3317CFBB21CAF765000D87FE /* UINavigationBar+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JCUtils.m"; sourceTree = "<group>"; };
-		3317CFBC21CAF765000D87FE /* UIView+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JCUtils.h"; sourceTree = "<group>"; };
-		3317CFBD21CAF765000D87FE /* UIView+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JCUtils.m"; sourceTree = "<group>"; };
 		3317CFBF21CAF765000D87FE /* JCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCBaseViewController.h; sourceTree = "<group>"; };
 		3317CFC021CAF765000D87FE /* JCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCBaseViewController.m; sourceTree = "<group>"; };
 		3317CFC121CAF765000D87FE /* JCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCButton.h; sourceTree = "<group>"; };
@@ -192,10 +158,6 @@
 		3317CFD921CAF765000D87FE /* JCHeaderTabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCHeaderTabView.xib; sourceTree = "<group>"; };
 		3317CFDA21CAF765000D87FE /* JCUIAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCUIAlertController.h; sourceTree = "<group>"; };
 		3317CFDB21CAF765000D87FE /* JCUIAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCUIAlertController.m; sourceTree = "<group>"; };
-		3317CFDD21CAF765000D87FE /* JCAuthenticationHanlder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAuthenticationHanlder.h; sourceTree = "<group>"; };
-		3317CFDE21CAF765000D87FE /* JCAuthenticationHanlder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAuthenticationHanlder.m; sourceTree = "<group>"; };
-		3317CFDF21CAF765000D87FE /* JCLocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCLocationHelper.h; sourceTree = "<group>"; };
-		3317CFE021CAF765000D87FE /* JCLocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCLocationHelper.m; sourceTree = "<group>"; };
 		3317CFE321CAF765000D87FE /* JCDragableCellGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDragableCellGestureRecognizer.h; sourceTree = "<group>"; };
 		3317CFE421CAF765000D87FE /* JCDragableCellGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDragableCellGestureRecognizer.m; sourceTree = "<group>"; };
 		3317CFE521CAF765000D87FE /* JCCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCollectionViewFlowLayout.h; sourceTree = "<group>"; };
@@ -208,11 +170,6 @@
 		3317CFEC21CAF765000D87FE /* JCStretchHeaderHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCStretchHeaderHandler.m; sourceTree = "<group>"; };
 		3317D02921CAF830000D87FE /* JCCartBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCartBarButtonItem.m; sourceTree = "<group>"; };
 		3317D02A21CAF830000D87FE /* JCCartBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCartBarButtonItem.h; sourceTree = "<group>"; };
-		3317D02E21CAF908000D87FE /* SAMKeychain.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SAMKeychain.bundle; sourceTree = "<group>"; };
-		3317D02F21CAF908000D87FE /* SAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychain.h; sourceTree = "<group>"; };
-		3317D03021CAF908000D87FE /* SAMKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychain.m; sourceTree = "<group>"; };
-		3317D03121CAF908000D87FE /* SAMKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychainQuery.h; sourceTree = "<group>"; };
-		3317D03221CAF908000D87FE /* SAMKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychainQuery.m; sourceTree = "<group>"; };
 		3317D04421CB0327000D87FE /* JCFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JCFramework.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3317D05421CB08F4000D87FE /* demo_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo_image.jpeg; sourceTree = "<group>"; };
 		3317D05521CB08F4000D87FE /* ic_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_back@3x.png"; sourceTree = "<group>"; };
@@ -220,8 +177,53 @@
 		3317D05721CB08F4000D87FE /* ic_menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_menu@3x.png"; sourceTree = "<group>"; };
 		3317D05821CB08F4000D87FE /* nav_cart@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_cart@3x.png"; sourceTree = "<group>"; };
 		3317D05921CB08F4000D87FE /* search_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_white@3x.png"; sourceTree = "<group>"; };
-		33291C9721CC941700D87CAC /* NSArray+JCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+JCUtils.h"; sourceTree = "<group>"; };
-		33291C9821CC941700D87CAC /* NSArray+JCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JCUtils.m"; sourceTree = "<group>"; };
+		932F998521D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCUIAlertUtils+CRToast.h"; sourceTree = "<group>"; };
+		932F998621D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JCUIAlertUtils+CRToast.m"; sourceTree = "<group>"; };
+		932F998D21D1C9740028FD90 /* JCAuthenticationHanlder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAuthenticationHanlder.m; sourceTree = "<group>"; };
+		932F998F21D1C9740028FD90 /* PAPasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPasscodeViewController.h; sourceTree = "<group>"; };
+		932F999021D1C9740028FD90 /* PAPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPasscodeViewController.m; sourceTree = "<group>"; };
+		932F999221D1C9740028FD90 /* NumericKeypadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumericKeypadViewController.m; sourceTree = "<group>"; };
+		932F999321D1C9740028FD90 /* NumericKeypad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumericKeypad.xib; sourceTree = "<group>"; };
+		932F999421D1C9740028FD90 /* NumericKeypadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumericKeypadView.m; sourceTree = "<group>"; };
+		932F999521D1C9740028FD90 /* NumericKeypadTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericKeypadTextField.h; sourceTree = "<group>"; };
+		932F999621D1C9740028FD90 /* NumericKeypadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericKeypadDelegate.h; sourceTree = "<group>"; };
+		932F999721D1C9740028FD90 /* NumericKeypadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericKeypadViewController.h; sourceTree = "<group>"; };
+		932F999821D1C9740028FD90 /* NumericKeypadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericKeypadView.h; sourceTree = "<group>"; };
+		932F999A21D1C9740028FD90 /* highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highlight.png; sourceTree = "<group>"; };
+		932F999B21D1C9740028FD90 /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
+		932F999C21D1C9740028FD90 /* NumericKeypadTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumericKeypadTextField.m; sourceTree = "<group>"; };
+		932F999D21D1C9740028FD90 /* PAPasscodeReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PAPasscodeReadMe.txt; sourceTree = "<group>"; };
+		932F999E21D1C9740028FD90 /* JCAuthenticationHanlder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAuthenticationHanlder.h; sourceTree = "<group>"; };
+		932F99AF21D1C9810028FD90 /* JCLocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCLocationHelper.m; sourceTree = "<group>"; };
+		932F99B021D1C9810028FD90 /* JCLocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCLocationHelper.h; sourceTree = "<group>"; };
+		932F99DC21D1CD050028FD90 /* JCUtils+DeviceID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCUtils+DeviceID.h"; sourceTree = "<group>"; };
+		932F99DD21D1CD050028FD90 /* JCUtils+DeviceID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JCUtils+DeviceID.m"; sourceTree = "<group>"; };
+		932F9A0821D1CDCD0028FD90 /* JCAuthentication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAuthentication.h; sourceTree = "<group>"; };
+		932F9A0921D1CECC0028FD90 /* JCDesign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCDesign.h; sourceTree = "<group>"; };
+		932F9A3421D1D0040028FD90 /* NSDictionary+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JCUtils.m"; sourceTree = "<group>"; };
+		932F9A3521D1D0040028FD90 /* NSArray+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JCUtils.h"; sourceTree = "<group>"; };
+		932F9A3621D1D0040028FD90 /* UIFont+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+JCUtils.m"; sourceTree = "<group>"; };
+		932F9A3721D1D0040028FD90 /* JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCUtils.m; sourceTree = "<group>"; };
+		932F9A3821D1D0040028FD90 /* UIFont+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+JCUtils.h"; sourceTree = "<group>"; };
+		932F9A3921D1D0040028FD90 /* NSString+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JCUtils.h"; sourceTree = "<group>"; };
+		932F9A3A21D1D0040028FD90 /* NSArray+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JCUtils.m"; sourceTree = "<group>"; };
+		932F9A3B21D1D0040028FD90 /* UIView+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JCUtils.m"; sourceTree = "<group>"; };
+		932F9A3C21D1D0040028FD90 /* NSDictionary+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JCUtils.h"; sourceTree = "<group>"; };
+		932F9A3D21D1D0040028FD90 /* UIColor+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JCUtils.h"; sourceTree = "<group>"; };
+		932F9A3E21D1D0040028FD90 /* UIImage+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JCUtils.h"; sourceTree = "<group>"; };
+		932F9A3F21D1D0040028FD90 /* JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCUtils.h; sourceTree = "<group>"; };
+		932F9A4021D1D0040028FD90 /* UINavigationBar+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JCUtils.m"; sourceTree = "<group>"; };
+		932F9A4121D1D0040028FD90 /* UIColor+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JCUtils.m"; sourceTree = "<group>"; };
+		932F9A4221D1D0040028FD90 /* JCUIAlertUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCUIAlertUtils.m; sourceTree = "<group>"; };
+		932F9A4321D1D0040028FD90 /* UIImage+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JCUtils.m"; sourceTree = "<group>"; };
+		932F9A4421D1D0050028FD90 /* NSString+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JCUtils.m"; sourceTree = "<group>"; };
+		932F9A4521D1D0050028FD90 /* UIView+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JCUtils.h"; sourceTree = "<group>"; };
+		932F9A4621D1D0050028FD90 /* JCUIAlertUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCUIAlertUtils.h; sourceTree = "<group>"; };
+		932F9A4721D1D0050028FD90 /* UINavigationBar+JCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JCUtils.h"; sourceTree = "<group>"; };
+		93AB2A0221CE441500A9A0BA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		93AB2A0421CE443000A9A0BA /* libPods-JCFrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-JCFrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93AB2A0621CE443900A9A0BA /* libSAMKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSAMKeychain.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93AB2A0821CE44BD00A9A0BA /* libSAMKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSAMKeychain.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,12 +243,10 @@
 				3317D04421CB0327000D87FE /* JCFramework.podspec */,
 				3317CF4D21CAF6B2000D87FE /* JCFramework */,
 				3317D05221CB08F4000D87FE /* Resource */,
-				3317D02D21CAF908000D87FE /* SAMKeychain */,
 				3317CF6A21CAF758000D87FE /* CRToast */,
-				3317CF7A21CAF758000D87FE /* PAPasscode */,
-				3317CF7721CAF758000D87FE /* Reachability */,
 				3317CF6221CAF758000D87FE /* UIView+TouchHighlighting */,
 				3317CF4C21CAF6B2000D87FE /* Products */,
+				93AB2A0121CE441400A9A0BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,12 +261,12 @@
 		3317CF4D21CAF6B2000D87FE /* JCFramework */ = {
 			isa = PBXGroup;
 			children = (
-				3317CFBE21CAF765000D87FE /* BaseView */,
+				3317CF4F21CAF6B2000D87FE /* Info.plist */,
+				3317CF4E21CAF6B2000D87FE /* JCFramework.h */,
+				932F9A0A21D1CFF60028FD90 /* Essential */,
+				3317CFE121CAF765000D87FE /* JCDesign */,
 				3317CFDC21CAF765000D87FE /* JCHelpers */,
 				3317CFAB21CAF765000D87FE /* JCUtils */,
-				3317CFD221CAF765000D87FE /* Widget */,
-				3317CF4E21CAF6B2000D87FE /* JCFramework.h */,
-				3317CF4F21CAF6B2000D87FE /* Info.plist */,
 			);
 			path = JCFramework;
 			sourceTree = "<group>";
@@ -307,78 +307,17 @@
 				3317CF7421CAF758000D87FE /* CRToastWindow.h */,
 				3317CF7521CAF758000D87FE /* CRToastWindow.m */,
 				3317CF7621CAF758000D87FE /* ReadMe.txt */,
+				932F998521D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.h */,
+				932F998621D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.m */,
 			);
 			path = CRToast;
-			sourceTree = "<group>";
-		};
-		3317CF7721CAF758000D87FE /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				3317CF7821CAF758000D87FE /* Reachability.h */,
-				3317CF7921CAF758000D87FE /* Reachability.m */,
-			);
-			path = Reachability;
-			sourceTree = "<group>";
-		};
-		3317CF7A21CAF758000D87FE /* PAPasscode */ = {
-			isa = PBXGroup;
-			children = (
-				3317CF7B21CAF758000D87FE /* NumPadTextField */,
-				3317CF8721CAF758000D87FE /* PAPasscodeReadMe.txt */,
-				3317CF8821CAF758000D87FE /* PAPasscodeViewController.h */,
-				3317CF8921CAF758000D87FE /* PAPasscodeViewController.m */,
-			);
-			path = PAPasscode;
-			sourceTree = "<group>";
-		};
-		3317CF7B21CAF758000D87FE /* NumPadTextField */ = {
-			isa = PBXGroup;
-			children = (
-				3317CF7C21CAF758000D87FE /* NumericKeypad.xib */,
-				3317CF7D21CAF758000D87FE /* NumericKeypadDelegate.h */,
-				3317CF7E21CAF758000D87FE /* NumericKeypadTextField.h */,
-				3317CF7F21CAF758000D87FE /* NumericKeypadTextField.m */,
-				3317CF8021CAF758000D87FE /* NumericKeypadView.h */,
-				3317CF8121CAF758000D87FE /* NumericKeypadView.m */,
-				3317CF8221CAF758000D87FE /* NumericKeypadViewController.h */,
-				3317CF8321CAF758000D87FE /* NumericKeypadViewController.m */,
-				3317CF8421CAF758000D87FE /* Resource */,
-			);
-			path = NumPadTextField;
-			sourceTree = "<group>";
-		};
-		3317CF8421CAF758000D87FE /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				3317CF8521CAF758000D87FE /* highlight.png */,
-				3317CF8621CAF758000D87FE /* normal.png */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		3317CFAB21CAF765000D87FE /* JCUtils */ = {
 			isa = PBXGroup;
 			children = (
-				3317CFAC21CAF765000D87FE /* JCUIAlertUtils.h */,
-				3317CFAD21CAF765000D87FE /* JCUIAlertUtils.m */,
-				3317CFAE21CAF765000D87FE /* JCUtils.h */,
-				3317CFAF21CAF765000D87FE /* JCUtils.m */,
-				3317CFB021CAF765000D87FE /* NSDictionary+JCUtils.h */,
-				3317CFB121CAF765000D87FE /* NSDictionary+JCUtils.m */,
-				3317CFB221CAF765000D87FE /* NSString+JCUtils.h */,
-				3317CFB321CAF765000D87FE /* NSString+JCUtils.m */,
-				3317CFB421CAF765000D87FE /* UIColor+JCUtils.h */,
-				3317CFB521CAF765000D87FE /* UIColor+JCUtils.m */,
-				3317CFB621CAF765000D87FE /* UIFont+JCUtils.h */,
-				3317CFB721CAF765000D87FE /* UIFont+JCUtils.m */,
-				3317CFB821CAF765000D87FE /* UIImage+JCUtils.h */,
-				3317CFB921CAF765000D87FE /* UIImage+JCUtils.m */,
-				3317CFBA21CAF765000D87FE /* UINavigationBar+JCUtils.h */,
-				3317CFBB21CAF765000D87FE /* UINavigationBar+JCUtils.m */,
-				3317CFBC21CAF765000D87FE /* UIView+JCUtils.h */,
-				3317CFBD21CAF765000D87FE /* UIView+JCUtils.m */,
-				33291C9721CC941700D87CAC /* NSArray+JCUtils.h */,
-				33291C9821CC941700D87CAC /* NSArray+JCUtils.m */,
+				932F99DC21D1CD050028FD90 /* JCUtils+DeviceID.h */,
+				932F99DD21D1CD050028FD90 /* JCUtils+DeviceID.m */,
 			);
 			path = JCUtils;
 			sourceTree = "<group>";
@@ -423,19 +362,18 @@
 		3317CFDC21CAF765000D87FE /* JCHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				3317CFDD21CAF765000D87FE /* JCAuthenticationHanlder.h */,
-				3317CFDE21CAF765000D87FE /* JCAuthenticationHanlder.m */,
-				3317CFDF21CAF765000D87FE /* JCLocationHelper.h */,
-				3317CFE021CAF765000D87FE /* JCLocationHelper.m */,
-				3317CFE121CAF765000D87FE /* UI */,
+				932F998C21D1C9740028FD90 /* Authentication */,
+				932F99AE21D1C9810028FD90 /* Location */,
 			);
 			path = JCHelpers;
 			sourceTree = "<group>";
 		};
-		3317CFE121CAF765000D87FE /* UI */ = {
+		3317CFE121CAF765000D87FE /* JCDesign */ = {
 			isa = PBXGroup;
 			children = (
-				3317CFE221CAF765000D87FE /* Gesture */,
+				932F9A0921D1CECC0028FD90 /* JCDesign.h */,
+				3317CFBE21CAF765000D87FE /* BaseView */,
+				3317CFD221CAF765000D87FE /* Widget */,
 				3317CFE521CAF765000D87FE /* JCCollectionViewFlowLayout.h */,
 				3317CFE621CAF765000D87FE /* JCCollectionViewFlowLayout.m */,
 				3317CFE721CAF765000D87FE /* JCParabolaAnimationHandler.h */,
@@ -445,7 +383,7 @@
 				3317CFEB21CAF765000D87FE /* JCStretchHeaderHandler.h */,
 				3317CFEC21CAF765000D87FE /* JCStretchHeaderHandler.m */,
 			);
-			path = UI;
+			path = JCDesign;
 			sourceTree = "<group>";
 		};
 		3317CFE221CAF765000D87FE /* Gesture */ = {
@@ -457,18 +395,6 @@
 				3317CFE421CAF765000D87FE /* JCDragableCellGestureRecognizer.m */,
 			);
 			path = Gesture;
-			sourceTree = "<group>";
-		};
-		3317D02D21CAF908000D87FE /* SAMKeychain */ = {
-			isa = PBXGroup;
-			children = (
-				3317D02E21CAF908000D87FE /* SAMKeychain.bundle */,
-				3317D02F21CAF908000D87FE /* SAMKeychain.h */,
-				3317D03021CAF908000D87FE /* SAMKeychain.m */,
-				3317D03121CAF908000D87FE /* SAMKeychainQuery.h */,
-				3317D03221CAF908000D87FE /* SAMKeychainQuery.m */,
-			);
-			path = SAMKeychain;
 			sourceTree = "<group>";
 		};
 		3317D05221CB08F4000D87FE /* Resource */ = {
@@ -492,6 +418,109 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		932F998C21D1C9740028FD90 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				932F9A0821D1CDCD0028FD90 /* JCAuthentication.h */,
+				932F998E21D1C9740028FD90 /* PAPasscode */,
+				932F999E21D1C9740028FD90 /* JCAuthenticationHanlder.h */,
+				932F998D21D1C9740028FD90 /* JCAuthenticationHanlder.m */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		932F998E21D1C9740028FD90 /* PAPasscode */ = {
+			isa = PBXGroup;
+			children = (
+				932F999121D1C9740028FD90 /* NumPadTextField */,
+				932F998F21D1C9740028FD90 /* PAPasscodeViewController.h */,
+				932F999021D1C9740028FD90 /* PAPasscodeViewController.m */,
+				932F999D21D1C9740028FD90 /* PAPasscodeReadMe.txt */,
+			);
+			path = PAPasscode;
+			sourceTree = "<group>";
+		};
+		932F999121D1C9740028FD90 /* NumPadTextField */ = {
+			isa = PBXGroup;
+			children = (
+				932F999821D1C9740028FD90 /* NumericKeypadView.h */,
+				932F999421D1C9740028FD90 /* NumericKeypadView.m */,
+				932F999321D1C9740028FD90 /* NumericKeypad.xib */,
+				932F999521D1C9740028FD90 /* NumericKeypadTextField.h */,
+				932F999621D1C9740028FD90 /* NumericKeypadDelegate.h */,
+				932F999C21D1C9740028FD90 /* NumericKeypadTextField.m */,
+				932F999721D1C9740028FD90 /* NumericKeypadViewController.h */,
+				932F999221D1C9740028FD90 /* NumericKeypadViewController.m */,
+				932F999921D1C9740028FD90 /* Resource */,
+			);
+			path = NumPadTextField;
+			sourceTree = "<group>";
+		};
+		932F999921D1C9740028FD90 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				932F999A21D1C9740028FD90 /* highlight.png */,
+				932F999B21D1C9740028FD90 /* normal.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		932F99AE21D1C9810028FD90 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				932F99AF21D1C9810028FD90 /* JCLocationHelper.m */,
+				932F99B021D1C9810028FD90 /* JCLocationHelper.h */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		932F9A0A21D1CFF60028FD90 /* Essential */ = {
+			isa = PBXGroup;
+			children = (
+				3317CFE221CAF765000D87FE /* Gesture */,
+				932F9A0B21D1CFF60028FD90 /* Utils */,
+			);
+			path = Essential;
+			sourceTree = "<group>";
+		};
+		932F9A0B21D1CFF60028FD90 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				932F9A4621D1D0050028FD90 /* JCUIAlertUtils.h */,
+				932F9A4221D1D0040028FD90 /* JCUIAlertUtils.m */,
+				932F9A3F21D1D0040028FD90 /* JCUtils.h */,
+				932F9A3721D1D0040028FD90 /* JCUtils.m */,
+				932F9A3521D1D0040028FD90 /* NSArray+JCUtils.h */,
+				932F9A3A21D1D0040028FD90 /* NSArray+JCUtils.m */,
+				932F9A3C21D1D0040028FD90 /* NSDictionary+JCUtils.h */,
+				932F9A3421D1D0040028FD90 /* NSDictionary+JCUtils.m */,
+				932F9A3921D1D0040028FD90 /* NSString+JCUtils.h */,
+				932F9A4421D1D0050028FD90 /* NSString+JCUtils.m */,
+				932F9A3D21D1D0040028FD90 /* UIColor+JCUtils.h */,
+				932F9A4121D1D0040028FD90 /* UIColor+JCUtils.m */,
+				932F9A3821D1D0040028FD90 /* UIFont+JCUtils.h */,
+				932F9A3621D1D0040028FD90 /* UIFont+JCUtils.m */,
+				932F9A3E21D1D0040028FD90 /* UIImage+JCUtils.h */,
+				932F9A4321D1D0040028FD90 /* UIImage+JCUtils.m */,
+				932F9A4721D1D0050028FD90 /* UINavigationBar+JCUtils.h */,
+				932F9A4021D1D0040028FD90 /* UINavigationBar+JCUtils.m */,
+				932F9A4521D1D0050028FD90 /* UIView+JCUtils.h */,
+				932F9A3B21D1D0040028FD90 /* UIView+JCUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		93AB2A0121CE441400A9A0BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93AB2A0821CE44BD00A9A0BA /* libSAMKeychain.a */,
+				93AB2A0621CE443900A9A0BA /* libSAMKeychain.a */,
+				93AB2A0421CE443000A9A0BA /* libPods-JCFrameworkDemo.a */,
+				93AB2A0221CE441500A9A0BA /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -499,52 +528,53 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3317CFA421CAF758000D87FE /* NumericKeypadViewController.h in Headers */,
+				932F9A5D21D1D21D0028FD90 /* JCAuthentication.h in Headers */,
+				932F9A5C21D1D2170028FD90 /* JCDesign.h in Headers */,
 				3317D00521CAF765000D87FE /* JCLabel.h in Headers */,
 				3317D00921CAF765000D87FE /* JCPanGestureRecognizer.h in Headers */,
 				3317D01221CAF765000D87FE /* JCBarButtonItem.h in Headers */,
 				3317D01421CAF765000D87FE /* JCErrorTextField.h in Headers */,
 				3317CF8A21CAF758000D87FE /* MTViewHighlighter.h in Headers */,
-				3317D01D21CAF765000D87FE /* JCLocationHelper.h in Headers */,
-				3317CFA921CAF758000D87FE /* PAPasscodeViewController.h in Headers */,
-				3317CFFB21CAF765000D87FE /* UINavigationBar+JCUtils.h in Headers */,
-				3317CFA021CAF758000D87FE /* NumericKeypadTextField.h in Headers */,
 				3317D00B21CAF765000D87FE /* JCTabBarController.h in Headers */,
 				3317D02C21CAF830000D87FE /* JCCartBarButtonItem.h in Headers */,
-				33291C9921CC941700D87CAC /* NSArray+JCUtils.h in Headers */,
 				3317D02721CAF765000D87FE /* JCStretchHeaderHandler.h in Headers */,
 				3317D00D21CAF765000D87FE /* JCTextField.h in Headers */,
 				3317D00121CAF765000D87FE /* JCButton.h in Headers */,
 				3317D01621CAF765000D87FE /* JCHeaderTabView.h in Headers */,
 				3317D01F21CAF765000D87FE /* JCDragableCellGestureRecognizer.h in Headers */,
 				3317CF8E21CAF758000D87FE /* UIView+TouchHighlighting.h in Headers */,
-				3317D01B21CAF765000D87FE /* JCAuthenticationHanlder.h in Headers */,
-				3317CFF321CAF765000D87FE /* NSString+JCUtils.h in Headers */,
 				3317D01921CAF765000D87FE /* JCUIAlertController.h in Headers */,
 				3317CF9021CAF758000D87FE /* CRToast.h in Headers */,
 				3317CF9321CAF758000D87FE /* CRToastManager.h in Headers */,
-				3317CFA221CAF758000D87FE /* NumericKeypadView.h in Headers */,
 				3317CF9221CAF758000D87FE /* CRToastLayoutHelpers.h in Headers */,
-				3317CFF921CAF765000D87FE /* UIImage+JCUtils.h in Headers */,
 				3317CF5021CAF6B2000D87FE /* JCFramework.h in Headers */,
-				3317D03421CAF909000D87FE /* SAMKeychain.h in Headers */,
 				3317D02521CAF765000D87FE /* JCScrollableViewKeyboardHandler.h in Headers */,
-				3317CFF121CAF765000D87FE /* NSDictionary+JCUtils.h in Headers */,
-				3317CFFD21CAF765000D87FE /* UIView+JCUtils.h in Headers */,
 				3317CFFF21CAF765000D87FE /* JCBaseViewController.h in Headers */,
-				3317CFF721CAF765000D87FE /* UIFont+JCUtils.h in Headers */,
-				3317CF9C21CAF758000D87FE /* Reachability.h in Headers */,
-				3317CFEF21CAF765000D87FE /* JCUtils.h in Headers */,
-				3317CFF521CAF765000D87FE /* UIColor+JCUtils.h in Headers */,
 				3317D00721CAF765000D87FE /* JCNavigationController.h in Headers */,
-				3317CFED21CAF765000D87FE /* JCUIAlertUtils.h in Headers */,
 				3317D02121CAF765000D87FE /* JCCollectionViewFlowLayout.h in Headers */,
+				932F99B221D1C9810028FD90 /* JCLocationHelper.h in Headers */,
+				932F99AD21D1C9740028FD90 /* JCAuthenticationHanlder.h in Headers */,
+				932F99A621D1C9740028FD90 /* NumericKeypadDelegate.h in Headers */,
+				932F99A721D1C9740028FD90 /* NumericKeypadViewController.h in Headers */,
+				932F9A5B21D1D0050028FD90 /* UINavigationBar+JCUtils.h in Headers */,
+				932F9A4D21D1D0050028FD90 /* NSString+JCUtils.h in Headers */,
+				932F9A5121D1D0050028FD90 /* UIColor+JCUtils.h in Headers */,
+				932F9A5321D1D0050028FD90 /* JCUtils.h in Headers */,
+				932F9A5221D1D0050028FD90 /* UIImage+JCUtils.h in Headers */,
+				932F9A5021D1D0050028FD90 /* NSDictionary+JCUtils.h in Headers */,
+				932F9A5921D1D0050028FD90 /* UIView+JCUtils.h in Headers */,
+				932F9A4C21D1D0050028FD90 /* UIFont+JCUtils.h in Headers */,
+				932F9A4921D1D0050028FD90 /* NSArray+JCUtils.h in Headers */,
+				932F9A5A21D1D0050028FD90 /* JCUIAlertUtils.h in Headers */,
+				932F99A521D1C9740028FD90 /* NumericKeypadTextField.h in Headers */,
+				932F99DE21D1CD050028FD90 /* JCUtils+DeviceID.h in Headers */,
+				932F99A821D1C9740028FD90 /* NumericKeypadView.h in Headers */,
+				932F99A021D1C9740028FD90 /* PAPasscodeViewController.h in Headers */,
 				3317CF9521CAF758000D87FE /* CRToastView.h in Headers */,
 				3317CF9921CAF758000D87FE /* CRToastWindow.h in Headers */,
-				3317D03621CAF909000D87FE /* SAMKeychainQuery.h in Headers */,
-				3317CF9F21CAF758000D87FE /* NumericKeypadDelegate.h in Headers */,
 				3317D02321CAF765000D87FE /* JCParabolaAnimationHandler.h in Headers */,
 				3317CF9721CAF758000D87FE /* CRToastViewController.h in Headers */,
+				932F998721D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.h in Headers */,
 				3317CF8C21CAF758000D87FE /* MTCompoundButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,20 +636,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932F99A921D1C9740028FD90 /* highlight.png in Resources */,
 				3317D05C21CB08F4000D87FE /* ic_close.png in Resources */,
+				932F99AC21D1C9740028FD90 /* PAPasscodeReadMe.txt in Resources */,
+				932F99A321D1C9740028FD90 /* NumericKeypad.xib in Resources */,
 				3317D05B21CB08F4000D87FE /* ic_back@3x.png in Resources */,
 				3317D05A21CB08F4000D87FE /* demo_image.jpeg in Resources */,
 				3317D04521CB0327000D87FE /* JCFramework.podspec in Resources */,
-				3317CFA621CAF758000D87FE /* highlight.png in Resources */,
+				932F99AA21D1C9740028FD90 /* normal.png in Resources */,
 				3317D05F21CB08F4000D87FE /* search_white@3x.png in Resources */,
 				3317CF9B21CAF758000D87FE /* ReadMe.txt in Resources */,
-				3317CFA721CAF758000D87FE /* normal.png in Resources */,
 				3317D01821CAF765000D87FE /* JCHeaderTabView.xib in Resources */,
 				3317D05E21CB08F4000D87FE /* nav_cart@3x.png in Resources */,
 				3317D05D21CB08F4000D87FE /* ic_menu@3x.png in Resources */,
-				3317CF9E21CAF758000D87FE /* NumericKeypad.xib in Resources */,
-				3317CFA821CAF758000D87FE /* PAPasscodeReadMe.txt in Resources */,
-				3317D03321CAF909000D87FE /* SAMKeychain.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,50 +659,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932F99A221D1C9740028FD90 /* NumericKeypadViewController.m in Sources */,
+				932F9A4F21D1D0050028FD90 /* UIView+JCUtils.m in Sources */,
 				3317D01721CAF765000D87FE /* JCHeaderTabView.m in Sources */,
+				932F9A4B21D1D0050028FD90 /* JCUtils.m in Sources */,
 				3317D02221CAF765000D87FE /* JCCollectionViewFlowLayout.m in Sources */,
-				3317CFAA21CAF758000D87FE /* PAPasscodeViewController.m in Sources */,
-				3317CFF221CAF765000D87FE /* NSDictionary+JCUtils.m in Sources */,
+				932F9A4821D1D0050028FD90 /* NSDictionary+JCUtils.m in Sources */,
+				932F9A5721D1D0050028FD90 /* UIImage+JCUtils.m in Sources */,
 				3317D02821CAF765000D87FE /* JCStretchHeaderHandler.m in Sources */,
 				3317D02621CAF765000D87FE /* JCScrollableViewKeyboardHandler.m in Sources */,
 				3317D00E21CAF765000D87FE /* JCTextField.m in Sources */,
-				3317CFA521CAF758000D87FE /* NumericKeypadViewController.m in Sources */,
 				3317D00621CAF765000D87FE /* JCLabel.m in Sources */,
-				33291C9A21CC941700D87CAC /* NSArray+JCUtils.m in Sources */,
 				3317CF9121CAF758000D87FE /* CRToast.m in Sources */,
-				3317CFEE21CAF765000D87FE /* JCUIAlertUtils.m in Sources */,
 				3317CF8B21CAF758000D87FE /* MTViewHighlighter.m in Sources */,
+				932F9A4A21D1D0050028FD90 /* UIFont+JCUtils.m in Sources */,
+				932F99B121D1C9810028FD90 /* JCLocationHelper.m in Sources */,
+				932F9A5621D1D0050028FD90 /* JCUIAlertUtils.m in Sources */,
 				3317D00221CAF765000D87FE /* JCButton.m in Sources */,
-				3317CFFC21CAF765000D87FE /* UINavigationBar+JCUtils.m in Sources */,
+				932F99A121D1C9740028FD90 /* PAPasscodeViewController.m in Sources */,
 				3317D00C21CAF765000D87FE /* JCTabBarController.m in Sources */,
 				3317D00821CAF765000D87FE /* JCNavigationController.m in Sources */,
 				3317D02021CAF765000D87FE /* JCDragableCellGestureRecognizer.m in Sources */,
-				3317D01C21CAF765000D87FE /* JCAuthenticationHanlder.m in Sources */,
-				3317CFF821CAF765000D87FE /* UIFont+JCUtils.m in Sources */,
+				932F998821D1AF7A0028FD90 /* JCUIAlertUtils+CRToast.m in Sources */,
 				3317CF9A21CAF758000D87FE /* CRToastWindow.m in Sources */,
-				3317CFF421CAF765000D87FE /* NSString+JCUtils.m in Sources */,
 				3317CF8D21CAF758000D87FE /* MTCompoundButton.m in Sources */,
-				3317CFFE21CAF765000D87FE /* UIView+JCUtils.m in Sources */,
-				3317CFFA21CAF765000D87FE /* UIImage+JCUtils.m in Sources */,
 				3317D00021CAF765000D87FE /* JCBaseViewController.m in Sources */,
 				3317CF8F21CAF758000D87FE /* UIView+TouchHighlighting.m in Sources */,
-				3317CFA321CAF758000D87FE /* NumericKeypadView.m in Sources */,
-				3317D03521CAF909000D87FE /* SAMKeychain.m in Sources */,
+				932F9A5421D1D0050028FD90 /* UINavigationBar+JCUtils.m in Sources */,
+				932F99AB21D1C9740028FD90 /* NumericKeypadTextField.m in Sources */,
+				932F9A5521D1D0050028FD90 /* UIColor+JCUtils.m in Sources */,
 				3317CF9821CAF758000D87FE /* CRToastViewController.m in Sources */,
+				932F9A5821D1D0050028FD90 /* NSString+JCUtils.m in Sources */,
 				3317D02421CAF765000D87FE /* JCParabolaAnimationHandler.m in Sources */,
-				3317D03721CAF909000D87FE /* SAMKeychainQuery.m in Sources */,
 				3317D02B21CAF830000D87FE /* JCCartBarButtonItem.m in Sources */,
 				3317CF9421CAF758000D87FE /* CRToastManager.m in Sources */,
+				932F999F21D1C9740028FD90 /* JCAuthenticationHanlder.m in Sources */,
+				932F99DF21D1CD050028FD90 /* JCUtils+DeviceID.m in Sources */,
 				3317D01321CAF765000D87FE /* JCBarButtonItem.m in Sources */,
 				3317D01521CAF765000D87FE /* JCErrorTextField.m in Sources */,
-				3317CFA121CAF758000D87FE /* NumericKeypadTextField.m in Sources */,
-				3317CFF621CAF765000D87FE /* UIColor+JCUtils.m in Sources */,
-				3317CF9D21CAF758000D87FE /* Reachability.m in Sources */,
+				932F99A421D1C9740028FD90 /* NumericKeypadView.m in Sources */,
 				3317CF9621CAF758000D87FE /* CRToastView.m in Sources */,
 				3317D00A21CAF765000D87FE /* JCPanGestureRecognizer.m in Sources */,
 				3317D01A21CAF765000D87FE /* JCUIAlertController.m in Sources */,
-				3317CFF021CAF765000D87FE /* JCUtils.m in Sources */,
-				3317D01E21CAF765000D87FE /* JCLocationHelper.m in Sources */,
+				932F9A4E21D1D0050028FD90 /* NSArray+JCUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,6 +835,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${BUILT_PRODUCTS_DIR}/**",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/SAMKeychain\"",
+				);
 				INFOPLIST_FILE = JCFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -815,10 +850,36 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"${BUILT_PRODUCTS_DIR}/**",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SAMKeychain\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SAMKeychain\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PODS_BUILD_DIR = build;
+				PODS_CONFIGURATION_BUILD_DIR = "${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/../JCFrameworkDemo/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnnie.JCFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -831,6 +892,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${BUILT_PRODUCTS_DIR}/**",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/SAMKeychain\"",
+				);
 				INFOPLIST_FILE = JCFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -839,11 +907,37 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"${BUILT_PRODUCTS_DIR}/**",
+				);
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SAMKeychain\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SAMKeychain\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PODS_BUILD_DIR = build;
+				PODS_CONFIGURATION_BUILD_DIR = "${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/../JCFrameworkDemo/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnnie.JCFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

@@ -11,19 +11,11 @@
 
 extern const NSInteger ALERT_TAG_PHONE_CALL;
 
-#define TOAST_MESSAGE_RED [UIColor colorWithRed:228.0/255.0 green:66.0/255.0 blue:66.0/255.0 alpha:1.0]
-#define TOAST_MESSAGE_GREEN [UIColor colorWithRed:60.0/255.0 green:180.0/255.0 blue:120.0/255.0 alpha:1.0]
-#define TOAST_MESSAGE_ORANGE [UIColor colorWithRed:250.0/255.0 green:178.0/255.0 blue:80.0/255.0 alpha:1.0]
-
 @interface UIAlertAction(JCUtils)
 - (void)_jcSetTitleColor:(UIColor *)color;
 @end
 
 @interface JCUIAlertUtils : NSObject
-
-//toast
-+ (void)toastWithMessage:(NSString *)message colour:(UIColor *)colour;
-+ (void)toastWithMessage:(NSString *)message colour:(UIColor *)colour completion:(void (^)(void))completion;
 
 //alert
 + (void)showConfirmDialog:(NSString *)title content:(NSString *)content okBtnTitle:(NSString *)okBtnTitle okHandler:(void (^)(UIAlertAction *action))okHandler;

@@ -45,7 +45,7 @@ NSString *const JC_HOME_CONFIRM_DELETE_CELL_LEFT_BUTTON_TITLE = @"One";
 }
 
 - (IBAction)leftButtonClicked:(id)sender {
-    [JCUIAlertUtils toastWithMessage:@"One clicked" colour:TOAST_MESSAGE_ORANGE];
+    [JCUIAlertUtils toastWithMessage:@"One clicked" colour:[UIColor toastMessageOrange]];
 }
 
 - (IBAction)deleteButtonClicked:(id)sender {
@@ -53,7 +53,7 @@ NSString *const JC_HOME_CONFIRM_DELETE_CELL_LEFT_BUTTON_TITLE = @"One";
         [self showConfirmDelete];
     }
     else{
-        [JCUIAlertUtils toastWithMessage:@"Confirm delete clicked" colour:TOAST_MESSAGE_ORANGE];
+        [JCUIAlertUtils toastWithMessage:@"Confirm delete clicked" colour:[UIColor toastMessageOrange]];
     }
 }
 

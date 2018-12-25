@@ -148,7 +148,7 @@
                                                                 }
                                                                 else{
                                                                     [JCUIAlertUtils toastWithMessage:errorMsg
-                                                                                              colour:TOAST_MESSAGE_RED];
+                                                                                              colour:[UIColor toastMessageRed]];
                                                                 }
                                                             }];
 }
@@ -156,7 +156,7 @@
 - (void)showChangePasscode{
     [[JCAuthenticationHanlder sharedHelper] changePasswordWithTitle:@"Change passcode" completion:^(BOOL success, NSString *errorMsg) {
         [JCUIAlertUtils toastWithMessage:success ? @"Passcode changed" :errorMsg
-                                  colour:success ? TOAST_MESSAGE_GREEN : TOAST_MESSAGE_RED];
+                                  colour:success ? [UIColor toastMessageGreen] : [UIColor toastMessageRed]];
     }];
 }
 
@@ -165,11 +165,11 @@
         if([errorMsg isEqualToString:ERROR_FORGOT_PASSCODE_CLCIKED]){
             //forget passcode clicked
             [JCUIAlertUtils toastWithMessage:@"Forget passcode clicked"
-                                      colour:TOAST_MESSAGE_GREEN];
+                                      colour:[UIColor toastMessageGreen]];
         }
         else{
             [JCUIAlertUtils toastWithMessage:success ? @"Passcode auth success" :errorMsg
-                                      colour:success ? TOAST_MESSAGE_GREEN : TOAST_MESSAGE_RED];
+                                      colour:success ? [UIColor toastMessageGreen] : [UIColor toastMessageRed]];
         }
     }];
 }
@@ -177,7 +177,7 @@
 - (void)showBiometricsAuthentication{
     [[JCAuthenticationHanlder sharedHelper] authenticateWithBiometricsWithTitle:@"This is a demo title" completion:^(BOOL success, NSError *error) {
         [JCUIAlertUtils toastWithMessage:success ? @"Biometrics auth success" : [error localizedDescription]
-                                  colour:success ? TOAST_MESSAGE_GREEN : TOAST_MESSAGE_RED];
+                                  colour:success ? [UIColor toastMessageGreen] : [UIColor toastMessageRed]];
     }];
 }
 

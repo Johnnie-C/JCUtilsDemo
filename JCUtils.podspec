@@ -14,13 +14,58 @@ Pod::Spec.new do |spec|
 		sub.source_files = 'JCFramework/**/*.{h,m}'
 		sub.resources = [ 'JCFramework/**/*.xib', 'JCFramework/Resource/**/*.*']
 		sub.public_header_files = 'JCFramework/**/*.h'
+        sub.dependency 'SAMKeychain'
 	end
-	
+
+
+    spec.subspec 'JCFrameworkEssential' do |sub|
+        sub.source_files = [ 'JCFramework/Essential/*.{h,m}' ]
+        sub.public_header_files = 'JCFramework/Essential/*.h'
+    end
+
+
+    spec.subspec 'JCDesign' do |sub|
+        sub.source_files = [ 'JCFramework/JCFramework/Design/**/*.{h,m}' ]
+        sub.resources = [ 'JCFramework/**/*.xib', 'JCFramework/Resource/**/*.*']
+        sub.public_header_files = 'JCFramework/Design/**/*.h'
+        sub.dependency 'JCUtils/JCFrameworkEssential'
+    end
+
+
+    spec.subspec 'JCAuthentication' do |sub|
+        sub.source_files = [ 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.{h,m}' ]
+        sub.public_header_files = 'JCFramework/JCHelpers/Authentication/**/*.h'
+        sub.resources = [ 'JCFramework/JCHelpers/Authentication/**/*.{xib,png}']
+        sub.dependency 'JCUtils/JCFrameworkEssential'
+        sub.dependency 'SAMKeychain'
+    end
+
+
+    spec.subspec 'JCLocation' do |sub|
+        sub.source_files = [ 'JCFramework/JCFramework/JCHelpers/Location/**/*.{h,m}' ]
+        sub.public_header_files = 'JCFramework/JCHelpers/Location/**/*.h'
+        sub.dependency 'JCUtils/JCFrameworkEssential'
+    end
+
+
+    spec.subspec 'JCToast' do |sub|
+        sub.source_files = [ 'JCFramework/CRToast/*.{h,m}' ]
+        sub.public_header_files = 'JCFramework/CRToast/*.h'
+        sub.dependency 'JCUtils/JCFrameworkEssential'
+    end
+
+
+    spec.subspec 'JCViewTouchHighlighting' do |sub|
+        sub.source_files = [ 'JCFramework/UIView+TouchHighlighting/**/*.{h,m}' ]
+        sub.public_header_files = 'JCFramework/UIView+TouchHighlighting/**/*.h'
+    end
+
+
 	spec.subspec 'JCFloatingView' do |sub|
 		sub.source_files = 'JCFloatingView/**/*.{h,m}'
 		sub.resources = [ 'JCFloatingView/**/*.xib', 'JCFloatingView/Resources/**/*.*']
 		sub.public_header_files = 'JCFloatingView/**/*.h'
-		sub.dependency 'JCUtils/JCFramework'
+		sub.dependency 'JCUtils/JCFrameworkEssential'
 	end
 	
 end

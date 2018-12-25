@@ -11,9 +11,4 @@ Pod::Spec.new do |spec|
     spec.framework    = 'SystemConfiguration'
     spec.ios.deployment_target  = '9.0'
     spec.dependency 'JCFramework'
-    
-    #spec.subspec 'JCFramework' do |ss|
-    #   ss.source_files         = '../JCFramework/**/*.{h,m,xib}'
-    #    ss.resource             = '../JCFramework/**/Resource/*.*'
-    #end
 end

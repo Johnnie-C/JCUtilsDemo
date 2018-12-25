@@ -37,9 +37,6 @@
                 break;
             case UICollectionUpdateActionDelete:
                 [indexPaths addObject:updateItem.indexPathBeforeUpdate];
-//                if([self.collectionView numberOfItemsInSection:updateItem.indexPathBeforeUpdate.section] <= 0){
-//                    _latstItemwLayoutAttributesInSections[updateItem.indexPathBeforeUpdate] = [super layoutAttributesForItemAtIndexPath:updateItem.indexPathBeforeUpdate];
-//                }
                 break;
             case UICollectionUpdateActionMove:
             case UICollectionUpdateActionReload:

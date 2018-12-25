@@ -7,7 +7,6 @@
 //
 
 #import "JCUIAlertUtils.h"
-#import "CRToast.h"
 
 #import "JCUIAlertController.h"
 #import "JCUtils.h"
@@ -174,38 +173,6 @@ const NSInteger ALERT_TAG_PHONE_CALL = 102;
     }
     
     [viewController presentViewController:alert animated:YES completion:nil];
-}
-
-#pragma mark - toast
-+ (void)toastWithMessage:(NSString *)message colour:(UIColor *)colour
-{
-    [self toastWithMessage:message colour:colour completion:nil];
-}
-
-
-+ (void)toastWithMessage:(NSString *)message colour:(UIColor *)colour completion:(void (^)(void))completion{
-    [CRToastManager dismissNotification:YES];
-    NSDictionary *options = @{
-                              kCRToastTextKey : message,
-                              kCRToastTextAlignmentKey : @(NSTextAlignmentCenter),
-                              kCRToastBackgroundColorKey : colour,
-                              kCRToastAnimationInTypeKey : @(CRToastAnimationTypeSpring),
-                              kCRToastAnimationOutTypeKey : @(CRToastAnimationTypeSpring),
-                              kCRToastAnimationInDirectionKey : @(CRToastAnimationDirectionTop),
-                              kCRToastAnimationOutDirectionKey : @(CRToastAnimationDirectionTop),
-                              kCRToastNotificationTypeKey : @(CRToastTypeNavigationBar),
-                              kCRToastNotificationPresentationTypeKey : @(CRToastPresentationTypeCover),
-                              kCRToastTimeIntervalKey : @(2),
-                              kCRToastFontKey : [UIFont fontWithSize:20],
-                              kCRToastInteractionRespondersKey : @[[CRToastInteractionResponder interactionResponderWithInteractionType:CRToastInteractionTypeTap
-                                                                                                                   automaticallyDismiss:YES
-                                                                                                                                  block:^(CRToastInteractionType interactionType){
-                                                                                                                                      
-                                                                                                                                  }]]
-                              };
-    [CRToastManager showNotificationWithOptions:options
-                                completionBlock:completion];
-    
 }
 
 @end

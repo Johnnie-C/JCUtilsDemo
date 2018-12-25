@@ -1,31 +1,41 @@
 PODS:
   - JCFloatingView (1.0.0):
     - JCFramework
-  - JCFramework (1.0.0)
+  - JCFramework (1.0.0):
+    - SAMKeychain
+  - JCReachability (1.0.0):
+    - JCFramework
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
+  - SAMKeychain (1.5.3)
 
 DEPENDENCIES:
   - JCFloatingView (from `../JCFloatingView`)
   - JCFramework (from `../JCFramework`)
+  - JCReachability (from `../JCReachability`)
   - MagicalRecord
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - MagicalRecord
+    - SAMKeychain
 
 EXTERNAL SOURCES:
   JCFloatingView:
     :path: "../JCFloatingView"
   JCFramework:
     :path: "../JCFramework"
+  JCReachability:
+    :path: "../JCReachability"
 
 SPEC CHECKSUMS:
-  JCFloatingView: 975580a237bcbfe43026c034c5e0cf8842fb2eb3
-  JCFramework: 8497b15cb4aebfc6b6fbba92b58caa9d8e4fbcd4
+  JCFloatingView: f71c9076dbac9c946a01e0a0da7ed5e4ae66d25e
+  JCFramework: d6d6c540b359a5e5c5be38f484417cc12db1aa9a
+  JCReachability: c75ba828dad23b1bbe99eb469ddd9cb8ee3edd6a
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
 
-PODFILE CHECKSUM: eb1d8a201180a5a1045da2bce92fbdbe0bcc244c
+PODFILE CHECKSUM: 6adacdbbd2a595d074b4b6ab5c88a41651b743f1
 
 COCOAPODS: 1.5.3

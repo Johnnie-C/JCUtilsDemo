@@ -14,10 +14,38 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "805BFA7E314265FD20E7A4E50213AE1E"
+               BuildableName = "libPods-JCFrameworkDemo.a"
+               BlueprintName = "Pods-JCFrameworkDemo"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "3317CF4A21CAF6B2000D87FE"
                BuildableName = "JCFramework.framework"
                BlueprintName = "JCFramework"
                ReferencedContainer = "container:../JCFramework/JCFramework.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9304F1D221CDBE0500225FB2"
+               BuildableName = "JCReachability.framework"
+               BlueprintName = "JCReachability"
+               ReferencedContainer = "container:../JCReachability/JCReachability.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry

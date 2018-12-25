@@ -9,6 +9,7 @@
 
 #import "UIColor+JCUtils.h"
 #import "UIView+JCUtils.h"
+#import "JCUtils.h"
 
 @interface JCHeaderTabView()
 
@@ -56,7 +57,7 @@
 - (void)setupUI{
     //init View
     NSString *className = NSStringFromClass([self class]);
-    _contentView = [[[NSBundle mainBundle] loadNibNamed:className owner:self options:nil] firstObject];
+    _contentView = [[[JCUtils frameworkBundle] loadNibNamed:className owner:self options:nil] firstObject];
     [self addSubview:_contentView];
     [_contentView fillInSuperView];
     self.clipsToBounds = YES;

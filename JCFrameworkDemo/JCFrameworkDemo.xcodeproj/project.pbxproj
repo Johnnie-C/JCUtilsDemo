@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D05D596F68A50FA8C6B8ACC /* libPods-JCFrameworkDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7651F1EFF321BA651ACE8AFD /* libPods-JCFrameworkDemoTests.a */; };
+		023C65151EA629D913AA755D /* libPods-JCFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C962469A67EBE9FC77B9956 /* libPods-JCFrameworkDemo.a */; };
 		3317D04E21CB069C000D87FE /* JCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3317D04321CB0281000D87FE /* JCFramework.framework */; };
 		3317D04F21CB069C000D87FE /* JCFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3317D04321CB0281000D87FE /* JCFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3317D08E21CB0F31000D87FE /* JCFloatingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3317D07E21CB0BE3000D87FE /* JCFloatingView.framework */; };
 		3317D08F21CB0F31000D87FE /* JCFloatingView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3317D07E21CB0BE3000D87FE /* JCFloatingView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4542B852BB6CE1245A1E98D1 /* libPods-JCFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */; };
-		51A308779463412C5110544C /* libPods-JCFrameworkDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C5239AFCA53D59A2873D73 /* libPods-JCFrameworkDemoUITests.a */; };
+		7659142CF32F226542001B64 /* libPods-JCFrameworkDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D1823D516F1DAB6CFA6D9B /* libPods-JCFrameworkDemoTests.a */; };
 		930176692001993D002D2265 /* JCJellyEffectDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930176672001993D002D2265 /* JCJellyEffectDemoViewController.m */; };
 		9301766A2001993D002D2265 /* JCJellyEffectDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930176682001993D002D2265 /* JCJellyEffectDemoViewController.xib */; };
+		9304F20F21CDC0C900225FB2 /* JCReachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9304F1FB21CDBE3F00225FB2 /* JCReachability.framework */; };
+		9304F21021CDC0C900225FB2 /* JCReachability.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9304F1FB21CDBE3F00225FB2 /* JCReachability.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		932F998B21D1C6D40028FD90 /* JCUtils.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 932F998921D1C6D40028FD90 /* JCUtils.podspec */; };
 		93477D26201D5C2C00C8DC39 /* JCCoreDataDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93477D24201D5C2C00C8DC39 /* JCCoreDataDemoViewController.m */; };
 		93477D27201D5C2C00C8DC39 /* JCCoreDataDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93477D25201D5C2C00C8DC39 /* JCCoreDataDemoViewController.xib */; };
 		93477D44201D688600C8DC39 /* JCCoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93477D42201D688600C8DC39 /* JCCoreDataDemo.xcdatamodeld */; };
@@ -56,6 +58,7 @@
 		93A5DFCD1FFA18CF006D35CF /* demo_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 93A5DFCC1FFA18CF006D35CF /* demo_image.jpeg */; };
 		93A5DFD11FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A5DFCF1FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.m */; };
 		93A5DFD21FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A5DFD01FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.xib */; };
+		AC51A1CB1E2BCD89248A815E /* libPods-JCFrameworkDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5D2AAA2B4438ECD8685E29 /* libPods-JCFrameworkDemoUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,27 @@
 			remoteGlobalIDString = 3317D06921CB0BC1000D87FE;
 			remoteInfo = JCFloatingView;
 		};
+		9304F1FA21CDBE3F00225FB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9304F1ED21CDBE3500225FB2 /* JCReachability.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9304F1D321CDBE0500225FB2;
+			remoteInfo = JCReachability;
+		};
+		9304F1FC21CDBE3F00225FB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9304F1ED21CDBE3500225FB2 /* JCReachability.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9304F1DC21CDBE0500225FB2;
+			remoteInfo = JCReachabilityTests;
+		};
+		9304F21121CDC0C900225FB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9304F1ED21CDBE3500225FB2 /* JCReachability.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9304F1D221CDBE0500225FB2;
+			remoteInfo = JCReachability;
+		};
 		93A5DD701FF9AF4E006D35CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 93A5DD4F1FF9AF4E006D35CF /* Project object */;
@@ -112,6 +136,7 @@
 			files = (
 				3317D08F21CB0F31000D87FE /* JCFloatingView.framework in Embed Frameworks */,
 				3317D04F21CB069C000D87FE /* JCFramework.framework in Embed Frameworks */,
+				9304F21021CDC0C900225FB2 /* JCReachability.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,11 +149,13 @@
 		3317D03E21CB0281000D87FE /* JCFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JCFramework.xcodeproj; path = ../../../JCFramework/JCFramework.xcodeproj; sourceTree = "<group>"; };
 		3317D07921CB0BE3000D87FE /* JCFloatingView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JCFloatingView.xcodeproj; path = ../../../JCFloatingView/JCFloatingView.xcodeproj; sourceTree = "<group>"; };
 		454A2EE625BA535674AC670D /* Pods-JCFrameworkDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemoUITests/Pods-JCFrameworkDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7651F1EFF321BA651ACE8AFD /* libPods-JCFrameworkDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C962469A67EBE9FC77B9956 /* libPods-JCFrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F5D2AAA2B4438ECD8685E29 /* libPods-JCFrameworkDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		930176662001993D002D2265 /* JCJellyEffectDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCJellyEffectDemoViewController.h; sourceTree = "<group>"; };
 		930176672001993D002D2265 /* JCJellyEffectDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCJellyEffectDemoViewController.m; sourceTree = "<group>"; };
 		930176682001993D002D2265 /* JCJellyEffectDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCJellyEffectDemoViewController.xib; sourceTree = "<group>"; };
+		9304F1ED21CDBE3500225FB2 /* JCReachability.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JCReachability.xcodeproj; path = ../../../JCReachability/JCReachability.xcodeproj; sourceTree = "<group>"; };
+		932F998921D1C6D40028FD90 /* JCUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JCUtils.podspec; path = ../JCUtils.podspec; sourceTree = "<group>"; };
 		93477D23201D5C2C00C8DC39 /* JCCoreDataDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCCoreDataDemoViewController.h; sourceTree = "<group>"; };
 		93477D24201D5C2C00C8DC39 /* JCCoreDataDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCCoreDataDemoViewController.m; sourceTree = "<group>"; };
 		93477D25201D5C2C00C8DC39 /* JCCoreDataDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCCoreDataDemoViewController.xib; sourceTree = "<group>"; };
@@ -196,7 +223,7 @@
 		93A5DFD01FFA3072006D35CF /* JCScrollViewTextFieldDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCScrollViewTextFieldDemoViewController.xib; sourceTree = "<group>"; };
 		B687E02F50B1ED483466C0EC /* Pods-JCFrameworkDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemoUITests/Pods-JCFrameworkDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DCBFA0119D73F4771CBE2F9E /* Pods-JCFrameworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemo/Pods-JCFrameworkDemo.release.xcconfig"; sourceTree = "<group>"; };
-		F3C5239AFCA53D59A2873D73 /* libPods-JCFrameworkDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D1823D516F1DAB6CFA6D9B /* libPods-JCFrameworkDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCFrameworkDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCDB1375D9E7D8ADAB553425 /* Pods-JCFrameworkDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCFrameworkDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCFrameworkDemoTests/Pods-JCFrameworkDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,9 +233,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3317D08E21CB0F31000D87FE /* JCFloatingView.framework in Frameworks */,
+				9304F20F21CDC0C900225FB2 /* JCReachability.framework in Frameworks */,
 				3317D04E21CB069C000D87FE /* JCFramework.framework in Frameworks */,
 				93477D55201D8A7F00C8DC39 /* CoreData.framework in Frameworks */,
-				4542B852BB6CE1245A1E98D1 /* libPods-JCFrameworkDemo.a in Frameworks */,
+				023C65151EA629D913AA755D /* libPods-JCFrameworkDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +244,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D05D596F68A50FA8C6B8ACC /* libPods-JCFrameworkDemoTests.a in Frameworks */,
+				7659142CF32F226542001B64 /* libPods-JCFrameworkDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +252,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51A308779463412C5110544C /* libPods-JCFrameworkDemoUITests.a in Frameworks */,
+				AC51A1CB1E2BCD89248A815E /* libPods-JCFrameworkDemoUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +276,9 @@
 			isa = PBXGroup;
 			children = (
 				93477D54201D8A7E00C8DC39 /* CoreData.framework */,
-				9217A674C3F131C2BCD3782C /* libPods-JCFrameworkDemo.a */,
-				7651F1EFF321BA651ACE8AFD /* libPods-JCFrameworkDemoTests.a */,
-				F3C5239AFCA53D59A2873D73 /* libPods-JCFrameworkDemoUITests.a */,
+				5C962469A67EBE9FC77B9956 /* libPods-JCFrameworkDemo.a */,
+				E4D1823D516F1DAB6CFA6D9B /* libPods-JCFrameworkDemoTests.a */,
+				6F5D2AAA2B4438ECD8685E29 /* libPods-JCFrameworkDemoUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -267,6 +295,15 @@
 			isa = PBXGroup;
 			children = (
 				3317D07E21CB0BE3000D87FE /* JCFloatingView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9304F1F621CDBE3F00225FB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9304F1FB21CDBE3F00225FB2 /* JCReachability.framework */,
+				9304F1FD21CDBE3F00225FB2 /* JCReachabilityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -349,6 +386,7 @@
 		93A5DD4E1FF9AF4E006D35CF = {
 			isa = PBXGroup;
 			children = (
+				932F998921D1C6D40028FD90 /* JCUtils.podspec */,
 				93A5DD591FF9AF4E006D35CF /* JCFrameworkDemo */,
 				93A5DD721FF9AF4E006D35CF /* JCFrameworkDemoTests */,
 				93A5DD7D1FF9AF4E006D35CF /* JCFrameworkDemoUITests */,
@@ -410,8 +448,9 @@
 		93A5DF341FF9BC8B006D35CF /* External */ = {
 			isa = PBXGroup;
 			children = (
-				3317D07921CB0BE3000D87FE /* JCFloatingView.xcodeproj */,
 				3317D03E21CB0281000D87FE /* JCFramework.xcodeproj */,
+				3317D07921CB0BE3000D87FE /* JCFloatingView.xcodeproj */,
+				9304F1ED21CDBE3500225FB2 /* JCReachability.xcodeproj */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -496,12 +535,14 @@
 				93A5DD541FF9AF4E006D35CF /* Frameworks */,
 				93A5DD551FF9AF4E006D35CF /* Resources */,
 				3317CF6121CAF73A000D87FE /* Embed Frameworks */,
+				303031B77AE7D1334255AA0B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				3317D05121CB069C000D87FE /* PBXTargetDependency */,
 				3317D09121CB0F31000D87FE /* PBXTargetDependency */,
+				9304F21221CDC0C900225FB2 /* PBXTargetDependency */,
 			);
 			name = JCFrameworkDemo;
 			productName = JCFrameworkDemo;
@@ -516,6 +557,7 @@
 				93A5DD6B1FF9AF4E006D35CF /* Sources */,
 				93A5DD6C1FF9AF4E006D35CF /* Frameworks */,
 				93A5DD6D1FF9AF4E006D35CF /* Resources */,
+				67076A41B3EA1EBF30850EC6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -535,6 +577,7 @@
 				93A5DD761FF9AF4E006D35CF /* Sources */,
 				93A5DD771FF9AF4E006D35CF /* Frameworks */,
 				93A5DD781FF9AF4E006D35CF /* Resources */,
+				94A20EA3F33AA97BAD56285E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -591,6 +634,10 @@
 					ProductGroup = 3317D03F21CB0281000D87FE /* Products */;
 					ProjectRef = 3317D03E21CB0281000D87FE /* JCFramework.xcodeproj */;
 				},
+				{
+					ProductGroup = 9304F1F621CDBE3F00225FB2 /* Products */;
+					ProjectRef = 9304F1ED21CDBE3500225FB2 /* JCReachability.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -616,6 +663,20 @@
 			remoteRef = 3317D07D21CB0BE3000D87FE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		9304F1FB21CDBE3F00225FB2 /* JCReachability.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JCReachability.framework;
+			remoteRef = 9304F1FA21CDBE3F00225FB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9304F1FD21CDBE3F00225FB2 /* JCReachabilityTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JCReachabilityTests.xctest;
+			remoteRef = 9304F1FC21CDBE3F00225FB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -638,6 +699,7 @@
 				93A1E3AA1FFB487F004D660C /* JCTransparentCurveTabDemoViewController.xib in Resources */,
 				939B1DC0202E9E4200D11956 /* JCAnimatedCollectionViewCell.xib in Resources */,
 				93477D27201D5C2C00C8DC39 /* JCCoreDataDemoViewController.xib in Resources */,
+				932F998B21D1C6D40028FD90 /* JCUtils.podspec in Resources */,
 				939B1DB9202E9E0900D11956 /* JCAnimatedCollectionViewDemoViewController.xib in Resources */,
 				935E7A38201840EC00BB42E2 /* JCTransitionDemoListViewController.xib in Resources */,
 			);
@@ -660,6 +722,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		303031B77AE7D1334255AA0B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JCFrameworkDemo/Pods-JCFrameworkDemo-resources.sh",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCFrameworkDemo/Pods-JCFrameworkDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		423C7F264D8CDC61C6AAD566 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -676,6 +756,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67076A41B3EA1EBF30850EC6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JCFrameworkDemoTests/Pods-JCFrameworkDemoTests-resources.sh",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCFrameworkDemoTests/Pods-JCFrameworkDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94A20EA3F33AA97BAD56285E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JCFrameworkDemoUITests/Pods-JCFrameworkDemoUITests-resources.sh",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCFrameworkDemoUITests/Pods-JCFrameworkDemoUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EA20031685544AFDF63C884B /* [CP] Check Pods Manifest.lock */ = {
@@ -774,6 +890,11 @@
 			isa = PBXTargetDependency;
 			name = JCFloatingView;
 			targetProxy = 3317D09021CB0F31000D87FE /* PBXContainerItemProxy */;
+		};
+		9304F21221CDC0C900225FB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JCReachability;
+			targetProxy = 9304F21121CDC0C900225FB2 /* PBXContainerItemProxy */;
 		};
 		93A5DD711FF9AF4E006D35CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -919,6 +1040,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5KWW36V7AA;
 				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/MagicalRecord\"",
+					"\"${PODS_ROOT}/Headers/Public/SAMKeychain\"",
+				);
 				INFOPLIST_FILE = JCFrameworkDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -926,6 +1053,7 @@
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/MagicalRecord\"",
 				);
+				PODS_CONFIGURATION_BUILD_DIR = "${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/";
 				PRODUCT_BUNDLE_IDENTIFIER = Johnnie.JCFrameworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -940,6 +1068,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5KWW36V7AA;
 				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/MagicalRecord\"",
+					"\"${PODS_ROOT}/Headers/Public/SAMKeychain\"",
+				);
 				INFOPLIST_FILE = JCFrameworkDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -947,6 +1081,7 @@
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/MagicalRecord\"",
 				);
+				PODS_CONFIGURATION_BUILD_DIR = "${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/";
 				PRODUCT_BUNDLE_IDENTIFIER = Johnnie.JCFrameworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -12,6 +12,7 @@
 #import <MagicalRecord/MagicalRecord.h>
 #import <JCFramework/JCFramework.h>
 
+
 @interface AppDelegate ()
 
 @end

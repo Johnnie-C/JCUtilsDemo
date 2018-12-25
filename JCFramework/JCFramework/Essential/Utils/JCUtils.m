@@ -10,9 +10,6 @@
 #import "JCUIAlertUtils.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 
-#import "SAMKeychain.h"
-#import "Reachability.h"
-
 @implementation JCUtils
 
 #pragma mark - general
@@ -28,18 +25,6 @@
         frameworkBundle = [NSBundle bundleForClass:[self class]];
     });
     return frameworkBundle;
-}
-
-+ (NSString *)deviceUDID{
-    NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleNameKey];
-    
-    NSString *strApplicationUDID = [SAMKeychain passwordForService:appName account:@"incoding"];
-    if (strApplicationUDID == nil){
-        strApplicationUDID  = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-        [SAMKeychain setPassword:strApplicationUDID forService:appName account:@"incoding"];
-    }
-    
-    return strApplicationUDID;
 }
 
 + (UIViewController *)rootViewController{
@@ -72,13 +57,6 @@
             return @"image/tiff";
     }
     return nil;
-}
-
-#pragma mark - network
-+(BOOL)hasConnectivity
-{
-    NetworkStatus networkStatus = [[Reachability reachabilityForInternetConnection] currentReachabilityStatus];
-    return (networkStatus == NotReachable) ? NO : YES;
 }
 
 #pragma mark - device

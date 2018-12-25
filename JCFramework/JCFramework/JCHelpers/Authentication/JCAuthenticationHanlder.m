@@ -10,17 +10,17 @@
 #import "JCNavigationController.h"
 
 #import "UIColor+JCUtils.h"
-#import "UINavigationBar+JCUtils.h"
 #import "JCUIAlertUtils.h"
 #import "JCUtils.h"
 
-#import "SAMKeychain.h"
+//#import "SAMKeychain.h"
+#import <SAMKeychain/SAMKeychain.h>
 
 static JCAuthenticationHanlder *sharedInstance;
-NSString *const KEY_AUTH_CONFIG = @"key_authConfig";
+NSString *const KEY_AUTH_CONFIG = @"key_jcAuthConfig";
 NSString *const SERVICE_PASSCODE = @"jc_password";
-NSString *const KEY_TOUCH_ID_ENABLED = @"key_touchIDEnabled";
-NSString *const KEY_PASSCODE_ENABLED = @"key_passcodeEnabled";
+NSString *const KEY_TOUCH_ID_ENABLED = @"key_jcTouchIDEnabled";
+NSString *const KEY_PASSCODE_ENABLED = @"key_jcPasscodeEnabled";
 NSString *const ERROR_FORGOT_PASSCODE_CLCIKED = @"JCError_forgotPasscodeClicked";
 
 @interface JCAuthenticationHanlder()
@@ -195,20 +195,20 @@ NSString *const ERROR_FORGOT_PASSCODE_CLCIKED = @"JCError_forgotPasscodeClicked"
     
     UIViewController *rootVC = [[[UIApplication sharedApplication] keyWindow] rootViewController];
     [rootVC dismissViewControllerAnimated:YES completion:^{
-        if(_completion){
-            _completion(YES, nil);
+        if(self.completion){
+            self.completion(YES, nil);
         }
-        _completion = nil;
+        self.completion = nil;
     }];
 }
 
 - (void)PAPasscodeViewControllerDidEnterPasscode:(PAPasscodeViewController *)controller{
     UIViewController *rootVC = [[[UIApplication sharedApplication] keyWindow] rootViewController];
     [rootVC dismissViewControllerAnimated:YES completion:^{
-        if(_completion){
-            _completion(YES, nil);
+        if(self.completion){
+            self.completion(YES, nil);
         }
-        _completion = nil;
+        self.completion = nil;
     }];
 }
 
@@ -229,10 +229,10 @@ NSString *const ERROR_FORGOT_PASSCODE_CLCIKED = @"JCError_forgotPasscodeClicked"
     
     UIViewController *rootVC = [[[UIApplication sharedApplication] keyWindow] rootViewController];
     [rootVC dismissViewControllerAnimated:YES completion:^{
-        if(_completion){
-            _completion(YES, nil);
+        if(self.completion){
+            self.completion(YES, nil);
         }
-        _completion = nil;
+        self.completion = nil;
     }];
 }
 
@@ -244,10 +244,10 @@ NSString *const ERROR_FORGOT_PASSCODE_CLCIKED = @"JCError_forgotPasscodeClicked"
                          yesHandler:^(UIAlertAction *action) {
                              UIViewController *rootVC = [[[UIApplication sharedApplication] keyWindow] rootViewController];
                              [rootVC dismissViewControllerAnimated:YES completion:^{
-                                 if(_completion){
-                                     _completion(NO, ERROR_FORGOT_PASSCODE_CLCIKED);
+                                 if(self.completion){
+                                     self.completion(NO, ERROR_FORGOT_PASSCODE_CLCIKED);
                                  }
-                                 _completion = nil;
+                                 self.completion = nil;
                              }];
                          }
                          noBtnTitle:@"Cancel"
