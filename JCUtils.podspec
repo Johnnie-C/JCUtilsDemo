@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
     spec.subspec 'JCDesign' do |sub|
         sub.source_files = [ 'JCFramework/JCFramework/Design/**/*.{h,m}' ]
         sub.resources = [ 'JCFramework/**/*.xib', 'JCFramework/Resource/**/*.*']
-        sub.public_header_files = 'JCFramework/Design/**/*.h'
+        sub.public_header_files = 'JCFramework/JCFramework/Design/**/*.h'
         sub.dependency 'JCUtils/JCFrameworkEssential'
     end
 
@@ -35,22 +35,21 @@ Pod::Spec.new do |spec|
     spec.subspec 'JCAuthentication' do |sub|
         sub.source_files = [ 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.{h,m}' ]
         sub.public_header_files = 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.h'
-        sub.resources = [ 'JCFramework/JCHelpers/Authentication/**/*.{xib,png}']
+        sub.resources = [ 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.{xib,png}']
         sub.dependency 'JCUtils/JCFrameworkEssential'
         sub.dependency 'SAMKeychain'
     end
 
 
     spec.subspec 'JCLocation' do |sub|
-        sub.source_files = [ 'JCFramework/JCFramework/JCAlert/*.{h,m}' ]
-        sub.public_header_files = 'JCFramework/JCFramework/JCAlert/*.h'
+        sub.source_files = [ 'JCFramework/JCFramework/JCHelpers/Location/**/*.{h,m}' ]
+        sub.public_header_files = 'JCFramework/JCFramework/JCHelpers/Location/**/*.h'
         sub.dependency 'JCUtils/JCFrameworkEssential'
     end
 
     spec.subspec 'JCAlert' do |sub|
-        sub.source_files = [ 'JCFramework/JCFramework/Design/**/*.{h,m}' ]
-        sub.resources = [ 'JCFramework/**/*.xib', 'JCFramework/Resource/**/*.*']
-        sub.public_header_files = 'JCFramework/Design/**/*.h'
+        sub.source_files = [ 'JCFramework/JCFramework/JCAlert/*.{h,m}' ]
+        sub.public_header_files = 'JCFramework/JCFramework/JCAlert/*.h'
         sub.dependency 'JCUtils/JCFrameworkEssential'
     end
 
