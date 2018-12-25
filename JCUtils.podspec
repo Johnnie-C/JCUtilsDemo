@@ -75,5 +75,11 @@ Pod::Spec.new do |spec|
         sub.public_header_files = 'JCFloatingView/**/*.h'
         sub.dependency 'JCUtils/JCFrameworkEssential'
     end
+
+
+    spec.subspec 'JCReachability' do |sub|
+        sub.source_files = [ 'JCReachability/JCReachability/**/*.{h,m}' ]
+        sub.public_header_files = 'JCReachability/JCReachability/**/*.h'
+    end
 	
 end
