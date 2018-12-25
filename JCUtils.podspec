@@ -25,16 +25,16 @@ Pod::Spec.new do |spec|
 
 
     spec.subspec 'JCDesign' do |sub|
-        sub.source_files = [ 'JCFramework/JCFramework/Design/**/*.{h,m}' ]
+        sub.source_files = [ 'JCFramework/JCFramework/JCDesign/**/*.{h,m}' ]
         sub.resources = [ 'JCFramework/**/*.xib', 'JCFramework/Resource/**/*.*']
-        sub.public_header_files = 'JCFramework/JCFramework/Design/**/*.h'
+        sub.public_header_files = 'JCFramework/JCFramework/JCDesign/**/*.h'
         sub.dependency 'JCUtils/JCFrameworkEssential'
     end
 
 
     spec.subspec 'JCAuthentication' do |sub|
-        sub.source_files = [ 'JCFramework/JCFramework/Design/BaseView/JCNavigationController.h', 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.{h,m}' ]
-        sub.public_header_files = [ 'JCFramework/JCFramework/Design/BaseView/JCNavigationController.h', 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.h']
+        sub.source_files = [ 'JCFramework/JCFramework/JCDesign/BaseView/JCNavigationController.h', 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.{h,m}' ]
+        sub.public_header_files = [ 'JCFramework/JCFramework/JCDesign/BaseView/JCNavigationController.h', 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.h']
         sub.resources = [ 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.{xib,png}']
         sub.dependency 'JCUtils/JCFrameworkEssential'
         sub.dependency 'SAMKeychain'
