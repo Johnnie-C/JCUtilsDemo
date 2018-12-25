@@ -1,5 +1,5 @@
 //
-//  JCUtils+DeviceID.h
+//  JCUtils+Comprehansive.h
 //  JCFramework
 //
 //  Created by Johnnie Cheng on 25/12/18.
@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "JCUtils.h"
 
-@interface JCUtils (DeviceID)
+@interface JCUtils (Comprehansive)
 
 + (NSString *)deviceUDID;
++ (void)sendEmailToEmailAddress:(NSString *)email subject:(NSString *)subject;
++ (void)callNumber:(NSString *)number;
 
 @end
 

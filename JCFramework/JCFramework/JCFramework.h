@@ -54,12 +54,6 @@ FOUNDATION_EXPORT const unsigned char JCUtilsVersionString[];
 #import "JCUIAlertUtils.h"
 #endif
 
-
-//Device ID
-#if __has_include("JCUtils+DeviceID.h")
-#import "JCUtils+DeviceID.h"
-#endif
-
 //Device ID
 #if __has_include("UIView+TouchHighlighting.h")
 #import "UIView+TouchHighlighting.h"
@@ -69,5 +63,10 @@ FOUNDATION_EXPORT const unsigned char JCUtilsVersionString[];
 //JCToast
 #if __has_include("JCUIAlertUtils+CRToast.h")
 #import "JCUIAlertUtils+CRToast.h"
+#endif
+
+//JCUtils+Comprehansive
+#if __has_include("JCUtils+Comprehansive.h")
+#import "JCUtils+Comprehansive.h"
 #endif
 

@@ -7,7 +7,6 @@
 //
 
 #import "JCUtils.h"
-#import "JCUIAlertUtils.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 
 @implementation JCUtils
@@ -144,26 +143,6 @@
 
 + (CGFloat)statusBarHeight{
     return [UIApplication sharedApplication].statusBarFrame.size.height;
-}
-
-#pragma mark - email
-+ (void)sendEmailToEmailAddress:(NSString *)email subject:(NSString *)subject{
-    NSString *emailURLStr = [NSString stringWithFormat:@"mailto:%@?subject=%@", email, subject];
-    emailURLStr = [emailURLStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSURL *emailURL = [NSURL URLWithString:emailURLStr];
-    [[UIApplication sharedApplication] openURL:emailURL];
-}
-
-+ (void)callNumber:(NSString *)number{
-    if([JCUtils isIPhone]){
-        NSString *num = [number stringByReplacingOccurrencesOfString:@" " withString:@""];
-        NSURL *phoneURL = [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", num]];
-        [[UIApplication sharedApplication] openURL:phoneURL];
-    }
-    else{
-        [JCUIAlertUtils showConfirmDialog:@"Error" content:@"This device does not support for phone call." okBtnTitle:@"Ok" okHandler:nil];
-    }
-    
 }
 
 #pragma mark - redirection

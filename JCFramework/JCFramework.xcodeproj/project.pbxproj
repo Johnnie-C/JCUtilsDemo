@@ -87,8 +87,8 @@
 		932F99AD21D1C9740028FD90 /* JCAuthenticationHanlder.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F999E21D1C9740028FD90 /* JCAuthenticationHanlder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		932F99B121D1C9810028FD90 /* JCLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F99AF21D1C9810028FD90 /* JCLocationHelper.m */; };
 		932F99B221D1C9810028FD90 /* JCLocationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F99B021D1C9810028FD90 /* JCLocationHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		932F99DE21D1CD050028FD90 /* JCUtils+DeviceID.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F99DC21D1CD050028FD90 /* JCUtils+DeviceID.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		932F99DF21D1CD050028FD90 /* JCUtils+DeviceID.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F99DD21D1CD050028FD90 /* JCUtils+DeviceID.m */; };
+		932F99DE21D1CD050028FD90 /* JCUtils+Comprehansive.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F99DC21D1CD050028FD90 /* JCUtils+Comprehansive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932F99DF21D1CD050028FD90 /* JCUtils+Comprehansive.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F99DD21D1CD050028FD90 /* JCUtils+Comprehansive.m */; };
 		932F9A4821D1D0050028FD90 /* NSDictionary+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F9A3421D1D0040028FD90 /* NSDictionary+JCUtils.m */; };
 		932F9A4921D1D0050028FD90 /* NSArray+JCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F9A3521D1D0040028FD90 /* NSArray+JCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		932F9A4A21D1D0050028FD90 /* UIFont+JCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F9A3621D1D0040028FD90 /* UIFont+JCUtils.m */; };
@@ -197,8 +197,8 @@
 		932F999E21D1C9740028FD90 /* JCAuthenticationHanlder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAuthenticationHanlder.h; sourceTree = "<group>"; };
 		932F99AF21D1C9810028FD90 /* JCLocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCLocationHelper.m; sourceTree = "<group>"; };
 		932F99B021D1C9810028FD90 /* JCLocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCLocationHelper.h; sourceTree = "<group>"; };
-		932F99DC21D1CD050028FD90 /* JCUtils+DeviceID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCUtils+DeviceID.h"; sourceTree = "<group>"; };
-		932F99DD21D1CD050028FD90 /* JCUtils+DeviceID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JCUtils+DeviceID.m"; sourceTree = "<group>"; };
+		932F99DC21D1CD050028FD90 /* JCUtils+Comprehansive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCUtils+Comprehansive.h"; sourceTree = "<group>"; };
+		932F99DD21D1CD050028FD90 /* JCUtils+Comprehansive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JCUtils+Comprehansive.m"; sourceTree = "<group>"; };
 		932F9A0821D1CDCD0028FD90 /* JCAuthentication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAuthentication.h; sourceTree = "<group>"; };
 		932F9A0921D1CECC0028FD90 /* JCDesign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCDesign.h; sourceTree = "<group>"; };
 		932F9A3421D1D0040028FD90 /* NSDictionary+JCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JCUtils.m"; sourceTree = "<group>"; };
@@ -319,8 +319,8 @@
 		3317CFAB21CAF765000D87FE /* JCUtils */ = {
 			isa = PBXGroup;
 			children = (
-				932F99DC21D1CD050028FD90 /* JCUtils+DeviceID.h */,
-				932F99DD21D1CD050028FD90 /* JCUtils+DeviceID.m */,
+				932F99DC21D1CD050028FD90 /* JCUtils+Comprehansive.h */,
+				932F99DD21D1CD050028FD90 /* JCUtils+Comprehansive.m */,
 			);
 			path = JCUtils;
 			sourceTree = "<group>";
@@ -578,7 +578,7 @@
 				932F9A4921D1D0050028FD90 /* NSArray+JCUtils.h in Headers */,
 				932F9A5A21D1D0050028FD90 /* JCUIAlertUtils.h in Headers */,
 				932F99A521D1C9740028FD90 /* NumericKeypadTextField.h in Headers */,
-				932F99DE21D1CD050028FD90 /* JCUtils+DeviceID.h in Headers */,
+				932F99DE21D1CD050028FD90 /* JCUtils+Comprehansive.h in Headers */,
 				932F99A821D1C9740028FD90 /* NumericKeypadView.h in Headers */,
 				932F99A021D1C9740028FD90 /* PAPasscodeViewController.h in Headers */,
 				3317CF9521CAF758000D87FE /* CRToastView.h in Headers */,
@@ -706,7 +706,7 @@
 				3317D02B21CAF830000D87FE /* JCCartBarButtonItem.m in Sources */,
 				3317CF9421CAF758000D87FE /* CRToastManager.m in Sources */,
 				932F999F21D1C9740028FD90 /* JCAuthenticationHanlder.m in Sources */,
-				932F99DF21D1CD050028FD90 /* JCUtils+DeviceID.m in Sources */,
+				932F99DF21D1CD050028FD90 /* JCUtils+Comprehansive.m in Sources */,
 				3317D01321CAF765000D87FE /* JCBarButtonItem.m in Sources */,
 				3317D01521CAF765000D87FE /* JCErrorTextField.m in Sources */,
 				932F99A421D1C9740028FD90 /* NumericKeypadView.m in Sources */,
