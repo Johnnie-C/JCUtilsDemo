@@ -37,6 +37,7 @@ Pod::Spec.new do |spec|
         sub.public_header_files = [ 'JCFramework/JCFramework/JCDesign/BaseView/JCNavigationController.h', 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.h']
         sub.resources = [ 'JCFramework/JCFramework/JCHelpers/Authentication/**/*.{xib,png}']
         sub.dependency 'JCUtils/JCFrameworkEssential'
+        sub.dependency 'JCUtils/JCAlert'
         sub.dependency 'SAMKeychain'
     end
 
