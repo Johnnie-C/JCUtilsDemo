@@ -17,6 +17,7 @@
 		3317D09421CB125F000D87FE /* JCFloatingViewConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317D09221CB125F000D87FE /* JCFloatingViewConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3317D09521CB125F000D87FE /* JCFloatingViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317D09321CB125F000D87FE /* JCFloatingViewConfig.m */; };
 		3317D09B21CB1E92000D87FE /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D09A21CB1E92000D87FE /* placeholder.png */; };
+		939DC1FE21D223E2002359CB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 939DC1FD21D223E2002359CB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3317D09221CB125F000D87FE /* JCFloatingViewConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCFloatingViewConfig.h; sourceTree = "<group>"; };
 		3317D09321CB125F000D87FE /* JCFloatingViewConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCFloatingViewConfig.m; sourceTree = "<group>"; };
 		3317D09A21CB1E92000D87FE /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		939DC1FD21D223E2002359CB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		3317D06021CB0BC1000D87FE = {
 			isa = PBXGroup;
 			children = (
+				939DC1FD21D223E2002359CB /* README.md */,
 				3317D08921CB0C93000D87FE /* JCFloatingView.podspec */,
 				3317D06C21CB0BC1000D87FE /* JCFloatingView */,
 				3317D09821CB1E92000D87FE /* Resources */,
@@ -168,6 +171,7 @@
 			files = (
 				3317D08A21CB0C93000D87FE /* JCFloatingView.podspec in Resources */,
 				3317D09B21CB1E92000D87FE /* placeholder.png in Resources */,
+				939DC1FE21D223E2002359CB /* README.md in Resources */,
 				3317D08421CB0C1D000D87FE /* JCFloatingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
