@@ -1,5 +1,4 @@
-# JCUtilsDemo
-General using utils
+# JCUtilsDemo and Libraries
+General utilities and libraries.
 
-## Libraries
 - [JCFloatingView](https://github.com/EzlyJohnnie/JCUtilsDemo/tree/master/JCFloatingView): an app level iOS floating view
