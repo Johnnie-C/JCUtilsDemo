@@ -71,7 +71,7 @@
     _const_contentViewHeight.constant = _lbContent.bottom + 20;
 }
 
-#pragma mark - RvrBarButtonItem Delegate
+#pragma mark - NavBarButtonItem Delegate
 - (void)rightBarButtonItemTapped:(NSInteger)btnType{
     [JCToast toastWithMessage:@"Right search clicked" colour:[UIColor toastMessageGreen]];
 }

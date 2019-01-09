@@ -363,17 +363,17 @@ typedef NS_ENUM(NSInteger, JCFoatingViewClosestEdge){
     
     if(panGesture.state == UIGestureRecognizerStateChanged){
         [self showCloseView:YES];
-        if(newX  < [JCUtils safeMarginLeft]){//add pull effect
+        if(newX  < [JCUtils safeMarginLeft]){
             newX = [JCUtils safeMarginLeft];
         }
         else if(newX > [self floatingViewMaxX]){
             newX = [self floatingViewMaxX];
         }
-        if(newY  < [JCUtils safeMarginTop]){//add pull effect
+        if(newY  < [JCUtils safeMarginTop]){
             newY = [JCUtils safeMarginTop];
         }
-        else if(newY > [self floatingViewMaxY]){
-            newY= [self floatingViewMaxY];
+        else if(newY > [self floatingViewMaxY] + _window.floatingView.height / 2){
+            newY= [self floatingViewMaxY] + _window.floatingView.height / 2;
         }
         
         [floatingView setX:newX];

@@ -94,15 +94,9 @@
 
 - (void)showAuthButtonWithCompletion:(void (^)(BOOL finished))completion{
     _const_btnAuthHeight.constant = 50;
-    [UIView animateWithDuration:0.3
-                          delay:0
-         usingSpringWithDamping:0.5
-          initialSpringVelocity:2
-                        options:UIViewAnimationOptionCurveEaseOut
-                     animations:^{
-                         [self.view layoutIfNeeded];
-                     }
-                     completion:completion];
+    [UIView springAnimation:^{
+        [self.view layoutIfNeeded];
+    } completion:completion];
 }
 
 #pragma mark - action
@@ -176,12 +170,15 @@
 
 - (void)showBiometricsAuthentication{
     [[JCAuthenticationHanlder sharedHelper] authenticateWithBiometricsWithTitle:@"This is a demo title" completion:^(BOOL success, NSError *error) {
-        [JCToast toastWithMessage:success ? @"Biometrics auth success" : [error localizedDescription]
-                                  colour:success ? [UIColor toastMessageGreen] : [UIColor toastMessageRed]];
+      //TODO: run on main thread
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [JCToast toastWithMessage:success ? @"Biometrics auth success" : [error localizedDescription]
+                               colour:success ? [UIColor toastMessageGreen] : [UIColor toastMessageRed]];
+        });
     }];
 }
 
-#pragma mark - RvrBarButtonItem Delegate
+#pragma mark - NavBarButtonItem Delegate
 - (void)rightBarButtonItemTapped:(NSInteger)btnType{
     switch (btnType) {
         case RightBarButtonTypeAdd:

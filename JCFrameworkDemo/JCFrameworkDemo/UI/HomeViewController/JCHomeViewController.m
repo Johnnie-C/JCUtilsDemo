@@ -273,7 +273,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     }
 }
 
-#pragma mark - RvrBarButtonItem Delegate
+#pragma mark - NavBarButtonItem Delegate
 - (void)leftBarButtonItemTapped:(NSInteger)btnType{
     BOOL hasConnectivity = [JCReachability hasConnectivity];
     NSString *message = [NSString stringWithFormat:@"checking connection: %@",

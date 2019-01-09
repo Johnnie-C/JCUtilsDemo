@@ -10,6 +10,15 @@
 
 @implementation JCButton
 
+- (id)init{
+  self = [super init];
+  if(self) {
+    [self setupFont];
+  }
+  
+  return self;
+}
+  
 - (id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     

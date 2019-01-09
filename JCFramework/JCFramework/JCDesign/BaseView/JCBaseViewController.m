@@ -208,7 +208,7 @@
 }
 
 
-#pragma mark - RvrBarButtonItem Delegate
+#pragma mark - NavBarButtonItem Delegate
 - (void)shareAction:(id)sender{
     [self rightBarButtonItemTapped:((UIBarButtonItem *)sender).tag];
 }

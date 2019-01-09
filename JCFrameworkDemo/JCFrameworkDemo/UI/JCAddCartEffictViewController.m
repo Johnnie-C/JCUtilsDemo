@@ -57,7 +57,8 @@
     animationHandler.duration = 0.5f;
     [animationHandler startAnimationandView:iv
                                  startPoint:startPoint
-                                   endPoint:endPoint endSize:_cartButton.lbCount.frame.size
+                                   endPoint:endPoint
+                                    endSize:_cartButton.lbCount.frame.size
                               complemention:^{
                                   [_cartButton addCartCountBy:1];
                               }];
