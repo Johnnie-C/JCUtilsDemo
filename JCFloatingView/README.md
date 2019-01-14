@@ -1,6 +1,6 @@
 # JCFloatingView
 iOS floating view in App level.
-<br>A simple iOS implementation of [SimpleFloating](https://github.com/recruit-lifestyle/FloatingView).
+<br>A simple iOS implementation of [recruit-lifestyle/FloatingView](https://github.com/recruit-lifestyle/FloatingView).
 <br><br>Demo can be found in [JCUtilsDemo](https://github.com/EzlyJohnnie/JCUtilsDemo) 
 <br>(See [JCHomeViewController#tableView:didSelectRowAtIndexPath:](https://github.com/EzlyJohnnie/JCUtilsDemo/blob/master/JCFrameworkDemo/JCFrameworkDemo/UI/HomeViewController/JCHomeViewController.m#L156))
 
