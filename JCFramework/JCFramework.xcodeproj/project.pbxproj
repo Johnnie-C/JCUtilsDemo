@@ -53,8 +53,6 @@
 		3317D02021CAF765000D87FE /* JCDragableCellGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFE421CAF765000D87FE /* JCDragableCellGestureRecognizer.m */; };
 		3317D02121CAF765000D87FE /* JCCollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFE521CAF765000D87FE /* JCCollectionViewFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3317D02221CAF765000D87FE /* JCCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFE621CAF765000D87FE /* JCCollectionViewFlowLayout.m */; };
-		3317D02321CAF765000D87FE /* JCParabolaAnimationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFE721CAF765000D87FE /* JCParabolaAnimationHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3317D02421CAF765000D87FE /* JCParabolaAnimationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFE821CAF765000D87FE /* JCParabolaAnimationHandler.m */; };
 		3317D02521CAF765000D87FE /* JCScrollableViewKeyboardHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFE921CAF765000D87FE /* JCScrollableViewKeyboardHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3317D02621CAF765000D87FE /* JCScrollableViewKeyboardHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317CFEA21CAF765000D87FE /* JCScrollableViewKeyboardHandler.m */; };
 		3317D02721CAF765000D87FE /* JCStretchHeaderHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317CFEB21CAF765000D87FE /* JCStretchHeaderHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -67,6 +65,10 @@
 		3317D05D21CB08F4000D87FE /* ic_menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05721CB08F4000D87FE /* ic_menu@3x.png */; };
 		3317D05E21CB08F4000D87FE /* nav_cart@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05821CB08F4000D87FE /* nav_cart@3x.png */; };
 		3317D05F21CB08F4000D87FE /* search_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3317D05921CB08F4000D87FE /* search_white@3x.png */; };
+		332C67F721E7FB1A00728A51 /* JCErrorShakeAnimiation.h in Headers */ = {isa = PBXBuildFile; fileRef = 332C67F321E7FB1A00728A51 /* JCErrorShakeAnimiation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		332C67F821E7FB1A00728A51 /* JCErrorShakeAnimiation.m in Sources */ = {isa = PBXBuildFile; fileRef = 332C67F421E7FB1A00728A51 /* JCErrorShakeAnimiation.m */; };
+		332C67F921E7FB1A00728A51 /* JCParabolaAnimationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 332C67F521E7FB1A00728A51 /* JCParabolaAnimationHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		332C67FA21E7FB1A00728A51 /* JCParabolaAnimationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 332C67F621E7FB1A00728A51 /* JCParabolaAnimationHandler.m */; };
 		932F998721D1AF7A0028FD90 /* JCToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 932F998521D1AF7A0028FD90 /* JCToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		932F998821D1AF7A0028FD90 /* JCToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F998621D1AF7A0028FD90 /* JCToast.m */; };
 		932F999F21D1C9740028FD90 /* JCAuthenticationHanlder.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F998D21D1C9740028FD90 /* JCAuthenticationHanlder.m */; };
@@ -162,8 +164,6 @@
 		3317CFE421CAF765000D87FE /* JCDragableCellGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDragableCellGestureRecognizer.m; sourceTree = "<group>"; };
 		3317CFE521CAF765000D87FE /* JCCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		3317CFE621CAF765000D87FE /* JCCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCollectionViewFlowLayout.m; sourceTree = "<group>"; };
-		3317CFE721CAF765000D87FE /* JCParabolaAnimationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCParabolaAnimationHandler.h; sourceTree = "<group>"; };
-		3317CFE821CAF765000D87FE /* JCParabolaAnimationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCParabolaAnimationHandler.m; sourceTree = "<group>"; };
 		3317CFE921CAF765000D87FE /* JCScrollableViewKeyboardHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCScrollableViewKeyboardHandler.h; sourceTree = "<group>"; };
 		3317CFEA21CAF765000D87FE /* JCScrollableViewKeyboardHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCScrollableViewKeyboardHandler.m; sourceTree = "<group>"; };
 		3317CFEB21CAF765000D87FE /* JCStretchHeaderHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCStretchHeaderHandler.h; sourceTree = "<group>"; };
@@ -176,6 +176,10 @@
 		3317D05721CB08F4000D87FE /* ic_menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_menu@3x.png"; sourceTree = "<group>"; };
 		3317D05821CB08F4000D87FE /* nav_cart@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_cart@3x.png"; sourceTree = "<group>"; };
 		3317D05921CB08F4000D87FE /* search_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_white@3x.png"; sourceTree = "<group>"; };
+		332C67F321E7FB1A00728A51 /* JCErrorShakeAnimiation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCErrorShakeAnimiation.h; sourceTree = "<group>"; };
+		332C67F421E7FB1A00728A51 /* JCErrorShakeAnimiation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCErrorShakeAnimiation.m; sourceTree = "<group>"; };
+		332C67F521E7FB1A00728A51 /* JCParabolaAnimationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCParabolaAnimationHandler.h; sourceTree = "<group>"; };
+		332C67F621E7FB1A00728A51 /* JCParabolaAnimationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCParabolaAnimationHandler.m; sourceTree = "<group>"; };
 		932F998521D1AF7A0028FD90 /* JCToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCToast.h; sourceTree = "<group>"; };
 		932F998621D1AF7A0028FD90 /* JCToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCToast.m; sourceTree = "<group>"; };
 		932F998D21D1C9740028FD90 /* JCAuthenticationHanlder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAuthenticationHanlder.m; sourceTree = "<group>"; };
@@ -373,10 +377,9 @@
 				932F9A0921D1CECC0028FD90 /* JCDesign.h */,
 				3317CFBE21CAF765000D87FE /* BaseView */,
 				3317CFD221CAF765000D87FE /* Widget */,
+				332C67F221E7FB1A00728A51 /* Animation */,
 				3317CFE521CAF765000D87FE /* JCCollectionViewFlowLayout.h */,
 				3317CFE621CAF765000D87FE /* JCCollectionViewFlowLayout.m */,
-				3317CFE721CAF765000D87FE /* JCParabolaAnimationHandler.h */,
-				3317CFE821CAF765000D87FE /* JCParabolaAnimationHandler.m */,
 				3317CFE921CAF765000D87FE /* JCScrollableViewKeyboardHandler.h */,
 				3317CFEA21CAF765000D87FE /* JCScrollableViewKeyboardHandler.m */,
 				3317CFEB21CAF765000D87FE /* JCStretchHeaderHandler.h */,
@@ -414,6 +417,17 @@
 				3317D05921CB08F4000D87FE /* search_white@3x.png */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		332C67F221E7FB1A00728A51 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				332C67F321E7FB1A00728A51 /* JCErrorShakeAnimiation.h */,
+				332C67F421E7FB1A00728A51 /* JCErrorShakeAnimiation.m */,
+				332C67F521E7FB1A00728A51 /* JCParabolaAnimationHandler.h */,
+				332C67F621E7FB1A00728A51 /* JCParabolaAnimationHandler.m */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		932F998C21D1C9740028FD90 /* Authentication */ = {
@@ -580,9 +594,10 @@
 				932F99A021D1C9740028FD90 /* PAPasscodeViewController.h in Headers */,
 				3317CF9521CAF758000D87FE /* CRToastView.h in Headers */,
 				3317CF9921CAF758000D87FE /* CRToastWindow.h in Headers */,
-				3317D02321CAF765000D87FE /* JCParabolaAnimationHandler.h in Headers */,
 				3317CF9721CAF758000D87FE /* CRToastViewController.h in Headers */,
 				939DC1FA21D1EB2F002359CB /* JCAlert.h in Headers */,
+				332C67F721E7FB1A00728A51 /* JCErrorShakeAnimiation.h in Headers */,
+				332C67F921E7FB1A00728A51 /* JCParabolaAnimationHandler.h in Headers */,
 				932F998721D1AF7A0028FD90 /* JCToast.h in Headers */,
 				3317CF8C21CAF758000D87FE /* MTCompoundButton.h in Headers */,
 			);
@@ -698,7 +713,7 @@
 				932F9A5521D1D0050028FD90 /* UIColor+JCUtils.m in Sources */,
 				3317CF9821CAF758000D87FE /* CRToastViewController.m in Sources */,
 				932F9A5821D1D0050028FD90 /* NSString+JCUtils.m in Sources */,
-				3317D02421CAF765000D87FE /* JCParabolaAnimationHandler.m in Sources */,
+				332C67F821E7FB1A00728A51 /* JCErrorShakeAnimiation.m in Sources */,
 				3317D02B21CAF830000D87FE /* JCCartBarButtonItem.m in Sources */,
 				3317CF9421CAF758000D87FE /* CRToastManager.m in Sources */,
 				932F999F21D1C9740028FD90 /* JCAuthenticationHanlder.m in Sources */,
@@ -709,6 +724,7 @@
 				3317CF9621CAF758000D87FE /* CRToastView.m in Sources */,
 				3317D00A21CAF765000D87FE /* JCPanGestureRecognizer.m in Sources */,
 				3317D01A21CAF765000D87FE /* JCUIAlertController.m in Sources */,
+				332C67FA21E7FB1A00728A51 /* JCParabolaAnimationHandler.m in Sources */,
 				932F9A4E21D1D0050028FD90 /* NSArray+JCUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

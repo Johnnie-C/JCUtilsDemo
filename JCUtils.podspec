@@ -9,6 +9,7 @@ Pod::Spec.new do |spec|
     spec.exclude_files = [ 'JCFrameworkDemo/**/*.*', 'WikiResources/**/*.*' ]
     spec.framework    = 'SystemConfiguration'
     spec.ios.deployment_target  = '9.0'
+    spec.osx.deployment_target = '10.6'
 
 
     spec.subspec 'JCFramework' do |sub|

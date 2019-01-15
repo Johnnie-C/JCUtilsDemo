@@ -19,6 +19,9 @@
 #import "JCHeaderTabView.h"
 
 #import "JCCollectionViewFlowLayout.h"
-#import "JCParabolaAnimationHandler.h"
 #import "JCScrollableViewKeyboardHandler.h"
 #import "JCStretchHeaderHandler.h"
+
+#import "JCParabolaAnimationHandler.h"
+#import "JCErrorShakeAnimiation.h"
+
