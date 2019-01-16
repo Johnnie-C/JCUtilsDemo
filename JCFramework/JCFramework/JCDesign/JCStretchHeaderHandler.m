@@ -125,6 +125,7 @@
 }
 
 - (void)destory{
+    [self updateStatusBarAndNavigationBarIfNeedWithNavigationBarAlpha:1.0];
     [self.scrollView removeObserver:self forKeyPath:NSStringFromSelector(@selector(contentOffset))];
     _headerView = nil;
     _scrollView = nil;
@@ -140,7 +141,7 @@
     
     //update header view height and Y position
     if(_scrollView.contentOffset.y < 0 && fabs(_scrollView.contentOffset.y) > _navigationBar.bottom){
-        navigationBarAlpha = (_headerViewHeight - fabs(_scrollView.contentOffset.y)) / (_headerViewHeight - _navigationBar.bottom);
+        navigationBarAlpha = (_headerViewHeight - fabs(_scrollView.contentOffset.y)) / MAX(_headerViewHeight - _navigationBar.bottom, 0);
         headerViewHeight = MAX(_headerViewHeight, fabs(_scrollView.contentOffset.y));
     }
     [_headerView setHeight:headerViewHeight];
@@ -173,6 +174,12 @@
     
         [_navigationBar setBackgroundColor:navBG extendToStatusBar:YES];
         [_navigationBar setTranslucent:navigationBarAlpha < 1];
+  
+        if (@available(iOS 11.0, *)) {
+            UIView * barBackground = _navigationBar.subviews.firstObject;
+            barBackground.alpha = navigationBarAlpha;
+            [barBackground.subviews setValue:@(navigationBarAlpha) forKeyPath:@"alpha"];
+        }
 //    }
 }
 

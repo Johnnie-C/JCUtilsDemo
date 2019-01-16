@@ -75,9 +75,13 @@
     return UIStatusBarStyleLightContent;
 }
 
+- (BOOL)prefersLargeTitles{
+    return YES;
+}
+
 #pragma mark - Custom Functions
 - (void)setupNavigationBar{
-    [self.navigationController.navigationBar setTranslucent:NO];
+    [self.navigationController.navigationBar setTranslucent:[self allowNavigationBarTranslucent]];
     self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
     [self.navigationItem setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil]];
     [self.navigationItem setTitle:@""];
@@ -88,6 +92,11 @@
     [self.navigationController.navigationBar
      setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor navigationbarTextColor]}];
     [self setNeedsStatusBarAppearanceUpdate];
+  
+    if (@available(iOS 11.0, *)) {
+        self.navigationController.navigationBar.prefersLargeTitles = [self prefersLargeTitles];
+        self.navigationController.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAutomatic;
+    }
 }
 
 - (void)setBackgrondImage{

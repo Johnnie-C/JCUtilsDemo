@@ -23,7 +23,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setupMagicalRecord];
     JCNavigationController *rootNavigationViewController = [[JCNavigationController alloc] initWithRootViewController:[JCHomeViewController new]];
-    rootNavigationViewController.view.backgroundColor = [UIColor navigationbarBackgroundColor];
     [self.window setRootViewController:rootNavigationViewController];
     [self.window makeKeyAndVisible];
     return YES;

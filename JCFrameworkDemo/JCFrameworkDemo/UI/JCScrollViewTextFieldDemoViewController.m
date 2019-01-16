@@ -74,6 +74,10 @@
 
 - (void)checkEmail{
     _txtEmail.error = [_txtEmail.text isValidEmail] ? nil : @"Invalid Email";
+    if(_txtEmail.error){
+        JCErrorShakeAnimiation *animation = [JCErrorShakeAnimiation animationOnView:_txtEmail];
+        [animation animate];
+    }
 }
 
 #pragma mark - JCErrorTextFieldDelegate

@@ -14,12 +14,17 @@
 @implementation UINavigationBar (JCUtils)
 
 - (void)setBackgroundColor:(UIColor *)backgroundColor extendToStatusBar:(BOOL)extendToStatusBar{
-    CGFloat width = [JCUtils screenWidth];
-    CGFloat height = extendToStatusBar ? self.height + [JCUtils statusBarHeight] : self.height;
-    UIImage *navImage = [UIImage imageWithColor:backgroundColor size:CGSizeMake(width, height)];
-    
-    [self setBackgroundImage:navImage forBarPosition:extendToStatusBar ? UIBarPositionTopAttached : UIBarPositionTop barMetrics:UIBarMetricsDefault];
-    self.barTintColor = backgroundColor;
+    if (@available(iOS 11.0, *)) {
+        self.barTintColor = backgroundColor;
+    }
+    else{
+        CGFloat width = [JCUtils screenWidth];
+        CGFloat height = extendToStatusBar ? self.height + [JCUtils statusBarHeight] : self.height;
+
+        UIImage *navImage = [UIImage imageWithColor:backgroundColor size:CGSizeMake(width, height)];
+        [self setBackgroundImage:navImage forBarPosition:extendToStatusBar ? UIBarPositionTopAttached : UIBarPositionTop barMetrics:UIBarMetricsDefault];
+        self.barTintColor = backgroundColor;
+    }
 }
 
 @end
