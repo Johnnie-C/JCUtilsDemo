@@ -71,6 +71,10 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
     [self setRightBarButtonTypes:@[@(RightBarButtonTypeMenu), @(RightBarButtonTypeSearch)]];
 }
 
+- (BOOL)prefersLargeTitles{
+  return YES;
+}
+
 - (void)setupTableView{
     _tableView.dataSource = self;
     _tableView.delegate = self;
@@ -140,7 +144,6 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
             
         case JCHomeViewCellIndexSlidableCell:
         case JCHomeViewCellIndexSlidableCellTwo:
-            [_dragCellpanGesture resetPredragedCellIfNeed];
             [JCToast toastWithMessage:[NSString stringWithFormat:@"Cell clicked at section: %ld, row: %ld", indexPath.section, indexPath.row]
                                       colour:[UIColor toastMessageOrange]];
             break;

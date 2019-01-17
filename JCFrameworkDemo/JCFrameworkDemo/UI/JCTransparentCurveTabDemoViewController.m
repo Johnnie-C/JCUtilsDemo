@@ -81,15 +81,9 @@
 
 - (void)hideAuthButtonWithCompletion:(void (^)(BOOL finished))completion{
     _const_btnAuthHeight.constant = 0;
-    [UIView animateWithDuration:0.3
-                          delay:0
-         usingSpringWithDamping:0.5
-          initialSpringVelocity:2
-                        options:UIViewAnimationOptionCurveEaseOut
-                     animations:^{
-                         [self.view layoutIfNeeded];
-                     }
-                     completion:completion];
+    [UIView springAnimation:^{
+        [self.view layoutIfNeeded];
+    } completion:completion];
 }
 
 - (void)showAuthButtonWithCompletion:(void (^)(BOOL finished))completion{

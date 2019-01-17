@@ -208,9 +208,9 @@
             _textField.placeholder = _error.length ? _placeholder : @"";
             
             [UIView animateWithDuration:0.3 animations:^{
-                [_floatLabel setX:0];
-                [_floatLabel setY:0];
-                _floatLabel.alpha = 1;
+                [self.floatLabel setX:0];
+                [self.floatLabel setY:0];
+                self.floatLabel.alpha = 1;
                 [self layoutIfNeeded];
             } completion:completion];
         }

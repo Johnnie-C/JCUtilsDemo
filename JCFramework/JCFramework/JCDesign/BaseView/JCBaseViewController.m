@@ -65,6 +65,11 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setBackgroundColor:[UIColor navigationbarBackgroundColor] extendToStatusBar:YES];
+  
+    if (@available(iOS 11.0, *)) {
+        self.navigationController.navigationBar.prefersLargeTitles = [self prefersLargeTitles];
+        self.navigationController.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAutomatic;
+    }
 }
 
 - (void)hideNavigationBar:(BOOL) isHide{
@@ -76,7 +81,7 @@
 }
 
 - (BOOL)prefersLargeTitles{
-    return YES;
+    return NO;
 }
 
 #pragma mark - Custom Functions
@@ -92,11 +97,6 @@
     [self.navigationController.navigationBar
      setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor navigationbarTextColor]}];
     [self setNeedsStatusBarAppearanceUpdate];
-  
-    if (@available(iOS 11.0, *)) {
-        self.navigationController.navigationBar.prefersLargeTitles = [self prefersLargeTitles];
-        self.navigationController.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAutomatic;
-    }
 }
 
 - (void)setBackgrondImage{

@@ -32,7 +32,7 @@
     return self;
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [super touchesBegan:touches withEvent:event];
     if (self.state == UIGestureRecognizerStatePossible) {
         if(_pressDelegate){

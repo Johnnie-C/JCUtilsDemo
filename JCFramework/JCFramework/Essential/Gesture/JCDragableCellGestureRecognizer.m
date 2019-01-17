@@ -148,21 +148,14 @@
     }
     
     if(animat){
-        [UIView animateWithDuration:0.3
-                              delay:0
-             usingSpringWithDamping:0.5
-              initialSpringVelocity:2
-                            options:UIViewAnimationOptionCurveEaseOut
-                         animations:^{
-                             if(const_topContentLeft){
-                                 [cell layoutIfNeeded];
-                             }
-                             else{
-                                 [topContentView setX:newX];
-                             }
-                         }
-                         completion:nil];
-        
+        [UIView springAnimation:^{
+            if(const_topContentLeft){
+                [cell layoutIfNeeded];
+            }
+            else{
+                [topContentView setX:newX];
+            }
+        } completion:nil];
     }
     else{
         [topContentView setX:newX];
@@ -204,7 +197,7 @@
 #pragma mark - UIGestureRecognizerDelegate
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
     if ([gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]]) {
-        CGPoint translation = [(UIPanGestureRecognizer*)gestureRecognizer translationInView:_scrollView.superview];
+        CGPoint translation = [(UIPanGestureRecognizer *)gestureRecognizer translationInView:_scrollView.superview];
         if (fabs(translation.x) > fabs(translation.y)) {
             return YES;
         }
