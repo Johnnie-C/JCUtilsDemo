@@ -1,6 +1,6 @@
 //
 //  JCBaseViewController.m
-//  
+//
 //
 //  Created by Johnnie on 11/12/17.
 //  Copyright © 2017 Johnnie Cheng. All rights reserved.
@@ -65,7 +65,7 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setBackgroundColor:[UIColor navigationbarBackgroundColor] extendToStatusBar:YES];
-  
+    
     if (@available(iOS 11.0, *)) {
         self.navigationController.navigationBar.prefersLargeTitles = [self prefersLargeTitles];
         self.navigationController.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAutomatic;
@@ -113,7 +113,7 @@
 }
 
 - (void)setLeftBarButtonType:(LeftBarButtonType)type{
-    JCBarButtonItem *barButtonItem = [[JCBarButtonItem alloc] initWithLeftBarButtonType:type];
+    JCBarButtonItem *barButtonItem = [self createLeftBarItem:type];
     [barButtonItem setDelegate:self];
     UIBarButtonItem *spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
     
@@ -136,7 +136,7 @@
             btn = [[JCCartBarButtonItem alloc] initWithRightBarButtonType:type];
         }
         else{
-            btn = [[JCBarButtonItem alloc] initWithRightBarButtonType:type];
+            btn = [self createRightBarItem:type];
         }
         [btn setDelegate:self];
         [buttons addObject:btn];
@@ -155,6 +155,14 @@
     }
     
     return buttons;
+}
+
+- (JCBarButtonItem *)createLeftBarItem:(LeftBarButtonType)type{
+    return [[JCBarButtonItem alloc] initWithLeftBarButtonType:type];
+}
+
+- (JCBarButtonItem *)createRightBarItem:(RightBarButtonType)type{
+    return [[JCBarButtonItem alloc] initWithRightBarButtonType:type];
 }
 
 - (void)setTabBarImageName:(NSString *)imageName{
@@ -194,7 +202,7 @@
         if(!self.unblockLoader){
             self.unblockLoader = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
             
-//            [self.unblockLoader setFrame:CGRectMake(0, 0, self.navigationController.view.width, self.navigationController.view.height)];
+            //            [self.unblockLoader setFrame:CGRectMake(0, 0, self.navigationController.view.width, self.navigationController.view.height)];
             self.unblockLoader.center = self.view.center;
             [self.unblockLoader setBackgroundColor:[UIColor blackColor]];
             [self.unblockLoader setAlpha:0.2f];

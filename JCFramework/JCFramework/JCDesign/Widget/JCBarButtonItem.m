@@ -1,6 +1,6 @@
 //
 //  JCBarButtonItem.m
-//  
+//
 //
 //  Created by Johnnie on 11/12/17.
 //  Copyright © 2017 Johnnie Cheng. All rights reserved.
@@ -17,10 +17,12 @@ static CGFloat const kImageHeight = 32.0;
 static CGFloat const kLeftBackContainerWidth = 40.0;
 static CGFloat const kLabelWidth = 50.0;
 
+
 typedef NS_ENUM(NSInteger, BarButtonSide) {
     LeftBarButton,
     RightBarButton
 };
+
 
 @interface JCBarButtonItem(){
     LeftBarButtonType leftBarButtonType;
@@ -30,12 +32,34 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
 
 @property (strong, nonatomic) UIImage *icon;
 @property (strong, nonatomic) NSString *text;
+@property (nonatomic, copy) ItemTextBlock itemTextBlock;
+@property (nonatomic, copy) ItemIconBlock itemIconBlock;
 
 @end
 
 
 
 @implementation JCBarButtonItem
+
++ (instancetype)buttonWithLeftBarButtonType:(LeftBarButtonType)type
+                                  textBlock:(ItemTextBlock)textBlock
+                                  iconBlock:(ItemIconBlock)iconBlock
+{
+    JCBarButtonItem *item = [[JCBarButtonItem alloc] initWithLeftBarButtonType:type];
+    item.itemTextBlock = textBlock;
+    item.itemIconBlock = iconBlock;
+    return item;
+}
+
++ (instancetype)buttonWithRightBarButtonType:(RightBarButtonType)type
+                                   textBlock:(ItemTextBlock)textBlock
+                                   iconBlock:(ItemIconBlock)iconBlock
+{
+    JCBarButtonItem *item = [[JCBarButtonItem alloc] initWithRightBarButtonType:type];
+    item.itemTextBlock = textBlock;
+    item.itemIconBlock = iconBlock;
+    return item;
+}
 
 - (id)initWithLeftBarButtonType:(LeftBarButtonType)type{
     leftBarButtonType = type;
@@ -73,8 +97,8 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
     [self setupContainerViewWithSide:side];
     [self setupAdditionalView];
     
-//    [self.containerView setBackgroundColor:[UIColor redColor]];
-//    [self.button setBackgroundColor:[UIColor blueColor]];
+    //    [self.containerView setBackgroundColor:[UIColor redColor]];
+    //    [self.button setBackgroundColor:[UIColor blueColor]];
     return self.containerView;
 }
 
@@ -111,7 +135,15 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
             break;
             
         case LeftBarButtonTypeNone:
+            break;
+            
         default:
+            if(_itemTextBlock != nil){
+                _text = _itemTextBlock();
+            }
+            if(_itemIconBlock != nil){
+                _icon = _itemIconBlock();
+            }
             break;
     }
 }
@@ -220,7 +252,3 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
 }
 
 @end
-
-
-
-

@@ -1,6 +1,6 @@
 //
 //  JCBarButtonItem.h
-//  
+//
 //
 //  Created by Johnnie on 11/12/17.
 //  Copyright © 2017 Johnnie Cheng. All rights reserved.
@@ -32,6 +32,10 @@ typedef NS_ENUM(NSInteger, RightBarButtonType) {
 - (void)rightBarButtonItemTapped:(NSInteger)btnType;
 @end
 
+
+typedef NSString * (^ItemTextBlock)(void);
+typedef UIImage * (^ItemIconBlock)(void);
+
 @interface JCBarButtonItem : UIBarButtonItem
 
 @property (nonatomic, assign) id <JCBarButtonItemDelegate> delegate;
@@ -40,8 +44,16 @@ typedef NS_ENUM(NSInteger, RightBarButtonType) {
 @property (strong, nonatomic) UIButton *button;
 @property (strong, nonatomic) UILabel *label;
 
-- (id)initWithLeftBarButtonType:(LeftBarButtonType)type;
-- (id)initWithRightBarButtonType:(RightBarButtonType)type;
++ (instancetype)buttonWithLeftBarButtonType:(LeftBarButtonType)type
+                                  textBlock:(ItemTextBlock)textBlock
+                                  iconBlock:(ItemIconBlock)iconBlock;
+
++ (instancetype)buttonWithRightBarButtonType:(RightBarButtonType)type
+                                   textBlock:(ItemTextBlock)textBlock
+                                   iconBlock:(ItemIconBlock)iconBlock;
+
+- (instancetype)initWithLeftBarButtonType:(LeftBarButtonType)type;
+- (instancetype)initWithRightBarButtonType:(RightBarButtonType)type;
 
 //for customised class use, override this
 - (void)setupAdditionalView;
