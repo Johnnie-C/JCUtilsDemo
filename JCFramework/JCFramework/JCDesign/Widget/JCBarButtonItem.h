@@ -44,13 +44,14 @@ typedef UIImage * (^ItemIconBlock)(void);
 @property (strong, nonatomic) UIButton *button;
 @property (strong, nonatomic) UILabel *label;
 
-+ (instancetype)buttonWithLeftBarButtonType:(LeftBarButtonType)type
-                                  textBlock:(ItemTextBlock)textBlock
-                                  iconBlock:(ItemIconBlock)iconBlock;
 
-+ (instancetype)buttonWithRightBarButtonType:(RightBarButtonType)type
-                                   textBlock:(ItemTextBlock)textBlock
-                                   iconBlock:(ItemIconBlock)iconBlock;
+- (instancetype)initWithLeftBarButtonType:(LeftBarButtonType)type
+                                textBlock:(ItemTextBlock)textBlock
+                                iconBlock:(ItemIconBlock)iconBlock;
+
+- (instancetype)initWithRightBarButtonType:(RightBarButtonType)type
+                                 textBlock:(ItemTextBlock)textBlock
+                                 iconBlock:(ItemIconBlock)iconBlock;
 
 - (instancetype)initWithLeftBarButtonType:(LeftBarButtonType)type;
 - (instancetype)initWithRightBarButtonType:(RightBarButtonType)type;

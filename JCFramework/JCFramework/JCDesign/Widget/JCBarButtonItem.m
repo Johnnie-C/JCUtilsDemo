@@ -27,13 +27,15 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
 @interface JCBarButtonItem(){
     LeftBarButtonType leftBarButtonType;
     RightBarButtonType rightBarButtonType;
+    ItemTextBlock itemTextBlock;
+    ItemIconBlock itemIconBlock;
 }
 
 
 @property (strong, nonatomic) UIImage *icon;
 @property (strong, nonatomic) NSString *text;
-@property (nonatomic, copy) ItemTextBlock itemTextBlock;
-@property (nonatomic, copy) ItemIconBlock itemIconBlock;
+//@property (nonatomic, copy) ItemTextBlock itemTextBlock;
+//@property (nonatomic, copy) ItemIconBlock itemIconBlock;
 
 @end
 
@@ -41,24 +43,22 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
 
 @implementation JCBarButtonItem
 
-+ (instancetype)buttonWithLeftBarButtonType:(LeftBarButtonType)type
-                                  textBlock:(ItemTextBlock)textBlock
-                                  iconBlock:(ItemIconBlock)iconBlock
+- (instancetype)initWithLeftBarButtonType:(LeftBarButtonType)type
+                                textBlock:(ItemTextBlock)textBlock
+                                iconBlock:(ItemIconBlock)iconBlock
 {
-    JCBarButtonItem *item = [[JCBarButtonItem alloc] initWithLeftBarButtonType:type];
-    item.itemTextBlock = textBlock;
-    item.itemIconBlock = iconBlock;
-    return item;
+    itemTextBlock = textBlock;
+    itemIconBlock = iconBlock;
+    return [self initWithLeftBarButtonType:type];
 }
 
-+ (instancetype)buttonWithRightBarButtonType:(RightBarButtonType)type
-                                   textBlock:(ItemTextBlock)textBlock
-                                   iconBlock:(ItemIconBlock)iconBlock
+- (instancetype)initWithRightBarButtonType:(RightBarButtonType)type
+                                 textBlock:(ItemTextBlock)textBlock
+                                 iconBlock:(ItemIconBlock)iconBlock
 {
-    JCBarButtonItem *item = [[JCBarButtonItem alloc] initWithRightBarButtonType:type];
-    item.itemTextBlock = textBlock;
-    item.itemIconBlock = iconBlock;
-    return item;
+    itemTextBlock = textBlock;
+    itemIconBlock = iconBlock;
+    return [self initWithRightBarButtonType:type];
 }
 
 - (id)initWithLeftBarButtonType:(LeftBarButtonType)type{
@@ -138,11 +138,11 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
             break;
             
         default:
-            if(_itemTextBlock != nil){
-                _text = _itemTextBlock();
+            if(itemTextBlock != nil){
+                _text = itemTextBlock();
             }
-            if(_itemIconBlock != nil){
-                _icon = _itemIconBlock();
+            if(itemIconBlock != nil){
+                _icon = itemIconBlock();
             }
             break;
     }

@@ -1,6 +1,6 @@
 //
 //  JCBaseViewController.h
-//  
+//
 //
 //  Created by Johnnie on 11/12/17.
 //  Copyright © 2017 Johnnie Cheng. All rights reserved.
@@ -27,5 +27,9 @@
 - (void)pushViewController:(UIViewController *)viewController;
 - (void)popViewController;
 - (void)showActionSheet:(UIViewController *)vc;
+
+
+- (JCBarButtonItem *)createLeftBarItem:(LeftBarButtonType)type;
+- (JCBarButtonItem *)createRightBarItem:(RightBarButtonType)type;
 
 @end
