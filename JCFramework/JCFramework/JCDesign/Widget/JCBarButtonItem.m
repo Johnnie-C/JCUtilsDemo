@@ -34,8 +34,6 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
 
 @property (strong, nonatomic) UIImage *icon;
 @property (strong, nonatomic) NSString *text;
-//@property (nonatomic, copy) ItemTextBlock itemTextBlock;
-//@property (nonatomic, copy) ItemIconBlock itemIconBlock;
 
 @end
 
@@ -44,21 +42,23 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
 @implementation JCBarButtonItem
 
 - (instancetype)initWithLeftBarButtonType:(LeftBarButtonType)type
-                                textBlock:(ItemTextBlock)textBlock
-                                iconBlock:(ItemIconBlock)iconBlock
+                                  textBlock:(ItemTextBlock)textBlock
+                                  iconBlock:(ItemIconBlock)iconBlock
 {
     itemTextBlock = textBlock;
     itemIconBlock = iconBlock;
-    return [self initWithLeftBarButtonType:type];
+    self = [self initWithLeftBarButtonType:type];
+    return self;
 }
 
 - (instancetype)initWithRightBarButtonType:(RightBarButtonType)type
-                                 textBlock:(ItemTextBlock)textBlock
-                                 iconBlock:(ItemIconBlock)iconBlock
+                                   textBlock:(ItemTextBlock)textBlock
+                                   iconBlock:(ItemIconBlock)iconBlock
 {
     itemTextBlock = textBlock;
     itemIconBlock = iconBlock;
-    return [self initWithRightBarButtonType:type];
+    self = [self initWithRightBarButtonType:type];
+    return self;
 }
 
 - (id)initWithLeftBarButtonType:(LeftBarButtonType)type{
