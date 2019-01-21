@@ -97,8 +97,9 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
     [self setupContainerViewWithSide:side];
     [self setupAdditionalView];
     
-    //    [self.containerView setBackgroundColor:[UIColor redColor]];
-    //    [self.button setBackgroundColor:[UIColor blueColor]];
+    itemTextBlock = nil;
+    itemIconBlock = nil;
+    
     return self.containerView;
 }
 
@@ -174,7 +175,15 @@ typedef NS_ENUM(NSInteger, BarButtonSide) {
             break;
             
         case RightBarButtonTypeNone:
+            break;
+            
         default:
+            if(itemTextBlock != nil){
+                _text = itemTextBlock();
+            }
+            if(itemIconBlock != nil){
+                _icon = itemIconBlock();
+            }
             break;
     }
 }
