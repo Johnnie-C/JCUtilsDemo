@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger, JCFontType) {
 @interface UIFont (JCUtils)
 
 + (void)registerFontWithFilename:(NSString *)filename bundle:(NSBundle *)bundle;
-+ (void)loadFontsWithFilenames:(NSArray<NSString *> *)filenames bunble:(NSBundle *)bundle;
++ (void)loadFontsWithFilenames:(NSArray<NSString *> *)filenames bundle:(NSBundle *)bundle;
   
 + (UIFont *)fontWithType:(JCFontType)type;
 + (UIFont *)fontWithSize:(CGFloat)size;

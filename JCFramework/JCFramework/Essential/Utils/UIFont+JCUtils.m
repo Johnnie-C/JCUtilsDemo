@@ -23,7 +23,7 @@
     CGFontRelease(customFont);
 }
   
-+ (void)loadFontsWithFilenames:(NSArray<NSString *> *)filenames bunble:(NSBundle *)bundle{
++ (void)loadFontsWithFilenames:(NSArray<NSString *> *)filenames bundle:(NSBundle *)bundle{
     for(NSString *filename in filenames){
         [UIFont registerFontWithFilename:filename bundle:bundle];
     }
