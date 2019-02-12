@@ -160,7 +160,7 @@
 }
 
 - (void)reset{
-    _floatingView.center = _initFloatingViewPosition;
+    _floatingView = nil;
 }
 
 @end

@@ -296,6 +296,7 @@ typedef NS_ENUM(NSInteger, JCFoatingViewClosestEdge){
 - (void)dismissFloatingView{
     [_window reset];
     [_config reset];
+    _config = nil;
     _window.hidden = YES;
     _isShowing = NO;
 }
