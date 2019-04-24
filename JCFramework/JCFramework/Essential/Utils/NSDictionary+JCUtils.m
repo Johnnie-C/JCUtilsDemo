@@ -38,21 +38,18 @@
     return [self objectForKey:key] && ![[self objectForKey:key] isEqual:[NSNull null]];
 }
 
-- (NSString*) toJSONStr{
+- (NSString *)toJSONStr{
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self options:(NSJSONWritingOptions)0  error:&error];
-    
-    if (! jsonData) {
-        return @"{}";
-    } else {
-        return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    }
+  
+  return jsonData? [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding] : @"{}";
 }
 
 + (NSDictionary *)fromJsonStr:(NSString *)json{
     NSError *error;
     NSData *data = [json dataUsingEncoding:NSUTF8StringEncoding];
-    return [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+  
+  return data ? [NSJSONSerialization JSONObjectWithData:data options:0 error:&error] : @"";
 }
     
 @end

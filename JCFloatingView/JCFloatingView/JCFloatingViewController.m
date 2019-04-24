@@ -298,6 +298,7 @@ typedef NS_ENUM(NSInteger, JCFoatingViewClosestEdge){
     [_config reset];
     _config = nil;
     _window.hidden = YES;
+    _window = nil;
     _isShowing = NO;
 }
 

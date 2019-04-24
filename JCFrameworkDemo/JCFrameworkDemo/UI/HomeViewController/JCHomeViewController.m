@@ -318,6 +318,7 @@ typedef NS_ENUM(NSInteger, JCHomeViewCellIndex){
 - (void)didDismissFloatingView:(JCFloatingViewController *)floatingView{
     [JCToast toastWithMessage:@"Floating view dismiss success"
                               colour:[UIColor toastMessageGreen]];
+    _floatingView = nil;
 }
 
 @end
